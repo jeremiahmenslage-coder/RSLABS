@@ -6,7 +6,13 @@
 
 Confirm (and report unknown when inaccessible): correct repo root; branch/commit/tag; `git status`; existing `AGENTS.md` and role files; actual npm scripts; architecture modules; current README and handoff; test inventory; whether phase1 branch/source matches the copy the Owner received. Do **not** alter source, initialize Git, install dependencies or change any file during this pass.
 
-## Product-owner walkthrough — Phase 1 acceptance from founding brief §E
+## Primary walkthrough — later Phase 1 delivery contract
+
+Use README.md, section "Phase 1 owner acceptance walkthrough (normal app)", together with docs/PHASE1_AUTHORIZATION.md §4. Create the exact seven nodes and six directed connections, use both connection methods and mixed edge kinds, move three nodes, edit/delete/undo/redo, optimize then move again, and verify saved IDs/fields/positions after refresh. Exercise failed-save feedback, last-known-good recovery, retry, duplicate/self-edge and hard-cycle rejection.
+
+Use an isolated browser profile with disposable test data; New empty roadmap and Load demo replace active data. Do not clear the Owner's site data. The application URL/origin and database schema must stay unchanged. No acceptance is claimed by this checklist.
+
+## Founding baseline walkthrough — five-node scenario
 
 1. Open the exact delivered application via the verified run instructions.
 2. Double-click empty canvas: detailed editor opens; cancel creates no ghost node; save creates a custom node in the expected position.

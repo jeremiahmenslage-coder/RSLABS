@@ -4,7 +4,7 @@
 
 Use Node built-in test runner for canonical fixture names, exact six ordered pairs, type enums, uniqueness, missing/dangling IDs, self-edge rejection, group referential integrity, hard-cycle rejection and soft/order cycle tolerance. Layout returns finite positions, preserves semantic signature, ranks directed acyclic fixture, and does not produce overlapping node boxes in either density. Projection must be read-only, retain graph signature, never introduce projected semantic edges, preserve cross-group counts, and handle representative nodes.
 
-## Layer 2: state/storage integration (Phase 1/2 — NOT IMPLEMENTED)
+## Layer 2: state/storage integration (Phase 1 mock coverage implemented; real-origin checks pending)
 
 Model → action → derived graph and undo/redo transactional semantics; IndexedDB autosave success/failure reporting; debounced drag commit; recover persisted positions/edges/status across browser reload; versioned migration/backup round-trip; invalid JSON import and interrupted migration preserve last valid graph. Use isolated browser storage contexts and a stub that can fail transactions. Include property-based generated graphs for cycles/ref integrity.
 
@@ -26,7 +26,7 @@ Phase 6: 250+/400+ generated diverse graphs, time render/pan/zoom/layout, edge h
 
 ## Reproducibility and defects
 
-- Commands: `npm test`; `python -m unittest discover -s tests -p 'browser_phase0.py' -v`; `node tests/performance_spike.mjs`; `python tests/browser_perf.py`; `npm run build`.
+- Current command inventory and side effects: `docs/TESTING.md`. `npm test` runs current Node coverage. `browser_phase0.py` and `browser_perf.py` are preserved legacy Phase 0 harnesses and are incompatible with the current Phase 1 app. Do not use them as current regression commands.
 - Report Pass / Fail / Not run, exact environment, relevant fixture and screenshots *alongside* automation results.
 - Any P0/P1 stops phase acceptance; P2 deferral requires owner decision; rerun full relevant suite after fixes.
 - Browser admin policy in this sandbox is a known test **limitation**, not an app pass or failure. Normal hosted-page E2E remains Not run.

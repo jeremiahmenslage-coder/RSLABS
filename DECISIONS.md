@@ -72,3 +72,14 @@ Owner's Phase 1 authorization explicitly made ADR-009's file picker optional onl
 Engineering sandbox blocks navigations to served `http://127.0.0.1:4173/`. Unlike a normal browser test, an inline DOM+data-module harness executes interactive elements with a **mock IndexedDB** and is labeled as such. Independent real HTTP asset serving works, but only the owner or another unrestricted browser environment can validate true IndexedDB persistence and full refresh recovery. **Do not upgrade this to an E2E pass**. Phase 1 implementation can be handed off, but final acceptance should wait for the owner-run recovery/failure checklist in README.
 
 Prior ADR-004 (one edge per ordered pair), ADR-005 (collapsed summary with boundary count), ADR-006 (private lawful art), and ADR-002 (replaceable nonproduction layout) remain unchanged.
+
+
+## ADR-014: Owner-authorized migration maintenance — 2026-10-26
+
+Source: direct Owner message in the repository migration/cleanup Codex conversation, following the read-only audit. Exact statement:
+
+> I authorize the backup, local Git setup, and documentation/instruction cleanup described above. Preserve application code and historical evidence. Do not delete files or begin Phase 2.
+
+Authorized: verified workspace backup, local Git baseline, root shared instructions and role reconciliation, relocation of staged migration documents out of src, documentation corrections and ignore rules. Application refactoring, test-harness repairs, file deletion, dependencies, push, deployment and Phase 2 are excluded. Git baseline preservation is not acceptance. Phase 1 remains delivered pending formal Owner acceptance.
+
+Records: `docs/agents/CURRENT_PHASE_GATE.md` is the current summary; this file holds decision evidence. Use the existing ledger rather than creating a second live approval ledger. Original kit manifests, evidence and historical phase documents remain archival.

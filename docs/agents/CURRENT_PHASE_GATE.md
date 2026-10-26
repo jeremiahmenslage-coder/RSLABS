@@ -1,28 +1,20 @@
-# Current phase gate — Owner statement, 2026-10-26
+# Current phase gate — 2026-10-26
 
-**Project:** OSRS Ironman Progression Planner
+The human Owner alone accepts phases and authorizes subsequent phases. Decision history: [DECISIONS.md](../../DECISIONS.md).
 
-## Supported state
-
-| Milestone | Status | Evidence category |
+| Milestone | Current status | Evidence and limits |
 |---|---|---|
-| Phase 0 delivered/accepted | Historical prerequisite for Phase 1 work; exact acceptance record **not inspected** | Unknown; verify prior explicit Owner approval |
-| Phase 1 authorized | Work has been done and a working copy delivered; original authorization record **not inspected** | User-reported history; verify approval if needed |
-| Phase 1 delivered | **YES, working copy received** | Current direct Owner report (2026-10-26) |
-| Phase 1 repository/browser acceptance | **NOT YET ESTABLISHED** | Owner has not stated acceptance; build not inspected here |
-| Phase 2 authorized | **NO** | Current direct Owner statement (2026-10-26) |
-| Work permitted in migration | Instructions drafting, read-only audit and review preparation | This migration task only; repo edits require approval |
+| Phase 0 acceptance / original Phase 1 authorization | Historical reports claim approval; activation evidence remains unverified | docs/PHASE1_AUTHORIZATION.md is inspected and conditional on Owner sending/approval. Handoff/spec/architecture report that it occurred; no independent original message was established by migration. |
+| Phase 1 delivery | Working copy delivered, pending formal acceptance | Direct Owner statements in the migration/audit conversation, 2026-10-26. |
+| Phase 1 acceptance | Pending | Required normal-browser persistence/recovery walkthrough remains unverified. |
+| Phase 2 authorization | NOT AUTHORIZED | Explicit current Owner instruction. |
+| Maintenance authorization | Backup, local Git setup, documentation/instruction cleanup authorized | Exact Owner quote in ADR-014, DECISIONS.md. No file deletion, application code changes, test-tool repairs or new features. |
+| Repository checkpoint | Local Git on main; original delivery checkpoint 2b232bcc999c1b56496766943be795a01ed10033 | Baseline preservation is not phase acceptance. See checkpoint inventory. |
 
-**Decision:** Do not commission or implement Phase 2. Do not mark Phase 1 accepted without the Owner's explicit message. No release or external push authorization is implied.
+## Next development gate
 
-## How to advance safely
+Use the existing delivered app for a Phase 1 review only. Follow [PHASE_1_REVIEW.md](PHASE_1_REVIEW.md) and the README walkthrough with isolated test data. Report actual Pass / Fail / Not run results. Any application remediation needs a scoped Owner-authorized ticket. Accepting Phase 1 still requires separate express authorization before Phase 2.
 
-1. Verify exact delivered Phase 1 archive/repo branch, commit, tag and working tree.
-2. Compare the actual app to Phase 1 acceptance criteria. Label test outcomes Pass / Fail / Not run, with environment and evidence.
-3. CEO briefs Owner on defects and manual acceptance walkthrough.
-4. Owner responds **accept**, **request Phase 1 fixes**, or **reject**. Record the exact dated words in the normal decision ledger.
-5. Even after Phase 1 acceptance, obtain a **separate Owner command authorizing Phase 2** before implementation.
+## Record maintenance
 
-## Change-control rule
-
-This is a point-in-time gate snapshot. Update only when new explicit human Owner decisions and/or repository evidence are recorded, with sources. Do not let an old `Execute Phase 0` sentence erase the current reported Phase 1 delivery. Conversely, do not use the delivery report to infer acceptance.
+Update this summary from explicit Owner decisions and verified evidence. Preserve original historical documents and distinguish requirements, reported history, observed code, executed tests and Owner acceptance. No push, release, deployment or browser-data reset is implied.

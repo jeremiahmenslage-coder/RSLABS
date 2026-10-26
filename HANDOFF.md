@@ -1,3 +1,11 @@
+# Current migration handoff — 2026-10-26
+
+Owner authorized backup, local Git setup, and documentation/instruction cleanup only; see ADR-014 in `DECISIONS.md`. Current gate: Phase 1 delivered pending acceptance; Phase 2 not authorized. Root `AGENTS.md` is installed, role files remain in `docs/agents/`, and staged migration originals moved from `src/` to `docs/migration/`. No application code, tests, browser data, historical evidence or checkpoints were altered.
+
+Original delivery is preserved in local Git commit `2b232bcc999c1b56496766943be795a01ed10033` and the verified workspace ZIP described in `docs/history/CHECKPOINTS.md`. The historical handoff below reports prior authorization; its conditional activation evidence was not independently established by migration. Current decisions supersede historical start orders. See `docs/TESTING.md` for legacy harness limitations. Two role chats have not been created or behavior-validated. Next development task: Owner-guided Phase 1 browser acceptance review; no fixes or Phase 2 are commissioned.
+
+---
+
 # Phase 1 engineering handoff — v0.1.0-phase1
 
 **Status:** Phase 0 approved, **Phase 1 expressly authorized and implemented**, Phase 2 **NOT authorized and NOT started**. Recommend **HOLD final Phase 1 acceptance pending normal browser-origin IndexedDB save/reopen/failure owner check** because unrestricted browser navigation is unavailable in engineering sandbox. No known P0/P1 defect in tests actually run.
@@ -29,3 +37,8 @@ One immutable-through-actions canonical state store, version-1 schema, node/edge
 ## Suggested Phase 2 plan (NOT authorized)
 
 Add and test readiness from user-defined incoming hard prerequisites only, status/manual counters without status propagation, shareable reused nodes, hard-cycle invariants; implement versioned JSON export/import with preview, corrupt-file/no-overwrite and round-trip tests, including complete custom asset bytes if such uploads are ever permitted (otherwise explicit nonportable limits). Carry forward Phase 1 tests and owner scenario. **STOP and request explicit Phase 2 authorization.**
+
+
+## Migration validation and next handoff
+
+Post-cleanup Node checks passed 34/34 on Windows Node 24.22.1; original protected files and relocated kit originals match the verified backup. See TEST_REPORT.md for scope and limitations. No browser acceptance was performed. Git contains a baseline commit and a separate documentation/configuration maintenance commit; use git log/status to obtain current refs rather than treating this handoff as the live Git state. No remote or external publication was configured.

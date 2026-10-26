@@ -34,3 +34,16 @@ Follow README under a real **Chrome/Edge** URL `http://127.0.0.1:4173/`: create 
 ## Known test limitations vs defects
 
 The policy-blocked browser navigation is **not** evidence that the application is broken. It is also **not** evidence that persistence works under real browser storage. No known confirmed P0/P1 from executed tests; the unresolved browser integration evidence requires explicit review and should prevent **unconditional** gate acceptance.
+
+
+## 2026-10-26 — authorized migration maintenance verification
+
+Environment: Windows PowerShell, Node 24.22.1. Executed from Phase1/osrs-phase1-editor:
+
+```powershell
+node --test tests/assets.test.mjs tests/graph.test.mjs tests/indexeddb.test.mjs tests/phase1.test.mjs
+```
+
+Result: **PASS 34/34, 0 failures**, after documentation/instruction relocation. The pre-maintenance ZIP contains 230 original files; every ZIP entry was verified against its original SHA-256 and size. Post-maintenance comparison found no unexpected original-file changes; runtime source, tests, scripts, assets, delivered dist, historical reports/manifests, founding originals, evidence and sibling checkpoints retain their original bytes. The three relocated migration originals retain their original bytes. Current documentation-index/migration/checkpoint Markdown links resolve locally.
+
+Not run: build, Python/browser tests, HTTP smoke, Graphviz benchmarks or Owner acceptance walkthrough. Builds/evidence-writing commands were avoided to preserve delivered artifacts. Node mock checks are not proof of actual browser-origin persistence or interactive acceptance. See docs/TESTING.md and docs/history/CHECKPOINTS.md.

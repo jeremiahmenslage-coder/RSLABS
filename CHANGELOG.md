@@ -1,3 +1,16 @@
+# Changelog
+
+## 2026-10-26 — repository migration maintenance
+
+- Preserved a verified 230-file workspace backup and local Git baseline of the original Phase 1 delivery.
+- Installed shared AGENTS.md; reconciled separate CEO/Engineer instructions, current gate and onboarding prompts.
+- Moved three original migration files from src into docs/migration without changing their bytes.
+- Added documentation navigation, current testing inventory and historical checkpoint/evidence mappings; corrected stale summaries.
+- Ignored future generated build/test/local-data outputs. Delivered dist stays on disk and is preserved in the baseline commit and ZIP.
+- No application, test, asset, dependency, storage-origin or schema changes; no historical evidence deleted; Phase 1 acceptance pending and Phase 2 not authorized.
+
+## Historical delivery entries (original order retained)
+
 ## 0.0.2 — Phase 0 feedback addendum (2026-10-25)
 
 - Recorded owner's ratification: single typed edge per ordered pair, honest boundary-count group summaries, renderer with layout adapter, private/noncommercial use and authentic-icons-when-lawful goal.
@@ -5,7 +18,6 @@
 - Compared custom deterministic layout against Graphviz dot 2.42.4 on 7/6, 110/127 and 250/400 fixtures. No production layout feature implemented; ELK.js remains untested pending available package installation.
 - Executed and documented Node, Chromium inline browser asset/gesture tests, static HTTP asset checks, and layout benchmarks. Added `PHASE0_ADDENDUM.md`, updated docs; no Phase 1 changes.
 
-# Changelog
 
 ## 0.0.1-phase0 — 2026-10-25
 

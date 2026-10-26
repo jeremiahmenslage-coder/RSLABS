@@ -2,11 +2,15 @@
 
 **Phase 1 only.** This is a locally hosted, browser-origin IndexedDB roadmap editor for a single private, noncommercial player. It starts with **your own empty roadmap**, not the canonical sample. Optional **Load original demo…** replaces the active roadmap with a copy of the original seven-node/six-edge fixture. Demo relationships are player-defined examples, **not verified game prerequisites**. No Jagex artwork is included.
 
+## Project maintenance and governance
+
+Open this application folder as the Codex project root. Shared rules: [AGENTS.md](AGENTS.md); [documentation index](docs/README.md); [migration setup](docs/migration/README.md); [test inventory](docs/TESTING.md). Phase 1 is delivered pending acceptance; Phase 2 is not authorized. Local Git preserves the original delivery; historical reports and evidence remain intact.
+
 ## Windows quick start (Chrome or Edge)
 
-1. Extract the Phase 1 ZIP to a **new folder**, separate from `v0.0.1` / `v0.0.2`.
-2. Install **Node.js 20+** if necessary. In the extracted `osrs-phase1-editor` folder, open Windows **Command Prompt**: click the Explorer address bar, type `cmd`, Enter.
-3. Run `npm install` (no runtime dependencies), then **`npm run dev`**. **Keep this terminal window open.** Alternatively double-click `START_WINDOWS.cmd` in this folder, which keeps the window open if the server exits unexpectedly.
+1. Use this existing `Phase1/osrs-phase1-editor` working folder. Only when restoring an archive, extract to a new separate folder; do not overwrite the working copy.
+2. Install **Node.js 20+** if necessary. In this `osrs-phase1-editor` folder, open Windows **Command Prompt**: click the Explorer address bar, type `cmd`, Enter.
+3. Run **`npm run dev`**. No package installation is needed for this dependency-free app. **Keep this terminal window open.** Alternatively double-click `START_WINDOWS.cmd` in this folder, which keeps the window open if the server exits unexpectedly.
 4. Open **http://127.0.0.1:4173/** exactly (not `file://`, not the old folder, and do not alternate between `localhost` and `127.0.0.1`). IndexedDB is scoped to this **browser + origin**.
 5. The page should read **LOCAL-FIRST GOAL EDITOR · PHASE 1**. If an older demo appears, press **Ctrl+Shift+R** and verify the terminal's current folder.
 6. Stop the server with **Ctrl+C** in its Command Prompt window. The roadmap remains in that browser's IndexedDB unless browser/site data is cleared.
@@ -48,7 +52,7 @@ python tests/browser_phase1.py       # 15 Chromium inline DOM interaction tests 
 python tests/static_phase1_smoke.py # 11 real HTTP asset checks against dist/
 ```
 
-Python browser test requires installed Playwright and a local Chromium executable at `/usr/bin/chromium` (engineering environment); owner **does not need Python** to use the app. The engineering sandbox forbids Chromium navigation to HTTP URLs (`ERR_BLOCKED_BY_ADMINISTRATOR`); the inline browser suite uses a **mock** IndexedDB and cannot prove **real-origin IndexedDB refresh recovery**. The owner checklist above is the outstanding genuine-browser test. Do not claim automated HTTP browser E2E passed.
+See `docs/TESTING.md` before running Python tests: some commands rebuild `dist/` or write evidence, and legacy Phase 0 harnesses are incompatible with Phase 1. The Phase 1 Python browser test requires installed Playwright and a local Chromium executable at `/usr/bin/chromium` (engineering environment); owner **does not need Python** to use the app. The original Linux engineering sandbox blocked Chromium navigation to HTTP URLs (`ERR_BLOCKED_BY_ADMINISTRATOR`); this restriction has not been established for the current Windows machine; the inline browser suite uses a **mock** IndexedDB and cannot prove **real-origin IndexedDB refresh recovery**. The owner checklist above is the outstanding genuine-browser test. Do not claim automated HTTP browser E2E passed.
 
 Project layout: `src/model.js` + `src/model/actions.js` (validation/actions); `src/state/store.js` (single authoritative snapshot/history); `src/storage/indexeddb.js` (structured durable transaction and serialized saves); `src/ui/graph.js` (nodes, SVG edges, drag/zoom/pan); `src/ui/inspector.js` (detailed editing); `src/main.js` (orchestration); `src/projection.js`/`src/layout.js` (swappable view/layout); `src/assets/resolve.js` and `src/catalog/reference.js` (separate bundled test icons/catalog metadata); `tests/` (regressions); docs (`ARCHITECTURE.md`, `TEST_REPORT.md`, etc.).
 

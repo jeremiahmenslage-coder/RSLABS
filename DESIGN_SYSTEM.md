@@ -1,6 +1,6 @@
 # Phase 0 design-system sample
 
-This is an **implemented CSS sample**, not a production-wide theme. Review actual `src/style.css` and screenshot `evidence/optimized.png`.
+This is an **implemented CSS sample**, not a production-wide theme. Review actual `src/style.css`. The historical screenshot `evidence/optimized.png` belongs to the complete Phase 0.0 checkpoint; see `docs/history/CHECKPOINTS.md` for its location. It is not Phase 1 interaction evidence.
 
 | Token/element | Implemented Phase 0 design |
 |---|---|

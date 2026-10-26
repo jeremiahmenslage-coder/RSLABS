@@ -1,6 +1,6 @@
 # Phase 1 — Implementation architecture and versioned data contract
 
-**Scope accepted:** Phase 0 approved; Phase 1 authorized by the owner on 2026-10-25. Implementation adds local-first editing only, with no Phase 2–6 features.
+**Historical delivery scope:** reports describe Phase 0 approval and Phase 1 authorization on 2026-10-25; migration did not independently establish the conditional authorization document's activation. Current Owner status is recorded in `docs/agents/CURRENT_PHASE_GATE.md`: Phase 1 delivered, pending acceptance; Phase 2 not authorized. Implementation described below is Phase 1 local-first editing.
 
 ## Current executable stack and boundaries
 

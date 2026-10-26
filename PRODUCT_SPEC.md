@@ -1,6 +1,6 @@
-# Product specification — approved scope baseline (Phase 0 snapshot)
+# Product specification — scope baseline and Phase 1 delivery
 
-Source of authority: bundled `docs/ENGINEERING_BRIEF.md`. **Do not treat the spike as changing approved product scope.**
+Source of authority: operational baseline `docs/ENGINEERING_BRIEF.md`, later explicit Owner decisions in `DECISIONS.md`, and current status in `docs/agents/CURRENT_PHASE_GATE.md`. The identical founding brief is archival. **Do not treat the spike as changing approved product scope.**
 
 ## v1 must deliver (later phases)
 
@@ -14,13 +14,13 @@ Local structured autosave (Phase 1), JSON versioned backup/import and recovery (
 
 No group collaboration, player accounts, hosted DB or sync, RuneLite importer, automatic dependency engine, full game encyclopedia, monetary/social features, JSON smart merge, recursive grouping or complete mobile editing.
 
-## Phase 0 implemented ONLY
+## Historical Phase 0 implementation (before Phase 1)
 
 Exact F1 graph specimen (seven nodes, six arcs); icons from custom created artwork; typed edges with handles, drags, in-memory inspector editing, compact/detailed, group projection, zoom/pan, and Optimize Layout. These demonstrate feasibility only. No persistence, catalog, task board, production UI or full editor is implied.
 
 ## Non-negotiable semantic guardrails
 
-A → B represents sequence/support per chosen edge type. One ordered pair has at most one edge by **proposed** default, requiring owner ratification. Reject hard cycles, allow soft/order cycles with visited-safe traversal. Readiness is computed across complete canonical graph including hidden members, not written as completion status. All game dependencies shown in F1 are *user-supplied planning examples*, not verified real-game requirements.
+A → B represents sequence/support per chosen edge type. One ordered pair has at most one typed edge; ADR-004 and the later owner-clarification section record ratification. Reject hard cycles, allow soft/order cycles with visited-safe traversal. Readiness is computed across complete canonical graph including hidden members, not written as completion status. All game dependencies shown in F1 are *user-supplied planning examples*, not verified real-game requirements.
 
 
 ## 2026-10-25 owner clarifications (Phase 0, locked)
@@ -36,7 +36,7 @@ A → B represents sequence/support per chosen edge type. One ordered pair has a
 
 ## Phase 1 authorization and delivered boundary (2026-10-25)
 
-The owner expressly accepted Phase 0 and authorized **Phase 1 only** by sending `docs/PHASE1_AUTHORIZATION.md`. The editor now starts with an empty user roadmap, supports double-click draft/create/cancel, title/category/notes/local test icon editing, safe node/edge deletion, both directed connection methods, one typed edge per ordered pair, hard-only DAG rejection, drag/pan/zoom/fit/basic optimize, undo/redo (session only), real IndexedDB browser-origin storage adapter, prompt saves and visible error/retry state. A fresh optional copy of the exact Phase 0 seven-node/six-edge fixture is available through **Load original demo…** and does not become a permanent default roadmap. Existing compact/detailed display and equipment-group visual summary remain.
+Historical delivery records report Phase 0 acceptance and Phase 1 authorization. The inspected `docs/PHASE1_AUTHORIZATION.md` is conditional on sending/approval; independent activation evidence was not established in migration. Current direct Owner status is Phase 1 delivered, pending acceptance; Phase 2 not authorized. The editor now starts with an empty user roadmap, supports double-click draft/create/cancel, title/category/notes/local test icon editing, safe node/edge deletion, both directed connection methods, one typed edge per ordered pair, hard-only DAG rejection, drag/pan/zoom/fit/basic optimize, undo/redo (session only), real IndexedDB browser-origin storage adapter, prompt saves and visible error/retry state. A fresh optional copy of the exact Phase 0 seven-node/six-edge fixture is available through **Load original demo…** and does not become a permanent default roadmap. Existing compact/detailed display and equipment-group visual summary remain.
 
 No Phase 2 status/readiness computation/counters/JSON backup/import, Phase 3 production-scale layout/focus, Phase 4 task board, Phase 5 OSRS art/catalog ingestion/upload, Phase 6 mobile/release/performance work was started. Original placeholder imagery remains; authentic OSRS artwork is desired only where lawful. The editor accepts only bundled original test-icon identifiers at this stage. `public/user-icons/` plus an explicit manifest is a future private build path, not an automated read of the owner's disk. A transferable backup must include custom icon bytes or a validated companion package **when** user uploads are implemented.
 

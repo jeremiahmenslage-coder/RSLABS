@@ -2,3 +2,19 @@ __pycache__/
 *.pyc
 node_modules/
 .DS_Store
+
+# Generated outputs; original delivered dist is recoverable in the baseline commit.
+/dist/
+/test-results/
+/playwright-report/
+/coverage/
+.pytest_cache/
+.cache/
+*.log
+.env
+.env.*
+!.env.example
+
+# Local user files and browser profiles are not project source.
+/local-data/
+/browser-profiles/
