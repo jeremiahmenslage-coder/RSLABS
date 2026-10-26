@@ -1,0 +1,81 @@
+{
+  "built": "2026-10-26",
+  "state": "staged-not-installed",
+  "files": [
+    {
+      "path": "PROPOSED_AGENTS.md",
+      "sha256": "6217b46fa1a9b249f20efb72f8c63f4c9c0420445a5c16bbadf02e64007f34b3",
+      "size_bytes": 3768
+    },
+    {
+      "path": "README_START_HERE.md",
+      "sha256": "71c987dc73722ca8dcff830a67b730c7bc1475f28d6712d16edc454f6fdef105",
+      "size_bytes": 6042
+    },
+    {
+      "path": "docs/agents/AI_CEO_INSTRUCTIONS.md",
+      "sha256": "ec4abf2427591dc3eb1fa2c90e3bde0cfce7c79d9df9e1c249ab70177ce15f53",
+      "size_bytes": 6145
+    },
+    {
+      "path": "docs/agents/AI_ENGINEER_INSTRUCTIONS.md",
+      "sha256": "6015c9c5762760a118295b44b9e4a9e7b039dca5d30e337eda7101e815c69506",
+      "size_bytes": 6557
+    },
+    {
+      "path": "docs/agents/CEO_START_PROMPT.md",
+      "sha256": "5a969b2452a76c59c0febe5ff59b65f50e9544190b0bdc73412761708bd253c0",
+      "size_bytes": 1083
+    },
+    {
+      "path": "docs/agents/CURRENT_PHASE_GATE.md",
+      "sha256": "059ec418edb7ce97d6d44578eab776d9d5d072856cd11583fe6126b605b6ba41",
+      "size_bytes": 2028
+    },
+    {
+      "path": "docs/agents/ENGINEER_START_PROMPT.md",
+      "sha256": "40f3d96fa72bdb77bf514dd0c0c2ab755fe7c65646948fc09c421e0533d6da26",
+      "size_bytes": 1065
+    },
+    {
+      "path": "docs/agents/PHASE_1_REVIEW.md",
+      "sha256": "6c9c3d36a45a0b95688b95a7defa41612a10bb5da971137e2aba3631d613b241",
+      "size_bytes": 2766
+    },
+    {
+      "path": "docs/founding/OSRS_Ironman_Progression_Planner_AI_Engineering_Brief.md",
+      "sha256": "163a7d233726222be5905e1d220def10b12e264fc343e86f43cb870b8bfb8de8",
+      "size_bytes": 38301
+    },
+    {
+      "path": "docs/founding/OSRS_Ironman_Progression_Planner_CEO_Playbook.md",
+      "sha256": "aea6de0ef937f5c4bbadcb862e483502c054e7972e123ebb3405cae2c0eb90cf",
+      "size_bytes": 16740
+    },
+    {
+      "path": "optional_codex_agents/.codex/agents/ai-ceo.toml",
+      "sha256": "8a2b5ad860ebfbca3e25be1f9d66f17f0c90f826bcd4cc8606d0e9a3f4382e59",
+      "size_bytes": 824
+    },
+    {
+      "path": "optional_codex_agents/.codex/agents/ai-engineer.toml",
+      "sha256": "39e19f5708daa6b71d3fc0219a30b48dcbd8581e34ba713c498105a9750fe5dc",
+      "size_bytes": 905
+    },
+    {
+      "path": "templates/DELIVERY_REPORT.md",
+      "sha256": "49aac5db2ddb706bd44a848b8e494eb099526ed46215c5aef4c9ffa0099e68e3",
+      "size_bytes": 930
+    },
+    {
+      "path": "templates/ENGINEERING_TICKET.md",
+      "sha256": "f465f65c7c5919726ef8650103f74493ea5bd561415310efa1cb9341eb13ac84",
+      "size_bytes": 902
+    },
+    {
+      "path": "templates/OWNER_APPROVAL_LEDGER.md",
+      "sha256": "103af335379605bd74c44cc9a92ced01543070a673ff47619a692b571095a4a5",
+      "size_bytes": 901
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+
+> osrs-ironman-planner@0.1.0-phase1 build
+> node scripts/build.mjs
+
+Static dist created (no external dependencies): dist/

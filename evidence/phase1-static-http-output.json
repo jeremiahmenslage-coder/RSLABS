@@ -1,0 +1,73 @@
+Static dist created (no external dependencies): dist/
+{
+  "result": [
+    {
+      "url": "http://127.0.0.1:4319/",
+      "status": 200,
+      "mime": "text/html",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/src/main.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/src/model/actions.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/src/state/store.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/src/storage/indexeddb.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/src/ui/graph.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/src/ui/inspector.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/src/style.css",
+      "status": 200,
+      "mime": "text/css",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/public/icons/sample-sail.png",
+      "status": 200,
+      "mime": "image/png",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/public/icons/sample-ring.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "pass": true
+    },
+    {
+      "url": "http://127.0.0.1:4319/public/icons/missing-file.png",
+      "status": 404,
+      "mime": "",
+      "pass": true
+    }
+  ],
+  "passed": 11,
+  "total": 11
+}

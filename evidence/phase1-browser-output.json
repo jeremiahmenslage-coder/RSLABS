@@ -1,0 +1,67 @@
+{
+  "environment": "Chromium inline DOM via data-URL modules; mocked IndexedDB; NOT URL-loaded E2E",
+  "tests": [
+    {
+      "name": "initial empty roadmap, no sample injected",
+      "result": "PASS"
+    },
+    {
+      "name": "Cancel new goal does not create an orphan",
+      "result": "PASS"
+    },
+    {
+      "name": "zoom-aware new node world coordinates + undo create",
+      "result": "PASS"
+    },
+    {
+      "name": "doubleclick empty canvas creates seven nodes and autosaves",
+      "result": "PASS"
+    },
+    {
+      "name": "select and edit node in Inspector",
+      "result": "PASS"
+    },
+    {
+      "name": "dirty edit requires confirmation before context switch",
+      "result": "PASS"
+    },
+    {
+      "name": "click source Shift-click destination + Connect",
+      "result": "PASS"
+    },
+    {
+      "name": "output handle -> input handle relationship creation",
+      "result": "PASS"
+    },
+    {
+      "name": "edge type edit, confirmed delete, undo restore",
+      "result": "PASS"
+    },
+    {
+      "name": "duplicate, self, hard-cycle rejection via actual UI",
+      "result": "PASS"
+    },
+    {
+      "name": "drag node, undo move, redo, browser-mock autosave",
+      "result": "PASS"
+    },
+    {
+      "name": "Optimize Layout preserves original semantic pairs and undo",
+      "result": "PASS"
+    },
+    {
+      "name": "simulated write failure + no false Saved + Retry",
+      "result": "PASS"
+    },
+    {
+      "name": "confirm node delete removes incident edges and undo restores",
+      "result": "PASS"
+    },
+    {
+      "name": "optional fixture, collapse semantics, density, reset to empty",
+      "result": "PASS"
+    }
+  ],
+  "passed": 15,
+  "failed": 0
+}

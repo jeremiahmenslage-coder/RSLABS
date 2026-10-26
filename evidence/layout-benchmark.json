@@ -1,0 +1,86 @@
+{
+  "node": "v22.16.0",
+  "dotVersion": "dot - graphviz version 2.42.4 (0)",
+  "platform": "linux",
+  "arch": "x64",
+  "results": [
+    {
+      "fixture": "canonical_7_6",
+      "algorithm": "simple",
+      "nodes": 7,
+      "edges": 6,
+      "layoutMs": 0.42,
+      "widthPx": 1334,
+      "heightPx": 428,
+      "overlaps": 0,
+      "semanticsPreserved": true,
+      "fitZoomAt1440x900": 0.9904,
+      "routeIntegration": "simple cubic curves, not collision aware"
+    },
+    {
+      "fixture": "canonical_7_6",
+      "algorithm": "graphviz-dot",
+      "nodes": 7,
+      "edges": 6,
+      "layoutMs": 8.04,
+      "widthPx": 1214,
+      "heightPx": 428,
+      "overlaps": 0,
+      "semanticsPreserved": true,
+      "fitZoomAt1440x900": 1,
+      "routeIntegration": "dot routing output not bound to SVG POC"
+    },
+    {
+      "fixture": "roadmap_110_branches_islands",
+      "algorithm": "simple",
+      "nodes": 110,
+      "edges": 127,
+      "layoutMs": 7.61,
+      "widthPx": 3896,
+      "heightPx": 2348,
+      "overlaps": 0,
+      "semanticsPreserved": true,
+      "fitZoomAt1440x900": 0.3586,
+      "routeIntegration": "simple cubic curves, not collision aware"
+    },
+    {
+      "fixture": "roadmap_110_branches_islands",
+      "algorithm": "graphviz-dot",
+      "nodes": 110,
+      "edges": 127,
+      "layoutMs": 10.98,
+      "widthPx": 3496,
+      "heightPx": 3263,
+      "overlaps": 0,
+      "semanticsPreserved": true,
+      "fitZoomAt1440x900": 0.266,
+      "routeIntegration": "dot routing output not bound to SVG POC"
+    },
+    {
+      "fixture": "stress_250_400",
+      "algorithm": "simple",
+      "nodes": 250,
+      "edges": 400,
+      "layoutMs": 0.89,
+      "widthPx": 91370,
+      "heightPx": 108,
+      "overlaps": 0,
+      "semanticsPreserved": true,
+      "fitZoomAt1440x900": 0.0157,
+      "routeIntegration": "simple cubic curves, not collision aware"
+    },
+    {
+      "fixture": "stress_250_400",
+      "algorithm": "graphviz-dot",
+      "nodes": 250,
+      "edges": 400,
+      "layoutMs": 35.45,
+      "widthPx": 81413,
+      "heightPx": 507,
+      "overlaps": 0,
+      "semanticsPreserved": true,
+      "fitZoomAt1440x900": 0.0177,
+      "routeIntegration": "dot routing output not bound to SVG POC"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+
+> osrs-ironman-planner@0.1.0-phase1 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: local PNG/WebP are decodable-format files and manifest maps to local relative paths
+ok 1 - local PNG/WebP are decodable-format files and manifest maps to local relative paths
+  ---
+  duration_ms: 1.257378
+  type: 'test'
+  ...
+# Subtest: catalog default icon is separate from goal status and icon override
+ok 2 - catalog default icon is separate from goal status and icon override
+  ---
+  duration_ms: 0.431377
+  type: 'test'
+  ...
+# Subtest: demo icon override preserves IDs, typed edges, manual positions and asset fallback
+ok 3 - demo icon override preserves IDs, typed edges, manual positions and asset fallback
+  ---
+  duration_ms: 0.48711
+  type: 'test'
+  ...
+# Subtest: F1 exact seven goal names and SIX directed pairs
+ok 4 - F1 exact seven goal names and SIX directed pairs
+  ---
+  duration_ms: 2.010189
+  type: 'test'
+  ...
+# Subtest: all three visibly typed edge semantics exist
+ok 5 - all three visibly typed edge semantics exist
+  ---
+  duration_ms: 0.8733
+  type: 'test'
+  ...
+# Subtest: invalid endpoints, self-edge, duplicate ordered pair cannot be added
+ok 6 - invalid endpoints, self-edge, duplicate ordered pair cannot be added
+  ---
+  duration_ms: 1.412686
+  type: 'test'
+  ...
+# Subtest: hard cycles reject while soft/order cycles are permitted
+ok 7 - hard cycles reject while soft/order cycles are permitted
+  ---
+  duration_ms: 1.342623
+  type: 'test'
+  ...
+# Subtest: layout changes only positions, not schema edges and names
+ok 8 - layout changes only positions, not schema edges and names
+  ---
+  duration_ms: 3.621981
+  type: 'test'
+  ...
+# Subtest: optimized six edges run left to right on exact acyclic fixture
+ok 9 - optimized six edges run left to right on exact acyclic fixture
+  ---
+  duration_ms: 0.689529
+  type: 'test'
+  ...
+# Subtest: group collapse is presentation only and never fabricates graph links
+ok 10 - group collapse is presentation only and never fabricates graph links
+  ---
+  duration_ms: 0.519538
+  type: 'test'
+  ...
+# Subtest: new outgoing edge demonstrates arbitrary divergence without cloning nodes
+ok 11 - new outgoing edge demonstrates arbitrary divergence without cloning nodes
+  ---
+  duration_ms: 0.256118
+  type: 'test'
+  ...
+# Subtest: missing group representative and corrupt coordinates rejected
+ok 12 - missing group representative and corrupt coordinates rejected
+  ---
+  duration_ms: 0.678102
+  type: 'test'
+  ...
+# Subtest: catalog references are stable and separate from roadmap goals
+ok 13 - catalog references are stable and separate from roadmap goals
+  ---
+  duration_ms: 0.472327
+  type: 'test'
+  ...
+# Subtest: visual representative must refer to an actual member, not another group
+ok 14 - visual representative must refer to an actual member, not another group
+  ---
+  duration_ms: 0.259974
+  type: 'test'
+  ...
+# Subtest: IDB adapter writes a complete snapshot and reads it back after reopen (mocked browser API)
+ok 15 - IDB adapter writes a complete snapshot and reads it back after reopen (mocked browser API)
+  ---
+  duration_ms: 5.744155
+  type: 'test'
+  ...
+# Subtest: IDB aborted write preserves last committed document (mocked transaction)
+ok 16 - IDB aborted write preserves last committed document (mocked transaction)
+  ---
+  duration_ms: 1.249195
+  type: 'test'
+  ...
+# Subtest: IDB invalid new document is rejected before transaction begins
+ok 17 - IDB invalid new document is rejected before transaction begins
+  ---
+  duration_ms: 0.487851
+  type: 'test'
+  ...
+# Subtest: empty roadmap starts unseeded, valid, with versioned preference defaults
+ok 18 - empty roadmap starts unseeded, valid, with versioned preference defaults
+  ---
+  duration_ms: 3.414414
+  type: 'test'
+  ...
+# Subtest: create stable unique nodes with intended coordinates and catalog separation
+ok 19 - create stable unique nodes with intended coordinates and catalog separation
+  ---
+  duration_ms: 0.891357
+  type: 'test'
+  ...
+# Subtest: create rejects blank, overly long, untrusted icon URI, category, and invalid coordinates, without modifying original
+ok 20 - create rejects blank, overly long, untrusted icon URI, category, and invalid coordinates, without modifying original
+  ---
+  duration_ms: 1.406477
+  type: 'test'
+  ...
+# Subtest: edit keeps id position edges status counters and timestamp types
+ok 21 - edit keeps id position edges status counters and timestamp types
+  ---
+  duration_ms: 0.915162
+  type: 'test'
+  ...
+# Subtest: node delete removes only incident edges, preserves descendants and other edges
+ok 22 - node delete removes only incident edges, preserves descendants and other edges
+  ---
+  duration_ms: 0.544795
+  type: 'test'
+  ...
+# Subtest: pair edge uniqueness, self-edge, invalid ID rejects all types
+ok 23 - pair edge uniqueness, self-edge, invalid ID rejects all types
+  ---
+  duration_ms: 0.450536
+  type: 'test'
+  ...
+# Subtest: hard cycles rejected on both create and type edit; order cycle permitted
+ok 24 - hard cycles rejected on both create and type edit; order cycle permitted
+  ---
+  duration_ms: 0.725892
+  type: 'test'
+  ...
+# Subtest: edge edit and delete preserve other records
+ok 25 - edge edit and delete preserve other records
+  ---
+  duration_ms: 0.388474
+  type: 'test'
+  ...
+# Subtest: drag position command changes only position; undo and redo recover final coordinates
+ok 26 - drag position command changes only position; undo and redo recover final coordinates
+  ---
+  duration_ms: 0.566106
+  type: 'test'
+  ...
+# Subtest: undo/redo of chained create edit connect delete maintains integrity
+ok 27 - undo/redo of chained create edit connect delete maintains integrity
+  ---
+  duration_ms: 0.797188
+  type: 'test'
+  ...
+# Subtest: redo invalidated on branching edit and undo bounded
+ok 28 - redo invalidated on branching edit and undo bounded
+  ---
+  duration_ms: 3.415616
+  type: 'test'
+  ...
+# Subtest: optimize positions preserves exact semantic edges; history restores before position
+ok 29 - optimize positions preserves exact semantic edges; history restores before position
+  ---
+  duration_ms: 1.223778
+  type: 'test'
+  ...
+# Subtest: group collapse remains visual, canonical edges untouched, and undoable
+ok 30 - group collapse remains visual, canonical edges untouched, and undoable
+  ---
+  duration_ms: 0.4466
+  type: 'test'
+  ...
+# Subtest: invalid future schema or corrupt payload is rejected without resetting it
+ok 31 - invalid future schema or corrupt payload is rejected without resetting it
+  ---
+  duration_ms: 0.269859
+  type: 'test'
+  ...
+# Subtest: save coordinator writes latest revision in order and emits honest state
+ok 32 - save coordinator writes latest revision in order and emits honest state
+  ---
+  duration_ms: 14.653257
+  type: 'test'
+  ...
+# Subtest: failed write preserves last-known-good and retry saves queued snapshot
+ok 33 - failed write preserves last-known-good and retry saves queued snapshot
+  ---
+  duration_ms: 5.261308
+  type: 'test'
+  ...
+# Subtest: separate transient UI preference updates do not pollute graph undo stack
+ok 34 - separate transient UI preference updates do not pollute graph undo stack
+  ---
+  duration_ms: 0.347443
+  type: 'test'
+  ...
+1..34
+# tests 34
+# suites 0
+# pass 34
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 166.6281
