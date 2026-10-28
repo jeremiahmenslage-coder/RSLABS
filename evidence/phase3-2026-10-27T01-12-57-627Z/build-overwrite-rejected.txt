@@ -1,0 +1,14 @@
+node:internal/fs/promises:1571
+  return await PromisePrototypeThen(
+         ^
+
+Error: EEXIST: file already exists, mkdir 'C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor\evidence\phase3-2026-10-27T01-12-57-627Z\static'
+    at async mkdir (node:internal/fs/promises:1571:10)
+    at async file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/scripts/build.mjs:6:2 {
+  errno: -4075,
+  code: 'EEXIST',
+  syscall: 'mkdir',
+  path: 'C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\evidence\\phase3-2026-10-27T01-12-57-627Z\\static'
+}
+
+Node.js v24.22.1

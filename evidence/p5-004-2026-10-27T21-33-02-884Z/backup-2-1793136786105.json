@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "roadmap_aef88a83-0875-4f5e-ab07-e22afc17b9f3",
+    "title": "My Ironman Roadmap",
+    "nodes": [],
+    "edges": [],
+    "groups": []
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 35,
+      "y": 35,
+      "zoom": 1
+    }
+  }
+}

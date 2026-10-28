@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "p3-003-disposable",
+    "title": "Disposable cursor actions (illustrative links only)",
+    "nodes": [
+      {
+        "id": "a",
+        "title": "Edited legacy prayer",
+        "category": "prayer",
+        "catalogRef": "osrs:item:rune-scimitar",
+        "iconOverride": "art:osrsbox:items:1333",
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0.125,
+          "target": 0.5
+        },
+        "position": {
+          "x": 70,
+          "y": 80
+        },
+        "groupId": "g",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T21:30:20.501Z"
+      },
+      {
+        "id": "b",
+        "title": "My freeform skill",
+        "category": "skill",
+        "catalogRef": "unknown:catalog",
+        "iconOverride": "unknown:icon",
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 80
+        },
+        "groupId": "g",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T21:30:20.459Z"
+      },
+      {
+        "id": "c",
+        "title": "80 Prayer",
+        "category": "skill",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Structured notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 70,
+          "y": 320
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T21:30:21.625Z",
+        "skillGoal": {
+          "format": 1,
+          "skillId": "osrs:skill:prayer",
+          "targetLevel": 80
+        }
+      },
+      {
+        "id": "d",
+        "title": "Goal d",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 660,
+          "y": 320
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "ab",
+        "sourceId": "a",
+        "targetId": "b",
+        "kind": "hard"
+      },
+      {
+        "id": "bc",
+        "sourceId": "b",
+        "targetId": "c",
+        "kind": "soft"
+      }
+    ],
+    "groups": [
+      {
+        "id": "g",
+        "title": "Independent goals",
+        "representativeNodeId": "a",
+        "collapsed": false
+      }
+    ]
+  },
+  "preferences": {
+    "lastView": "board",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 30,
+      "y": 20,
+      "zoom": 1
+    }
+  }
+}

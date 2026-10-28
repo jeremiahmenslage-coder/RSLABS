@@ -1,0 +1,21 @@
+{
+  "reviewDate": "2026-10-27",
+  "permission": {
+    "source": "Owner P5-002 report of Jagex permission",
+    "scope": "Third-party sourcing/bundling in private local planner",
+    "independentlyVerified": false,
+    "broaderDistributionRights": false
+  },
+  "artworkReport": "catalog/ARTWORK.md",
+  "assetManifest": "catalog/artwork-manifest.json",
+  "selection": "catalog/artwork-selection.json",
+  "sourceNotices": "public/notices/artwork/",
+  "records": 207,
+  "authenticPngs": 94,
+  "identitySpecificMatches": 90,
+  "categoryMarkerMatches": 117,
+  "individualLiveReferenceLinkAudit": "Not run",
+  "sourceCodeAdoption": "None; PNG data extracted without execution",
+  "originalFallbacks": "Retained unchanged",
+  "historicalReview": "evidence/p5-002-preflight-2026-10-27/catalog_source-review.json-before"
+}

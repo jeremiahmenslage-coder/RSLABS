@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-26T21:26:19.773Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p3-004-2026-10-26T21-26-12-543Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "inspector starts closed; first-goal guidance, save and controls are accessible",
+      "result": "Pass"
+    },
+    {
+      "name": "single clicks select only; double-click goal opens full quick editor without inspector or mutation",
+      "result": "Pass"
+    },
+    {
+      "name": "complete goal quick edit is undoable; counters independent; invalid fields reject without mutation",
+      "result": "Pass"
+    },
+    {
+      "name": "quick editor blocks background and Tab stays inside; Escape cancels and restores focus",
+      "result": "Pass"
+    },
+    {
+      "name": "More details transfers all goal fields; closing, selecting and reopening preserves inspector draft",
+      "result": "Pass"
+    },
+    {
+      "name": "port start/release/cancel do not prompt or discard hidden inspector; actual commit is guarded",
+      "result": "Pass"
+    },
+    {
+      "name": "edge single/double clicks, type draft transfer, reversal and confirmed deletion use validated history",
+      "result": "Pass"
+    },
+    {
+      "name": "panel toggle and pointer/keyboard resize preserve viewport, positions and dirty draft",
+      "result": "Pass"
+    },
+    {
+      "name": "region-only toolbar reveals choices on demand; empty click clears selections with no data mutation, pan remains pan",
+      "result": "Pass"
+    },
+    {
+      "name": "creation Progress disclosure, zoom/pan coordinates and More details preserve all unsaved fields",
+      "result": "Pass"
+    },
+    {
+      "name": "closed-panel quick changes autosave/reload/JSON roundtrip; visible failure and Retry preserve last good copy",
+      "result": "Pass"
+    },
+    {
+      "name": "approved quick commit resolves dirty inspector; declined import replacement preserves hidden draft and roadmap",
+      "result": "Pass"
+    },
+    {
+      "name": "no browser exceptions/external requests; dist preserved",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

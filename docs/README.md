@@ -11,6 +11,7 @@ Current gate: [CURRENT_PHASE_GATE.md](agents/CURRENT_PHASE_GATE.md). Phase 1 is 
 - [Phase 1 review](agents/PHASE_1_REVIEW.md)
 - [Product specification](../PRODUCT_SPEC.md), [architecture](../ARCHITECTURE.md), [design sample](../DESIGN_SYSTEM.md)
 - [Decision history](../DECISIONS.md), [handoff](../HANDOFF.md), [changelog](../CHANGELOG.md)
+- [Future feature ideas and deferred options](FUTURE_FEATURES.md) (ideas only; not implementation authorization)
 - [Testing commands and limitations](TESTING.md), [strategy](../TEST_STRATEGY.md), [executed reports](../TEST_REPORT.md), [risks](../RISK_REGISTER.md)
 - [Migration setup](migration/README.md) and [checkpoint/evidence inventory](history/CHECKPOINTS.md)
 

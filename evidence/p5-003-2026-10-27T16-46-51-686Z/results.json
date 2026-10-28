@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-27T16:47:03.378Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p5-003-2026-10-27T16-46-51-686Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "manual creation starts with title/category/status; cancellation, validation, keyboard, chosen status and history preserve data",
+      "result": "Pass"
+    },
+    {
+      "name": "manual More details transfers all inputs and zoom/pan position; Cancel makes no orphan and closes",
+      "result": "Pass"
+    },
+    {
+      "name": "all eight category mappings agree across both Graph densities, Board and quick/detailed editors",
+      "result": "Pass"
+    },
+    {
+      "name": "category changes immediately update every symbol while exact saved/unknown individual references and counters remain inactive",
+      "result": "Pass"
+    },
+    {
+      "name": "detailed ordinary edits preserve hidden known/unknown data exactly and update category art",
+      "result": "Pass"
+    },
+    {
+      "name": "failed category images use original fallback in Graph, Board and editor without touching archived references",
+      "result": "Pass"
+    },
+    {
+      "name": "graph shortcut is absent but non-color status, quick/detailed/Board edits, keyboard history and persistence remain",
+      "result": "Pass"
+    },
+    {
+      "name": "Inspector Cancel discards and closes, preserves applied history/data, while panel hiding preserves drafts",
+      "result": "Pass"
+    },
+    {
+      "name": "connection/group inspector cancellation discards only their forms and closes",
+      "result": "Pass"
+    },
+    {
+      "name": "backup roundtrip and failed-save/Retry/reload plus cancelled/failed imports preserve recovery",
+      "result": "Pass"
+    },
+    {
+      "name": "hidden counters stay absent; no errors/external runtime calls; dist unchanged",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

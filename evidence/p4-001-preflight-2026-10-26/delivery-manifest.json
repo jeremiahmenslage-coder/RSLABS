@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-26T23:03:47.189Z",
+  "checkout": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor",
+  "branch": "main",
+  "commit": "604d4d6d21fcd0030286acb400087cb14388e8f7",
+  "authority": "Owner P4-001 / ADR-023; Phase 3 accepted ADR-022",
+  "files": [
+    {
+      "file": "index.html",
+      "before": "340552397A5653C1878818AF2CE978ADFBE2585AAEA079C8F075ECCE89B1DD0E",
+      "after": "26196be3886bb87f67ad9c68cbd4161f890f232d1062208edfbf07946b47e2e8"
+    },
+    {
+      "file": "src/main.js",
+      "before": "D40268DA156AFE2B3EB643F6D3F6B2ED0E4717BCA84724F0D59952924ECAF623",
+      "after": "322017981dc6d739e9a1f48f1fece30b8b92f05907aee923c520ca896d07231e"
+    },
+    {
+      "file": "src/model.js",
+      "before": "9FF99D8B2202E45EA1DFB93BDA06680269C2C3A02878B9A633950304EFDEE501",
+      "after": "b644b8c1d10fdb3b57d430380f06004cad7feacde71485d07c4c5773fbe2d7cf"
+    },
+    {
+      "file": "src/style.css",
+      "before": "9E67D8DE2C60BFBC60C96007AA0B5E91DAC77D6938BD780F304F412AD2E0A0A1",
+      "after": "28ef0b43b470167b16829e0fa580edc76265463e80afc720bcef7bb05ff4d312"
+    },
+    {
+      "file": "src/ui/cursor.js",
+      "before": "346C10829409C2FC8BE71263BE15CE8C3C171612CA2522ECE2B4667878B7CFD7",
+      "after": "efde573cc0abbed27649d98ec74afcb433b3d1d4c6e89b9b9f80d6ce16d5ce3f"
+    },
+    {
+      "file": "src/board.js",
+      "before": null,
+      "after": "bdb9bd97e3ca5f8a0a9c2fac90bd632fe96f894966269f106e98ea91905f70a6"
+    },
+    {
+      "file": "src/ui/board.js",
+      "before": null,
+      "after": "4462f13bb0a9cad9e519a5108f7b8f05392f61194b6a32e656b5a8d084349e59"
+    },
+    {
+      "file": "tests/board.test.mjs",
+      "before": null,
+      "after": "a36b25f7a26e63afaaccf9e493726cc7a0f0d1c35de1534750fa146a7153cb2f"
+    },
+    {
+      "file": "tests/browser_board.mjs",
+      "before": null,
+      "after": "1aa9634f201226d143c01f7e91ac52098f969bc1a2fee186088b6cee2e32b70f"
+    },
+    {
+      "file": "DECISIONS.md",
+      "before": "5DB7845234038F2747DFDEF8F33B8E15F33714D589ADE7D70CFDA4EFA8DF9D93",
+      "after": "77827d3383ef48d0fee3c0e0784df1a32e206775dd985b1268b73840213fadc4"
+    },
+    {
+      "file": "docs/agents/CURRENT_PHASE_GATE.md",
+      "before": "4FA7696091AEC79DDC2C3A957CC172C283A6E46A2E546422F349B15FF8597273",
+      "after": "05b2508e9b7d77973351fbdfc55a365365cea366e5b8cc6fd519b46e38d0cd70"
+    },
+    {
+      "file": "HANDOFF.md",
+      "before": "9957A02FFD22E665795C3188D98D11A2E0AFB01BDA83BCD9D5C4926B0E8494E0",
+      "after": "3faf1ee27b617cfad041745ea095d6c48985435be827b62af95c280a9895b27f"
+    },
+    {
+      "file": "TEST_REPORT.md",
+      "before": "43E16FED4FF8C39F54D286EC173CF2A822557E208906FDF6CA91703B5776370F",
+      "after": "58430210928a520190842b0056def504a50a40b27b7fb0aa88e5b9216ba559f0"
+    },
+    {
+      "file": "README.md",
+      "before": "CC1F8B3721E743F29AD251300BF7921CF62B6A3DB74E1CAC0AF4F258BEE928D3",
+      "after": "23f1354f6ee995e3450d298f7bfd7a59adcaa61f3eff18bb289c62a8a73f00d0"
+    },
+    {
+      "file": "PRODUCT_SPEC.md",
+      "before": "063B733A54331327ED9757E164EB0F0560FFE9B85099AAAD89DAC40686E33FE0",
+      "after": "3fcfa1982ba9d2031230442893073421d3f76b75f63d883cbfa1c10d600c5cdb"
+    },
+    {
+      "file": "ARCHITECTURE.md",
+      "before": "1A21F8E0BBE3A470E896EB4F5300252E1287BF7F8541AE314ACAAA5C21165A72",
+      "after": "0eacaeac6a20443a050c4acaf94dc9e4cedf7f35e5254e9d2a8057d612888cf8"
+    },
+    {
+      "file": "docs/TESTING.md",
+      "before": "2B504C5AE2C0AF1651F58319EEDE51B5BA37510F3600267A174B076E8CF1BA5C",
+      "after": "14e82279512b2851f986e6bc0e6238df69156f93fbd48f0ee3f4b1f13569347a"
+    }
+  ],
+  "unchangedBaselineFiles": 85,
+  "historicalRecordSuffixes": {
+    "HANDOFF.md": {
+      "bytes": 47086,
+      "sha256": "9957a02ffd22e665795c3188d98d11a2e0afb01bda83bcd9d5c4926b0e8494e0"
+    },
+    "TEST_REPORT.md": {
+      "bytes": 45177,
+      "sha256": "43e16fed4ff8c39f54d286ec173cf2a822557e208906fdf6ca91703b5776370f"
+    }
+  },
+  "historicalDecisionLedgerPreserved": true,
+  "primaryStatic": {
+    "path": "evidence/p4-001-2026-10-26T23-00-26-537Z/static",
+    "indexAndSourceMatch": true
+  },
+  "preserved": "dist, layout/router/vendor/store/storage/backup and all prior test files unchanged; empty Git index; main/HEAD unchanged",
+  "node": {
+    "pass": 82,
+    "fail": 0
+  },
+  "browser": {
+    "pass": 91,
+    "fail": 0,
+    "suites": [
+      [
+        "P4-001 board",
+        11,
+        "p4-001-2026-10-26T23-00-26-537Z"
+      ],
+      [
+        "P3-005 editing consistency",
+        9,
+        "p3-005-2026-10-26T22-59-01-930Z"
+      ],
+      [
+        "P3-004 workspace",
+        14,
+        "p3-004-2026-10-26T22-59-01-108Z"
+      ],
+      [
+        "P3-003 cursor/context",
+        17,
+        "p3-003-2026-10-26T22-59-01-477Z"
+      ],
+      [
+        "P3-002 bulk",
+        13,
+        "p3-002-2026-10-26T22-59-03-140Z"
+      ],
+      [
+        "Phase 1/2 editing/progression/backup",
+        15,
+        "phase2-2026-10-26T22-59-02-432Z"
+      ],
+      [
+        "P3-001 organization/layout",
+        12,
+        "phase3-2026-10-26T22-59-03-790Z"
+      ]
+    ]
+  },
+  "data": "Schema 1, existing lastView; optional boardFilters only; no migration or storage/origin change; disposable contexts only",
+  "defects": [
+    {
+      "severity": "P2",
+      "status": "Owner-deferred routing ambiguity OPEN; unchanged"
+    }
+  ],
+  "review": "Independent reviewer / CEO review / Owner Phase 4 acceptance pending; Phase 5 unauthorized"
+}

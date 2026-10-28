@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "p3-003-disposable",
+    "title": "Disposable cursor actions (illustrative links only)",
+    "nodes": [
+      {
+        "id": "a",
+        "title": "Goal a",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 70,
+          "y": 80
+        },
+        "groupId": "g",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "b",
+        "title": "Goal b",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 80
+        },
+        "groupId": "g",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "c",
+        "title": "Goal c",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 70,
+          "y": 320
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "d",
+        "title": "Goal d",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 660,
+          "y": 320
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "node_2dcf8d0e-3f3d-4591-a0c6-581ff45b83e1",
+        "title": "Context placement",
+        "category": "custom",
+        "notes": "",
+        "iconOverride": null,
+        "status": "not_started",
+        "progress": null,
+        "catalogRef": null,
+        "position": {
+          "x": 927,
+          "y": 603
+        },
+        "groupId": null,
+        "createdAt": "2026-10-26T20:48:01.035Z",
+        "updatedAt": "2026-10-26T20:48:01.035Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "ab",
+        "sourceId": "a",
+        "targetId": "b",
+        "kind": "hard"
+      },
+      {
+        "id": "bc",
+        "sourceId": "b",
+        "targetId": "c",
+        "kind": "soft"
+      }
+    ],
+    "groups": [
+      {
+        "id": "g",
+        "title": "Independent goals",
+        "representativeNodeId": "a",
+        "collapsed": false
+      }
+    ]
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": -15.625000000000059,
+      "y": 144.72916666666666,
+      "zoom": 1.0416666666666667
+    },
+    "navigation": {
+      "mode": "none",
+      "direction": "both",
+      "rootId": null
+    }
+  }
+}

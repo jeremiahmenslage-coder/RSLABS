@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-27T15:40:02.791Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/phase3-2026-10-27T15-39-49-499Z/static/",
+    "storage": "disposable nonpersistent context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "separate static build succeeds, refuses overwrite, and preserves original dist",
+      "result": "Pass"
+    },
+    {
+      "name": "seven compact: actual local ELK optimization, ports, dimensions, overlap measurements",
+      "result": "Pass"
+    },
+    {
+      "name": "seven detailed: actual local ELK optimization, ports, dimensions, overlap measurements",
+      "result": "Pass"
+    },
+    {
+      "name": "raid compact: actual local ELK optimization, ports, dimensions, overlap measurements",
+      "result": "Pass"
+    },
+    {
+      "name": "raid detailed: actual local ELK optimization, ports, dimensions, overlap measurements",
+      "result": "Pass"
+    },
+    {
+      "name": "create/edit visual group, independent ToA/Fang/Lightbearer, representative and original boundary inspector",
+      "result": "Pass"
+    },
+    {
+      "name": "group deletion defaults to ungroup; coherent undo/redo retains nodes and edges",
+      "result": "Pass"
+    },
+    {
+      "name": "completed visibility, expandable summaries, and hidden hard prerequisites preserve positions/state",
+      "result": "Pass"
+    },
+    {
+      "name": "Focus and Highlight all directions terminate across cycles, reset and preserve positions",
+      "result": "Pass"
+    },
+    {
+      "name": "navigation, visibility, groups and all semantic data survive reload and JSON roundtrip",
+      "result": "Pass"
+    },
+    {
+      "name": "Optimize undo/redo, manual movement after layout and reload persistence",
+      "result": "Pass"
+    },
+    {
+      "name": "static output has no external runtime requests or unhandled errors; original dist unchanged",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

@@ -1,0 +1,85 @@
+# Current P5-003 supersession — 2026-10-27
+
+P5-003 is the current authorized mode: manual title/category/manual-status creation and optional More details. Active catalog discovery/selection and individual-icon controls are removed. Category artwork controls Graph/Board/editor presentation; saved catalog references, individual overrides and hidden counters remain stored but inactive. Inspector Cancel discards the form and closes; panel hiding preserves drafts. Phase 5 acceptance pending; Phase 6 and text-only dictionary implementation NOT AUTHORIZED.
+
+Owner reports Jagex permission covering third-party artwork sourcing and local bundling for this private planner. Owner-provided, not independently verified; no broader distribution rights implied. Applicable source notices remain retained.
+
+Category-only resolver overlays presentation without rewriting canonical data. Omitted iconOverride edits now preserve the existing value; inspector and quick paths retain inactive data explicitly. Five genuine symbols, Inventory/Diary gaps and neutral custom are documented in catalog/CATEGORY_MODE.md. No dependencies/migration/storage/origin/architecture change. Historical specifications and delivery statements below retain their original dates/attribution and are superseded where this mode differs.
+
+---
+
+# Product specification — scope baseline and Phase 1 delivery
+
+Source of authority: operational baseline `docs/ENGINEERING_BRIEF.md`, later explicit Owner decisions in `DECISIONS.md`, and current status in `docs/agents/CURRENT_PHASE_GATE.md`. The identical founding brief is archival. **Do not treat the spike as changing approved product scope.**
+
+## Current Phase 3 delivery — P3-001, October 26, 2026
+
+**P3-003 cursor/context follow-up (ADR-019):** pointer-local create and shared connection forms with draft-preserving More details; quick rename/manual counters; contextual goal/edge/selection/group/canvas actions; explicitly counted reviewed bulk scope versus singleton outside targets; atomic validated edge reversal; bounded panels, keyboard access/cancellation and predictable focus. Inspector/visible alternate access remains. No automatic layout/completion, storage/schema/dependency changes or later phases. Delivery awaits independent review, CEO review and Owner acceptance; existing P2 routing ambiguity remains open.
+
+**P3-002 selection follow-up (ADR-018):** Owner authorized Shift-drag full-card region selection and explicit selected-ID bulk actions (manual status, create group, add to group, ungroup). Implemented with visible count/check marks, action/count/ID preview, cancellation/draft protection, one-command history/autosave and projection-hidden ID pruning. Counters, unrelated goals, canonical relationships and positions are preserved; no implicit group/prerequisite/downstream expansion, automatic layout or inferred completion. Selection is transient; bulk results persist via existing schema-1 storage/JSON. Existing inspector grouping and both connection methods remain available. Delivery awaits independent reviewer and CEO review before Owner acceptance; existing P2 routing limit remains open. No new phase is authorized.
+
+Owner accepted Phase 2 (static build was not verified), then authorized Phase 3 with “approve moving forward with phase 3” and “proceed” (ADR-017). Implemented within P3-001: replaceable locally bundled ELK port-aware layout, actual density/summary geometry, group CRUD and independent representatives, original boundary inspection, completed visibility/expandable summaries, all-edge cycle-safe directional Focus/Highlight/reset, persistent view preferences and unchanged canonical readiness/data identities. Position changes require explicit move/Optimize; groups/filters never fabricate semantic edges. Evidence/measurements/remaining routing limits are in `TEST_REPORT.md`; Phase 3 awaits CEO review and Owner acceptance. Phase 4, task board, catalog/art/uploads, mobile/cloud/deployment and Phase 6 production hardening remain excluded.
+
+## Phase 2 delivery baseline — P2-001, October 26, 2026
+
+Owner authorized progression rules and safe backups (ADR-016), subsequently accepted under ADR-017; Phase 1 was accepted under ADR-015. Implemented: manual status, optional counters without completion inference, canonical incoming-hard-only readiness with Completed override, reused goal state, full schema-version-1 JSON backup, validated preview and explicit whole-roadmap replacement after current-roadmap export, transaction-safe failure reporting, and retained unknown icon references with fallback/portability warning. Phase 2 acceptance does not retroactively verify its unrun static build. Requirements alone are not evidence; see `TEST_REPORT.md`. The Phase 2 workflows are regression-tested under Phase 3.
+
+## v1 must deliver (later phases)
+
+A local-first, static HTML/CSS/JavaScript solo OSRS Ironman roadmap planner with one state store and two synchronized views: interactive directed graph and task board. Graph goals may be skill, quest, item, boss, diary, prayer, activity, or custom. A node has its own manual status (`not_started`, `in_progress`, `completed`) and optional progress (`current`, `target`); reused instances are never automatically duplicated. User-defined `hard` incoming edges alone determine display readiness; `soft` preparation and `order` only indicate a relationship. Neither prerequisites nor group membership automatically complete nodes.
+
+Desktop editor: double-click empty canvas opens detailed creation sidebar; catalog/manual node entry; drag/create/edit/delete with undo/redo; two connection mechanisms and unambiguous source → target direction. Manual positions persist until user invokes Optimize Layout. One-level collapsible **visual-only** groups; external links remain inspectable and no fabricated dependencies are persisted. Focus/highlight, compact/detailed, completed visibility modes, zoom/pan/fit/search. Mobile inspection/search/manual progress updating without full editing.
+
+Local structured autosave (Phase 1), JSON versioned backup/import and recovery (Phase 2); broad legally sourced reference catalog and authentic permitted assets with fallback (Phase 5); performance/accessibility and release hardening (Phase 6). No required runtime backend or API.
+
+## Explicit v1 exclusions
+
+No group collaboration, player accounts, hosted DB or sync, RuneLite importer, automatic dependency engine, full game encyclopedia, monetary/social features, JSON smart merge, recursive grouping or complete mobile editing.
+
+## Historical Phase 0 implementation (before Phase 1)
+
+Exact F1 graph specimen (seven nodes, six arcs); icons from custom created artwork; typed edges with handles, drags, in-memory inspector editing, compact/detailed, group projection, zoom/pan, and Optimize Layout. These demonstrate feasibility only. No persistence, catalog, task board, production UI or full editor is implied.
+
+## Non-negotiable semantic guardrails
+
+A → B represents sequence/support per chosen edge type. One ordered pair has at most one typed edge; ADR-004 and the later owner-clarification section record ratification. Reject hard cycles, allow soft/order cycles with visited-safe traversal. Readiness is computed across complete canonical graph including hidden members, not written as completion status. All game dependencies shown in F1 are *user-supplied planning examples*, not verified real-game requirements.
+
+
+## 2026-10-25 owner clarifications (Phase 0, locked)
+
+- Product remains a local, single-player, **private personal noncommercial** planner, not a product for publication/distribution/monetization. Privacy intent does **not** confer rights to Jagex artwork.
+- Owner wants authentic OSRS icons *where lawful*. Use original art **as a fallback**, not as a permanent substitute without review. No unlicensed sprite archives may be bundled in a transferable package.
+- Only one typed directed relationship per ordered pair (`hard | soft | order`), editable; reverse directed pair distinct unless hard-cycle conflict.
+- Collapsed visual groups summarize original external link **counts** and offer expand; no fabricated group→outside semantic link.
+- HTML/SVG rendering approach ratified as feasible for small graphs, with swappable layout and **no** claim that existing simple layout scales. Complex layout acceptance in Phase 3, performance in Phase 6.
+- Allowlisted local PNG/WebP support is feasible in Phase 0. Actual user-driven import, durable asset storage, JSON backup portability and full catalog matching remain in their authorized future phases.
+
+---
+
+## Phase 1 authorization and delivered boundary (2026-10-25)
+
+Historical delivery records report Phase 0 acceptance and Phase 1 authorization. The inspected `docs/PHASE1_AUTHORIZATION.md` is conditional on sending/approval; independent activation evidence was not established in migration. Current direct Owner status is Phase 1 delivered, pending acceptance; Phase 2 not authorized. The editor now starts with an empty user roadmap, supports double-click draft/create/cancel, title/category/notes/local test icon editing, safe node/edge deletion, both directed connection methods, one typed edge per ordered pair, hard-only DAG rejection, drag/pan/zoom/fit/basic optimize, undo/redo (session only), real IndexedDB browser-origin storage adapter, prompt saves and visible error/retry state. A fresh optional copy of the exact Phase 0 seven-node/six-edge fixture is available through **Load original demo…** and does not become a permanent default roadmap. Existing compact/detailed display and equipment-group visual summary remain.
+
+No Phase 2 status/readiness computation/counters/JSON backup/import, Phase 3 production-scale layout/focus, Phase 4 task board, Phase 5 OSRS art/catalog ingestion/upload, Phase 6 mobile/release/performance work was started. Original placeholder imagery remains; authentic OSRS artwork is desired only where lawful. The editor accepts only bundled original test-icon identifiers at this stage. `public/user-icons/` plus an explicit manifest is a future private build path, not an automated read of the owner's disk. A transferable backup must include custom icon bytes or a validated companion package **when** user uploads are implemented.
+
+**Acceptance evidence condition:** test status is reported by `TEST_REPORT.md`; no claim of real HTTP-loaded Chromium IndexedDB recovery is made. Owner-run normal-browser refresh/save-failure demonstration remains required to ratify the Phase 1 gate.
+
+
+## P3-004 authorized interaction consolidation — 2026-10-26
+
+ADR-020 supersedes earlier P3-004 scope. Implemented/engineering-tested, pending independent/CEO review and Owner acceptance: optional inspector initially closed; single-click selection, double-click complete quick forms; explicit More details draft/position transfer; transient region-only toolbar and empty-click clearing; one modal quick form; dirty-draft preservation/resolution; stable viewport on panel/toolbar changes; View/Help disclosures, full relationship labels and always-visible save failure/Retry. No semantic/schema/origin/dependency changes. Current exact evidence and walkthrough: HANDOFF.md and TEST_REPORT.md. Phase 4 remains unauthorized; routing ambiguity remains open.
+
+
+## P4-001 authorized task board — 2026-10-26
+
+Implemented/engineering-tested under ADR-023, pending independent/CEO review and Owner Phase 4 acceptance: three columns derive from canonical manual status with shared IDs/store/actions/history; quick status/counter editing synchronized with Graph; combined Board name/category/readiness/group filters including completed discovery and Clear; persisted last view and Board filters; explicit optional details/draft resolution and shared save/recovery/backup controls. Canonical readiness ignores Board filters and Graph scope. No ordering, duplicated tasks, propagation, migration or new service. Phases 1–3 are Owner-accepted under ADR-022. Phase 5 is unauthorized; P2 routing ambiguity remains explicitly deferred.
+
+
+## P5-001 current requirements/delivery — 2026-10-26
+
+ADR-024 records Owner Phase 4 acceptance/deferrals and Phase 5 authorization. Direct graph manual-status chooser and removal of all numeric progress UI supersede earlier UI requirements; stored values/validation/JSON remain and restoration requires Owner approval. Separate 207-record factual catalog, seven original category icons, offline repeatable import, quick-first search/category creation/custom path and shared styling are implemented/tested. Documented routing/null-group/Target defects corrected with measured/pre-hide evidence; clarified notes prompt not reproduced, covered with a preservation regression. Catalog coverage/authentic-image gaps and tests are disclosed in current handoff; no automatic prerequisites, migration, live API or new integration. Phase 5 acceptance pending; Phase 6 unauthorized.
+
+
+## P5-002 current supersession — 2026-10-27
+
+ADR-025 implements the Owner replacement ticket: pinned local artwork defaults overlay the existing catalog by stable ID, manual overrides/legacy/fallback retain priority, and user goals are never rewritten by catalog updates. No migration/storage/dependency/architecture change. Catalog-first creation has an adjacent direct custom title/category path, safe switching and optional details. Inspector Cancel resets form/closes; mere hiding preserves drafts. Graph status shortcut is removed; status remains in quick/details/Board editing. Hidden counter data and all canonical invariants remain preserved. Source/pins/permissions/coverage: catalog/ARTWORK.md. Owner-reported Jagex private-local permission is not independently verified or broad distribution permission. Actual validation/limits: current HANDOFF.md and TEST_REPORT.md. Phase 5 awaits independent/CEO/Owner review; Phase 6 unauthorized. Historical requirements/deliveries above retain their dates and attribution.

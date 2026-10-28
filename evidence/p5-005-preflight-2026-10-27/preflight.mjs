@@ -1,0 +1,4 @@
+import fs from 'node:fs';import path from 'node:path';import {createHash} from 'node:crypto';
+const dir='evidence/p5-005-preflight-2026-10-27/';fs.mkdirSync(dir,{recursive:true});const rows=[];
+function walk(d){for(const e of fs.readdirSync(d,{withFileTypes:true})){const f=path.join(d,e.name).replaceAll('\\','/');if(e.isDirectory())walk(f);else rows.push({path:f,hash:createHash('sha256').update(fs.readFileSync(f)).digest('hex')});}}
+for(const d of ['src','tests','scripts','public','catalog','dist'])walk(d);for(const f of ['README.md','PRODUCT_SPEC.md','ARCHITECTURE.md','DECISIONS.md','HANDOFF.md','TEST_REPORT.md','docs/TESTING.md','docs/agents/CURRENT_PHASE_GATE.md','docs/README.md','index.html','package.json','package-lock.json']){rows.push({path:f,hash:createHash('sha256').update(fs.readFileSync(f)).digest('hex')});if(f.endsWith('.md'))fs.copyFileSync(f,dir+f.replaceAll('/','_')+'-before');}fs.writeFileSync(dir+'starting-files.json',JSON.stringify(rows,null,2));

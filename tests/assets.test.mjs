@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {referenceCatalog} from '../src/catalog/reference.js';
-import {iconAssets,resolveNodeIcon} from '../src/assets/resolve.js';
+import {iconAssets,resolveIndividualIcon as resolveNodeIcon} from '../src/assets/resolve.js';
 import {newFixture} from '../src/fixture.js';
 import {graphSignature} from '../src/model.js';
 function node(doc,id){return doc.roadmap.nodes.find(n=>n.id===id);}
@@ -16,7 +16,7 @@ test('local PNG/WebP are decodable-format files and manifest maps to local relat
   assert.ok(['image/png','image/webp','image/svg+xml'].includes(mediaType));
  }
 });
-test('catalog default icon is separate from goal status and icon override',()=>{
+test('inactive catalog default icon is separate from goal status and icon override',()=>{
  const d=newFixture(),s=node(d,'sailing'),r=node(d,'ring');
  assert.equal(s.catalogRef,'demo:sailing');
  assert.equal(referenceCatalog[s.catalogRef].defaultIconAssetId,'test:sail-png');
@@ -25,7 +25,7 @@ test('catalog default icon is separate from goal status and icon override',()=>{
  assert.equal(Object.hasOwn(referenceCatalog[s.catalogRef],'status'),false);
  s.status='completed'; assert.equal(referenceCatalog[s.catalogRef].defaultIconAssetId,'test:sail-png');
 });
-test('demo icon override preserves IDs, typed edges, manual positions and asset fallback',()=>{
+test('inactive demo icon override preserves IDs, typed edges, manual positions and asset fallback',()=>{
  const d=newFixture(),sig=graphSignature(d),positions=JSON.stringify(d.roadmap.nodes.map(n=>n.position));
  const s=node(d,'sailing');s.iconOverride='test:alternate-png';
  assert.equal(resolveNodeIcon(s).src,'./public/icons/sample-alternate.png');

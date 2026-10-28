@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-26T16:51:09.522Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173/",
+    "storage": "fresh nonpersistent browser context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "fresh context starts empty; create Cancel leaves no orphan",
+      "result": "Pass"
+    },
+    {
+      "name": "import preview requires current export; Cancel and Escape preserve active state",
+      "result": "Pass"
+    },
+    {
+      "name": "explicit replacement confirmation cancellation preserves active state",
+      "result": "Pass"
+    },
+    {
+      "name": "valid import commits full schema; preserves unknown icon with fallback and warning",
+      "result": "Pass"
+    },
+    {
+      "name": "multiple hard predecessors and reused goal update without completion propagation",
+      "result": "Pass"
+    },
+    {
+      "name": "manual status and counters (zero and above target), validation, undo/redo and reload",
+      "result": "Fail",
+      "error": "page.waitForFunction: Timeout 30000ms exceeded.\n    at saved (C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase2.mjs:16:22)\n    at C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase2.mjs:68:48\n    at async check (C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase2.mjs:14:34)\n    at async file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_phase2.mjs:63:2"
+    }
+  ],
+  "errors": []
+}

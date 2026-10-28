@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-27T21:27:05.104Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p3-002-2026-10-27T21-26-55-056Z/static/",
+    "storage": "fresh disposable browser context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "separate static build succeeds without replacing preserved dist",
+      "result": "Pass"
+    },
+    {
+      "name": "Shift-region draws rectangle and selects full visible cards; ordinary pan is unchanged",
+      "result": "Pass"
+    },
+    {
+      "name": "containment at zoom/pan, reverse drag, partial exclusion and compact size",
+      "result": "Pass"
+    },
+    {
+      "name": "status preview/cancel and single-step undo/redo affect exactly explicit IDs and preserve counters",
+      "result": "Pass"
+    },
+    {
+      "name": "new group cancel/validation/create, add, ungroup and representatives each use one command",
+      "result": "Pass"
+    },
+    {
+      "name": "cancel and declining draft discard leave data and inspector draft unchanged",
+      "result": "Pass"
+    },
+    {
+      "name": "selection/action scope under completed Hide/Collapse, Focus and collapsed groups",
+      "result": "Pass"
+    },
+    {
+      "name": "adding to collapsed group prunes selected IDs and never includes existing hidden members",
+      "result": "Pass"
+    },
+    {
+      "name": "reload and JSON import/export preserve bulk results; selection remains transient",
+      "result": "Pass"
+    },
+    {
+      "name": "failed bulk save keeps last committed copy; reload recovery and Retry retain correct IDs",
+      "result": "Pass"
+    },
+    {
+      "name": "Escape mid-region cancels gesture without data changes; highlighted goals remain selectable",
+      "result": "Pass"
+    },
+    {
+      "name": "click/Shift-click pairing, node movement, and port connection still work after region selection",
+      "result": "Pass"
+    },
+    {
+      "name": "no browser exceptions/external requests; preserved dist bytes unchanged",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

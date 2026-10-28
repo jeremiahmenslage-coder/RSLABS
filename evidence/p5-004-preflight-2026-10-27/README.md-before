@@ -1,0 +1,23 @@
+# OSRS Ironman Progression Planner — P5-003 review package
+
+P5-003 is the current authorized mode: manual title/category/manual-status creation and optional More details. Active catalog discovery/selection and individual-icon controls are removed. Category artwork controls Graph/Board/editor presentation; saved catalog references, individual overrides and hidden counters remain stored but inactive. Inspector Cancel discards the form and closes; panel hiding preserves drafts. Phase 5 acceptance pending; Phase 6 and text-only dictionary implementation NOT AUTHORIZED.
+
+## Run
+
+Use the existing checkout C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor. Run npm run dev and use http://127.0.0.1:4173/ at the existing browser origin for your saved data. No install. Export JSON regularly; source backups do not include browser IndexedDB. Do not run the default build over preserved dist. Exact separate review build, test results, file inventory and Owner walkthrough: HANDOFF.md / TEST_REPORT.md.
+
+## Daily controls
+
+Double-click empty canvas for title, category and manual status; Enter/Create commits, Cancel/Escape creates nothing. More details transfers draft/position to optional notes/grouping inspector. Double-click a goal to quick edit; Board titles and explicit status controls share the same canonical goal. Status never propagates, and only incoming hard prerequisites block readiness. Counters remain hidden and stored.
+
+Category markers agree across Graph (both densities), Board and quick/detailed editors. Changing category updates the displayed symbol; saved individual overrides/references remain inactive. Genuine Combat, Minigame, Quest, Skills and Prayer are locally bundled. Inventory and Achievement Diary are explicit artwork gaps using an original fallback; Custom uses a neutral original diamond. Failed images also use original fallback. No catalog/individual-icon control is active.
+
+Inspector Cancel discards the current unsaved form and closes without a data/history operation; merely toggling the panel preserves drafts. Switching actual targets resolves dirty drafts. Click empty canvas clears selection; dragging pans; Shift-drag selects full visible cards. Actual Shift-click pairing and port dragging create typed connections; Optimize is explicit/undoable and manual dragging remains available. Right-click/Shift+F10 opens contextual actions. Board search/category/readiness/group filters remain available.
+
+Save status and Retry remain visible with panels closed. Import previews require export and explicit replacement confirmation. Failed writes preserve the last committed copy; Retry before reloading unsaved changes. Export preserves inactive references/overrides and exact fractional counters; images are separate assets, not embedded in JSON.
+
+## Content and limits
+
+Owner reports Jagex permission covering third-party artwork sourcing and local bundling for this private planner. Owner-provided, not independently verified; no broader distribution rights implied. Applicable source notices remain retained.
+
+See catalog/CATEGORY_MODE.md and category-artwork-manifest.json for current category coverage, pins and offline preparation. Catalog records, 94 individual-art PNGs, original preparation tooling/provenance/licenses remain in place as inactive/deprecated. Dictionary is deferred. No schema/storage/dependency changes. No complete/current-game content certification, broad redistribution rights, arbitrary-graph routing guarantee or Phase 6 performance/mobile/browser hardening claimed. Historical README preserved at evidence/p5-003-preflight-2026-10-27/README.md-before.

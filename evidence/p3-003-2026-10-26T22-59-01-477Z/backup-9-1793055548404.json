@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "p3-003-disposable",
+    "title": "Disposable cursor actions (illustrative links only)",
+    "nodes": [
+      {
+        "id": "a",
+        "title": "Goal a",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 70,
+          "y": 80
+        },
+        "groupId": "group_5f53ac2f-5098-45f9-8c3f-112cacd7c3e3",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "b",
+        "title": "Goal b",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 80
+        },
+        "groupId": "group_5f53ac2f-5098-45f9-8c3f-112cacd7c3e3",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "c",
+        "title": "Goal c",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 70,
+          "y": 320
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-26T22:59:08.005Z"
+      },
+      {
+        "id": "d",
+        "title": "Goal d",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 660,
+          "y": 320
+        },
+        "groupId": "group_a79f1206-b02e-4de4-a72f-c29bc09f20d9",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "ab",
+        "sourceId": "a",
+        "targetId": "b",
+        "kind": "hard"
+      },
+      {
+        "id": "bc",
+        "sourceId": "b",
+        "targetId": "c",
+        "kind": "soft"
+      }
+    ],
+    "groups": [
+      {
+        "id": "g",
+        "title": "Independent goals",
+        "representativeNodeId": null,
+        "collapsed": false
+      },
+      {
+        "id": "group_5f53ac2f-5098-45f9-8c3f-112cacd7c3e3",
+        "title": "Context selection",
+        "representativeNodeId": null,
+        "collapsed": false
+      },
+      {
+        "id": "group_a79f1206-b02e-4de4-a72f-c29bc09f20d9",
+        "title": "Singleton context",
+        "representativeNodeId": null,
+        "collapsed": false
+      }
+    ]
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 30,
+      "y": 20,
+      "zoom": 1
+    }
+  }
+}

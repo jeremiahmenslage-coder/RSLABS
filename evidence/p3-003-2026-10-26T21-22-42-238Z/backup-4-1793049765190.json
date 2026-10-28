@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "roadmap_3a102f7f-26e4-43b2-98ce-f313c025c43b",
+    "title": "My Ironman Roadmap",
+    "nodes": [
+      {
+        "id": "node_26db1c62-44b4-4560-b38f-b88697835102",
+        "title": "Transferred quest",
+        "category": "quest",
+        "notes": "",
+        "iconOverride": null,
+        "status": "not_started",
+        "progress": null,
+        "catalogRef": null,
+        "position": {
+          "x": 41,
+          "y": 176
+        },
+        "groupId": null,
+        "createdAt": "2026-10-26T21:22:44.808Z",
+        "updatedAt": "2026-10-26T21:22:44.808Z"
+      },
+      {
+        "id": "node_a4314f38-8a8b-4c0e-a971-625aeaece25f",
+        "title": "Quick Enter",
+        "category": "custom",
+        "notes": "",
+        "iconOverride": null,
+        "status": "not_started",
+        "progress": null,
+        "catalogRef": null,
+        "position": {
+          "x": 478,
+          "y": 413
+        },
+        "groupId": null,
+        "createdAt": "2026-10-26T21:22:44.984Z",
+        "updatedAt": "2026-10-26T21:22:44.984Z"
+      }
+    ],
+    "edges": [],
+    "groups": []
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 74.49999999999997,
+      "y": -24.450000000000045,
+      "zoom": 1.1
+    }
+  }
+}

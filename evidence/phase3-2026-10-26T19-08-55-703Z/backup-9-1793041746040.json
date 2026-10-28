@@ -1,0 +1,415 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "phase0_fixture",
+    "title": "Illustrative branching raid roadmap (not verified OSRS requirements)",
+    "nodes": [
+      {
+        "id": "sailing",
+        "title": "52 Sailing",
+        "category": "skill",
+        "catalogRef": "demo:sailing",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 56,
+          "y": 588
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "tortugans",
+        "title": "Troubled Tortugans",
+        "category": "quest",
+        "catalogRef": "demo:tortugans",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 506,
+          "y": 588
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "belle",
+        "title": "Belle's Folly",
+        "category": "quest",
+        "catalogRef": "demo:belle",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 1163.5,
+          "y": 588
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "barrows",
+        "title": "Barrows armor",
+        "category": "item",
+        "catalogRef": "demo:barrows",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "completed",
+        "progress": null,
+        "position": {
+          "x": 986,
+          "y": 372
+        },
+        "groupId": "loadout",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-26T19:09:00.490Z"
+      },
+      {
+        "id": "crystal",
+        "title": "Crystal shield",
+        "category": "item",
+        "catalogRef": "demo:crystal",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 986,
+          "y": 244
+        },
+        "groupId": "loadout",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "ring",
+        "title": "Berserker ring",
+        "category": "item",
+        "catalogRef": "demo:ring",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 1336,
+          "y": 244
+        },
+        "groupId": "loadout",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "moons",
+        "title": "Perilous Moons",
+        "category": "boss",
+        "catalogRef": "demo:moons",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 1821,
+          "y": 244
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "titans",
+        "title": "Royal Titans",
+        "category": "boss",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Disposable test fixture; relationships are illustrative player choices only.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 2273,
+          "y": 12
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "toa",
+        "title": "Clear Tombs of Amascut",
+        "category": "boss",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Disposable test fixture; relationships are illustrative player choices only.",
+        "status": "completed",
+        "progress": {
+          "current": 1,
+          "target": 1
+        },
+        "position": {
+          "x": 12,
+          "y": 300
+        },
+        "groupId": "group_dd94f64e-7430-4905-9e97-bffa2a8a850b",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "fang",
+        "title": "Obtain Osmumten’s fang",
+        "category": "item",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Disposable test fixture; relationships are illustrative player choices only.",
+        "status": "in_progress",
+        "progress": {
+          "current": 2,
+          "target": 10
+        },
+        "position": {
+          "x": 464,
+          "y": 676
+        },
+        "groupId": "group_dd94f64e-7430-4905-9e97-bffa2a8a850b",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "lightbearer",
+        "title": "Obtain Lightbearer",
+        "category": "item",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Disposable test fixture; relationships are illustrative player choices only.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 464,
+          "y": 488
+        },
+        "groupId": "group_dd94f64e-7430-4905-9e97-bffa2a8a850b",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "dwh",
+        "title": "Dragon Warhammer",
+        "category": "item",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Disposable test fixture; relationships are illustrative player choices only.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 506,
+          "y": 12
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "cox",
+        "title": "Chambers of Xeric",
+        "category": "boss",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Disposable test fixture; relationships are illustrative player choices only.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 1163.5,
+          "y": 12
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "rigour",
+        "title": "Dexterous scroll / Rigour",
+        "category": "prayer",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Disposable test fixture; relationships are illustrative player choices only.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 1821,
+          "y": 12
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "prayer",
+        "title": "70 Prayer",
+        "category": "prayer",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Disposable test fixture; relationships are illustrative player choices only.",
+        "status": "completed",
+        "progress": null,
+        "position": {
+          "x": 506,
+          "y": 200
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-26T19:09:00.442Z"
+      },
+      {
+        "id": "island",
+        "title": "Disconnected personal goal",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "Disposable test fixture; relationships are illustrative player choices only.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 36,
+          "y": 112
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "sourceId": "sailing",
+        "targetId": "tortugans",
+        "kind": "order"
+      },
+      {
+        "id": "e2",
+        "sourceId": "tortugans",
+        "targetId": "belle",
+        "kind": "soft"
+      },
+      {
+        "id": "e3",
+        "sourceId": "barrows",
+        "targetId": "ring",
+        "kind": "hard"
+      },
+      {
+        "id": "e4",
+        "sourceId": "crystal",
+        "targetId": "ring",
+        "kind": "order"
+      },
+      {
+        "id": "e5",
+        "sourceId": "ring",
+        "targetId": "moons",
+        "kind": "hard"
+      },
+      {
+        "id": "e6",
+        "sourceId": "belle",
+        "targetId": "moons",
+        "kind": "order"
+      },
+      {
+        "id": "raid0",
+        "sourceId": "moons",
+        "targetId": "titans",
+        "kind": "order"
+      },
+      {
+        "id": "raid1",
+        "sourceId": "titans",
+        "targetId": "toa",
+        "kind": "order"
+      },
+      {
+        "id": "raid2",
+        "sourceId": "toa",
+        "targetId": "dwh",
+        "kind": "order"
+      },
+      {
+        "id": "raid3",
+        "sourceId": "dwh",
+        "targetId": "cox",
+        "kind": "order"
+      },
+      {
+        "id": "raid4",
+        "sourceId": "toa",
+        "targetId": "fang",
+        "kind": "soft"
+      },
+      {
+        "id": "raid5",
+        "sourceId": "toa",
+        "targetId": "lightbearer",
+        "kind": "soft"
+      },
+      {
+        "id": "raid6",
+        "sourceId": "cox",
+        "targetId": "rigour",
+        "kind": "order"
+      },
+      {
+        "id": "raid7",
+        "sourceId": "prayer",
+        "targetId": "toa",
+        "kind": "hard"
+      },
+      {
+        "id": "raid8",
+        "sourceId": "prayer",
+        "targetId": "cox",
+        "kind": "hard"
+      },
+      {
+        "id": "raid9",
+        "sourceId": "rigour",
+        "targetId": "titans",
+        "kind": "soft"
+      }
+    ],
+    "groups": [
+      {
+        "id": "loadout",
+        "title": "Equipment route",
+        "representativeNodeId": null,
+        "collapsed": false
+      },
+      {
+        "id": "group_dd94f64e-7430-4905-9e97-bffa2a8a850b",
+        "title": "Independent ToA goals",
+        "collapsed": false,
+        "representativeNodeId": "toa"
+      }
+    ]
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 16.081703107019564,
+      "y": 314.9113924050633,
+      "zoom": 0.3739930955120829
+    },
+    "expandedCompleted": [],
+    "navigation": {
+      "mode": "none",
+      "direction": "both",
+      "rootId": null
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "version": "0.12.0",
+  "upstream": "https://github.com/kieler/elkjs",
+  "records": [
+    {
+      "path": "src/vendor/elkjs/elk.bundled.js",
+      "bytes": 1609707,
+      "sha256": "1222e44f953ce7746af23801e723708f8e6f436b8b377a6a5fc7552f34a307b3"
+    },
+    {
+      "path": "src/vendor/elkjs/LICENSE.md",
+      "bytes": 14443,
+      "sha256": "637e81f4a1b6b4079535c499fca05e238cf7605c1ff5b76d60d7da7ce96700c9"
+    },
+    {
+      "path": "src/vendor/elkjs/README.md",
+      "bytes": 15957,
+      "sha256": "a83dbb420b0b4f335f4b9d2ca65c335be3fdcf83248bff49f81582b9c0c30712"
+    },
+    {
+      "path": "evidence/phase3-preflight-2026-10-26/elkjs-0.12.0.tgz",
+      "bytes": 1685655,
+      "sha256": "c1d7719723e020b10724e3ccbc935696a2884f1e78d361cdd03766309e8e8e2a"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "targetArrow": {
+    "value": "0.000001",
+    "min": "0.000001",
+    "step": "any"
+  },
+  "groupNull": [
+    "a",
+    "c",
+    "d"
+  ],
+  "drafts": {
+    "prompts": 0,
+    "notes": "UNSAVED Board to Graph notes"
+  }
+}

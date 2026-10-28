@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-27T00:56:57.562Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p5-reproduction-2026-10-27T00-56-54-068Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

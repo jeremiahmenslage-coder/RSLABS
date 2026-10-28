@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-27T15:39:54.347Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p3-005-2026-10-27T15-39-48-598Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "undo declined dirty draft resolution and subsequent Save",
+      "result": "Pass"
+    },
+    {
+      "name": "undo accepted dirty draft resolution and subsequent Save",
+      "result": "Pass"
+    },
+    {
+      "name": "redo declined dirty draft resolution and subsequent Save",
+      "result": "Pass"
+    },
+    {
+      "name": "redo accepted dirty draft resolution and subsequent Save",
+      "result": "Pass"
+    },
+    {
+      "name": "trusted browser pointer cancellation restores card/group geometry and routes after visible movement, without save",
+      "result": "Pass"
+    },
+    {
+      "name": "combined type/reversal validates only final graph and commits once with undo/redo, JSON and reload",
+      "result": "Pass"
+    },
+    {
+      "name": "invalid final cycle and duplicate pairs preserve original edge, roadmap and history",
+      "result": "Pass"
+    },
+    {
+      "name": "no browser errors/external requests and original dist preserved",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-27T01:17:21.809Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p5-001-2026-10-27T01-17-07-534Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "direct graph status chooser changes no selection/pair/geometry when opening/canceling; keyboard accessible",
+      "result": "Pass"
+    },
+    {
+      "name": "counter UI absent in Graph/Board/quick/details/context/Help while quick and inspector edits preserve exact fractional values",
+      "result": "Pass"
+    },
+    {
+      "name": "catalog search/category creation, source identity/default original icon and independent duplicate instances",
+      "result": "Pass"
+    },
+    {
+      "name": "catalog More details retains reference and intended position; manual/custom path remains available",
+      "result": "Pass"
+    },
+    {
+      "name": "missing and unknown icons fall back in both views without losing references",
+      "result": "Pass"
+    },
+    {
+      "name": "actual offline catalog update in separate static fixture preserves saved user IDs/edits/statuses/hidden values/positions/overrides",
+      "result": "Pass"
+    },
+    {
+      "name": "literal group ID null, missing group and explicit Ungrouped filters match exact IDs without canonical changes",
+      "result": "Pass"
+    },
+    {
+      "name": "Owner-reported Board to Graph draft case: no prompt on hide/reopen/view change; real replacement remains guarded",
+      "result": "Pass"
+    },
+    {
+      "name": "reconstructed raid after HTTP reload and actual manual drag has measured zero crossings/shared paths in both densities",
+      "result": "Pass"
+    },
+    {
+      "name": "actual mouse Shift-click pairing, port editor cancellation, region selection and status-button drag preserve states",
+      "result": "Pass"
+    },
+    {
+      "name": "hidden-value backups, failed saves/Retry and cancelled/failed imports keep committed recovery contract",
+      "result": "Pass"
+    },
+    {
+      "name": "context rename/status, connection reversal and visual-group context retain independent IDs and hidden data",
+      "result": "Pass"
+    },
+    {
+      "name": "Board combined daily filters, quick edits, cross-view history and preferences persist without counter controls",
+      "result": "Pass"
+    },
+    {
+      "name": "no browser exceptions/external runtime calls; original dist remains unchanged",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

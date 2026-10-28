@@ -1,0 +1,270 @@
+[
+  {
+    "density": "compact",
+    "move": false,
+    "ms": 6.438699999999983,
+    "visibleCards": 16,
+    "width": 4029,
+    "height": 556,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [
+      [
+        "raid7",
+        "raid9"
+      ],
+      [
+        "raid8",
+        "raid9"
+      ]
+    ],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ],
+      [
+        "raid0",
+        "raid9"
+      ],
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid2",
+        "raid5"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid3",
+        "raid8"
+      ],
+      [
+        "raid4",
+        "raid5"
+      ],
+      [
+        "raid7",
+        "raid8"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "density": "compact",
+    "move": true,
+    "ms": 3.9005000000000223,
+    "visibleCards": 16,
+    "width": 4029,
+    "height": 556,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [
+      [
+        "raid7",
+        "raid9"
+      ],
+      [
+        "raid8",
+        "raid9"
+      ]
+    ],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ],
+      [
+        "raid0",
+        "raid9"
+      ],
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid2",
+        "raid5"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid3",
+        "raid8"
+      ],
+      [
+        "raid4",
+        "raid5"
+      ],
+      [
+        "raid7",
+        "raid8"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "density": "detailed",
+    "move": false,
+    "ms": 1.2545000000000073,
+    "visibleCards": 16,
+    "width": 4689,
+    "height": 700,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [
+      [
+        "raid7",
+        "raid9"
+      ],
+      [
+        "raid8",
+        "raid9"
+      ]
+    ],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ],
+      [
+        "raid0",
+        "raid9"
+      ],
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid2",
+        "raid5"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid3",
+        "raid8"
+      ],
+      [
+        "raid4",
+        "raid5"
+      ],
+      [
+        "raid7",
+        "raid8"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "density": "detailed",
+    "move": true,
+    "ms": 1.5640000000000214,
+    "visibleCards": 16,
+    "width": 4689,
+    "height": 700,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid7",
+        "raid9"
+      ],
+      [
+        "raid8",
+        "raid9"
+      ]
+    ],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ],
+      [
+        "raid0",
+        "raid9"
+      ],
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid2",
+        "raid5"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid3",
+        "raid8"
+      ],
+      [
+        "raid4",
+        "raid5"
+      ],
+      [
+        "raid7",
+        "raid8"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  }
+]

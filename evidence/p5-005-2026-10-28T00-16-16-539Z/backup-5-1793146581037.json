@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "p5-005-disposable",
+    "title": "Synthetic Song of the Elves many-prerequisite benchmark",
+    "nodes": [
+      {
+        "id": "p0",
+        "title": "Illustrative prerequisite 1",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 60
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p1",
+        "title": "Illustrative prerequisite 2",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 60
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p2",
+        "title": "Illustrative prerequisite 3",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 225
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p3",
+        "title": "Illustrative prerequisite 4",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 225
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p4",
+        "title": "Illustrative prerequisite 5",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 390
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p5",
+        "title": "Illustrative prerequisite 6",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 390
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p6",
+        "title": "Illustrative prerequisite 7",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 555
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p7",
+        "title": "Illustrative prerequisite 8",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 555
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p8",
+        "title": "Illustrative prerequisite 9",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 720
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p9",
+        "title": "Illustrative prerequisite 10",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 720
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p10",
+        "title": "Illustrative prerequisite 11",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 885
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p11",
+        "title": "Illustrative prerequisite 12",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 885
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p12",
+        "title": "Illustrative prerequisite 13",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 1050
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p13",
+        "title": "Illustrative prerequisite 14",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 1050
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p14",
+        "title": "Illustrative prerequisite 15",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 1215
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p15",
+        "title": "Illustrative prerequisite 16",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 1215
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p16",
+        "title": "Illustrative prerequisite 17",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 1380
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p17",
+        "title": "Illustrative prerequisite 18",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 1380
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p18",
+        "title": "Illustrative prerequisite 19",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 1545
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p19",
+        "title": "Illustrative prerequisite 20",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 1545
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p20",
+        "title": "Illustrative prerequisite 21",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 1710
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p21",
+        "title": "Illustrative prerequisite 22",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 1710
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p22",
+        "title": "Illustrative prerequisite 23",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 60,
+          "y": 1875
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p23",
+        "title": "Illustrative prerequisite 24",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 1875
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "song",
+        "title": "Song of the Elves (illustrative connections)",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 820,
+          "y": 453
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-28T00:16:20.850Z"
+      },
+      {
+        "id": "after",
+        "title": "Independent next goal",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 1150,
+          "y": 600
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "req0",
+        "sourceId": "p0",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req1",
+        "sourceId": "p1",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req2",
+        "sourceId": "p2",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req3",
+        "sourceId": "p3",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req4",
+        "sourceId": "p4",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req5",
+        "sourceId": "p5",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req6",
+        "sourceId": "p6",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req7",
+        "sourceId": "p7",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req8",
+        "sourceId": "p8",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req9",
+        "sourceId": "p9",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req10",
+        "sourceId": "p10",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req11",
+        "sourceId": "p11",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req12",
+        "sourceId": "p12",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req13",
+        "sourceId": "p13",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req14",
+        "sourceId": "p14",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req15",
+        "sourceId": "p15",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req16",
+        "sourceId": "p16",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req17",
+        "sourceId": "p17",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req18",
+        "sourceId": "p18",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req19",
+        "sourceId": "p19",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req20",
+        "sourceId": "p20",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req21",
+        "sourceId": "p21",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req22",
+        "sourceId": "p22",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "req23",
+        "sourceId": "p23",
+        "targetId": "song",
+        "kind": "hard"
+      },
+      {
+        "id": "next",
+        "sourceId": "song",
+        "targetId": "after",
+        "kind": "order"
+      },
+      {
+        "id": "return",
+        "sourceId": "after",
+        "targetId": "p0",
+        "kind": "soft"
+      },
+      {
+        "id": "cycle",
+        "sourceId": "p0",
+        "targetId": "after",
+        "kind": "order"
+      }
+    ],
+    "groups": []
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "compact",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 20,
+      "y": 20,
+      "zoom": 0.7
+    }
+  }
+}

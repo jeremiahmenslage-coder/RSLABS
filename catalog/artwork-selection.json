@@ -1,0 +1,1567 @@
+{
+  "format": 1,
+  "permission": {
+    "source": "Owner-provided P5-002 report of Jagex permission",
+    "scope": "Third-party icon sourcing and bundling in this private local planner only",
+    "independentlyVerified": false,
+    "broaderDistributionRights": false
+  },
+  "sources": {
+    "osrsbox": {
+      "repo": "osrsbox/osrsbox-db",
+      "revision": "dae12e3400add0c71465f07a334f9d8f86bebce8"
+    },
+    "dava": {
+      "repo": "Dava96/osrs-icons",
+      "revision": "16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6"
+    }
+  },
+  "mapping": {
+    "osrs:skill:attack": {
+      "source": "dava",
+      "collection": "category",
+      "export": "attack",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:strength": {
+      "source": "dava",
+      "collection": "category",
+      "export": "strength",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:defence": {
+      "source": "dava",
+      "collection": "category",
+      "export": "defence",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:ranged": {
+      "source": "dava",
+      "collection": "category",
+      "export": "ranged",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:prayer": {
+      "source": "dava",
+      "collection": "category",
+      "export": "prayer",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:magic": {
+      "source": "dava",
+      "collection": "category",
+      "export": "magic",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:runecraft": {
+      "source": "dava",
+      "collection": "category",
+      "export": "runecraft",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:construction": {
+      "source": "dava",
+      "collection": "category",
+      "export": "construction",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:hitpoints": {
+      "source": "dava",
+      "collection": "category",
+      "export": "hitpoints",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:agility": {
+      "source": "dava",
+      "collection": "category",
+      "export": "agility",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:herblore": {
+      "source": "dava",
+      "collection": "category",
+      "export": "herblore",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:thieving": {
+      "source": "dava",
+      "collection": "category",
+      "export": "thieving",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:crafting": {
+      "source": "dava",
+      "collection": "category",
+      "export": "crafting",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:fletching": {
+      "source": "dava",
+      "collection": "category",
+      "export": "fletching",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:slayer": {
+      "source": "dava",
+      "collection": "category",
+      "export": "slayer",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:hunter": {
+      "source": "dava",
+      "collection": "category",
+      "export": "hunter",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:mining": {
+      "source": "dava",
+      "collection": "category",
+      "export": "mining",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:smithing": {
+      "source": "dava",
+      "collection": "category",
+      "export": "smithing",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:fishing": {
+      "source": "dava",
+      "collection": "category",
+      "export": "fishing",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:cooking": {
+      "source": "dava",
+      "collection": "category",
+      "export": "cooking",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:firemaking": {
+      "source": "dava",
+      "collection": "category",
+      "export": "firemaking",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:woodcutting": {
+      "source": "dava",
+      "collection": "category",
+      "export": "woodcutting",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:farming": {
+      "source": "dava",
+      "collection": "category",
+      "export": "farming",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:skill:sailing": {
+      "source": "dava",
+      "collection": "category",
+      "export": "sailing",
+      "match": "identity",
+      "basis": "Exact skill category export (not item-name match)."
+    },
+    "osrs:quest:cook-s-assistant": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:demon-slayer": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:dragon-slayer-i": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:ernest-the-chicken": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:goblin-diplomacy": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:imp-catcher": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:pirate-s-treasure": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:prince-ali-rescue": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:romeo-juliet": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:rune-mysteries": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:the-restless-ghost": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:the-knight-s-sword": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:vampyre-slayer": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:witch-s-potion": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:waterfall-quest": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:lost-city": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:fairytale-i-growing-pains": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:fairytale-ii-cure-a-queen": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:animal-magnetism": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:recipe-for-disaster": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:monkey-madness-i": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:monkey-madness-ii": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:desert-treasure-i": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:desert-treasure-ii-the-fallen-empire": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:dragon-slayer-ii": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:song-of-the-elves": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:sins-of-the-father": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:perilous-moons": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:a-kingdom-divided": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:lunar-diplomacy": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:dream-mentor": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:quest:beneath-cursed-sands": {
+      "source": "dava",
+      "collection": "category",
+      "export": "questStartIcon",
+      "match": "category",
+      "basis": "Authentic generic quest-start marker, not unique quest artwork."
+    },
+    "osrs:item:rune-scimitar": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 1333,
+      "sourceName": "Rune scimitar",
+      "sourceVariant": "Rune scimitar",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:dragon-scimitar": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 4587,
+      "sourceName": "Dragon scimitar",
+      "sourceVariant": "Dragon scimitar",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:dragon-defender": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 12954,
+      "sourceName": "Dragon defender",
+      "sourceVariant": "Dragon defender (Normal)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:dragon-warhammer": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 13576,
+      "sourceName": "Dragon warhammer",
+      "sourceVariant": "Dragon warhammer",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:abyssal-whip": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 4151,
+      "sourceName": "Abyssal whip",
+      "sourceVariant": "Abyssal whip",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:trident-of-the-seas": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 11907,
+      "sourceName": "Trident of the seas",
+      "sourceVariant": "Trident of the seas (Partially charged)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:toxic-blowpipe": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 12926,
+      "sourceName": "Toxic blowpipe",
+      "sourceVariant": "Toxic blowpipe (Charged)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:bow-of-faerdhinen": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 25865,
+      "sourceName": "Bow of faerdhinen",
+      "sourceVariant": "Bow of faerdhinen (Charged)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:osmumten-s-fang": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "osmumtensFang",
+      "match": "identity",
+      "basis": "Exact normalized item export; absent in pinned osrsbox index."
+    },
+    "osrs:item:lightbearer": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 25975,
+      "sourceName": "Lightbearer",
+      "sourceVariant": "Lightbearer",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:berserker-ring": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 6737,
+      "sourceName": "Berserker ring",
+      "sourceVariant": "Berserker ring",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:amulet-of-fury": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 6585,
+      "sourceName": "Amulet of fury",
+      "sourceVariant": "Amulet of fury",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:amulet-of-torture": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 19553,
+      "sourceName": "Amulet of torture",
+      "sourceVariant": "Amulet of torture",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:necklace-of-anguish": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 19547,
+      "sourceName": "Necklace of anguish",
+      "sourceVariant": "Necklace of anguish",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:occult-necklace": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 12002,
+      "sourceName": "Occult necklace",
+      "sourceVariant": "Occult necklace",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:barrows-gloves": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 7462,
+      "sourceName": "Barrows gloves",
+      "sourceVariant": "Barrows gloves",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:fire-cape": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 6570,
+      "sourceName": "Fire cape",
+      "sourceVariant": "Fire cape (Normal)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:infernal-cape": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 21295,
+      "sourceName": "Infernal cape",
+      "sourceVariant": "Infernal cape (Normal)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:crystal-shield": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 23991,
+      "sourceName": "Crystal shield",
+      "sourceVariant": "Crystal shield (Active)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:crystal-bow": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 23983,
+      "sourceName": "Crystal bow",
+      "sourceVariant": "Crystal bow (Active)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:ahrim-s-robetop": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 4712,
+      "sourceName": "Ahrim's robetop",
+      "sourceVariant": "Ahrim's robetop (Undamaged)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:karil-s-leathertop": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 4736,
+      "sourceName": "Karil's leathertop",
+      "sourceVariant": "Karil's leathertop (Undamaged)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:dharok-s-greataxe": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 4718,
+      "sourceName": "Dharok's greataxe",
+      "sourceVariant": "Dharok's greataxe (Undamaged)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:guthan-s-warspear": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 4726,
+      "sourceName": "Guthan's warspear",
+      "sourceVariant": "Guthan's warspear (Undamaged)",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:armadyl-crossbow": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 11785,
+      "sourceName": "Armadyl crossbow",
+      "sourceVariant": "Armadyl crossbow",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:bandos-chestplate": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 11832,
+      "sourceName": "Bandos chestplate",
+      "sourceVariant": "Bandos chestplate",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:bandos-tassets": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 11834,
+      "sourceName": "Bandos tassets",
+      "sourceVariant": "Bandos tassets",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:zenyte-shard": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 19529,
+      "sourceName": "Zenyte shard",
+      "sourceVariant": "Zenyte shard",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:dexterous-prayer-scroll": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 21034,
+      "sourceName": "Dexterous prayer scroll",
+      "sourceVariant": "Dexterous prayer scroll",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:item:arcane-prayer-scroll": {
+      "source": "osrsbox",
+      "collection": "items",
+      "id": 21079,
+      "sourceName": "Arcane prayer scroll",
+      "sourceVariant": "Arcane prayer scroll",
+      "match": "identity",
+      "basis": "Explicit normal gameplay item ID; alternatives such as LMS, animation, ornament and degraded variants excluded."
+    },
+    "osrs:boss:giant-mole": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:king-black-dragon": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:kalphite-queen": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:dagannoth-rex": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:dagannoth-prime": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:dagannoth-supreme": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:zulrah": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:vorkath": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:cerberus": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:abyssal-sire": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:kraken": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:alchemical-hydra": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:hespori": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:sarachnis": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:skotizo": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:scurrius": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:phantom-muspah": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:general-graardor": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:commander-zilyana": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:kree-arra": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:k-ril-tsutsaroth": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:the-nightmare": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:nex": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:boss:araxxor": {
+      "source": "dava",
+      "collection": "category",
+      "export": "combatAchievementsIcon",
+      "match": "category",
+      "basis": "Authentic generic combat-achievement marker; individual boss portraits unavailable in assessed icon sets."
+    },
+    "osrs:prayer:thick-skin": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 1,
+      "sourceName": "Thick Skin",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:burst-of-strength": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 2,
+      "sourceName": "Burst of Strength",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:clarity-of-thought": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 3,
+      "sourceName": "Clarity of Thought",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:sharp-eye": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 4,
+      "sourceName": "Sharp Eye",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:mystic-will": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 5,
+      "sourceName": "Mystic Will",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:rock-skin": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 6,
+      "sourceName": "Rock Skin",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:superhuman-strength": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 7,
+      "sourceName": "Superhuman Strength",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:improved-reflexes": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 8,
+      "sourceName": "Improved Reflexes",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:rapid-restore": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 9,
+      "sourceName": "Rapid Restore",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:rapid-heal": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 10,
+      "sourceName": "Rapid Heal",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:protect-item": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 11,
+      "sourceName": "Protect Item",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:hawk-eye": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 12,
+      "sourceName": "Hawk Eye",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:mystic-lore": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 13,
+      "sourceName": "Mystic Lore",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:steel-skin": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 14,
+      "sourceName": "Steel Skin",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:ultimate-strength": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 15,
+      "sourceName": "Ultimate Strength",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:incredible-reflexes": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 16,
+      "sourceName": "Incredible Reflexes",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:protect-from-magic": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 17,
+      "sourceName": "Protect from Magic",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:protect-from-missiles": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 18,
+      "sourceName": "Protect from Missiles",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:protect-from-melee": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 19,
+      "sourceName": "Protect from Melee",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:eagle-eye": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 20,
+      "sourceName": "Eagle Eye",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:mystic-might": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 21,
+      "sourceName": "Mystic Might",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:retribution": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 22,
+      "sourceName": "Retribution",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:redemption": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 23,
+      "sourceName": "Redemption",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:smite": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 24,
+      "sourceName": "Smite",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:chivalry": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 26,
+      "sourceName": "Chivalry",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:piety": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 27,
+      "sourceName": "Piety",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:preserve": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 25,
+      "sourceName": "Preserve",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:rigour": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 28,
+      "sourceName": "Rigour",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:prayer:augury": {
+      "source": "osrsbox",
+      "collection": "prayers",
+      "id": 29,
+      "sourceName": "Augury",
+      "match": "identity",
+      "basis": "Exact prayer name and stable source prayer ID."
+    },
+    "osrs:activity:barrows": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:chambers-of-xeric": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:theatre-of-blood": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:tombs-of-amascut": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:pest-control": {
+      "source": "dava",
+      "collection": "category",
+      "export": "pestControlLogo",
+      "match": "identity",
+      "basis": "Explicit corresponding activity-logo export."
+    },
+    "osrs:activity:barbarian-assault": {
+      "source": "dava",
+      "collection": "category",
+      "export": "barbarianAssaultLogo",
+      "match": "identity",
+      "basis": "Explicit corresponding activity-logo export."
+    },
+    "osrs:activity:wintertodt": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:tempoross": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:guardians-of-the-rift": {
+      "source": "dava",
+      "collection": "category",
+      "export": "guardiansOfTheRiftLogo",
+      "match": "identity",
+      "basis": "Explicit corresponding activity-logo export."
+    },
+    "osrs:activity:hallowed-sepulchre": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:tithe-farm": {
+      "source": "dava",
+      "collection": "category",
+      "export": "titheFarmLogo",
+      "match": "identity",
+      "basis": "Explicit corresponding activity-logo export."
+    },
+    "osrs:activity:motherlode-mine": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:blast-furnace": {
+      "source": "dava",
+      "collection": "category",
+      "export": "blastFurnaceLogo",
+      "match": "identity",
+      "basis": "Explicit corresponding activity-logo export."
+    },
+    "osrs:activity:giants-foundry": {
+      "source": "dava",
+      "collection": "category",
+      "export": "giantsFoundryLogo",
+      "match": "identity",
+      "basis": "Explicit corresponding activity-logo export."
+    },
+    "osrs:activity:mahogany-homes": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:fishing-trawler": {
+      "source": "dava",
+      "collection": "category",
+      "export": "fishingTrawlerLogo",
+      "match": "identity",
+      "basis": "Explicit corresponding activity-logo export."
+    },
+    "osrs:activity:rogues-den": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:the-gauntlet": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:the-corrupted-gauntlet": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:activity:fight-caves": {
+      "source": "dava",
+      "collection": "category",
+      "export": "minigameMapIcon",
+      "match": "category",
+      "basis": "Authentic generic minigame marker; unique activity illustration not asserted."
+    },
+    "osrs:diary:ardougne-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:ardougne-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:ardougne-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:ardougne-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:desert-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:desert-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:desert-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:desert-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:falador-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:falador-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:falador-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:falador-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:fremennik-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:fremennik-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:fremennik-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:fremennik-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:kandarin-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:kandarin-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:kandarin-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:kandarin-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:karamja-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:karamja-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:karamja-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:karamja-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:kourend-kebos-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:kourend-kebos-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:kourend-kebos-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:kourend-kebos-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:lumbridge-draynor-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:lumbridge-draynor-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:lumbridge-draynor-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:lumbridge-draynor-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:morytania-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:morytania-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:morytania-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:morytania-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:varrock-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:varrock-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:varrock-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:varrock-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:western-provinces-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:western-provinces-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:western-provinces-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:western-provinces-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:wilderness-diary-easy": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:wilderness-diary-medium": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:wilderness-diary-hard": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    },
+    "osrs:diary:wilderness-diary-elite": {
+      "source": "dava",
+      "collection": "inventory",
+      "export": "achievementDiaryCape",
+      "match": "category",
+      "basis": "Authentic achievement-diary cape used as a generic diary-category marker; not tier/region-specific artwork."
+    }
+  },
+  "inputHashes": {
+    "osrsbox-items-complete.json": "6dff51177a74dfe7fc37dbd78fa3243975c40cc69d794d1830ac0f95887e766e",
+    "osrsbox-docs_prayers-complete.json": "7e9ee86bbcd969d603274ab130015c43af6f6599c85aee184602609e4ebe53fa",
+    "Dava96-src_generated_icons.ts": "1f31caf5738e5e95fbfb1b1c9562ae033878d1f3ff4c6096043c1f5b6d52ab4e",
+    "Dava96-src_generated_category-icons.ts": "9930a322894a48e7712379d88d03d0e72d79d3f45aac1e0dd3ce2580d0d66481",
+    "osrsbox-LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "osrsbox-README.md": "42b8d9ae7153313830d2969e74872985908f7060401ca4645aa049eaf0f9b9c8",
+    "Dava96-LICENSE": "a61c36ef31e076caf6b965fea1bf6319c07f1783d49218d492fc0ce15c535a9a",
+    "Dava96-README.md": "c22a48c546a42e2545c1175dad0be93c49f586f0d72c429995f1c9e30523e802"
+  }
+}

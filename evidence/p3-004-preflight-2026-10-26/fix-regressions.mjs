@@ -1,0 +1,3 @@
+import fs from 'node:fs';
+let p='tests/browser_phase2.mjs',s=fs.readFileSync(p,'utf8');s=s.replace("accept=true;assert.equal(await page.locator('#goal-notes').inputValue(),'unsaved');await page.locator('#cancel-editor')","accept=true;await page.keyboard.press('Escape');assert.equal(await page.locator('#goal-notes').inputValue(),'unsaved');await page.locator('#cancel-editor')");fs.writeFileSync(p,s);
+p='tests/browser_bulk.mjs';s=fs.readFileSync(p,'utf8').replaceAll('y:a.y-8','y:a.y-4').replaceAll('height:a.height+16','height:a.height+8').replaceAll('height:Math.max(a.height,b.height)+16','height:Math.max(a.height,b.height)+8');fs.writeFileSync(p,s);

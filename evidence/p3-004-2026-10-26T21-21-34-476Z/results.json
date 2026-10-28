@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-26T21:21:37.412Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p3-004-2026-10-26T21-21-34-476Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "inspector starts closed; first-goal guidance, save and controls are accessible",
+      "result": "Pass"
+    },
+    {
+      "name": "single clicks select only; double-click goal opens full quick editor without inspector or mutation",
+      "result": "Pass"
+    },
+    {
+      "name": "complete goal quick edit is undoable; counters independent; invalid fields reject without mutation",
+      "result": "Pass"
+    },
+    {
+      "name": "quick editor blocks background and Tab stays inside; Escape cancels and restores focus",
+      "result": "Pass"
+    },
+    {
+      "name": "More details transfers all goal fields; closing, selecting and reopening preserves inspector draft",
+      "result": "Pass"
+    },
+    {
+      "name": "port start/release/cancel do not prompt or discard hidden inspector; actual commit is guarded",
+      "result": "Pass"
+    },
+    {
+      "name": "edge single/double clicks, type draft transfer, reversal and confirmed deletion use validated history",
+      "result": "Fail",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'Create directed connection'\n- 'Edit connection'\n\n    at file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_workspace.mjs:69:303\n    at async check (file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_workspace.mjs:17:34)\n    at async file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_workspace.mjs:68:2"
+    }
+  ],
+  "errors": [
+    "Connection no longer exists."
+  ],
+  "external": []
+}

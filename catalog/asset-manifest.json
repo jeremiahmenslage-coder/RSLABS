@@ -1,0 +1,64 @@
+{
+  "reviewDate": "2026-10-26",
+  "assets": [
+    {
+      "file": "public/icons/reference-activity.svg",
+      "bytes": 281,
+      "sha256": "92a244535f04b4c896bf88cd23ebc0e4d6e733c913fbeb9ee8c47533035c8a8b",
+      "author": "Project-original geometric symbol; no game image source",
+      "license": "Project-original; local bundling authorized by Owner P5-001; no external license grant",
+      "packaging": "bundle_allowed"
+    },
+    {
+      "file": "public/icons/reference-boss.svg",
+      "bytes": 287,
+      "sha256": "4b1b4b1ff3b97def6df48c3acb3cd3426ebfaed8f85a5dd0dbf6d43b0b2a7ce4",
+      "author": "Project-original geometric symbol; no game image source",
+      "license": "Project-original; local bundling authorized by Owner P5-001; no external license grant",
+      "packaging": "bundle_allowed"
+    },
+    {
+      "file": "public/icons/reference-diary.svg",
+      "bytes": 290,
+      "sha256": "1ad015bc9ac7646edda08692906347cfe96a4673754c445f580e1a99d8aff15e",
+      "author": "Project-original geometric symbol; no game image source",
+      "license": "Project-original; local bundling authorized by Owner P5-001; no external license grant",
+      "packaging": "bundle_allowed"
+    },
+    {
+      "file": "public/icons/reference-item.svg",
+      "bytes": 256,
+      "sha256": "d5b4d2e5bc394866035049e6c65557151ad8c0c78716d2841a4fb392a7547c6a",
+      "author": "Project-original geometric symbol; no game image source",
+      "license": "Project-original; local bundling authorized by Owner P5-001; no external license grant",
+      "packaging": "bundle_allowed"
+    },
+    {
+      "file": "public/icons/reference-prayer.svg",
+      "bytes": 282,
+      "sha256": "f425923434cde295167fb888c116ea82d43a4a3b1f15199db14a8f910ab9b6d1",
+      "author": "Project-original geometric symbol; no game image source",
+      "license": "Project-original; local bundling authorized by Owner P5-001; no external license grant",
+      "packaging": "bundle_allowed"
+    },
+    {
+      "file": "public/icons/reference-quest.svg",
+      "bytes": 274,
+      "sha256": "bddca6df0133f3edf49a760476567f57795d2a71b2bc58306fee540edede3718",
+      "author": "Project-original geometric symbol; no game image source",
+      "license": "Project-original; local bundling authorized by Owner P5-001; no external license grant",
+      "packaging": "bundle_allowed"
+    },
+    {
+      "file": "public/icons/reference-skill.svg",
+      "bytes": 263,
+      "sha256": "a945d90ac41903ac2e4f6bb77319dc51c8e0c0bf7e6514c0ea1c87d416b07170",
+      "author": "Project-original geometric symbol; no game image source",
+      "license": "Project-original; local bundling authorized by Owner P5-001; no external license grant",
+      "packaging": "bundle_allowed"
+    }
+  ],
+  "totalBytes": 1933,
+  "authenticGameImages": 0,
+  "gap": "Authentic imagery omitted; no suitable packaging permission established"
+}

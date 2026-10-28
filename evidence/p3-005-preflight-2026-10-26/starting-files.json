@@ -1,0 +1,374 @@
+[
+  {
+    "hash": "1AF83BAF72DC44C86F893A2C629F492395C0063B6BC90438EBC82C32609B186E",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\fixture.js"
+  },
+  {
+    "hash": "03E885C1EFB5F5BB5853831099F09ECB51F7D8D3D4728D7DC7B2003F73357751",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\geometry.js"
+  },
+  {
+    "hash": "70D53020328AA34D871516CB1DCA3249191D2913C9385DB1518F7D2C2E988B84",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\icons.js"
+  },
+  {
+    "hash": "378003D654AC22F6FF2C060E892C7FC32DDF66E27CD1B6E6A582EDB16F84F126",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\layout.js"
+  },
+  {
+    "hash": "954943CCB1AB453CB0E418D91880E1997CF44A4E0211EB6D17C71F9797DFC5C0",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\main.js"
+  },
+  {
+    "hash": "9FF99D8B2202E45EA1DFB93BDA06680269C2C3A02878B9A633950304EFDEE501",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\model.js"
+  },
+  {
+    "hash": "D5C081F645C921780BABE3B5664EFBA288632F6A6B5CE1BC8C3BD80129A285F5",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\navigation.js"
+  },
+  {
+    "hash": "24F600D284375369F1D89C45688EE15704F7C8AD5C17C306AD54BE00685279B1",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\projection.js"
+  },
+  {
+    "hash": "D66D85A25960E77FD896662DFFCAC376A426288D81E27A2C403891245B69EBE9",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\selection.js"
+  },
+  {
+    "hash": "9E67D8DE2C60BFBC60C96007AA0B5E91DAC77D6938BD780F304F412AD2E0A0A1",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\style.css"
+  },
+  {
+    "hash": "AE13B1F111B4CC383D403DD8029BCA7CFBB5A2DD534599DAD2880A5652043B82",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\assets\\resolve.js"
+  },
+  {
+    "hash": "0DCDD711EFECA4DA12A9572979987A3D18010F54BDCD9CD5124585EB42DD7A30",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\benchmarks\\fixtures.js"
+  },
+  {
+    "hash": "FEF53F04FD40866E59CD38F6D0A0E6B8158ABD32F70D24ACBFA1DB3154395C28",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\benchmarks\\graphviz-adapter.js"
+  },
+  {
+    "hash": "8732DB29E0A41C7CE90C171D2D628F004D49D8D5548ABF35B4AAB831A282BD61",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\catalog\\reference.js"
+  },
+  {
+    "hash": "39F744A834AEA01A361088FA92745FAD2C265564C6C84B499ABB324B7552DE95",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\layout\\elk.js"
+  },
+  {
+    "hash": "721105243CCDF37B83461711CA1D1A55103589BA9DAAC707A2F743062929C6A4",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\layout\\metrics.js"
+  },
+  {
+    "hash": "FDDA9D750F072C76D8081EA7F23500424C752D4B9B48C2025420D26F7E3EBB1D",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\layout\\routing.js"
+  },
+  {
+    "hash": "B382F05113A729AEA5C86A6765C440032451222217092F4218CD9DB3930F433C",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\model\\actions.js"
+  },
+  {
+    "hash": "6161C7C6B84BE5F3E24582FE2360FEF51BDE71455C00F77B55CAA35F6B33ADDE",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\model\\bulk.js"
+  },
+  {
+    "hash": "0E5D6B073E2C666E3AFEA153A92FD2EA517BA9B694C0204F58F5907BF3A41162",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\model\\groups.js"
+  },
+  {
+    "hash": "41C44448C7DE34C7DB68331BBE4F16BF5828B0C6C86BF0779EDC16FCBFE79153",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\state\\store.js"
+  },
+  {
+    "hash": "00CCB17FBCF0C61870A3849C838C0599E51D972AA9E2DE1F1E97813DF82195DF",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\storage\\backup.js"
+  },
+  {
+    "hash": "1E8D70C45E8CB1A023952078639538C8E917921223E6EB7105FE33830E8C9183",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\storage\\indexeddb.js"
+  },
+  {
+    "hash": "C3DD6AC136735AC726DB4FC977020973E4EE7367430EFC58FAB088094F929647",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\ui\\backup.js"
+  },
+  {
+    "hash": "12014A1CB7692E3D9F7E0F76722FFF610BA3DD6786A3C2A54AC1A5E4CE4B338F",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\ui\\bulk.js"
+  },
+  {
+    "hash": "746FC70F27C899F8CE2F0010BFCB06E2252505734C99A6BB16D4FB7801F3D0C5",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\ui\\cursor.js"
+  },
+  {
+    "hash": "205F7C3F412EFD50CA7EFD54B233BC66A16A4F65F40319C5A8D94C03F293B01C",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\ui\\graph.js"
+  },
+  {
+    "hash": "B7A1202C28EE177A23A1A5825F271FE000ECB54DB67811E6280ACDF18B5DD0BF",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\ui\\inspector.js"
+  },
+  {
+    "hash": "EBB7324018E76378CE090F202772BD79FCECC6242838CF4064285C5C92727279",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\ui\\labels.js"
+  },
+  {
+    "hash": "E5C6370FAD84C446E91584B5EDAF42F005FFB3DFCE313A729324E442C70C9E33",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\ui\\organization.js"
+  },
+  {
+    "hash": "F12B48A77F7F265B26FC47F4B7BD53A008024620982439C8713065F553A835DF",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\ui\\workspace.js"
+  },
+  {
+    "hash": "1222E44F953CE7746AF23801E723708F8E6F436B8B377A6A5FC7552F34A307B3",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\vendor\\elkjs\\elk.bundled.js"
+  },
+  {
+    "hash": "4268BA8F6746881C48A24747615ACBAEFC3E7A4765DAE7106911D0E8AA214FD6",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\vendor\\elkjs\\integrity.json"
+  },
+  {
+    "hash": "637E81F4A1B6B4079535C499FCA05E238CF7605C1FF5B76D60D7DA7CE96700C9",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\vendor\\elkjs\\LICENSE.md"
+  },
+  {
+    "hash": "683A99EE0D19224A1FA7DD2C260D14825F93EAFBD814024EED4273CE7F17BA47",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\vendor\\elkjs\\NOTICE.md"
+  },
+  {
+    "hash": "7D29F58053A73977B0AD746EA7A871BAB991462118606CBF0A50EF10C9CC46B4",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\vendor\\elkjs\\package.json"
+  },
+  {
+    "hash": "A83DBB420B0B4F335F4B9D2CA65C335BE3FDCF83248BFF49F81582B9C0C30712",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\src\\vendor\\elkjs\\README.md"
+  },
+  {
+    "hash": "C02ECF6835BB7DF2CD74741DD2B3524869BB3810CDFAAD35E5D23E0FDB00A4C9",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\assets.test.mjs"
+  },
+  {
+    "hash": "F9ECC5711DFC7ECBD0F54819F65434DA97E47D9C692E32184C5E075A76462F9A",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_bulk.mjs"
+  },
+  {
+    "hash": "716159EC4CA535CBF4A730E93720F91D56708CACDD5EED678855385E5A90EF03",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_cursor.mjs"
+  },
+  {
+    "hash": "975BF524D36EEF7AFF0A26D11ACB6627B6FB6E3DAE4A50434935E9311BA8C371",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_perf.py"
+  },
+  {
+    "hash": "A3B4B9747A2127CDF7B0F2B8534B8AF0199FB18A182E86CA60B8572E1BC54B9A",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase0.py"
+  },
+  {
+    "hash": "CB82E86B28C5AC6D41A92A1007A040DEF41DFA6F9B4426FBB3BCE951CFE4AAB2",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase1.py"
+  },
+  {
+    "hash": "DF7AA188727565D256DC49D52CD129A1D0DF8641191244FBE847957838FEF9BB",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase2.mjs"
+  },
+  {
+    "hash": "BE631F96BBB08C6BEBAEE986F5EB30E1A027E87D3757A9EB01F463FAA297855C",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase3.mjs"
+  },
+  {
+    "hash": "FE898D91D0B9246B2D8E86A306C29F97117D496928171D16781517065E3320CA",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_workspace.mjs"
+  },
+  {
+    "hash": "66D930F5E9409231AC42E7138D3E37754B4969A958ED47B6FE76B26DA3FF6E98",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\bulk.test.mjs"
+  },
+  {
+    "hash": "B74196B5C6E081AC7B7AC0A414447283BD146C146AA21E4568F1C4B481F679CF",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\cursor.test.mjs"
+  },
+  {
+    "hash": "A632343A3FA48CD9B6FB2A781D7BEA85D6BE7D6ADE6BFF4690EC81F3B9B439D2",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\graph.test.mjs"
+  },
+  {
+    "hash": "0C89F0A5A9EB95B12F208323A94DA1A26BB17CD74A807D729004F14572355C3D",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\indexeddb.test.mjs"
+  },
+  {
+    "hash": "B92AC669500C8CB0BF7D087D1A5FDAAB16DAACCE4FAA29C1D4A58576A71691E0",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\performance_spike.mjs"
+  },
+  {
+    "hash": "800127B2FDE729ECDEDAC2D5A14A33051BD1B7DFE60DB620B59CC285D5682A25",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\phase1.test.mjs"
+  },
+  {
+    "hash": "E5624BDB9E68895AEFC1398FFE89C3AC62B33CC4C6D2FBEBAD8D5C151DD74AF0",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\phase2.test.mjs"
+  },
+  {
+    "hash": "9C14CADED01154DB07CBCA50211FBBD7BF90B6B143D310035A32ED1E42C69122",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\phase3.test.mjs"
+  },
+  {
+    "hash": "EA28FE204540F4466DFBD788BD3E0F7C7FAAF3A734013A6F7D1BC5BBF3EBCE63",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\static_asset_check.py"
+  },
+  {
+    "hash": "251242CE639078B516427AAF938C3240D720D58A39958F1B1DC7BC7B2AEF5C95",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\static_phase1_smoke.py"
+  },
+  {
+    "hash": "09BC5258170B7F796E80A4A2A0BA5911F544BC107DCD25F466EE3EA0E41DF1F0",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\fixtures\\cursor.mjs"
+  },
+  {
+    "hash": "C03DD6FA33937EC336896914B522BBCDDE9B450D11D79213CB9E1FB1ACDD76D8",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\fixtures\\phase3.mjs"
+  },
+  {
+    "hash": "F871C1BA0BE3457C2433DA34D83D400E3B11303E607DC9413AE7CA1BADDCC337",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\scripts\\benchmark-layout.mjs"
+  },
+  {
+    "hash": "8E42BB2C10491F8AC8833D9933B9D51BA1D09439D940CC5E933F19C55FAB3394",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\scripts\\build.mjs"
+  },
+  {
+    "hash": "F23E87C45FD300D9DB40B79D7B08CD93C926E4B7F9A2643E0FF8B0CE587E2DD2",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\scripts\\serve.mjs"
+  },
+  {
+    "hash": "D20A8059E1805403622AD9ACF71AEEF4F11261A97CF4AE70B4C97FC965A55CAD",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\index.html"
+  },
+  {
+    "hash": "8DD50E845258B9EF4D07417AD454F2F550C7F9D0553C0C0C64CE63712CE173BD",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\public\\icons\\armor.svg"
+  },
+  {
+    "hash": "470BC047EA53427206012DED5CF07D231764BA38D8E600617F6902647388ED2E",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\public\\icons\\moon.svg"
+  },
+  {
+    "hash": "D656A7F2E6B42F33EACF60037CED1C2640F629582AA4D764F6E202FEECA521CD",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\public\\icons\\ring.svg"
+  },
+  {
+    "hash": "FBF94FF0A9F72CCAA7F57C6BDC19E0AA5C11301D3027D1BD20A320FFE0BCACA8",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\public\\icons\\sail.svg"
+  },
+  {
+    "hash": "D986FCCFB6F1DD5732BE6F16F2B3D31F7BC940541E9198E9DC4DE7517819BF16",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\public\\icons\\sample-alternate.png"
+  },
+  {
+    "hash": "0C2BD8A9522CC0E79F921FAF1B52093C3DD8A0BC90D827F2C122A535B0D3551B",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\public\\icons\\sample-ring.webp"
+  },
+  {
+    "hash": "9D4287FC8C5421B708D8CD78A44C202BED0123376D6752E783549A72BCC78027",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\public\\icons\\sample-sail.png"
+  },
+  {
+    "hash": "265C7E2991790925BC1DC8D1983B96CCB359D7F6F698C5B73114B91B67402A82",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\public\\icons\\scroll.svg"
+  },
+  {
+    "hash": "85F1C45644A48D033B965C79552ACCE4C3CE67D4DC8BA6D8E8826427DE49FB14",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\public\\icons\\shield.svg"
+  },
+  {
+    "hash": "1AF83BAF72DC44C86F893A2C629F492395C0063B6BC90438EBC82C32609B186E",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\fixture.js"
+  },
+  {
+    "hash": "70D53020328AA34D871516CB1DCA3249191D2913C9385DB1518F7D2C2E988B84",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\icons.js"
+  },
+  {
+    "hash": "378003D654AC22F6FF2C060E892C7FC32DDF66E27CD1B6E6A582EDB16F84F126",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\layout.js"
+  },
+  {
+    "hash": "5FECE77AD2C2F23D7C0C614120ACCEE3F870B3B58302DBD219E47A9525DE408A",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\main.js"
+  },
+  {
+    "hash": "00478EA817E70957F4111085937897D403BAF2AB4AFF3190C52130661E1D73CD",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\model.js"
+  },
+  {
+    "hash": "A5071894FEB72E801647DC6A0D459C2059630C596D3C0D49BD04A5E26842979A",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\projection.js"
+  },
+  {
+    "hash": "34C43BC26E708DD268EC27967ADF02C956E9C1936D8F5D790CECE3CA310EA883",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\style.css"
+  },
+  {
+    "hash": "AE13B1F111B4CC383D403DD8029BCA7CFBB5A2DD534599DAD2880A5652043B82",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\assets\\resolve.js"
+  },
+  {
+    "hash": "0DCDD711EFECA4DA12A9572979987A3D18010F54BDCD9CD5124585EB42DD7A30",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\benchmarks\\fixtures.js"
+  },
+  {
+    "hash": "FEF53F04FD40866E59CD38F6D0A0E6B8158ABD32F70D24ACBFA1DB3154395C28",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\benchmarks\\graphviz-adapter.js"
+  },
+  {
+    "hash": "8732DB29E0A41C7CE90C171D2D628F004D49D8D5548ABF35B4AAB831A282BD61",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\catalog\\reference.js"
+  },
+  {
+    "hash": "979522ACAC30EE59C76ABFFD39BB0FFDC900E74922280B5B177177A533C1F03C",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\model\\actions.js"
+  },
+  {
+    "hash": "41C44448C7DE34C7DB68331BBE4F16BF5828B0C6C86BF0779EDC16FCBFE79153",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\state\\store.js"
+  },
+  {
+    "hash": "F23FAAE20D884713657FA76D0AA66E2FB808167D8094EADCE00CF0B23D791D17",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\storage\\indexeddb.js"
+  },
+  {
+    "hash": "EE6B96BE0B972C36F1A54711B0BC170255A1DFBECC6863B2956998B6B23DEFA2",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\ui\\graph.js"
+  },
+  {
+    "hash": "456785A15BBD9757B0B69B14C4863D83737149FD1F77871A91313608C022A393",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\dist\\src\\ui\\inspector.js"
+  },
+  {
+    "hash": "340552397A5653C1878818AF2CE978ADFBE2585AAEA079C8F075ECCE89B1DD0E",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\index.html"
+  },
+  {
+    "hash": "8CC17CA67536C295CB1082FD29505F06BFE00CD27F1116083CB00231A677AB92",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\DECISIONS.md"
+  },
+  {
+    "hash": "B4B6DB34B790FD86EA9D1D626FE4FCE01E4129E6C81030285710975951BF0320",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\HANDOFF.md"
+  },
+  {
+    "hash": "54BBB14B4772A469288A123C1DDA58723FD4028D1C7D8ED8F00D355D929A3513",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\TEST_REPORT.md"
+  },
+  {
+    "hash": "76D3B68A5A2CA1546EF856AC5EDEF495809778878B66327C85551F36A254FA0D",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\docs\\agents\\CURRENT_PHASE_GATE.md"
+  },
+  {
+    "hash": "42C0D2CE0FD3391709E38C53EFBD8380E2BAE4B8E9DE5D0FBE624F62659BF640",
+    "path": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\docs\\TESTING.md"
+  }
+]

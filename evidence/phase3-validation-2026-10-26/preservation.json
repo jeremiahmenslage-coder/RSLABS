@@ -1,0 +1,50 @@
+[
+  {
+    "path": "src/storage/backup.js",
+    "preserved": true
+  },
+  {
+    "path": "src/ui/backup.js",
+    "preserved": true
+  },
+  {
+    "path": "src/storage/indexeddb.js",
+    "preserved": true
+  },
+  {
+    "path": "src/state/store.js",
+    "preserved": true
+  },
+  {
+    "path": "src/assets/resolve.js",
+    "preserved": true
+  },
+  {
+    "path": "src/layout.js",
+    "preserved": true
+  },
+  {
+    "path": "tests/phase2.test.mjs",
+    "preserved": true
+  },
+  {
+    "path": "tests/browser_phase2.mjs",
+    "preserved": true
+  },
+  {
+    "path": "tests/phase1.test.mjs",
+    "preserved": true
+  },
+  {
+    "path": "tests/graph.test.mjs",
+    "preserved": true
+  },
+  {
+    "path": "tests/indexeddb.test.mjs",
+    "preserved": true
+  },
+  {
+    "path": "tests/assets.test.mjs",
+    "preserved": true
+  }
+]

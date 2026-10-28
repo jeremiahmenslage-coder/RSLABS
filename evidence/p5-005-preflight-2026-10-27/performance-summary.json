@@ -1,0 +1,265 @@
+{
+  "environment": {
+    "node": "v24.22.1",
+    "browser": "155.0.8059.85",
+    "platform": "win32",
+    "viewport": "1600x1120",
+    "origin": "http://127.0.0.1:4173",
+    "storage": "disposable context; real IndexedDB"
+  },
+  "fixtures": {
+    "primary": "14 goals, 15 directed edges, 12 incoming hard prerequisites plus permitted soft/order cycle; synthetic illustrative Song of the Elves equivalent, not verified game requirements",
+    "highDegree": "26 goals, 27 edges, 24 hard predecessors plus same permitted cycle"
+  },
+  "runs": {
+    "before": {
+      "evidence": "evidence/p5-005-before-calibrated-2026-10-27T23-56-42-766Z/measurements.json",
+      "densities": [
+        {
+          "density": "compact",
+          "router": {
+            "count": 3,
+            "median": 314.80000001192093,
+            "p95": 314.80000001192093,
+            "max": 340.0999999642372
+          },
+          "pointerHandler": {
+            "count": 57,
+            "median": 222.19999998807907,
+            "p95": 361.89999997615814,
+            "max": 580.8999999761581
+          },
+          "preview": {
+            "count": 54,
+            "median": 222.30000001192093,
+            "p95": 361.80000001192093,
+            "max": 580.8000000119209
+          },
+          "frame": {
+            "count": 123,
+            "median": 7,
+            "p95": 347.2999999999997,
+            "max": 576.4000000000015
+          },
+          "release": {
+            "count": 3,
+            "median": 220.69999998807907,
+            "p95": 220.69999998807907,
+            "max": 248.30000001192093
+          },
+          "longTasks": {
+            "count": 57,
+            "median": 224,
+            "p95": 363,
+            "max": 582
+          }
+        },
+        {
+          "density": "detailed",
+          "router": {
+            "count": 3,
+            "median": 335.19999998807907,
+            "p95": 335.19999998807907,
+            "max": 344.7000000476837
+          },
+          "pointerHandler": {
+            "count": 57,
+            "median": 266.30000001192093,
+            "p95": 331.2000000476837,
+            "max": 364
+          },
+          "preview": {
+            "count": 54,
+            "median": 267.2000000476837,
+            "p95": 331.2000000476837,
+            "max": 364
+          },
+          "frame": {
+            "count": 127,
+            "median": 7,
+            "p95": 319.5,
+            "max": 361.2000000000007
+          },
+          "release": {
+            "count": 3,
+            "median": 269.5,
+            "p95": 269.5,
+            "max": 281.4000000357628
+          },
+          "longTasks": {
+            "count": 57,
+            "median": 269,
+            "p95": 332,
+            "max": 365
+          }
+        }
+      ]
+    },
+    "after": {
+      "evidence": "evidence/p5-005-after-final-package-2026-10-28T00-26-28-176Z/measurements.json",
+      "densities": [
+        {
+          "density": "compact",
+          "router": {
+            "count": 3,
+            "median": 4.300000011920929,
+            "p95": 4.300000011920929,
+            "max": 5.800000011920929
+          },
+          "pointerHandler": {
+            "count": 57,
+            "median": 0,
+            "p95": 0.10000002384185791,
+            "max": 0.10000002384185791
+          },
+          "preview": {
+            "count": 54,
+            "median": 0.19999998807907104,
+            "p95": 0.3999999761581421,
+            "max": 0.699999988079071
+          },
+          "frame": {
+            "count": 57,
+            "median": 6.900000000000091,
+            "p95": 7,
+            "max": 7.100000000000136
+          },
+          "release": {
+            "count": 3,
+            "median": 8.099999964237213,
+            "p95": 8.099999964237213,
+            "max": 8.800000011920929
+          },
+          "longTasks": {
+            "count": 0,
+            "median": null,
+            "p95": null,
+            "max": null
+          }
+        },
+        {
+          "density": "detailed",
+          "router": {
+            "count": 3,
+            "median": 3.300000011920929,
+            "p95": 3.300000011920929,
+            "max": 3.699999988079071
+          },
+          "pointerHandler": {
+            "count": 57,
+            "median": 0,
+            "p95": 0.10000002384185791,
+            "max": 0.10000002384185791
+          },
+          "preview": {
+            "count": 54,
+            "median": 0.20000004768371582,
+            "p95": 0.3999999761581421,
+            "max": 0.40000003576278687
+          },
+          "frame": {
+            "count": 54,
+            "median": 6.900000000000091,
+            "p95": 7,
+            "max": 27.90000000000009
+          },
+          "release": {
+            "count": 3,
+            "median": 7.800000011920929,
+            "p95": 7.800000011920929,
+            "max": 8.399999976158142
+          },
+          "longTasks": {
+            "count": 0,
+            "median": null,
+            "p95": null,
+            "max": null
+          }
+        }
+      ]
+    },
+    "highDegree": {
+      "evidence": "evidence/p5-005-high-degree-final-package-2026-10-28T00-26-31-055Z/measurements.json",
+      "densities": [
+        {
+          "density": "compact",
+          "router": {
+            "count": 3,
+            "median": 12,
+            "p95": 12,
+            "max": 15.700000047683716
+          },
+          "pointerHandler": {
+            "count": 57,
+            "median": 0,
+            "p95": 0.10000002384185791,
+            "max": 0.10000002384185791
+          },
+          "preview": {
+            "count": 54,
+            "median": 0.30000001192092896,
+            "p95": 0.5,
+            "max": 0.699999988079071
+          },
+          "frame": {
+            "count": 68,
+            "median": 7,
+            "p95": 13.899999999999864,
+            "max": 20.699999999999818
+          },
+          "release": {
+            "count": 3,
+            "median": 20.5,
+            "p95": 20.5,
+            "max": 21.5
+          },
+          "longTasks": {
+            "count": 0,
+            "median": null,
+            "p95": null,
+            "max": null
+          }
+        },
+        {
+          "density": "detailed",
+          "router": {
+            "count": 3,
+            "median": 12.400000035762787,
+            "p95": 12.400000035762787,
+            "max": 12.800000011920929
+          },
+          "pointerHandler": {
+            "count": 57,
+            "median": 0,
+            "p95": 0.10000002384185791,
+            "max": 0.10000002384185791
+          },
+          "preview": {
+            "count": 54,
+            "median": 0.30000001192092896,
+            "p95": 0.40000003576278687,
+            "max": 0.6000000238418579
+          },
+          "frame": {
+            "count": 67,
+            "median": 6.999999999999943,
+            "p95": 7.100000000000023,
+            "max": 34.80000000000007
+          },
+          "release": {
+            "count": 3,
+            "median": 18.5,
+            "p95": 18.5,
+            "max": 20.299999952316284
+          },
+          "longTasks": {
+            "count": 0,
+            "median": null,
+            "p95": null,
+            "max": null
+          }
+        }
+      ]
+    }
+  }
+}

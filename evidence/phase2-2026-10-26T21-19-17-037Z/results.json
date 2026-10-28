@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-26T21:19:50.862Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173/",
+    "storage": "fresh nonpersistent browser context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "fresh context starts empty; create Cancel leaves no orphan",
+      "result": "Pass"
+    },
+    {
+      "name": "import preview requires current export; Cancel and Escape preserve active state",
+      "result": "Pass"
+    },
+    {
+      "name": "explicit replacement confirmation cancellation preserves active state",
+      "result": "Pass"
+    },
+    {
+      "name": "valid import commits full schema; preserves unknown icon with fallback and warning",
+      "result": "Pass"
+    },
+    {
+      "name": "multiple hard predecessors and reused goal update without completion propagation",
+      "result": "Pass"
+    },
+    {
+      "name": "manual status and counters (zero and above target), validation, undo/redo and reload",
+      "result": "Pass"
+    },
+    {
+      "name": "completed override, soft/order advisory and collapsed canonical readiness",
+      "result": "Pass"
+    },
+    {
+      "name": "complete browser download/import/export roundtrip with undo/redo replacement",
+      "result": "Pass"
+    },
+    {
+      "name": "malformed/version/references/cycle/null-record imports rejected without mutation",
+      "result": "Pass"
+    },
+    {
+      "name": "failed import write keeps both active and committed roadmap; retry requires confirmation",
+      "result": "Pass"
+    },
+    {
+      "name": "real IndexedDB aborted transaction preserves previously committed copy",
+      "result": "Pass"
+    },
+    {
+      "name": "Phase 1 notes/icon edits, dirty draft protection, move, zoom, Optimize, density",
+      "result": "Fail",
+      "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#cancel-editor')\u001b[22m\n\u001b[2m    - locator resolved to <button type=\"button\" id=\"cancel-editor\">Cancel</button>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <dialog open=\"\" id=\"cursor-dialog\" aria-labelledby=\"cursor-heading\">…</dialog> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is visible, enabled and stable\u001b[22m\n\u001b[2m      - scrolling into view if needed\u001b[22m\n\u001b[2m      - done scrolling\u001b[22m\n\u001b[2m      - <dialog open=\"\" id=\"cursor-dialog\" aria-labelledby=\"cursor-heading\">…</dialog> intercepts pointer events\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is visible, enabled and stable\u001b[22m\n\u001b[2m       - scrolling into view if needed\u001b[22m\n\u001b[2m       - done scrolling\u001b[22m\n\u001b[2m       - <dialog open=\"\" id=\"cursor-dialog\" aria-labelledby=\"cursor-heading\">…</dialog> intercepts pointer events\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase2.mjs:105:244\n    at async check (C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase2.mjs:14:34)\n    at async file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_phase2.mjs:103:2"
+    }
+  ],
+  "errors": []
+}

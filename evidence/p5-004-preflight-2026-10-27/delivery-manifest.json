@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-27T21:38:49.350Z",
+  "checkout": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor",
+  "branch": "main",
+  "commit": "604d4d6d21fcd0030286acb400087cb14388e8f7",
+  "changed": [
+    {
+      "path": "src/assets/resolve.js",
+      "before": "f7217440cbb4c963dcea91d75a84f77ddc184796381bf44aba08e697b63bb0ee",
+      "after": "60477b3da9c84024af6363a29fbee69e649f171d2f28fac3b4d1ffc481d7b866"
+    },
+    {
+      "path": "src/model/actions.js",
+      "before": "85864625a14895c4abec288508a159591762e5071941009c500767c8fe898a9b",
+      "after": "de008ece366f4a14cb6a4327d415e5537ea951db882b07cd1874355d638c7a1f"
+    },
+    {
+      "path": "src/model.js",
+      "before": "b644b8c1d10fdb3b57d430380f06004cad7feacde71485d07c4c5773fbe2d7cf",
+      "after": "acf235d03003bd6d6c1598b61df46b6e45d3679d0f1cc696c6a4e143cec41840"
+    },
+    {
+      "path": "src/ui/cursor.js",
+      "before": "705d0b88c0151dc9ebfc7859785e7867a9d2d454e2f360828d20fe868c4e9c0f",
+      "after": "08f52a584b4cb19cb8914f0cd66c306544bdc977c652b8eea35018a3c46f7e61"
+    },
+    {
+      "path": "src/ui/inspector.js",
+      "before": "5efd90b57938fb4e01df00b4864865a43a9f0b3f050fed07acb873ecef31f983",
+      "after": "ed13896ee3213c49bab582bb7855d2627dd41b72820b04f202aa7882563fe44f"
+    },
+    {
+      "path": "scripts/import-catalog.mjs",
+      "before": "d739432e90216796f0b1e8ccc95328551012b965a3967392c054ce5af07e96ae",
+      "after": "04d7d977fbc55e76e850251590032ece8db9c06da22a13bc66948ec4f48e4067"
+    },
+    {
+      "path": "scripts/prepare-category-icons.mjs",
+      "before": "8cec3e2ab816c47997712217778957265cbce820ff92230decc00143ff131847",
+      "after": "10cb1703c93392c59fb0a2c2250f991e3f8a7aa9a1ada6746d3478a8e86b0570"
+    },
+    {
+      "path": "public/catalog-notices.html",
+      "before": "f6bd3a7b2773d858a8cc1f28d4abe8aeaf693ca95084e733f099b2acc307d8ff",
+      "after": "733daa63f7bbf882debce4aaec9b7ab59445ebe9a02a5e66ae75cb794cd4cbf6"
+    },
+    {
+      "path": "catalog/README.md",
+      "before": "9552e2b62f8893d0816110734bf189e756297fe8c90ec8ed35c401ff9fe944fc",
+      "after": "66377aff340f413b39560450dd0d856ae41cb36857e8c47e3fd212ac8bdb684b"
+    },
+    {
+      "path": "README.md",
+      "before": "f4b8c51f73404ddc165690e314f9faee26ee110d331439d8874de880295c390e",
+      "after": "8feeb49c6c669be1b65e69a54a82ad333c4953a687099912cdd19bd27f62723b"
+    },
+    {
+      "path": "PRODUCT_SPEC.md",
+      "before": "47ce8bb4396a3c851fd4fe10c28736b089a675fa7297740e71336348a91a44fa",
+      "after": "0fb7d4883a64961ed8f56efcfe928641c2fe553804a1dc033b93cc62da897262"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "before": "11940f39464371f18c4d487541ce0ce706d383aaa223d4aee7363768f9f48979",
+      "after": "db37d3d273eaec025b1b9126fc36fc2a262e6e1c90120c8b494c4f149fcb3a40"
+    },
+    {
+      "path": "HANDOFF.md",
+      "before": "55bbc3dfe7280ff2230567dba971417f977559ba3928fe5bcf40388f046e662f",
+      "after": "40f9093c1e955d73622881851e51abd84cc67e6f68aefca43df109ff1fa9ffcc"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "before": "6c945c4445768b3e1a4395eb114d1d58f6a5ebf81d2631f082e4c975aa5a5166",
+      "after": "f0ec12bb4f79808d9ed0019b60d092f87bd04a6dbdd661f0b2ebbe397cd04b94"
+    },
+    {
+      "path": "DECISIONS.md",
+      "before": "38acd7713031e5aecdc2aaa7c8647edb821351911fef9a19891cd48a0a974d78",
+      "after": "c9806daf600e1ea7d672ef4e6981a7113b367e07b80bb452ccf15a247197f616"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "before": "09a3382462d55fe8956c939b4195780995f32cc1988fe93d5cd6b5840b84482e",
+      "after": "3ed164a0fe5816a899bf56203b0e756f7c0479e0dfd62bafd214d0c95eb8ef75"
+    },
+    {
+      "path": "docs/agents/CURRENT_PHASE_GATE.md",
+      "before": "7306fbb0c83edf84befd33e64c27e5a56293957d2c533b1904c171f4023b1ff5",
+      "after": "6ad62a9ea8b476865f9a64b483f9d66a7ee61054c895af13679ee8fec6bf151d"
+    },
+    {
+      "path": "index.html",
+      "before": "2ab879fe79b37a431c30403c118f9219bfb5ed1172cababa66b4564b654baf86",
+      "after": "152715cf493e2d6f69d460a7fb03f7d26486692ac3db20ad8c2d475b8075e1c1"
+    }
+  ],
+  "added": [
+    {
+      "path": "src/assets/owner-categories.js",
+      "after": "a9d5f46aff0e6706ad41896731a67a120544014d94ded7f821809250231f494c"
+    },
+    {
+      "path": "src/catalog/owner-reference.js",
+      "after": "06a9eb9673ab2170751129f27983ad66b8e4f5e443af8941a77a2e921f17b8c4"
+    },
+    {
+      "path": "src/catalog/reference-pack.js",
+      "after": "7158ae8b25015e6ca643b206a26a4d45b9dc170266654fafda027239985c1a58"
+    },
+    {
+      "path": "src/goal-rules.js",
+      "after": "502eaec299a3b7d65009f27c27d3416a6ed5689a47406c79a7f6d7db865ad1c7"
+    },
+    {
+      "path": "src/ui/goal-picker.js",
+      "after": "ab3ed1e54744b77552fcace28966bde4653217e5739ad088c4be3450bb97d0bb"
+    },
+    {
+      "path": "src/ui/skill-goal.js",
+      "after": "cd14886ea9eefe8e1443d443787640257835954beb86508a0ee8b25d2cab715b"
+    },
+    {
+      "path": "tests/browser_p5_004.mjs",
+      "after": "f0e2cf2f1d78fd3ac5a697d2f35315e2d93e5524eb812ee7190f1feb91985b7a"
+    },
+    {
+      "path": "tests/reference-packs.test.mjs",
+      "after": "09d6223e4b0f4931391f6fe86dfb5ee04a7bf1d37f37b72f011a9734df2f9a6a"
+    },
+    {
+      "path": "scripts/local-icon-pack.mjs",
+      "after": "4e0a66363e2614f52a3fd6bcd36bc7c7ae0f74f7761eaa5a3cb549e9ea07fdc9"
+    },
+    {
+      "path": "public/icon-packs/browser-verification-v1-c119f063432da805/test-png.png",
+      "after": "99c6992a60164513345dd906c7d2488810aa28b280599fd9371b3ff7c734b4ab"
+    },
+    {
+      "path": "public/icon-packs/browser-verification-v1-c119f063432da805/test-webp.webp",
+      "after": "0c2bd8a9522cc0e79f921faf1b52093c3dd8a0bc90d827f2c122a535b0d3551b"
+    },
+    {
+      "path": "public/icon-packs/sample-v1-b9771a64c4e1f80e/neutral-v1.png",
+      "after": "99c6992a60164513345dd906c7d2488810aa28b280599fd9371b3ff7c734b4ab"
+    },
+    {
+      "path": "catalog/icon-packs/README.md",
+      "after": "14ef818227eaab4ce76ee7b3bc00afd2518622cca8ef08792880fb567c543ca1"
+    },
+    {
+      "path": "catalog/icon-packs/sample-v1/icons/neutral.png",
+      "after": "99c6992a60164513345dd906c7d2488810aa28b280599fd9371b3ff7c734b4ab"
+    },
+    {
+      "path": "catalog/icon-packs/sample-v1/manifest.json",
+      "after": "1fe71e9fc84d27d7cd713260dcb1e650036cd97d82fa4a7a6f1d311a90dd26d2"
+    },
+    {
+      "path": "catalog/reference-packs/osrs-v1.json",
+      "after": "58f739050a17356a78f69d199ccdb57b3e2ab114a4635cf404e976a0c7f3ea5c"
+    },
+    {
+      "path": "catalog/reference-packs/README.md",
+      "after": "5e4fe6dd1c3f72ac2a8b269bef7b58e9b2a6d4fe4f2c44fae13886e10f71998b"
+    },
+    {
+      "path": "docs/SKILL_GOAL_CONTRACT.md",
+      "after": "3e15984cc1736eb612d8efbe589786554f4580e600d21087dab8b7907ce8c955"
+    }
+  ],
+  "checks": {
+    "allBaselineFilesPresent": true,
+    "protectedArchiveArtNoticesCatalogSourceUnchanged": true,
+    "distStorageLayoutVendorPackagesUnchanged": true,
+    "historicalHandoffAndTestSuffixUnchanged": true,
+    "indexEmpty": true
+  },
+  "browserEvidence": [
+    "p5-004-2026-10-27T21-35-40-394Z",
+    "p3-005-2026-10-27T21-26-55-050Z",
+    "p3-002-2026-10-27T21-26-55-056Z",
+    "phase3-2026-10-27T21-26-55-078Z"
+  ],
+  "note": "New timestamped evidence/static copies, Node fixture folders and preflight scripts/caches/logs are additional artifacts excluded from source inventory. No original evidence overwritten. Live Owner override module remains empty; fixture mappings activated only in disposable copied builds."
+}

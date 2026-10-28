@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-27T21:26:55.210Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p5-004-2026-10-27T21-26-15-404Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "Owner PNG/WebP pack validates real decoded images and atomic candidate without activating live source",
+      "result": "Pass"
+    },
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "category-first prompt has seven categories without standalone Prayer; cancel has no side effects",
+      "result": "Pass"
+    },
+    {
+      "name": "skill picker has all 24 skills including Prayer, explicit integer bounds, manual completion and independent repeated goals",
+      "result": "Pass"
+    },
+    {
+      "name": "quest/item/boss/activity category searches aliases and no-results/custom escape retain input without mixed results",
+      "result": "Pass"
+    },
+    {
+      "name": "all 48 diary region/tier combinations preview correctly and create stable referenced independent goals",
+      "result": "Pass"
+    },
+    {
+      "name": "category/back switches preserve structured/custom drafts; More details transfers status/skill/position at zoom/pan and Cancel makes no orphan",
+      "result": "Pass"
+    },
+    {
+      "name": "structured quick/detailed/Board editing validates target and preserves hidden fields; legacy Prayer and freeform skills remain exact without conversion",
+      "result": "Pass"
+    },
+    {
+      "name": "dictionary-only updated build affects new selections while saved names/references/statuses remain untouched",
+      "result": "Pass"
+    },
+    {
+      "name": "Owner-local PNG/WebP mappings render on category goals; missing files fall back without mutating roadmap or individual overrides",
+      "result": "Pass"
+    },
+    {
+      "name": "malformed structured imports preserve current and committed data",
+      "result": "Fail",
+      "error": "page.waitForFunction: Timeout 30000ms exceeded.\n    at C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_p5_004.mjs:68:647\n    at async check (C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_p5_004.mjs:21:34)\n    at async file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_p5_004.mjs:68:2"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

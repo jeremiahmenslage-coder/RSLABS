@@ -5,16 +5,63 @@ The human Owner alone accepts phases and authorizes subsequent phases. Decision 
 | Milestone | Current status | Evidence and limits |
 |---|---|---|
 | Phase 0 acceptance / original Phase 1 authorization | Historical reports claim approval; activation evidence remains unverified | docs/PHASE1_AUTHORIZATION.md is inspected and conditional on Owner sending/approval. Handoff/spec/architecture report that it occurred; no independent original message was established by migration. |
-| Phase 1 delivery | Working copy delivered, pending formal acceptance | Direct Owner statements in the migration/audit conversation, 2026-10-26. |
-| Phase 1 acceptance | Pending | Required normal-browser persistence/recovery walkthrough remains unverified. |
-| Phase 2 authorization | NOT AUTHORIZED | Explicit current Owner instruction. |
+| Phase 1 delivery | Working copy delivered; Owner accepted Phase 1 on 2026-10-26 | Delivery evidence remains preserved; acceptance is recorded in ADR-015, DECISIONS.md. |
+| Phase 1 acceptance | ACCEPTED by Owner on 2026-10-26 | Owner reported all required browser acceptance checks passed. Results attributed to Owner testing, not AI Engineer execution or independent verification. See ADR-015. |
+| Phase 2 authorization | AUTHORIZED for P2-001 on 2026-10-26 | Direct Owner ticket and quote recorded in ADR-016, DECISIONS.md; progression rules and safe backups only. |
+| Phase 2 delivery / testing | P2-001 implemented; engineering checks passed | Windows Node 24.22.1: 46/46 Node tests; Chrome 155.0.8059.85: 15/15 real HTTP/IndexedDB scenarios with disposable data. See TEST_REPORT.md and HANDOFF.md for evidence and Not run limits. |
+| Phase 2 acceptance | ACCEPTED by Owner, reported in P3-001 on 2026-10-26 | ADR-017. Phase 2 static build was not verified; preserve that limitation and uncommitted delivery/evidence. |
+| Phase 3 authorization | AUTHORIZED for P3-001 | Owner explicitly said “approve moving forward with phase 3” and “proceed”; bounded graph-organization ticket recorded in ADR-017. |
+| Phase 3 delivery / testing | P3-001 implemented and delivered for review | 59/59 Node checks, 12/12 separate-static-build browser scenarios, 15/15 prior-workflow browser scenarios. Original dist preserved; layout metrics and P2 routing limits in TEST_REPORT.md / HANDOFF.md. |
+| Phase 3 selection follow-up | P3-002 AUTHORIZED | Owner quote and scope in ADR-018. Region selection and explicit bulk actions only; no routing repairs. |
+| Phase 3 follow-up delivery / testing | P3-002 implemented and delivered for review | 67/67 Node, 13/13 bulk browser/static-build, 15/15 prior-workflow browser and 12/12 P3-001 browser checks. Separate new evidence/output; original dist/routing/storage preserved. |
+| Cursor/context follow-up | P3-003 AUTHORIZED | Direct Owner ticket/quote and bounded scope in ADR-019. No routing repair, migration, dependencies or later phases. |
+| Cursor/context delivery / testing | P3-003 implemented and delivered for review | 74/74 Node, 17/17 cursor/static-build, 15/15 detailed workflows, 13/13 bulk, 12/12 P3-001 browser scenarios. Actual mouse modifiers/gestures tested; independent/CEO/Owner review remains pending. |
+| Consolidated canvas usability follow-up | P3-004 implemented and delivered for review | ADR-020. 74/74 Node and 71/71 browser/build groups Pass; separate static builds, original dist preserved. Independent/CEO/Owner review pending. |
+| Editing consistency remediation | P3-005 implemented and delivered for review | ADR-021. 77/77 Node and 80/80 browser/build groups Pass; independent/CEO/Owner review pending. |
+| Phase 3 acceptance | ACCEPTED by Owner on 2026-10-26 | ADR-022. Owner-reported walkthrough passes; P3-005 separate reviewer explicitly waived. P2 routing ambiguity explicitly deferred, not repaired. |
+| Phase 4 authorization | AUTHORIZED for P4-001 | Direct Owner implementation approval recorded in ADR-023; task board and daily-use navigation only. |
+| Phase 4 acceptance | ACCEPTED by Owner | ADR-024. Owner-reported walkthroughs; three issues explicitly deferred. Historical test attribution preserved. |
 | Maintenance authorization | Backup, local Git setup, documentation/instruction cleanup authorized | Exact Owner quote in ADR-014, DECISIONS.md. No file deletion, application code changes, test-tool repairs or new features. |
+| Current work | P5-005 delivered; review pending | ADR-028. Owner-provided private-planner artwork permission; not independently verified; no broader distribution rights. |
 | Repository checkpoint | Local Git on main; original delivery checkpoint 2b232bcc999c1b56496766943be795a01ed10033 | Baseline preservation is not phase acceptance. See checkpoint inventory. |
+| Phase 4 engineering evidence | Historical P4-001 submission preserved | 82/82 Node and 91/91 browser/build groups; engineering attribution unchanged by Owner acceptance. |
+| Phase 5 authorization | AUTHORIZED within P5-001 | ADR-024, direct Owner ticket and “Proceed.” |
+| Phase 5 acceptance | Pending independent reviewer, CEO review and Owner acceptance | Content gaps and Owner draft-prompt verification item disclosed in current handoff. |
+| Phase 6 authorization | NOT AUTHORIZED | Separate Owner authorization required. |
 
 ## Next development gate
 
-Use the existing delivered app for a Phase 1 review only. Follow [PHASE_1_REVIEW.md](PHASE_1_REVIEW.md) and the README walkthrough with isolated test data. Report actual Pass / Fail / Not run results. Any application remediation needs a scoped Owner-authorized ticket. Accepting Phase 1 still requires separate express authorization before Phase 2.
+Phases 1–4 are Owner-accepted. P5-005 targeted remediation implemented under ADR-028, with 107 Node and 65 browser/build groups passed plus before/after measurements. Stop for independent reviewer, CEO review and Owner Phase 5 acceptance. No Phase 6 or broad dictionary expansion authorized.
 
 ## Record maintenance
 
 Update this summary from explicit Owner decisions and verified evidence. Preserve original historical documents and distinguish requirements, reported history, observed code, executed tests and Owner acceptance. No push, release, deployment or browser-data reset is implied.
+
+
+## P5-002 delivery checkpoint — 2026-10-27
+
+Replacement P5-002 implemented and tested (93 Node, 47 browser/build groups passed). Current handoff/test report supersedes historical P5-001 graph-shortcut/no-authentic-art behavior only within this ticket. Owner-provided Jagex permission is private-local, not independently verified and not broader distribution rights. Phase 5 remains unaccepted pending independent reviewer, CEO review and Owner acceptance. Phase 6 remains NOT AUTHORIZED.
+
+
+## P5-003 current delivery checkpoint — 2026-10-27
+
+ADR-026 manual creation/category-only mode implemented. Archived catalog/individual references/artwork inactive and preserved. Five genuine symbols; Inventory/Diary gaps use disclosed original fallback. 97/97 Node and 46/46 browser/build groups Pass; source/data/Not run limitations in current handoff. Phase 5 acceptance pending independent reviewer, CEO review and Owner decision. Phase 6 and dictionary NOT AUTHORIZED. No staging/commit/branch/push/deployment.
+
+
+## P5-004 authorized work — 2026-10-27
+
+Owner “Approved” authorizes prepared P5-004 and engineering compatibility plan, recorded ADR-027. Category-first picker/reference packs/Owner-local icon tooling; optional additive schema-1 skillGoal, no automatic legacy conversion or storage migration. Phase 5 acceptance pending; Phase 6 unauthorized.
+
+
+## P5-004 engineering checkpoint — 2026-10-27
+
+ADR-027 implemented and validated: 102 Node + 50 browser/build groups Pass. Additive optional schema-1 skillGoal, no eager migration; legacy Prayer/freeform data preserved. 178 reference entries, complete bounded 24 skills/48 diaries, other categories partial. Owner-local PNG/WebP tooling/sample available; genuine Inventory/Diary files not supplied, gaps remain. Phase 5 pending independent reviewer/CEO/Owner acceptance; Phase 6/in-app dictionary authoring NOT AUTHORIZED.
+
+## P5-005 authorized remediation
+
+Direct Owner ticket authorizes measured dragging, selected-set moves, arrowhead-free directed connections, immediate undoable deletion and contradictory Skill-title rejection (ADR-028). No Phase 6 authorization; stop for independent reviewer/CEO/Owner review.
+
+
+## P5-005 delivery checkpoint — 2026-10-27 local
+
+Measured movement/connections/deletion/title consistency delivered: 107/107 Node and 65/65 browser/build groups Pass. Before/after and remaining crossing/release limits in PERFORMANCE.md and current handoff. No schema/storage migration or dependency. Phase 5 acceptance pending; independent reviewer/CEO/Owner decisions required. Phase 6 unauthorized; broad dictionary expansion deferred.

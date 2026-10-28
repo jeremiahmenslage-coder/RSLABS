@@ -1,0 +1,48 @@
+# P5-002 pinned artwork assessment and coverage
+
+Owner reports Jagex permission for third-party icon sourcing and bundling in **this private local planner**. This is **Owner-provided permission**, not independently verified. It grants no independently established broader distribution rights. Repository notices and underlying Jagex/Wiki rights remain applicable. Nothing here licenses the whole planner under a new license or authorizes publication/deployment.
+
+## Assessed and adopted sources
+
+| Source | Pinned revision | Assessment/use |
+|---|---|---|
+| [osrsbox/osrsbox-db](https://github.com/osrsbox/osrsbox-db) | `dae12e3400add0c71465f07a334f9d8f86bebce8` | Revision metadata dates to 2021-09-30; currency is not assumed. Selected item and prayer PNG data was matched by explicit stable IDs/exact names. 29 item icons and 29 prayer icons adopted. Duplicate/LMS/animation/ornament/degraded variants were not selected automatically. Chosen charged/active/undamaged representations are recorded per match. |
+| [Dava96/osrs-icons](https://github.com/Dava96/osrs-icons) | `16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6` | Revision metadata dates to 2026-09-22. Selected PNG exports were decoded as data only; no upstream TypeScript/package code executed or installed. Supplies skills, a missing item (Osmumten's fang), activity logos and generic category markers. Beta/LMS/ornament/version-suffixed alternatives were explicitly excluded where a normal named export was chosen. |
+
+Original notices copied verbatim to `public/notices/artwork/`: both LICENSE and README files. osrsbox's GPL-3.0 source notice has explicit Jagex-art and Wiki-content exceptions; selected game-art bytes are not represented as GPL-owned project code. Dava96 declares CC BY-NC-SA 3.0 and credits Jagex/Wiki contributors. Preserve the attribution, noncommercial/share-alike notice and [license URI](https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode). Extracted PNG bytes are unchanged; base64/CSS containers were removed, with no resizing/recoloring. No upstream software dependency was adopted.
+
+The source notices do not independently verify the Owner's Jagex permission. The private scope and absence of broader distribution authorization remain explicit. Original fallback symbols and legacy test-asset notices are unchanged.
+
+## Actual coverage
+
+94 unique PNGs, **60,053 bytes**, cover 207 catalog records as follows:
+
+| Category | Records | Identity-specific authentic icon | Generic authentic category marker | Original fallback used by default |
+|---|---:|---:|---:|---:|
+| Skills | 24 | 24 | 0 | 0 |
+| Items | 30 | 30 | 0 | 0 |
+| Prayers | 29 | 29 | 0 | 0 |
+| Activities | 20 | 7 | 13 | 0 |
+| Quests | 32 | 0 | 32 | 0 |
+| Bosses | 24 | 0 | 24 | 0 |
+| Diary tiers | 48 | 0 | 48 | 0 |
+| **Total** | **207** | **90** | **117** | **0** |
+
+Generic markers are intentionally disclosed: quest-start marker for quests; combat-achievements marker for bosses; achievement-diary cape for diary categories; minigame marker for activities without a selected named logo. They do **not** depict individual quests/boss portraits/diary regions or tiers. These 117 identity-specific-art gaps are not claimed as exact visual matches. Catalog completeness/newest-content and a live audit of all reference links remain separate gaps.
+
+Reviewed mappings live in `artwork-selection.json`; every catalog ID has an explicit source ID/export, match scope and basis. `artwork-manifest.json` records full revisions, source paths/URLs, provenance, permissions, PNG dimensions/SHA-256 and per-category counts. All 94 images decode in the real-browser test and were inspected in a contact sheet. No fuzzy runtime matching occurs. Missing/unknown assets retain the original fallback; existing manual overrides (including original symbols and legacy references) win over new defaults.
+
+## Repeatable preparation/update
+
+No package installation is needed. `scripts/prepare-artwork.mjs` uses Node built-ins, validates pinned input hashes and PNG signatures/dimensions, extracts data without executing upstream code, and writes only selected PNGs, generated lookup/manifest and notices. It never accesses a player's roadmap or browser storage.
+
+```powershell
+node scripts/prepare-artwork.mjs --check
+# Use --cache <directory> for a different cache. On a fresh machine:
+node scripts/prepare-artwork.mjs --cache evidence/my-new-art-cache --fetch
+node scripts/prepare-artwork.mjs --cache evidence/my-new-art-cache --check
+```
+
+Default cache is the preserved P5-002 assessment directory. `--fetch` only retrieves the eight whitelisted raw files at the pinned revisions; network permission may be required. Actual assessment downloads were performed, and cached generation/check ran successfully. A fresh-cache invocation of the final tool's `--fetch` branch was not separately rerun. Public app runtime is entirely local; no CDN/API requests.
+
+For an update: assess new source notices/revisions, review exact mappings and variants, intentionally update `inputHashes` and pins, prepare in a separate review checkout/output before replacing existing assets. The tool refuses a differing existing PNG instead of silently overwriting it. Verify generated metadata/notices/hashes and run tests. Keep stable catalog IDs. The generated default-art lookup does not rewrite goal titles, IDs, statuses, hidden counters, positions, groups, connections or overrides. Existing asset files remain available for saved explicit overrides; do not remove them without a separate compatibility decision. Distribution beyond the private planner needs a separate rights decision.

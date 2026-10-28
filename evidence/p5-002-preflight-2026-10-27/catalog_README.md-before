@@ -1,0 +1,25 @@
+# Bundled reference catalog
+
+This offline compilation contains **207** factual name/category/reference-link records: 24 skills, 32 quests, 30 items, 24 bosses, 29 prayers, 48 diary tiers (12 regions × 4), and 20 activities. Seven existing `demo:` references remain preserved separately and are excluded from catalog search. No catalog record creates prerequisites, statuses or goal instances automatically.
+
+`reference-source.json` is the reviewed input. `node scripts/import-catalog.mjs` regenerates `src/catalog/generated.js` deterministically. `node scripts/import-catalog.mjs catalog/reference-source.json --check` checks reproducibility. For a reviewable candidate, use `node scripts/import-catalog.mjs catalog/reference-source.json evidence/<existing-new-work-directory>/candidate.js`. The importer does no network access and never opens browser storage or a roadmap. It validates format, IDs, duplicate IDs, categories and source URLs before writing output. Review source terms and names before updating the input; preserve existing stable catalog IDs. Catalog replacement never synchronizes fields into user goals.
+
+## Provenance and permissions review — 2026-10-26
+
+Each input record links the OSRS Wiki page for its factual name (diary tiers link the region page). Curation was manual and limited to names, category labels and URLs. No descriptions, requirements, prices, statistics, quest text, screenshots, sprites, logos or copied Wiki tables are bundled. The source pages are references, not a claimed license to their artwork or prose. Search/index checks were available; some direct Wiki page fetches were robots-denied. **An individual live audit of all 207 links was not run.** Names/current completeness are a reference snapshot; recheck against the game/Wiki when extending it. No automated scraping or bypass was used.
+
+Reviewed primary sources:
+
+- [Jagex Fan Content Policy](https://legal.jagex.com/docs/policies/fan-content-policy), version 1.4 dated 29 September 2026. Section 6.1.3 restricts Jagex-property use in companion applications. This package does **not** claim that personal use permits redistribution of authentic game art.
+- [OSRS Wiki Images and media policy](https://oldschool.runescape.wiki/w/RuneScape:Images_and_media_policy): individual images can remain subject to Jagex copyright/fair-use conditions. No Wiki or game images are ingested.
+- [Wiki copyright page](https://oldschool.runescape.wiki/w/RuneScape:Copyrights): direct retrieval was unavailable; no unverified Wiki prose/image license is asserted or relied on.
+- Factual reference indexes: [quests](https://oldschool.runescape.wiki/w/Quests/List), [skills](https://oldschool.runescape.wiki/w/Skills), [prayers](https://oldschool.runescape.wiki/w/Prayer), [bosses](https://oldschool.runescape.wiki/w/Boss), [diaries](https://oldschool.runescape.wiki/w/Achievement_Diary), [activities](https://oldschool.runescape.wiki/w/Minigames), [equipment](https://oldschool.runescape.wiki/w/Barrows_equipment). Individual record URLs are the more specific attribution.
+
+Attribution: OSRS Wiki contributors for linked references; Old School RuneScape/game names belong to Jagex. This is an independent planner, not endorsed by Jagex or the Wiki. The reference compilation and all seven new geometric category symbols were authored for this project; no third-party expressive assets were imported. Their format/code is original project work. Their packaging permission is the Owner's explicit P5-001 authorization to create and locally bundle original assets. No broader public-domain dedication, third-party asset license or change to the application's overall license is applied; external redistribution licensing remains the Owner's decision. Existing vendor/test-asset notices remain intact.
+
+## Actual gaps / packaging limits
+
+- Authentic item/skill/boss/prayer sprites: **0**. Seven original category SVGs serve as defaults/overrides; missing or unknown references fall back reliably. Authentic imagery remains an explicit gap pending Owner review and suitable packaging permission.
+- Items, bosses, activities and quests are a curated subset. No claim of full OSRS coverage, newest content, all item variants, subquests, unlock metadata, requirements or drop tables. Diary tiers are represented, not their individual tasks. Skill/prayer lists are a named snapshot, not future-completeness guarantees. Custom/manual creation remains available for every gap.
+- No game-derived artwork, copied UI/font/logo or licensed Wiki descriptions are bundled. Styling uses original geometry, standard system fonts and a parchment/brass palette. Do not replace these with unlicensed sprites during catalog updates.
+- Stable goal IDs, player titles/notes, manual statuses, stored progress, positions, group membership and overrides are roadmap data, separate from catalog metadata. Existing references whose catalog record disappears remain intact and use fallback. Two goals from one reference are independent.

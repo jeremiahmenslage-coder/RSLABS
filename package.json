@@ -1,9 +1,9 @@
 {
   "name": "osrs-ironman-planner",
   "private": true,
-  "version": "0.1.0-phase1",
+  "version": "0.3.0-phase3",
   "type": "module",
-  "description": "Local-first static roadmap editor, Phase 1 only",
+  "description": "Local-first roadmap editor with graph organization, manual progression and safe backups",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",

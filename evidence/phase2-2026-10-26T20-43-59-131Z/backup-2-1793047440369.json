@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "roadmap_a5d68e09-a661-4b67-86b6-d17d6ffc3e42",
+    "title": "My Ironman Roadmap",
+    "nodes": [
+      {
+        "id": "node_4ffb3a71-f868-45ff-9442-c1645803d0a5",
+        "title": "Original saved goal",
+        "category": "custom",
+        "notes": "",
+        "iconOverride": null,
+        "status": "not_started",
+        "progress": null,
+        "catalogRef": null,
+        "position": {
+          "x": 45,
+          "y": 95
+        },
+        "groupId": null,
+        "createdAt": "2026-10-26T20:43:59.985Z",
+        "updatedAt": "2026-10-26T20:43:59.985Z"
+      }
+    ],
+    "edges": [],
+    "groups": []
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 35,
+      "y": 35,
+      "zoom": 1
+    }
+  }
+}

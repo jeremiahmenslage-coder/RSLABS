@@ -1,0 +1,54 @@
+[
+  {
+    "name": "seven",
+    "density": "compact",
+    "ms": 197.87470000000002,
+    "visibleCards": 7,
+    "width": 2253,
+    "height": 371,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": []
+  },
+  {
+    "name": "seven",
+    "density": "detailed",
+    "ms": 29.000500000000017,
+    "visibleCards": 7,
+    "width": 2553,
+    "height": 508,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": []
+  },
+  {
+    "name": "raid",
+    "density": "compact",
+    "ms": 58.669399999999996,
+    "visibleCards": 16,
+    "width": 5459,
+    "height": 495,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": []
+  },
+  {
+    "name": "raid",
+    "density": "detailed",
+    "ms": 51.33660000000003,
+    "visibleCards": 16,
+    "width": 6119,
+    "height": 700,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": []
+  }
+]

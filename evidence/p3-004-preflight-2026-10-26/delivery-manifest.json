@@ -1,0 +1,325 @@
+{
+  "date": "2026-10-26T21:30:10.450Z",
+  "checkout": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor",
+  "branch": "main",
+  "commit": "604d4d6d21fcd0030286acb400087cb14388e8f7",
+  "git": "unstaged/uncommitted; index empty; no branch/commit/push/deployment",
+  "authority": "ADR-020 / Owner P3-004 superseding ticket",
+  "files": [
+    {
+      "file": "src/main.js",
+      "sha256": "954943ccb1ab453cb0e418d91880e1997cf44a4e0211eb6d17c71f9797dfc5c0"
+    },
+    {
+      "file": "src/style.css",
+      "sha256": "9e67d8de2c60bfbc60c96007aa0b5e91dac77d6938bd780f304f412ad2e0a0a1"
+    },
+    {
+      "file": "src/ui/bulk.js",
+      "sha256": "12014a1cb7692e3d9f7e0f76722fff610ba3dd6786a3c2a54ac1a5e4ce4b338f"
+    },
+    {
+      "file": "src/ui/cursor.js",
+      "sha256": "746fc70f27c899f8ce2f0010bfcb06e2252505734c99a6bb16d4fb7801f3d0c5"
+    },
+    {
+      "file": "src/ui/graph.js",
+      "sha256": "205f7c3f412efd50ca7efd54b233bc66a16a4f65f40319c5a8d94c03f293b01c"
+    },
+    {
+      "file": "src/ui/inspector.js",
+      "sha256": "b7a1202c28ee177a23a1a5825f271fe000ecb54db67811e6280acdf18b5dd0bf"
+    },
+    {
+      "file": "src/ui/organization.js",
+      "sha256": "e5c6370fad84c446e91584b5edaf42f005ffb3dfce313a729324e442c70c9e33"
+    },
+    {
+      "file": "tests/browser_bulk.mjs",
+      "sha256": "f9ecc5711dfc7ecbd0f54819f65434da97e47d9c692e32184c5e075a76462f9a"
+    },
+    {
+      "file": "tests/browser_cursor.mjs",
+      "sha256": "716159ec4ca535cbf4a730e93720f91d56708cacdd5eed678855385e5a90ef03"
+    },
+    {
+      "file": "tests/browser_phase2.mjs",
+      "sha256": "df7aa188727565d256dc49d52cd129a1d0df8641191244fbe847957838fef9bb"
+    },
+    {
+      "file": "tests/browser_phase3.mjs",
+      "sha256": "be631f96bbb08c6bebaee986f5eb30e1a027e87d3757a9eb01f463faa297855c"
+    },
+    {
+      "file": "index.html",
+      "sha256": "340552397a5653c1878818af2ce978adfbe2585aaea079c8f075ecce89b1dd0e"
+    },
+    {
+      "file": "src/ui/workspace.js",
+      "sha256": "f12b48a77f7f265b26fc47f4b7bd53a008024620982439c8713065f553a835df"
+    },
+    {
+      "file": "src/ui/labels.js",
+      "sha256": "ebb7324018e76378ce090f202772bd79fcecc6242838cf4064285c5c92727279"
+    },
+    {
+      "file": "tests/browser_workspace.mjs",
+      "sha256": "fe898d91d0b9246b2d8e86a306c29f97117d496928171d16781517065e3320ca"
+    },
+    {
+      "file": "DECISIONS.md",
+      "sha256": "8cc17ca67536c295cb1082fd29505f06bfe00cd27f1116083cb00231a677ab92"
+    },
+    {
+      "file": "docs/agents/CURRENT_PHASE_GATE.md",
+      "sha256": "76d3b68a5a2ca1546ef856ac5edef495809778878b66327c85551f36a254fa0d"
+    },
+    {
+      "file": "HANDOFF.md",
+      "sha256": "b4b6db34b790fd86ea9d1d626fe4fce01e4129e6c81030285710975951bf0320"
+    },
+    {
+      "file": "TEST_REPORT.md",
+      "sha256": "54bbb14b4772a469288a123c1dda58723fd4028d1c7d8ed8f00d355d929a3513"
+    },
+    {
+      "file": "README.md",
+      "sha256": "cc1f8b3721e743f29ad251300bf7921cf62b6a3db74e1cac0af4f258bee928d3"
+    },
+    {
+      "file": "PRODUCT_SPEC.md",
+      "sha256": "063b733a54331327ed9757e164eb0f0560ffe9b85099aaad89dac40686e33fe0"
+    },
+    {
+      "file": "ARCHITECTURE.md",
+      "sha256": "1a21f8e0bbe3a470e896eb4f5300252e1287bf7f8541ae314acaaa5c21165a72"
+    },
+    {
+      "file": "docs/TESTING.md",
+      "sha256": "42c0d2ce0fd3391709e38c53efbd8380e2bae4b8e9de5d0fbe624f62659bf640"
+    }
+  ],
+  "unchangedStartingFileCount": 73,
+  "protectedFilesVerified": 45,
+  "historicalHandoffAndReportSuffixes": "preserved exactly after newline normalization",
+  "primaryStatic": "evidence/p3-004-2026-10-26T21-29-23-732Z/static",
+  "sourceAndIndexMatchPrimaryStatic": true,
+  "suites": [
+    {
+      "directory": "evidence/p3-004-2026-10-26T21-29-23-732Z",
+      "passed": 14,
+      "environment": {
+        "node": "v24.22.1",
+        "platform": "win32",
+        "browser": "155.0.8059.85",
+        "origin": "http://127.0.0.1:4173",
+        "url": "http://127.0.0.1:4173/evidence/p3-004-2026-10-26T21-29-23-732Z/static/",
+        "storage": "fresh disposable context; real IndexedDB"
+      }
+    },
+    {
+      "directory": "evidence/p3-003-2026-10-26T21-29-23-216Z",
+      "passed": 17,
+      "environment": {
+        "node": "v24.22.1",
+        "platform": "win32",
+        "browser": "155.0.8059.85",
+        "origin": "http://127.0.0.1:4173",
+        "url": "http://127.0.0.1:4173/evidence/p3-003-2026-10-26T21-29-23-216Z/static/",
+        "storage": "fresh disposable context; real IndexedDB"
+      }
+    },
+    {
+      "directory": "evidence/p3-002-2026-10-26T21-29-22-772Z",
+      "passed": 13,
+      "environment": {
+        "node": "v24.22.1",
+        "platform": "win32",
+        "browser": "155.0.8059.85",
+        "origin": "http://127.0.0.1:4173",
+        "url": "http://127.0.0.1:4173/evidence/p3-002-2026-10-26T21-29-22-772Z/static/",
+        "storage": "fresh disposable browser context; real IndexedDB"
+      }
+    },
+    {
+      "directory": "evidence/phase3-2026-10-26T21-29-22-296Z",
+      "passed": 12,
+      "environment": {
+        "node": "v24.22.1",
+        "platform": "win32",
+        "browser": "155.0.8059.85",
+        "origin": "http://127.0.0.1:4173",
+        "url": "http://127.0.0.1:4173/evidence/phase3-2026-10-26T21-29-22-296Z/static/",
+        "storage": "disposable nonpersistent context; real IndexedDB"
+      }
+    },
+    {
+      "directory": "evidence/phase2-2026-10-26T21-29-21-880Z",
+      "passed": 15,
+      "environment": {
+        "node": "v24.22.1",
+        "platform": "win32",
+        "browser": "155.0.8059.85",
+        "origin": "http://127.0.0.1:4173/",
+        "storage": "fresh nonpersistent browser context; real IndexedDB"
+      }
+    }
+  ],
+  "node": "74/74 Pass",
+  "browserTotal": 71,
+  "layout": [
+    {
+      "name": "seven",
+      "density": "compact",
+      "stage": "optimized ELK routes",
+      "cards": 7,
+      "width": 1715,
+      "height": 412,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 2,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "seven",
+      "density": "compact",
+      "stage": "reloaded routing at saved positions",
+      "cards": 7,
+      "width": 1715,
+      "height": 412,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 2,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "seven",
+      "density": "detailed",
+      "stage": "optimized ELK routes",
+      "cards": 7,
+      "width": 2015,
+      "height": 508,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 2,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "seven",
+      "density": "detailed",
+      "stage": "reloaded routing at saved positions",
+      "cards": 7,
+      "width": 2015,
+      "height": 508,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 2,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "raid",
+      "density": "compact",
+      "stage": "optimized ELK routes",
+      "cards": 16,
+      "width": 4029,
+      "height": 556,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 10,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "raid",
+      "density": "compact",
+      "stage": "reloaded routing at saved positions",
+      "cards": 16,
+      "width": 4029,
+      "height": 556,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 2,
+      "sharedSegments": 10,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "raid",
+      "density": "detailed",
+      "stage": "optimized ELK routes",
+      "cards": 16,
+      "width": 4689,
+      "height": 700,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 10,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "raid",
+      "density": "detailed",
+      "stage": "reloaded routing at saved positions",
+      "cards": 16,
+      "width": 4689,
+      "height": 700,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 2,
+      "sharedSegments": 10,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "collapsed ToA",
+      "density": "detailed",
+      "stage": "optimized summaries",
+      "cards": 14,
+      "width": 2509,
+      "height": 696,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 4,
+      "labelEdgeIntersections": 0
+    }
+  ],
+  "dependencies": "none added; existing local ELK 0.12.0 preserved",
+  "data": "schema/storage IDs/origin unchanged; no migration; disposable browser contexts only",
+  "defects": [
+    {
+      "severity": "P2",
+      "status": "open prior defect",
+      "description": "Existing routing crossings/shared-trunk ambiguity; not repaired"
+    }
+  ],
+  "notRun": [
+    "Independent reviewer / CEO review / Owner acceptance",
+    "headed manual accessibility/assistive technology audit",
+    "other browsers",
+    "natural quota exhaustion",
+    "concurrent tabs",
+    "mobile",
+    "production-scale performance"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "format": 1,
+  "pack": "owner:icons:browser-verification-v1",
+  "version": "1.0.0",
+  "permissionAttribution": "Owner-supplied records; not independently verified; no broader distribution rights implied",
+  "assets": [
+    {
+      "provenance": "Original disposable test artwork; not an authentic Inventory/Diary symbol",
+      "attribution": "Project-original test fixture",
+      "permission": "Original test fixture; private test use",
+      "id": "owner:icon:test-png",
+      "file": "neutral.png",
+      "mediaType": "image/png",
+      "width": 32,
+      "height": 32,
+      "bytes": 195,
+      "sha256": "99c6992a60164513345dd906c7d2488810aa28b280599fd9371b3ff7c734b4ab"
+    },
+    {
+      "provenance": "Original disposable test artwork; not an authentic Inventory/Diary symbol",
+      "attribution": "Project-original test fixture",
+      "permission": "Original test fixture; private test use",
+      "id": "owner:icon:test-webp",
+      "file": "ring.webp",
+      "mediaType": "image/webp",
+      "bytes": 306,
+      "sha256": "0c2bd8a9522cc0e79f921faf1b52093c3dd8a0bc90d827f2c122a535b0d3551b",
+      "width": 64,
+      "height": 64
+    }
+  ],
+  "coverage": {
+    "skill": "pinned category symbol",
+    "quest": "pinned category symbol",
+    "item": "Owner local pack",
+    "boss": "pinned category symbol",
+    "diary": "Owner local pack",
+    "activity": "pinned category symbol",
+    "custom": "neutral original"
+  }
+}

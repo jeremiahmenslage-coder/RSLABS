@@ -1,0 +1,340 @@
+[
+  {
+    "name": "seven",
+    "stage": "optimized ELK routes",
+    "density": "compact",
+    "visibleCards": 7,
+    "width": 1715,
+    "height": 412,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "name": "seven",
+    "stage": "reloaded routing at saved positions",
+    "density": "compact",
+    "visibleCards": 7,
+    "width": 1715,
+    "height": 412,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "name": "seven",
+    "stage": "optimized ELK routes",
+    "density": "detailed",
+    "visibleCards": 7,
+    "width": 2015,
+    "height": 508,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "name": "seven",
+    "stage": "reloaded routing at saved positions",
+    "density": "detailed",
+    "visibleCards": 7,
+    "width": 2015,
+    "height": 508,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "name": "raid",
+    "stage": "optimized ELK routes",
+    "density": "compact",
+    "visibleCards": 16,
+    "width": 4029,
+    "height": 556,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ],
+      [
+        "raid0",
+        "raid9"
+      ],
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid2",
+        "raid5"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid3",
+        "raid8"
+      ],
+      [
+        "raid4",
+        "raid5"
+      ],
+      [
+        "raid7",
+        "raid8"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "name": "raid",
+    "stage": "reloaded routing at saved positions",
+    "density": "compact",
+    "visibleCards": 16,
+    "width": 4029,
+    "height": 556,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [
+      [
+        "raid7",
+        "raid9"
+      ],
+      [
+        "raid8",
+        "raid9"
+      ]
+    ],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ],
+      [
+        "raid0",
+        "raid9"
+      ],
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid2",
+        "raid5"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid3",
+        "raid8"
+      ],
+      [
+        "raid4",
+        "raid5"
+      ],
+      [
+        "raid7",
+        "raid8"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "name": "raid",
+    "stage": "optimized ELK routes",
+    "density": "detailed",
+    "visibleCards": 16,
+    "width": 4689,
+    "height": 700,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ],
+      [
+        "raid0",
+        "raid9"
+      ],
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid2",
+        "raid5"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid3",
+        "raid8"
+      ],
+      [
+        "raid4",
+        "raid5"
+      ],
+      [
+        "raid7",
+        "raid8"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  },
+  {
+    "name": "raid",
+    "stage": "reloaded routing at saved positions",
+    "density": "detailed",
+    "visibleCards": 16,
+    "width": 4689,
+    "height": 700,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [
+      [
+        "raid7",
+        "raid9"
+      ],
+      [
+        "raid8",
+        "raid9"
+      ]
+    ],
+    "sharedSegments": [
+      [
+        "e3",
+        "e4"
+      ],
+      [
+        "e5",
+        "e6"
+      ],
+      [
+        "raid0",
+        "raid9"
+      ],
+      [
+        "raid1",
+        "raid7"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid2",
+        "raid5"
+      ],
+      [
+        "raid2",
+        "raid4"
+      ],
+      [
+        "raid3",
+        "raid8"
+      ],
+      [
+        "raid4",
+        "raid5"
+      ],
+      [
+        "raid7",
+        "raid8"
+      ]
+    ],
+    "labelEdgeIntersections": []
+  }
+]

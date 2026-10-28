@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-26T21:22:52.935Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p3-003-2026-10-26T21-22-42-238Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "cursor create/cancel is bounded near pointer, makes no orphan and returns focus",
+      "result": "Pass"
+    },
+    {
+      "name": "creation draft More details retains title/category/position at zoom and pan; inspector cancel makes no orphan",
+      "result": "Pass"
+    },
+    {
+      "name": "Enter creates one goal through quick form, with correct coordinates and undo/redo",
+      "result": "Pass"
+    },
+    {
+      "name": "actual mouse Shift-click pair and port drag use the same quick connection editor, with draft transfer",
+      "result": "Pass"
+    },
+    {
+      "name": "quick connection duplicate, self and hard-cycle validation preserves original state",
+      "result": "Pass"
+    },
+    {
+      "name": "opening/canceling goal menu preserves dirty inspector; declined discard prevents quick status",
+      "result": "Pass"
+    },
+    {
+      "name": "quick rename/counters and More details preserve draft fields and never infer completion",
+      "result": "Pass"
+    },
+    {
+      "name": "right-click selection shows reviewed count; outside goal actions are singleton and never bulk",
+      "result": "Pass"
+    },
+    {
+      "name": "connection menu type/reverse/delete/details are validated and undoable; deletion cancel preserves state",
+      "result": "Pass"
+    },
+    {
+      "name": "context reverse duplicate/hard-cycle conflicts leave original connection unchanged",
+      "result": "Pass"
+    },
+    {
+      "name": "group context rename/draft/collapse/expand/details preserve independent state and positions",
+      "result": "Pass"
+    },
+    {
+      "name": "goal Focus directions and empty canvas Fit/Reset/Create here keep intended coordinates",
+      "result": "Pass"
+    },
+    {
+      "name": "keyboard menus/arrows/details, Escape focus return and resize placement work",
+      "result": "Pass"
+    },
+    {
+      "name": "quick edits survive reload/JSON and failed-save last-good recovery/Retry",
+      "result": "Pass"
+    },
+    {
+      "name": "menus do not interfere with actual pan/region/node/port gestures or mouse Shift-click pairing",
+      "result": "Pass"
+    },
+    {
+      "name": "no browser exceptions/external requests and original dist unchanged",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

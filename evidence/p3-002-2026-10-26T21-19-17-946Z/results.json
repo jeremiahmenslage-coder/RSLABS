@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26T21:19:21.141Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p3-002-2026-10-26T21-19-17-946Z/static/",
+    "storage": "fresh disposable browser context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "separate static build succeeds without replacing preserved dist",
+      "result": "Pass"
+    },
+    {
+      "name": "Shift-region draws rectangle and selects full visible cards; ordinary pan is unchanged",
+      "result": "Pass"
+    },
+    {
+      "name": "containment at zoom/pan, reverse drag, partial exclusion and compact size",
+      "result": "Fail",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    'a',\n+   'b'\n  ]\n\n    at file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_bulk.mjs:59:131\n    at async check (file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_bulk.mjs:17:34)\n    at async file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_bulk.mjs:57:2"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

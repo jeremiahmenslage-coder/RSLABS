@@ -1,0 +1,151 @@
+
+> osrs-ironman-planner@0.3.0-phase3 test
+> node --test tests/*.test.mjs
+
+✔ local PNG/WebP are decodable-format files and manifest maps to local relative paths (3.2951ms)
+✔ catalog default icon is separate from goal status and icon override (0.6506ms)
+✔ demo icon override preserves IDs, typed edges, manual positions and asset fallback (0.494ms)
+✔ board columns retain canonical IDs, completed goals and independent manual status/counters (5.8487ms)
+✔ combined filters intersect without mutating roadmap or hiding canonical hard blockers (1.6601ms)
+✔ old schema1 defaults, empty/no-results and missing/ungrouped filters are safe pure projections (0.4907ms)
+✔ optional board preferences validate, preserve unknown icon refs and roundtrip without conversion (2.2535ms)
+✔ shared actions/history and view/filter preferences never alter graph geometry or relationships (1.4405ms)
+✔ region containment selects complete card bounds, including reverse drags and density differences (2.6039ms)
+✔ projection scope excludes collapsed/hidden goals and summaries; selection is pruned without implicit additions (2.15ms)
+✔ bulk status changes exactly selected IDs without counters, positions or completion propagation (3.3242ms)
+✔ create group uses only explicit members and preserves other group members and independent state (6.3019ms)
+✔ add and ungroup preserve target members, collapse state, and valid representatives (1.0237ms)
+✔ invalid bulk action rejects atomically without modifying roadmap (0.7206ms)
+✔ each bulk action adds a single history step; no-op adds none; roundtrip/reload retains all data (6.4929ms)
+✔ failed bulk autosave preserves committed roadmap; Retry writes exactly the selected change (2.5323ms)
+✔ reverse keeps ID/type/other data and leaves input unchanged (3.7734ms)
+✔ reverse rejects duplicate ordered pair without modifying original (1.2371ms)
+✔ reverse rejects a newly formed hard cycle atomically (0.5938ms)
+✔ reverse rejects missing and invalid self-edge documents without mutation (0.6212ms)
+✔ reverse/rename/counters are undoable and roundtrip without completion inference (3.521ms)
+✔ cursor placement clamps panels to visible window edges (0.2739ms)
+✔ context target distinguishes explicit selection, outside singleton, edges and groups (0.5418ms)
+✔ combined edit validates final type/endpoints without rejecting the intermediate hard cycle (3.3879ms)
+✔ combined edit rejects final cycles, duplicate pairs and invalid references without mutation/history changes (3.6093ms)
+✔ combined success is one history step and preserves JSON recovery and independent goal state (1.2626ms)
+✔ F1 exact seven goal names and SIX directed pairs (2.5857ms)
+✔ all three visibly typed edge semantics exist (0.2888ms)
+✔ invalid endpoints, self-edge, duplicate ordered pair cannot be added (0.9758ms)
+✔ hard cycles reject while soft/order cycles are permitted (0.6405ms)
+✔ layout changes only positions, not schema edges and names (2.0519ms)
+✔ optimized six edges run left to right on exact acyclic fixture (0.3136ms)
+✔ group collapse is presentation only and never fabricates graph links (0.5998ms)
+✔ new outgoing edge demonstrates arbitrary divergence without cloning nodes (0.3053ms)
+✔ missing group representative and corrupt coordinates rejected (0.4144ms)
+✔ catalog references are stable and separate from roadmap goals (0.2795ms)
+✔ visual representative must refer to an actual member, not another group (0.2119ms)
+✔ IDB adapter writes a complete snapshot and reads it back after reopen (mocked browser API) (10.3962ms)
+✔ IDB aborted write preserves last committed document (mocked transaction) (1.3494ms)
+✔ IDB invalid new document is rejected before transaction begins (1.5613ms)
+✔ empty roadmap starts unseeded, valid, with versioned preference defaults (9.0852ms)
+✔ create stable unique nodes with intended coordinates and catalog separation (1.3701ms)
+✔ create rejects blank, overly long, untrusted icon URI, category, and invalid coordinates, without modifying original (0.4398ms)
+✔ edit keeps id position edges status counters and timestamp types (0.6998ms)
+✔ node delete removes only incident edges, preserves descendants and other edges (0.6413ms)
+✔ pair edge uniqueness, self-edge, invalid ID rejects all types (0.4607ms)
+✔ hard cycles rejected on both create and type edit; order cycle permitted (0.6962ms)
+✔ edge edit and delete preserve other records (0.343ms)
+✔ drag position command changes only position; undo and redo recover final coordinates (0.6533ms)
+✔ undo/redo of chained create edit connect delete maintains integrity (0.6947ms)
+✔ redo invalidated on branching edit and undo bounded (4.6214ms)
+✔ optimize positions preserves exact semantic edges; history restores before position (1.2409ms)
+✔ group collapse remains visual, canonical edges untouched, and undoable (0.5524ms)
+✔ invalid future schema or corrupt payload is rejected without resetting it (0.321ms)
+✔ save coordinator writes latest revision in order and emits honest state (26.1491ms)
+✔ failed write preserves last-known-good and retry saves queued snapshot (15.969ms)
+✔ separate transient UI preference updates do not pollute graph undo stack (0.4779ms)
+✔ soft/order predecessors never block regardless of completion or counters (5.1887ms)
+✔ multiple hard prerequisites, completed override, independent branches and counters (0.8315ms)
+✔ one reused goal feeds branches with no duplicated state or completion propagation (3.6795ms)
+✔ collapsed and offscreen nodes remain canonical prerequisites (0.989ms)
+✔ manual progression edits undo/redo and reload with stable Phase 1 IDs (1.2095ms)
+✔ invalid counters/status rejected without mutating source; counters can be removed (0.664ms)
+✔ complete schema roundtrip preserves every field and unknown icon references (1.7032ms)
+✔ malformed/unsupported/broken references/duplicates/hard cycles reject detached copies (1.2997ms)
+✔ backup prerequisite tracks exact current content; cancel clears preview (0.9171ms)
+✔ durable replacement waits for pending saves then applies exactly after successful write (11.6693ms)
+✔ failed replacement preserves active and committed roadmap and does not queue candidate for retry (0.9127ms)
+✔ failed pending autosave blocks replacement instead of discarding unsaved state (0.282ms)
+✔ group create/edit/delete and reassignment retain independent identities/status/counters/positions (6.9975ms)
+✔ grouping/layout/move history undo/redo restores exact snapshots (209.9556ms)
+✔ show/dim/hide/collapse/expand retain semantics and hard-only readiness (1.404ms)
+✔ Focus and Highlight traverse cycles by direction across all edge types without sibling flood-fill (0.7032ms)
+✔ 100 completed goals collapse into a branch summary; hidden prerequisites still satisfy readiness (2.9431ms)
+✔ old schema-1 loads without migration; preferences roundtrip and invalid roots reject (1.6711ms)
+✔ ELK seven compact: port routes, no card/label collisions; reload routing preserves positions (38.2573ms)
+✔ ELK seven detailed: port routes, no card/label collisions; reload routing preserves positions (23.3756ms)
+✔ ELK raid compact: port routes, no card/label collisions; reload routing preserves positions (63.3933ms)
+✔ ELK raid detailed: port routes, no card/label collisions; reload routing preserves positions (58.6342ms)
+✔ collapsed group and completed summaries pack without overlap; hidden member offsets retained (66.4736ms)
+✔ replaceable layout adapter failures never mutate input (0.8001ms)
+✔ vendored ELK includes the upstream license locally (1.8835ms)
+✔ source-qualified catalog import is deterministic, offline, category-complete and rejects invalid provenance/duplicates (12.0635ms)
+✔ catalog instances, overrides and unknown references remain independent through edits and JSON (5.5499ms)
+✔ catalog update cannot rewrite user records, including hidden fractional counters and overrides (1.802ms)
+✔ literal null group filter differs from null membership, missing group, and Ungrouped (0.4975ms)
+✔ retained Target configuration uses positive whole-step defaults without modifying fractional data (0.4611ms)
+✖ reconstructed raid compact reload/manual move has no crossings/shared paths without semantic mutation (274.5513ms)
+✖ reconstructed raid detailed reload/manual move has no crossings/shared paths without semantic mutation (65.0861ms)
+ℹ tests 89
+ℹ suites 0
+ℹ pass 87
+ℹ fail 2
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 652.5772
+
+✖ failing tests:
+
+test at tests\phase5.test.mjs:8:45
+✖ reconstructed raid compact reload/manual move has no crossings/shared paths without semantic mutation (274.5513ms)
+  AssertionError [ERR_ASSERTION]: labelEdgeIntersections
+  + actual - expected
+  
+  + [
+  +   [
+  +     'raid4',
+  +     'raid2'
+  +   ]
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/phase5.test.mjs:8:677)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ [ 'raid4', 'raid2' ] ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests\phase5.test.mjs:8:45
+✖ reconstructed raid detailed reload/manual move has no crossings/shared paths without semantic mutation (65.0861ms)
+  AssertionError [ERR_ASSERTION]: labelEdgeIntersections
+  + actual - expected
+  
+  + [
+  +   [
+  +     'raid4',
+  +     'raid2'
+  +   ]
+  + ]
+  - []
+  
+      at TestContext.<anonymous> (file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/phase5.test.mjs:8:677)
+      at async Test.run (node:internal/test_runner/test:1409:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:974:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: [ [ 'raid4', 'raid2' ] ],
+    expected: [],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }

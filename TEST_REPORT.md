@@ -1,3 +1,542 @@
+# P5-005 consolidated engineering delivery — 2026-10-27 (local)
+
+Direct Owner ticket authorizes targeted responsive movement/simpler connections/deletion/Skill-title validation (ADR-028). Implemented and tested; stop for independent reviewer and CEO review before Owner Phase 5 acceptance. Phase 5 remains unaccepted; Phase 6 unauthorized. Broad dictionary expansion remains deferred; reference-pack foundation/Custom escape retained. UTC evidence timestamps extend into October 28; work record uses America/Chicago local October 27.
+
+Exact checkout: C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor; main; HEAD 604d4d6d21fcd0030286acb400087cb14388e8f7. Prior uncommitted deliveries/Owner changes preserved; no staging/commits/branch changes/push/deployment, destructive cleanup, schema migration or new dependencies. Incremental inventory/before-after hashes: evidence/p5-005-preflight-2026-10-27/changed-files.md and delivery-manifest.json relative to the preflight baseline (not Git HEAD). Original dist/evidence intact; Owner docs/README.md untouched.
+
+Implemented:
+- Node/pan/region/link visual updates coalesced to one pending animation frame with gesture identity checks/cancellation. Node previews reposition only explicit cards, update incident SVG paths/labels and affected group frames, without full routing or unrelated SVG rebuilding. Canonical state remains untouched until release. Settled routing runs synchronously after release; measured bounded cost does not justify a worker/new architecture. No stale background router result exists; stale RAF callbacks are canceled/guarded. History/menu interruptions cancel active preview first; actual Ctrl+Z during a held drag is regression-tested.
+- Explicit region-selected goals move by one common offset, retaining relative coordinates and selection; no hidden members/descendants/group expansion. One validated moveNodes command and one IndexedDB put per completed drag, tested both densities. Escape/trusted pointer cancellation restores all canonical cards/routes/group geometry with no commit. Single-click still selects/pairs normally; movement suppresses its trailing click, preserving the selected set. Undo/Redo/reload/backups use existing store/autosave.
+- Bounded candidate routing replaces runtime full-graph A* pathfinding. Old routine retained as inactive legacyRouteAtPositions for comparison/evidence; existing routeAtPositions API remains. Nearby lanes separate high-degree shared paths without expensive crossing avoidance; clear cached unrelated routes/labels are reused. No position/semantic edge changes. Right-out/left-in stubs retained for forward/backward/cyclic links. Arrowheads removed; typed colors/dashes/labels, 19px hit path, hover/focus/selection emphasis and explicit Source → Destination readouts remain. Edge DOM groups are reused/patched.
+- Individual goal/connection and explicit selected-goal deletion are immediate and undoable, via contexts/details/quick connection editor, selected More toolbar, or Delete with Graph-owned non-editor focus. Count feedback offers Undo. Only exact IDs and incident edges are removed; descendants/data untouched; group representative/navigation references repaired safely. Explicit deletion discards an affected object's form; unrelated dirty inspector draft survives without a deletion confirmation. Text inputs/contenteditable/Board/modal focus guarded. Reset/demo/import/group-wide safeguards retained.
+- Loaded/imported structured Skill titles must exactly match validated skillGoal metadata. Contradictions reject before preview/save; invalid startup data is preserved and app blocks instead of resetting. Legacy freeform Skill/Prayer compatibility stays. Normal validated actions still generate structured titles; no counter-based inference/propagation.
+
+Measured performance/quality: full raw samples, environment, method and geometric counts in evidence/p5-005-preflight-2026-10-27/PERFORMANCE.md and performance-summary.json. Same Windows/Node v24.22.1/Chrome 155.0.8059.85, viewport 1600×1120, local HTTP/real IndexedDB disposable contexts; sequential before/after primary runs, three route samples and three 18-step drags per density. Before replay is a fresh copy of preserved original source, not edited evidence. Synthetic Song of the Elves equivalent: 14 goals, 15 edges, 12 hard predecessors plus permitted soft/order cycle; not verified game requirements. Actual Owner roadmap not supplied/used.
+
+Primary compact/detailed router medians fall from 314.8/335.2 ms to about 4.3/3.3 ms. Before drag-preview maximum 580.8/364.0 ms; after sub-millisecond previews and pointer handlers. Max before release 248.3/281.4 ms; after about 10 ms. Before observed 57 long tasks per density, after zero. Additional after-only 24-predecessor/26-goal/27-edge fixture stays below 50ms long-task threshold, with release around 20 ms. Actual max/95th/median/raw values in PERFORMANCE.md, not a 60fps guarantee: occasional observed frames/high-degree release exceed 16.7ms. Larger graph/production-scale performance remains Phase 6.
+
+Geometric tradeoff on identical coordinates: many-prerequisite total route length ~25% shorter compact/~41% shorter detailed; raid ~7–8% shorter. Many compact crossings 27→34, detailed 36→35; raid 0→4 in both densities. This is disclosed under Owner's short-route/crossing policy. Final measured fixtures have zero shared segments, card intersections, label/card, label/label and label/edge intersections. Arbitrarily overlapping manual cards/other shapes can still occlude or overlap; no universal routing-quality guarantee. Preview routes are intentionally inexpensive and may temporarily cross cards/lines, with exact canonical restoration on cancel; settled measurements are separately reported.
+
+| Validation | Actual result / evidence |
+|---|---|
+| npm test | Pass 107/107; evidence/p5-005-preflight-2026-10-27/node-delivery.txt. Five new action/ports/cycle/title tests, full affected existing model/history/storage/reference regressions. |
+| node tests/browser_p5_005.mjs | Pass 15/15; evidence/p5-005-2026-10-28T00-25-08-906Z/results.json. Source/public byte-matching separate static build; both densities, exact selected-set offsets/history/single write, frame burst coalescing and SVG identity, actual mouse and trusted touch cancellation, hidden scope/repeated drags, 24-degree/cycles/no arrows, hit targets/readout, immediate deletion/context/details/keyboard/Undo/dirty drafts/text guards, failed-save recovery, contradictory import/load DB preservation. |
+| node tests/browser_p5_004.mjs | Pass 16/16; evidence/p5-004-2026-10-28T00-25-46-972Z/results.json. Reference/category/Skill/Diary/legacy flows, local PNG/WebP pack validation/update/fallback, data/drafts/history/reload/backups/failures. |
+| node tests/browser_editing.mjs | Pass 9/9; evidence/p3-005-2026-10-28T00-25-46-982Z/results.json. Actual pointer-cancel geometry, accepted/declined history discard/subsequent Save, atomic combined connection edits/rejections. |
+| node tests/browser_bulk.mjs | Pass 13/13; evidence/p3-002-2026-10-28T00-25-46-977Z/results.json. Selection/pan/zoom, bulk/group/history/recovery and both connection methods including actual Shift-click pairing/port dragging. Retained-after-move selection expectation updated for this ticket. |
+| node tests/browser_phase3.mjs | Pass 12/12; evidence/phase3-2026-10-28T00-25-47-406Z/results.json. Actual seven/raid ELK both densities, groups/representatives/boundary edges, visibility/Focus/Highlight/layout/history/manual moves/roundtrips. |
+| Current browser/build total | Pass 65/65 groups, disposable real HTTP/IndexedDB. Chrome 155.0.8059.85, Node v24.22.1, Windows. No final browser page errors/external runtime requests. |
+| Benchmark + route-quality scripts | Pass executed measurement collection, not pass-count substitutes. Before/after/high-degree raw samples and exact source/build locations linked in PERFORMANCE.md; Node same-coordinate geometry report route-quality.json. Screenshots inspected for dense connections and prior cancellation scenarios. |
+| git diff --check / preservation | Pass; all baseline files retained, unchanged packages/storage/vendor/ELK/metrics/pack data/art/notices/dist verified in manifest. |
+| Actual Owner roadmap; other browsers/mobile; production-scale stress; arbitrary overlap readability | Not run. Faithful synthetic many-prerequisite + larger high-degree/cycle fixture used. No new broader performance phase or dictionary expansion. |
+
+Failure history preserved: initial patch helper had a quoting syntax error before edits; fixed. First after benchmark exposed missing edgeReadout integration (startup blocked safely); fixed and subsequent startup/flow checks pass. Old strict zero-crossing assertions failed after the authorized routing-policy change; updated only crossing/shared-path/label-edge assumptions, retained card/label/data checks and added port/cycle/cache tests. One compact label-overlap failure was reproduced/fixed with bounded label candidates. New save counter initially wrapped itself twice across densities; fixed instrumentation. One inspector Delete label lookup expected no ellipsis while old caption retained it; made immediate-delete captions consistent. Bulk regression exposed over-preserved single-click selection; fixed so normal pairing clears region, while actual moved set retains it. Its old post-move-clear expectation then updated as explicitly superseded. Earlier failed runs/logs remain separate; no failures relabeled as passes.
+
+Known limits: no observed remaining P0/P1 in executed current workflows. P2/P3 visual limits: crossings remain by design and can be dense; measured compact crossing count increases while routes shorten. Preview lines can cross obstacles; arbitrary overlapping placement is not universally solved. High-degree release can exceed one 16.7ms frame, though no measured post-change long task. Phase 6 scaling/browser/mobile hardening not authorized. Existing genuine Inventory/Diary symbol gaps and partial non-bounded dictionary coverage remain unchanged, disclosed in pack docs. Owner-provided private-planner Jagex permission/attribution is retained without independent verification or broader distribution assertion; no new third-party content ingested.
+
+Data impact: no schema/storage/origin change, migration or automatic normalization. Explicit movement/deletion modifies only authorized IDs/incident edges plus necessary representative/navigation references; undo preserves original IDs. Manual statuses, hidden counters, catalog/icon refs, groups and unrelated positions remain exact. Routing/selection are presentation/temporary state. Contradictory structured data now rejects as requested and remains recoverable in original JSON/DB. Import/export/replacement confirmation/export-required and failed-write/Retry contract preserved. Historical handoff/test report below retained byte-for-byte as a suffix.
+
+Run: npm run dev in exact checkout, then http://127.0.0.1:4173/ at existing origin. No install. Separate verified build: http://127.0.0.1:4173/evidence/p5-005-2026-10-28T00-25-08-906Z/static/ . Do not run default build over preserved dist. Browser commands use existing PowerShell $env:PLAYWRIGHT_MODULE_PATH='C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright'. Benchmarks require that local server and create fresh evidence/static copies. See docs/TESTING.md for side effects.
+
+Consolidated Owner walkthrough (disposable data; export personal work before replacement):
+1. Load/create a many-prerequisite arrangement; compare compact/detailed dragging with PERFORMANCE.md. Lines preview cheaply and settle on release. No auto layout/status changes. Inspect a backward/cyclic connection: source right → destination left, no arrowheads; hover/select for type/direction and tracing.
+2. Shift-region select two visible goals, drag one: both move together, offsets stay equal and toolbar selection remains. Undo/Redo once; repeat. Hidden group members/unselected descendants must stay fixed. Escape while dragging or pointer cancellation restores all original geometry with no save.
+3. Single-click source, actual Shift-click destination/Connect, and port dragging still work. Use line hit area/keyboard to select an edge. Shorter paths can cross; emphasize the selected line/read its explicit endpoints.
+4. Delete one goal/connection via context/details, or Delete from focused Graph; no deletion prompt, affected count and Undo shown. Select two and Delete/More action: only those IDs/incident edges disappear, other descendants remain, representatives repair. Undo once restores IDs/relationships. Delete in a title/notes/Board search or open quick dialog must edit text/do nothing to roadmap. Broader reset/import safeguards still ask.
+5. Export/reload/import after movement/deletion; test failure injection/Retry on disposable data. Contradictory structured Skill title/metadata JSON rejects without replacing current data. Existing freeform Skill and legacy Prayer remain compatible; no hidden counter inference or propagation.
+
+Stop for independent reviewer and CEO review before Owner Phase 5 acceptance. Phase 6 remains unauthorized.
+
+---
+Historical records below retain their original dates/attribution. Current P5-005 routing/deletion/selection rules supersede older crossing-free/confirmation/post-drag-clear behavior only within the authorized ticket.
+
+# P5-004 consolidated engineering delivery — 2026-10-27
+
+Owner replied “Approved” to the prepared P5-004 ticket and engineering compatibility proposal (ADR-027). The bounded category-first picker, structured Skill editing, versioned reference packs and Owner-local icon preparation are implemented. Stop for independent reviewer and CEO review before Owner Phase 5 acceptance. Phase 5 remains unaccepted; Phase 6 and in-app dictionary authoring remain unauthorized.
+
+Exact checkout: C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor; branch main; HEAD 604d4d6d21fcd0030286acb400087cb14388e8f7. Existing uncommitted Phase 2–5 and Owner changes retained; no staging, commits, branch changes, push/deployment, destructive cleanup or new dependency installed. Incremental source inventory/before-after hashes: evidence/p5-004-preflight-2026-10-27/changed-files.md and delivery-manifest.json, relative to starting-files.json (not Git HEAD). Historical evidence/dist retained. Owner docs/README.md changes were not edited by this ticket.
+
+Implemented behavior:
+- Double-click empty canvas opens “What are you working toward?” with category first, no default selection. Skill: all 24 skills including Prayer/Sailing and explicit integer level 1–99. Diary: all 12 regions × four tiers. Quest/Item/Boss/Activity: category-only name/alias search, partial-list/no-results explanations, visible custom escape. Custom: manual title. Generated preview, manual status, optional More details, safe cancellation and intended zoom/pan placement. Back/category switching retains each path’s input. A changed search clears stale selection. No global mixed-category/individual-icon picker or restored counters.
+- Structured Skill quick/detailed editors expose skill/level and generate the title; status stays manual. Existing freeform Skill goals are never parsed/converted. Existing Prayer-category goals remain valid/editable/filterable/importable, omitted only from new categories. No prayer-unlock replacement. Inspector Cancel/hiding semantics retained; dirty target replacement still resolves drafts.
+- Reused 178 factual entries with stable IDs/names/category/aliases/provenance in catalog/reference-packs/osrs-v1.json. Rules, reference entries and saved instances are separate. 24 skills and 48 diary combinations are complete bounded lists; 32 quests/30 items/24 bosses/20 activities are partial. Old standalone Prayer records and individual catalog/artwork remain archived/inactive, not deleted. Dictionary updates affect future selection only; existing titles/notes/statuses/positions/references remain unchanged. Repeated selections create independent IDs/states.
+- Existing import-catalog.mjs gains --pack validation/generation/check/coverage. Full validation precedes a candidate file and single atomic generated-module activation. Duplicate/invalid IDs, malformed entries/aliases/provenance, unsupported versions and missing bounded entries reject without changing working output.
+- Existing prepare-category-icons.mjs gains --pack local PNG/WebP support. Project-contained relative paths with realpath checks, IDs/mappings, source/attribution/permission strings, signatures, RIFF/chunk/dimensions/size checks and actual decode in disposable Chrome are validated before publication. Immutable content-addressed files refuse differing bytes. One atomic Owner mapping/report activation preserves the previous working output on rejection/failed activation. Original sample pack and copy-files/run/check/candidate instructions included. No runtime API/CDN/upload. Unused immutable/candidate artifacts can remain after filesystem failure; no cleanup/deletion is automatic.
+
+Data contract/compatibility decision: optional skillGoal {format:1,skillId,targetLevel} extends schemaVersion 1 additively; exact keys/format/known bounded skill ID/integer 1–99/category validated. Existing absent/null field stays freeform. No storage version/name/store/key/origin change and no eager migration or legacy rewriting. Independent hidden progress counters remain untouched. SkillGoal is structured authority; the original catalogRef snapshot remains preserved through later structured edits. History/persistence/JSON preserve the new attribute and all prior IDs/overrides/refs/counters/groups/edges/positions. Current invalid imports reject before preview; failed writes/replacement preserve prior committed data. Older builds lack structured validation/editing and may produce mismatched titles if used to edit these goals: retain current package/JSON and use the current build; no cross-version editing or automatic down-conversion guarantee. Detailed contract: docs/SKILL_GOAL_CONTRACT.md.
+
+Artwork/source coverage: no new authentic third-party art sourced. Five genuine pinned category symbols retained, original Custom fallback retained. Inventory and Achievement Diary genuine-symbol gaps remain until Owner supplies suitable files. Local preparation supports both categories; disposable original PNG/WebP fixtures prove activation/fallback without claiming those images are genuine Inventory/Diary symbols. Original 32px PNG diamond sample is 195 bytes. Live Owner override mapping remains empty by default; only candidate/static test builds activate fixtures. All prior authentic art/provenance/source LICENSE/README notices retained. Owner reports Jagex permission for third-party sourcing/local bundling in this private planner; Owner-provided, not independently verified, no broader distribution rights. Owner pack records are assertions and need human suitability/rights review. Existing Playwright/Chrome is used only for development decoding/tests; no app/new npm dependency. Source, attribution, version/coverage and instructions: catalog/reference-packs/README.md and catalog/icon-packs/README.md.
+
+Current-source verification limits: primary Jagex Sailing announcement and Wiki search-index entries checked for 24 skills/Sailing and 12 diary regions. Direct Wiki fetch was robots-denied and not bypassed. Existing names/links reused as factual references, no new article prose/requirements or imagery ingested. Full per-entry live-link audit/comprehensive catalog certification not run; source links/attribution are in the reference report.
+
+| Validation | Actual result / evidence |
+|---|---|
+| npm test | Pass 102/102, evidence/p5-004-preflight-2026-10-27/node-tests-delivery.txt. New tests cover bounded rules/levels/aliases/malformed packs, independent structured/legacy/hidden state/history/JSON, dictionary-update isolation and invalid local pack output preservation. Pack tests create new disposable evidence directories. |
+| node scripts/import-catalog.mjs --pack catalog/reference-packs/osrs-v1.json --check | Pass, 178 entries; generated module reproducible, coverage printed. |
+| node scripts/prepare-category-icons.mjs --pack catalog/icon-packs/sample-v1/manifest.json --output evidence/p5-004-preflight-2026-10-27/sample-owner-categories.js --check | Pass; actual original PNG decode and candidate mapping/report reproducibility. First non-check candidate preparation also passed; live source mapping not activated. |
+| Original reference/art/category --check commands | Pass: original 207-record catalog, 94-art manifest/module/notices and five category defaults preserved/reproducible. |
+| node tests/browser_p5_004.mjs | Pass 16/16, evidence/p5-004-2026-10-27T21-35-40-394Z/results.json. Separate static source/public byte equality/dist preservation; all category flows, explicit Skill bounds, all 48 diary previews, independent repeated Skill goals, drafts/position/cancel, structured/legacy/Board/notes/history/JSON/reload, same-reference dictionary update isolation, PNG/WebP local preparation/activation/fallback, malformed structured imports and failed-save/Retry/canceled/failed replacement. No errors/external runtime requests. |
+| node tests/browser_editing.mjs | Pass 9/9, evidence/p3-005-2026-10-27T21-26-55-050Z/results.json. Accepted/declined Undo/Redo draft discard and subsequent Save, actual trusted pointer cancellation/routes, final-candidate atomic connection edits/rejection. |
+| node tests/browser_bulk.mjs | Pass 13/13, evidence/p3-002-2026-10-27T21-26-55-056Z/results.json. Actual mouse selection/pan/zoom/density, exact bulk/group scope/history/cancel/reload/recovery, Shift-click pairing, node movement and port dragging. |
+| node tests/browser_phase3.mjs | Pass 12/12, evidence/phase3-2026-10-27T21-26-55-078Z/results.json. Actual ELK seven/raid both densities, grouping/representatives/original boundary edges, visibility/Focus/Highlight, movement/history/roundtrip. |
+| Browser/build total | Pass 50/50 groups. Windows; Node v24.22.1; Chrome 155.0.8059.85; real HTTP 127.0.0.1:4173 and IndexedDB in fresh disposable contexts. Final static source/public bytes verified; screenshots inspected for category prompt/Skill/Diary and form containment. Historical dist not rebuilt. |
+| git diff --check; baseline/archive protections | Pass, recorded in delivery-manifest.json. No original files missing, unchanged storage/layout/vendor/packages/archived assets/catalog source checked. |
+| Old direct-create/catalog browser runners; other browsers/mobile; full live reference audit; older-build structured editing; symbolic-link/junction escape and OS-level activation fault injection | Not run this ticket. Path traversal/absolute paths/realpath checks, malformed bytes/actual decode failure, duplicate/missing mappings and detached-candidate/output preservation covered. No unexecuted platform-specific case claimed passed. |
+
+Failure history retained: initial added Node test had an await inside a synchronous assertion callback (syntax error); corrected and 102 passed. First browser run passed ten groups then timed out because its malformed-import assertion watched import-dialog error text, while correct validation rejection used the main status area before opening preview. Corrected test watches a fresh rejection notice and asserts no preview/data change; final suite passes. Earlier failed/successful evidence folders remain preserved; no failure relabeled. UI review also corrected stale validation messages when picker input changes; final build verifies that behavior. No observed P0/P1 application defect in executed checks.
+
+Known limits/severity: P2 genuine Inventory/Diary artwork gaps remain, explicitly disclosed as permitted by ticket. Other text categories are partial by scoped design. P3 existing arbitrary-overlapping/non-planar routing and future scale/mobile/browser hardening limits remain unchanged; no routing repairs here. Older-build structured editing is an explicit compatibility limitation, not certified safe. Future source/permission suitability needs Owner review; permission is never independently verified by preparation. No P0/P1 observed in executed current workflows; independent review and Owner acceptance remain required.
+
+Run from exact checkout: npm run dev; open http://127.0.0.1:4173/ for the existing source origin. No install. Separate verified review build: http://127.0.0.1:4173/evidence/p5-004-2026-10-27T21-35-40-394Z/static/ . Do not run default npm run build over preserved dist. For browser tools set PowerShell $env:PLAYWRIGHT_MODULE_PATH='C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright'; run the commands above. New separate build/evidence only; disposable profiles for acceptance. See docs/TESTING.md for side effects.
+
+Consolidated Owner walkthrough:
+1. Double-click empty canvas and choose Skill → Prayer. Leave level empty or enter 1.5/100: Create rejects without a goal. Enter 70: preview is 70 Prayer. Choose manual status and Create; repeat and verify independent IDs/completion. Undo/Redo, Board, reload and JSON agree.
+2. Choose Quest/Item/Boss/Activity; search names/aliases (cooks, fang, toa), test no results and visible Not listed? Create custom goal. Type a Custom title, switch/back and verify retained input. No global/individual image controls or archived counters appear. Diary Lumbridge & Draynor + Hard previews the generated title; all four tiers available.
+3. More details transfers the draft/level/reference/intended zoom/pan position. Cancel makes no orphan and closes. Hiding/reopening details preserves drafts; Cancel discards. Edit a new structured Skill through quick/details/Board, preserving manual state and hidden data. Existing freeform Skill stays freeform and legacy Prayer stays legacy/editable.
+4. Review/edit versioned text pack and run its preparation/check command. Existing selected goal titles/statuses/notes/refs must remain unchanged; new selections use the new text. Export before testing imports. Malformed structured backups reject without replacing active data; failure injection/Retry and canceled/failed replacement preserve recovery.
+5. Read catalog/icon-packs/README.md. Copy suitable local PNG/WebP + manifest, run candidate preparation/check, inspect provenance/coverage, then intentionally activate only reviewed suitable assets. Sample is original Custom art; Inventory/Diary gaps are not falsely filled. No in-app upload or runtime network. Keep original asset package with JSON recovery.
+
+Stop: independent reviewer, CEO review, then Owner Phase 5 acceptance. No Phase 6 authorization inferred.
+
+---
+Historical records below remain unchanged, with their original dates/attribution. Current P5-004 scope supersedes earlier dictionary deferral/manual-only creation only within the approved ticket.
+
+# P5-003 consolidated engineering delivery — 2026-10-27
+
+Owner-authorized replacement manual/category mode (ADR-026) is implemented for independent reviewer and CEO review before Owner acceptance. Phase 5 acceptance remains pending. Phase 6 and text-only dictionary implementation NOT AUTHORIZED. No AI phase acceptance inferred from tests.
+
+Exact checkout: C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor; main; HEAD 604d4d6d21fcd0030286acb400087cb14388e8f7. Existing uncommitted Phase 2–5/Owner changes preserved, unstaged/uncommitted. No staging, commits, branch changes, push/deployment, dependencies, migration, relocation/deletion or runtime integration. Incremental changed-file inventory with before/after hashes: evidence/p5-003-preflight-2026-10-27/delivery-manifest.json and changed-files.md. Diff is relative to pre-ticket starting-files.json, not Git HEAD.
+
+Implemented:
+- Manual creation defaults directly to title/category/manual status and optional More details. No active catalog search/browse/selection or individual-icon control. Existing quick/details/Board status controls remain; no graph shortcut returned. Inspector Cancel discards form and closes; panel hiding preserves drafts.
+- Category-only resolver is shared across Graph (both densities and group representatives), Board and quick/detailed previews; category changes update symbols. Saved individual references/overrides never determine active art. Unknown references remain inert and retained; no arbitrary remote/path loads.
+- Genuine Combat (crossed swords), Minigame, Quest, Skills, Prayer symbols use unchanged PNG bytes from Dava96 pin 16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6. Three reused, two added (combatIcon 372 bytes, skillsIcon 330 bytes). Five active source PNGs total 1,797 bytes, already covered by retained source notices. Custom uses a neutral original diamond. Inventory and Achievement Diary symbols were not found in reviewed pinned exports: explicitly disclosed original fallback, no unrelated substitute. Gaps explained in editors, image tooltips/help, current source notice and catalog/CATEGORY_MODE.md.
+- Catalog records, 94 individual-art PNGs, preparation tooling, metadata/provenance/notices remain in place as inactive/deprecated. Archived resolver retained for compatibility tests only. New offline category preparation checks the previously preserved pinned cache SHA256, extracts data without execution, refuses changed existing PNGs and verifies metadata. No fresh network sourcing/permissions claimed this ticket.
+
+Permission attribution: Owner reports Jagex permission for third-party artwork sourcing/local bundling in this private planner. Owner-provided, NOT independently verified; no broader distribution rights implied. Dava96 CC BY-NC-SA 3.0 and underlying Jagex/Wiki notices retained; original source LICENSE/README copies unchanged. No whole-planner relicensing. Source/pin/match/coverage: catalog/CATEGORY_MODE.md and category-artwork-manifest.json. Earlier OSRSBox/individual-art permission assessments remain historical and inactive.
+
+Data impact: no schema/storage identifier/origin migration. Existing IDs/titles/categories/statuses/hidden fractional counters/positions/groups/edges/catalog references/icon overrides survive reload and JSON. Ordinary edits preserve hidden fields, including unknown values; omitted iconOverride now preserves the existing value instead of defaulting to null. Quick/detailed forms retain inactive references explicitly. Presentation never modifies user state; category art updates never rewrite saved goals. Readiness stays canonical, hard-only; statuses manual/independent, no completion propagation. Optimize/selection/history unchanged. Original dist, historical evidence, catalog source/generated data, individual artwork/manifests/tooling, vendored library and storage code preserved.
+
+| Check | Actual result and evidence |
+|---|---|
+| npm test | Pass 97/97; evidence/p5-003-preflight-2026-10-27/node-tests-final.txt. Includes four new category-mode tests plus archived compatibility checks. |
+| node scripts/prepare-category-icons.mjs --check | Pass five category PNGs/source pin/hash/mapping; two explicit missing-symbol gaps. Offline cached source; no upstream execution. |
+| node scripts/prepare-artwork.mjs --check | Pass archived 94 PNGs/default module/manifest/notices unchanged. This is archival validation, not active individual-icon behavior. |
+| node scripts/import-catalog.mjs catalog/reference-source.json --check | Pass; archived 207-record source/generated catalog unchanged. |
+| node tests/browser_p5_003.mjs | Pass 12/12; evidence/p5-003-2026-10-27T16-49-09-267Z/results.json. Separate static build matches final source/public bytes; actual manual/cancel/validation/Enter/transfer/zoom/pan, eight categories/both densities/Board/editor/fallback, category edits and exact inactive references/counters, quick/details/status/history/reload/JSON, cancelled/failed import and failed-save/Retry. |
+| node tests/browser_editing.mjs | Pass 9/9; evidence/p3-005-2026-10-27T16-47-09-650Z/results.json. Accepted/declined history draft resolution, subsequent Save, actual pointer cancellation and atomic connection edits. |
+| node tests/browser_bulk.mjs | Pass 13/13; evidence/p3-002-2026-10-27T16-47-10-022Z/results.json. Selection/pan/zoom/density, bulk/group/history/cancel/reload/recovery, actual mouse Shift-click pairing, node move and port dragging. |
+| node tests/browser_phase3.mjs | Pass 12/12; evidence/phase3-2026-10-27T16-47-10-441Z/results.json. Actual local ELK convergence/raid both densities, original boundary edges, independent groups, visibility/Focus/Highlight/roundtrip/history/manual positions. |
+| Browser/build total | Pass 46/46 groups; Windows, Node v24.22.1, Chrome 155.0.8059.85; HTTP 127.0.0.1:4173, fresh disposable contexts with real IndexedDB. Screenshots inspected: manual creation, detailed/compact categories and Board. No external runtime requests or unhandled errors in executed suites. |
+| git diff --check / preservation | Pass; exact hashes/protected paths recorded in delivery-manifest.json. |
+| Older catalog/individual-icon creation browser suites, other browsers/mobile, exhaustive source search for missing symbols, dictionary, Phase 6 performance | Not run / out of scope. Preserved historical results do not count as current tests. Relevant current workflows covered above. No universal arbitrary-graph routing/performance claim. |
+
+Test adjustments/failures: first Node run had 92/93 because the old unknown-icon expectation assumed individual presentation; changed that assertion to category presentation while preserving full roundtrip assertions. Other prior icon tests now explicitly exercise the retained inactive resolver, alongside new active category tests. New browser harness initially had an escaped-regex syntax error before launch; corrected, then both browser runs passed (early evidence retained separately). No observed application workflow failure during executed P5-003 browser suites; no failure relabeled as a pass.
+
+Known defects/limitations: no observed P0/P1 in executed checks. P2 content gaps: Inventory and Achievement Diary symbols unavailable in reviewed cached exports; original fallback shown and disclosed. No broad source search or claim these symbols do not exist elsewhere. Owner review must assess acceptance of these gaps. Existing limitations for arbitrary overlapping/non-planar graph routes and Phase 6 scale/mobile/browser hardening remain unchanged (P3 limitation); no routing repair in this ticket. Owner-reported earlier notes-prompt issue retains P5-001 non-reproduction attribution, not claimed newly fixed. Catalog/dictionary are inactive/deferred by Owner scope, not incomplete active interfaces.
+
+Runnable instructions: from the exact checkout run npm run dev; open http://127.0.0.1:4173/ using the existing origin/profile for saved work. No install. Use a disposable profile for acceptance. Separate verified static build: http://127.0.0.1:4173/evidence/p5-003-2026-10-27T16-49-09-267Z/static/ . Do not run default npm run build over preserved dist. Browser runners use existing Playwright via PowerShell $env:PLAYWRIGHT_MODULE_PATH='C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright'; then node tests/browser_p5_003.mjs (new evidence/static output only). See docs/TESTING.md for all command effects.
+
+Concise Owner walkthrough:
+1. Double-click empty canvas: title/category/manual status appear directly, no catalog/icon choices or counters. Enter title, choose status/category and Create; Cancel/Escape makes no orphan. More details transfers input and intended position at zoom/pan.
+2. Create/edit each category; verify Combat, Minigame, Quest, Skills and Prayer symbols in both Graph densities, Board and quick/details previews. Item/Diary use the disclosed original fallback; Custom is neutral. Change category: only its symbol/category changes, not completion or hidden references.
+3. Edit status/title/notes through quick/details/Board; Undo/Redo and reload agree. In details, hide/reopen preserves unsaved notes; Cancel discards the unsaved form and closes without changing data/history. Both connection methods and Shift-region bulk actions remain available.
+4. On disposable imported data with old/unknown refs/overrides and fractional counters, make ordinary edits then export/reload/restore. Compare hidden fields exactly; presentation remains category-based. Export current roadmap before replacement. Help / Diagnostics failure injection and Retry preserve the last committed roadmap on failed save/replacement.
+
+Stop for independent reviewer and CEO review before Owner Phase 5 acceptance. Phase 6/dictionary not authorized.
+
+---
+Historical records below remain unchanged and retain their dates/attribution; current P5-003 behavior supersedes active catalog/individual-art instructions.
+
+# P5-002 consolidated engineering delivery — 2026-10-27
+
+Owner replacement ticket is implemented for independent reviewer and CEO review before Owner Phase 5 acceptance (ADR-025). Phase 5 remains unaccepted; Phase 6 NOT AUTHORIZED. Owner reports Jagex permission for third-party sourcing/bundling in this private local planner: Owner-provided, not independently verified, no broader distribution rights implied.
+
+Exact checkout: C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor; branch main; HEAD 604d4d6d21fcd0030286acb400087cb14388e8f7. Existing Phase 2–5/Owner edits remain unstaged/uncommitted. No staging, commits, branch changes, push or deployment. Incremental inventory/hashes: evidence/p5-002-preflight-2026-10-27/delivery-manifest.json (relative to starting-files.json, not Git HEAD).
+
+Implemented: 94 locally bundled unchanged PNGs (60,053 bytes), explicit stable-ID mappings and pinned provenance/notices. 207 references: 90 identity-specific matches (24 skills, 30 items, 29 prayers, 7 activities), 117 generic markers (32 quests, 24 bosses, 48 diary tiers, 13 activities). Generic markers are not individual illustrations. OSRSBox pin dae12e3400add0c71465f07a334f9d8f86bebce8; Dava96 pin 16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6. Source/license/coverage/update report: catalog/ARTWORK.md and artwork-manifest.json. OSRSBox GPL source notice includes Jagex/Wiki exceptions; Dava96 declares CC BY-NC-SA 3.0. Original source notices/credits retained verbatim; no upstream code installed/executed or application relicensing. Preparation uses Node built-ins only; no new dependencies, runtime CDN or integration.
+
+Graph status shortcut removed; visible status and quick/detailed/Board editing retained. Inspector Cancel resets the unsaved form and closes details without a data/history command; panel toggle still preserves drafts. Creation starts with catalog search beside prominent Create custom goal. Custom opens minimal title/category directly; path switching retains input and reference replacement asks before overwriting it. More details retains draft/reference/intended coordinates. Counter controls remain hidden.
+
+Data impact: no migration/schema/storage/origin changes. New icon IDs are presentation defaults plus optional explicit overrides accepted by existing validation. Manual overrides win; legacy/unknown references and original missing-image fallback retained. Catalog updates do not rewrite user records. IDs, edits, manual statuses, hidden fractional counters, positions, groups, relationships and JSON recovery preserved. Protected dist, vendor, existing routing/storage/history code and original evidence retained. Tests used fresh disposable contexts, not personal browser data.
+
+| Check | Actual result / evidence |
+|---|---|
+| npm test | Pass 93/93; evidence/p5-002-preflight-2026-10-27/node-tests-final.txt |
+| node scripts/prepare-artwork.mjs --check | Pass: cached pinned source hashes, 94 PNGs, generated metadata/defaults and four verbatim source notices |
+| node scripts/import-catalog.mjs catalog/reference-source.json --check | Pass; existing 207 reference records unchanged |
+| node tests/browser_p5_002.mjs | Pass 13/13; evidence/p5-002-2026-10-27T15-45-40-716Z/results.json; separate static build matches final source/public bytes, all 94 PNGs decode, screenshot gallery, both creation paths/coordinates/drafts, status/keyboard/history/reload, overrides/fallback, changed-default fixture, backups and failed-save/import recovery |
+| node tests/browser_editing.mjs | Pass 9/9; evidence/p3-005-2026-10-27T15-39-48-598Z/results.json; discard/history, actual pointer cancellation and atomic combined edits |
+| node tests/browser_bulk.mjs | Pass 13/13; evidence/p3-002-2026-10-27T15-39-49-072Z/results.json; mouse selection/pairing, bulk groups/status/history/recovery |
+| node tests/browser_phase3.mjs | Pass 12/12; evidence/phase3-2026-10-27T15-39-49-499Z/results.json; layout/group/visibility/navigation/roundtrip |
+| Current browser/build total | Pass 47/47 groups; Windows, Node v24.22.1, Chrome 155.0.8059.85, HTTP 127.0.0.1:4173, real IndexedDB in disposable contexts |
+| Fresh-cache --fetch through final preparation CLI; mobile/other browsers; full live catalog link audit | Not run. Assessment scripts fetched pinned inputs successfully with approved network access; final CLI cached preparation/check tested. |
+| Old browser_phase5/board/cursor/workspace/phase2 runners | Not run this ticket; some creation/status assumptions superseded. Relevant shared workflows covered above; unchanged historical results retain original attribution. |
+
+Failures retained honestly: first Node expectation still expected the original default icon; updated the one obsolete assertion, then all passed. Early P5-002 browser runs failed because native search Escape cleared the query without closing the quick dialog. Reproduced and fixed explicit Escape dismissal; final suite asserts dialog closure and passes. Failed/debug evidence remains separately preserved (15:33, 15:35 runs); no failures relabeled as passes.
+
+Known limitations: no observed P0/P1 in executed checks. P2 content coverage gap: 117 category markers lack unique per-entry illustrations; curated catalog/snapshot is not comprehensive/current-game certification. Permission is Owner-reported only; broader redistribution not established. P3 routing limits for arbitrary overlapping/non-planar graphs and Phase 6 performance/browser/mobile hardening remain unchanged; no routing work in P5-002. Earlier Owner notes prompt after clicking a Graph goal was not reproduced by P5-001; original report/attribution remains preserved, not claimed fixed by hiding controls.
+
+Run: npm run dev, then http://127.0.0.1:4173/ at the existing browser origin. No install. Separate verified review build: http://127.0.0.1:4173/evidence/p5-002-2026-10-27T15-45-40-716Z/static/ . Do not run the default build over preserved dist. Recheck with npm test, node scripts/prepare-artwork.mjs --check, and the browser commands above (existing Playwright module path documented in docs/TESTING.md).
+
+Owner walkthrough (disposable data; export personal roadmap before replacement):
+1. Double-click empty canvas: catalog search is first and Create custom goal is beside it. Create directly from custom title/category; switch back/search and decline replacing entered fields. Cancel/Escape makes no orphan. More details retains input/position at zoom/pan.
+2. Search/create representative skill, item, prayer and activity icons; quest/boss/diary generic markers are disclosed. Create the same catalog goal twice; edit one independently. In details choose a manual icon override; reload and JSON roundtrip preserve it, with original fallback for missing icons.
+3. Graph cards show manual status without a shortcut button. Double-click a goal or use keyboard/context editing; change status in quick/details/Board, Undo/Redo and switch views. Hidden numeric values remain preserved and absent from UI.
+4. Edit unsaved inspector notes: panel toggle hides/reopens with draft intact. Cancel discards the form and closes; reopen to see saved values. Cancel creation makes no orphan, and Cancel changes no history. Try connection/group forms too.
+5. Export/reload/preview/replace a disposable backup. Use Help / Diagnostics failure injection, verify visible failure/Retry and prior committed roadmap after failed replacement. Reset diagnostics and retry before leaving unsaved work.
+
+Stop: independent reviewer and CEO review, then Owner Phase 5 acceptance. No Phase 6 authorization inferred.
+
+---
+Historical record below retained unchanged; current superseding behavior is above.
+
+# P5-001 executed QA — 2026-10-26
+
+Authority/current gate: Owner accepted Phase 4 based on Owner-reported walkthroughs, with its three documented issues explicitly deferred; P5-001 authorizes Phase 5, including the older routing issue, direct graph status controls, hiding numeric progress UI without deleting data, and the reference catalog/visual pass. Owner said “Proceed.” ADR-024 records this decision and preserves prior engineering/Owner attribution. Phase 5 is delivered for independent reviewer, CEO review and Owner acceptance. Phase 6 is NOT AUTHORIZED. Neither AI accepts a phase.
+
+Exact checkout: C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor; branch main; HEAD 604d4d6d21fcd0030286acb400087cb14388e8f7. All delivery remains unstaged/uncommitted. No staging/commits/branch changes/push/deployment, integrations or destructive cleanup. Preflight hashes: evidence/p5-001-preflight-2026-10-26/starting-files.json. Exact incremental changed files/before-after hashes and preservation checks: evidence/p5-001-preflight-2026-10-26/delivery-manifest.json.
+
+Implemented: a small labeled manual-status button on every graph goal opens only a status chooser, supports keyboard, captures/stops its own pointer gestures and preserves selection/pairing. It uses the existing validated single-ID action/history/autosave; readiness stays canonical/hard-only and downstream state remains independent. Current/Target controls and values are removed from Graph cards, summaries, Board, full/rename quick forms, inspector, context menus and current app help. Existing fractional values/validation/export/import remain intact. Quick editing omits progress fields and validated editNode retains existing values; the inspector explicitly retains its loaded value. No schema/data deletion or migration. Restoring numeric UI requires separate Owner approval.
+
+Deferred-case disposition:
+
+| Case | Reproduction and result | Disposition |
+|---|---|---|
+| Routing ambiguity | Baseline raid reconstruction: compact reload 2 crossings/10 shared segments, manual move 2/11; detailed reload 2/10, manual move 3/10. Final Node and real HTTP reload/manual-drag fixtures: zero crossings/shared segments/card intersections/label intersections in both densities. | Reproduced; corrected for the documented raid cases. A* routes avoid prior edges and reserved stubs; separate attachment lanes remain inside the existing handles. Labels have more valid candidates, including short edges. The same derived router now renders immediately after Optimize instead of temporarily replacing it with raw ELK routes. No position/relationship changes except the explicit move/Optimize. |
+| Group ID string null vs null membership | Before: group:null yielded a,c,d; after: only a. Ungrouped yields c,d; absent null group yields no matches and Clear filters recovers. | Reproduced and corrected with an explicit non-null membership check. |
+| Target arrows | Before hiding, actual empty Target + ArrowUp produced 0.000001 (min 0.000001 / step any). After correction, the same browser action produced 1 (min 1 / step 1). | Reproduced and corrected before removal. Retained progress-input helper is regression/recovery code only; no numeric controls remain. Fractional stored values are not rounded/cleared by other edits. |
+| Inspector draft prompt | Initial Board notes → close → Graph → reopen: 0 prompts, notes retained. Owner clarified “Clicking a graph goal afterward”; final browser adds an actual single click on a different goal and asserts its selection, original inspector title/notes and 0 prompts. Real More details replacement still prompts, and declining retains both drafts. | Owner report not reproduced in the current build, including the clarified sequence. Existing preservation behavior retained; regression added. No unobserved root-cause fix or historical closure is claimed. Owner verification remains requested during acceptance. |
+
+Reproduction evidence: evidence/p5-reproduction-2026-10-27T00-56-54-068Z/observations.json (before); evidence/p5-reproduction-2026-10-27T00-58-30-067Z/observations.json (corrected before hiding). New measured baseline/final JSON: evidence/p5-001-preflight-2026-10-26/routing-before.json and routing-final.json. Actual browser geometry/routes: evidence/p5-001-2026-10-27T01-19-49-438Z/routing-metrics.json and raid screenshots. These source/render changes do not move goals automatically, fabricate semantic connections, or alter graph identities/readiness.
+
+Catalog: 207 factual name/category/reference-link records across seven categories: skills 24, quests 32, items 30, bosses 24, prayers 29, diary tiers 48, activities 20. Seven legacy demo references remain preserved and excluded from catalog search. Offline repeatable importer: scripts/import-catalog.mjs; input catalog/reference-source.json; generated immutable module src/catalog/generated.js. It validates before output and never reads/writes browser data. Catalog search/category filtering is in quick creation and detailed creation, with manual/custom entry retained. Selected reference/source identity transfers through More details. New goal IDs/statuses remain independent for repeated references. Existing catalogRef/iconOverride fields are reused; updates never synchronize metadata into user titles/notes/statuses/hidden values/positions/overrides. A real separately rebuilt updated-catalog fixture was opened at the same origin with saved disposable data, and exact user-document equality was asserted.
+
+Source/license and coverage report: catalog/README.md, catalog/source-review.json, catalog/asset-manifest.json and bundled public/catalog-notices.html (linked under Help). Current Jagex policy and Wiki media conditions were checked before choosing the no-game-art path. Factual names/reference URLs were manually curated; no article prose, tables, game stats, requirements, screenshots, logos or sprites were copied. Some Wiki fetches were robots-denied; no bypass was attempted. An individual live audit of all 207 links was NOT RUN. Original category symbols: seven SVGs, 1,933 bytes total, locally bundled under Owner P5-001 authorization; no external artwork license or public-domain dedication is applied to Owner assets or application. Authentic game imagery: 0, explicit gap pending suitable permission/Owner review. Items/quests/bosses/activities are a curated subset; diary tiers omit individual tasks. Completeness/newest-content/individual-link accuracy is not claimed. The static app has no runtime API or external asset dependency; reference links are explicit user navigation only.
+
+Visuals: original parchment/brass palette, system fonts and geometric icons shared by Graph, Board, editors and dialogs. Compact/detailed card dimensions and one-level visual groups are retained. Optional inspector/quick-first interactions stay in place; default numeric controls are not restored. Original icon fallback and unknown-reference portability remain supported.
+
+| Check | Actual result | Evidence |
+|---|---|---|
+| npm test, all model/state/storage/catalog checks | Pass 89/89 | evidence/p5-001-preflight-2026-10-26/node-tests-complete.txt |
+| P5-001 current progress/catalog/deferred cases browser/build groups | Pass 15/15 | evidence/p5-001-2026-10-27T01-19-49-438Z/results.json |
+| P3-005 editing/history/cancellation browser/build groups | Pass 9/9 | evidence/p3-005-2026-10-27T01-12-57-256Z/results.json |
+| P3-002 bulk/gestures/grouping browser/build groups | Pass 13/13 | evidence/p3-002-2026-10-27T01-12-57-259Z/results.json |
+| P3-001 organization/layout/navigation browser/build groups | Pass 12/12 | evidence/phase3-2026-10-27T01-12-57-627Z/results.json |
+| Catalog regeneration check | Pass, byte-identical | node scripts/import-catalog.mjs catalog/reference-source.json --check |
+
+Final engineering result: 89/89 Node and 49/49 current browser/build groups Pass; zero final Fail. Environment: Windows PowerShell, Node v24.22.1, installed Chrome 155.0.8059.85, preinstalled bundled Playwright; fresh disposable headless contexts and real HTTP/IndexedDB at unchanged http://127.0.0.1:4173/, 1500×1050. Source/vendor/static bytes and original dist hashes verified; existing server reused without touching personal profiles. Final source has only a whitespace cleanup after the earlier legacy runs; current full P5 build/browser matches exact delivery source.
+
+Tests include direct-status mouse/keyboard/cancel/drag/history/reload; exact fractional preservation while editing notes/title/icons/status; absence of numeric UI; catalog creation/two independent instances/manual entry/More details/overrides/fallback/actual update; null-group and clarified Owner draft cases; route measurements; Board combined filters/cross-view history/preferences; JSON/failed-write/Retry/canceled/failed replacement; context actions and confirmed/canceled goal deletion; existing grouping/selection/actual Shift-click/ports/navigation/layout; all model/storage tests. Original counter-UI browser runners browser_phase2.mjs, browser_cursor.mjs, browser_workspace.mjs and browser_board.mjs are retained, NOT RUN unchanged because their numeric-control expectations are superseded by this Owner ticket. Relevant current interactions/data assertions are covered by browser_phase5.mjs plus the three unaffected suites. The historical browser_p5_reproduction.mjs is a before-hiding observation harness, not a runnable current-counter UI feature. Node counter validation/data tests remain active and pass.
+
+Intermediate failures are retained: two Node logs exposed a label/edge intersection in the new route tests; expanding placement for short edges fixed it. New browser harness syntax was corrected before browser execution. Earlier successful/current runs and pre-hide static evidence are retained separately. No failed results are relabeled as passes. Screenshots were visually inspected, with actual interaction/data assertions providing workflow evidence.
+
+Known defects/limits: no P0/P1 observed in executed checks. The documented raid reconstruction cases pass, but arbitrary overlapping/non-planar/very dense graphs may still need manual adjustments or route fallback; no general crossing-free guarantee or production-scale hardening is claimed. Source completeness/link audit and authentic imagery remain documented content gaps. The Owner draft-prompt report remains an acceptance verification item because the clarified sequence did not reproduce. Not run: independent review, CEO review, Owner Phase 5 acceptance, other browser engines, headed assistive-technology audit, natural quota exhaustion/concurrent tabs, mobile and Phase 6 production-scale performance.
+
+Data impact: schema 1, IndexedDB name/version/store/key and origin unchanged; no migration or data deletion. Existing goal IDs/relationships/manual state/fractional progress/positions/groups/preferences/unknown icon references are preserved. New catalog metadata remains separate, and creates no edges/prerequisites. Original dist, vendor/dependencies, historical evidence and prior Owner decisions remain preserved. The pre-P5 README is retained verbatim at evidence/p5-001-preflight-2026-10-26/README-before.md while the current guide removes superseded numeric-control instructions.
+
+Runnable validation: npm test; node scripts/import-catalog.mjs catalog/reference-source.json --check. Set PLAYWRIGHT_MODULE_PATH to C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright, then run node tests/browser_phase5.mjs and the retained browser_editing.mjs, browser_bulk.mjs, browser_phase3.mjs. Each writes new timestamped evidence and separate static output; no installs or default dist rebuild required.
+
+Consolidated Owner walkthrough:
+
+1. Run npm run dev in the existing checkout and use http://127.0.0.1:4173/. Use a disposable browser profile for acceptance; export personal work before replacement. No install is needed. The separately verified build is evidence/p5-001-2026-10-27T01-19-49-438Z/static/ beneath the same origin. Do not run the default build over preserved dist.
+2. On a graph goal, click its manual-status button or Tab to it and press Enter. Choose a status, Cancel, then apply. Selection, positions and connection pairing must stay unchanged. Undo/Redo, reload and switch to Board: the same goal/ID changes, independently of downstream goals. No numeric progress controls or values should appear in either view or any editor/menu/help.
+3. Double-click empty canvas, expand Reference catalog, search Cook's Assistant and filter Quest. Create it twice; complete/edit one and verify the other remains independent. More details preserves the reference, draft and intended canvas position. Use manual/custom entry for gaps. In details, change a local icon override; unknown or missing assets must fall back.
+4. In Board, combine name/category/readiness/group filters; verify completed search, Ungrouped, clearing filters and reload/JSON preferences. Test a literal group ID null in disposable JSON: it must not include ungrouped goals. Hidden/collapsed prerequisites still determine canonical hard-only readiness.
+5. Enter unsaved notes in Board details, close it, switch to Graph, single-click a different goal, and reopen details. Original notes must remain without a prompt. Opening another object's details or applying a conflicting edit still asks before discarding. Decline and verify both drafts remain.
+6. Optimize a disposable branching roadmap, reload and move a goal manually. Verify readable reconstructed routes without changing IDs/relationships or other positions. Exact raid metrics and screenshots are in the evidence. Export/reload/restore including stored fractional progress, and use Help / Diagnostics to test failed save/Retry and failed import replacement. Test artifacts include a real changed-catalog build proving user data survives an update.
+
+STOP: return for independent reviewer, CEO review and Owner Phase 5 acceptance. Phase 6 is NOT AUTHORIZED.
+
+
+---
+
+Prior Owner/engineering records retained verbatim below. Historical holds and counter-UI descriptions are superseded only within ADR-024/P5-001:
+
+# P4-001 executed QA — 2026-10-26
+
+Owner authorization: “I authorize Phase 4 within this proposal.” Direct P4-001 ticket recorded in ADR-023. ADR-022's Owner Phase 3 acceptance and explicit deferral of P2 routing ambiguity are preserved. Phase 4 is implemented/engineering-tested and delivered for independent review, CEO review and Owner Phase 4 acceptance; neither AI accepts the phase. Phase 5 requires separate Owner authorization.
+
+Exact checkout: C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor; main; HEAD 604d4d6d21fcd0030286acb400087cb14388e8f7. Work is unstaged/uncommitted. No staging, commit, branch change, push, deployment, integration or destructive cleanup. Starting hashes: evidence/p4-001-preflight-2026-10-26/starting-files.json. Exact incremental files/before-after hashes/preservation assertions: evidence/p4-001-preflight-2026-10-26/delivery-manifest.json.
+
+Implemented: three columns Not Started / In Progress / Completed derive directly from canonical nodes/IDs and manual status. Board titles open the existing complete quick goal editor; explicit status selectors use the existing validated single-ID bulk action. Optional counters never infer completion, prerequisites never propagate completion, and edits agree in both views. More details alone opens the inspector; notes/icons/grouping/technical fields remain there. Inspector drafts survive view switching; quick modal input requires explicit save/cancel/transfer before background switching. Declining dirty-inspector replacement/commit retains both drafts/data.
+
+Combined Board filters: case-insensitive goal-name substring, category, canonical readiness, and visual-group or Ungrouped. All filters intersect; completed goals remain included unless excluded by the chosen filters. Clear filters restores all canonical goals. Graph Focus/Highlight, completed visibility, and collapsed groups do not scope Board or readiness. Readiness always uses the full canonical graph and only incoming hard prerequisites, with manual Completed override. No separate tasks, ordering, or board-specific goal state exist.
+
+Navigation: explicit Graph/Board buttons; lastView and query/category/readiness/group filters are saved and exported. Graph positions and viewport, graph visibility/navigation, IDs/edges/status/counters/groups/icon references remain intact. Undo/Redo retains the currently chosen view/Board filters while applying existing roadmap history; filter/view changes themselves do not add history commands. Graph-only controls are hidden in Board; shared Undo/Redo, backup, save/failure/Retry, Help/Diagnostics and optional details remain accessible. Quick editor focus returns to the matching Board title, or search if filtering removed that card. Empty/no-results, initial storage loading, inline validation, saving and failure messages are provided; deliberately delayed startup was not separately simulated.
+
+Data/compatibility: no migration/conversion, schema version, database/store/key, origin or dependency changes. Existing schema 1 already supports lastView board. New optional preferences.boardFilters has query/category/readiness/group; absent means empty filters without rewriting old documents. It is validated on load/import and retained by existing full-document backup. A removed/unavailable group filter intentionally yields no matches and can be cleared, retaining original IDs. Existing unknown icon references remain preserved with fallback and portability warnings. Storage, backup modules, store, layout/router/vendor and prior tests are unchanged by this ticket. Old code ignores the optional filter fields but cannot provide the new Board UI; recovery is through the full JSON document and current code. Phase 2's historical static-build limitation remains unchanged.
+
+Changed application files: index.html, src/main.js, src/model.js, src/style.css, src/ui/cursor.js, src/board.js, src/ui/board.js. New tests: tests/board.test.mjs, tests/browser_board.mjs. Current records: DECISIONS.md, docs/agents/CURRENT_PHASE_GATE.md, HANDOFF.md, TEST_REPORT.md, README.md, PRODUCT_SPEC.md, ARCHITECTURE.md, docs/TESTING.md. Other uncommitted Git changes belong to preserved earlier deliveries/Owner changes. Original dist, previous evidence and Owner decision text remain preserved; historical Handoff/QA content is retained verbatim below.
+
+Environment: Windows PowerShell, Node v24.22.1, installed Chrome 155.0.8059.85, preinstalled bundled Playwright. Fresh headless disposable contexts with real HTTP/IndexedDB at unchanged http://127.0.0.1:4173/, 1500×1050 plus prior boundary-resize checks. Static suites build in fresh evidence subdirectories, verify copied source/vendor bytes and dist hashes, and reuse the verified existing server without personal profiles or site-data reset.
+
+| Check | Actual result | Evidence |
+|---|---|---|
+| npm test — model/actions/history/storage/layout/board | Pass 82/82 | evidence/p4-001-preflight-2026-10-26/node-tests.txt |
+| P4-001 board browser/build scenario groups | Pass 11/11 | evidence/p4-001-2026-10-26T23-00-26-537Z/results.json |
+| P3-005 editing consistency browser/build scenario groups | Pass 9/9 | evidence/p3-005-2026-10-26T22-59-01-930Z/results.json |
+| P3-004 workspace browser/build scenario groups | Pass 14/14 | evidence/p3-004-2026-10-26T22-59-01-108Z/results.json |
+| P3-003 cursor/context browser/build scenario groups | Pass 17/17 | evidence/p3-003-2026-10-26T22-59-01-477Z/results.json |
+| P3-002 bulk browser/build scenario groups | Pass 13/13 | evidence/p3-002-2026-10-26T22-59-03-140Z/results.json |
+| Phase 1/2 editing/progression/backup browser/build scenario groups | Pass 15/15 | evidence/phase2-2026-10-26T22-59-02-432Z/results.json |
+| P3-001 organization/layout browser/build scenario groups | Pass 12/12 | evidence/phase3-2026-10-26T22-59-03-790Z/results.json |
+
+Final results: 82/82 Node and 91/91 browser/build scenario groups Pass, zero Fail. The first Board run also passed and is preserved at evidence/p4-001-2026-10-26T22-58-33-767Z/; the final run corrects a test name so no delayed-loading simulation is implied. No assertions were removed from prior suites. Five new Node checks cover canonical projection/filter purity, manual state/counters, defaults/compatibility, invalid preferences/full JSON and shared history. Eleven Board browser/build groups exercise both edit directions; cross-view history; combined filters/completed discovery/full readiness; reload and full JSON replacement; draft preservation/declined target replacement; validation/cancel/focus; failed-save/Retry/reload and canceled/invalid/failed imports. Prior 80 groups cover editing, selection, group/layout/navigation, real pointer gestures/trusted cancellation, persistence and recovery. Screenshots were visually inspected; controls/persistence are proven by interaction assertions rather than screenshots alone.
+
+Known defects: no P0/P1 or new P2 defect observed in executed checks. Owner-deferred P2 routing ambiguity remains OPEN: two reconstructed raid-route crossings per density and shared paths remain possible. No routing changes were made. Not run: independent reviewer/CEO review/Owner acceptance, other browser engines, headed manual/assistive-technology audit, natural quota exhaustion, concurrent-tab conflicts, mobile hardening and production-scale performance. Those are not passes. Phase 5 work is excluded.
+
+Runnable validation: npm test. Set PLAYWRIGHT_MODULE_PATH to C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright, then run node tests/browser_board.mjs. Prior runners browser_editing.mjs, browser_workspace.mjs, browser_cursor.mjs, browser_bulk.mjs, browser_phase2.mjs and browser_phase3.mjs use the same environment. Each creates a new evidence directory. Separate verified static output: evidence/p4-001-2026-10-26T23-00-26-537Z/static/, available under the existing localhost origin. No default dist rebuild was used.
+
+Consolidated Owner walkthrough:
+
+1. Run npm run dev in the existing application folder, retaining http://127.0.0.1:4173/. Use a disposable browser profile for acceptance and export personal work before replacing data. No install is required. Default npm run build replaces dist; use the separate static output below instead.
+2. Select Board. Use a goal-name button for quick status/current/target editing, or its explicit manual-status selector. Set current above target and verify status stays manual. Switch to Graph: the same goal/ID must show the same state. Quick edit there, return to Board, then Undo/Redo across views. Positions, edges, other goals and membership must remain unchanged.
+3. Combine name/category/readiness/group filters. Search a completed goal, clear filters and verify all results return. Hide/collapse/focus graph prerequisites: Board still uses every canonical goal for hard-only readiness. A missing group filter shows an unavailable-group option/no results; Clear filters recovers the list.
+4. More details explicitly opens the inspector. Enter notes, hide details, switch views and reopen: the draft remains. Try transferring a different quick draft; decline discard, then Cancel or explicitly resolve it. A modal quick form blocks background view switching until saved, canceled or transferred.
+5. Reload with Board/filters active; verify last view, query/category/readiness/group and edits restore. Export/import a full JSON backup and verify the same preferences/data. Use Help / Diagnostics to fail a disposable save: save failure and Retry remain available in Board and Graph. Retry, reload, cancel an import and test failed replacement; prior committed data must be recoverable.
+
+STOP: return this package for independent review, CEO review and Owner Phase 4 acceptance. Phases 1–3 remain Owner-accepted. Phase 5 is NOT AUTHORIZED.
+
+
+---
+
+Prior Owner/engineering records retained verbatim; historical authorization holds are superseded only by ADR-023 within P4-001 scope:
+
+# P3-005 executed QA — 2026-10-26
+
+Owner authorization: direct P3-005 ticket, quoting “Yes i approve,” for the CEO's three-fix remediation scope. Recorded in ADR-021. Implemented and engineering-tested only; Phase 3 remains UNACCEPTED, independent reviewer/CEO review and Owner acceptance are pending. Phase 4 remains NOT AUTHORIZED. Existing P2 routing ambiguity remains open and unchanged. Phase 2's historical static-build limitation remains disclosed below.
+
+Exact checkout: C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor; branch main; HEAD 604d4d6d21fcd0030286acb400087cb14388e8f7. Existing delivery remains unstaged/uncommitted; no staging, commits, branch changes, push, deployment or other Git-state mutations. Preflight hashes: evidence/p3-005-preflight-2026-10-26/starting-files.json. Exact per-file before/after hashes and preservation checks: evidence/p3-005-preflight-2026-10-26/delivery-manifest.json.
+
+Only three fixes:
+
+1. Undo/Redo captures the inspector's canonical object context, resolves discard before calling history, then reloads that object from the resulting document or resets if it no longer exists. Declining leaves fields/history untouched. Accepted discard clears the dirty inspector before history emits its changes; subsequent Save cannot restore discarded input. The optional panel remains in its prior open/closed state.
+2. Pointer cancellation explicitly renders the canonical graph rather than relying on the unchanged-document selection fast path. Temporary card/group geometry and preview connection paths are replaced from canonical positions/routes; no command, history entry or autosave of a temporary node position occurs. Routing algorithms/ambiguity are unchanged.
+3. New editConnection action applies allowed type/source/destination fields to one detached copy, then validates the final candidate. The quick connection Reverse direction control supplies the selected type and swapped current endpoints to this one action and one store command. It no longer validates an intermediate type-only edit. Existing store invariant checks remain in place. Invalid final cycles, duplicate pairs, self-edges and missing references reject without mutating source/history. IDs and unrelated data remain intact.
+
+Changed application files: src/main.js, src/model/actions.js, src/ui/cursor.js. New tests: tests/editing.test.mjs, tests/browser_editing.mjs. Current records: DECISIONS.md, docs/agents/CURRENT_PHASE_GATE.md, HANDOFF.md, TEST_REPORT.md, docs/TESTING.md. New evidence only under the directories listed in the table and evidence/p3-005-preflight-2026-10-26/; existing uncommitted files outside this list are prior deliveries/Owner changes and were preserved. No unrelated refactor, dependency, schema, storage identifier, origin or migration changes.
+
+| Check | Actual result | Evidence |
+|---|---|---|
+| npm test — model/actions/history/storage/layout | Pass 77/77 | evidence/p3-005-preflight-2026-10-26/node-tests.txt |
+| P3-005 editing fixes browser/build groups | Pass 9/9 | evidence/p3-005-2026-10-26T22-41-19-168Z/results.json |
+| P3-004 workspace browser/build groups | Pass 14/14 | evidence/p3-004-2026-10-26T22-41-29-432Z/results.json |
+| P3-003 cursor/context browser/build groups | Pass 17/17 | evidence/p3-003-2026-10-26T22-41-29-449Z/results.json |
+| P3-002 bulk browser/build groups | Pass 13/13 | evidence/p3-002-2026-10-26T22-41-29-926Z/results.json |
+| Phase 1/2 editing/progression/backup browser/build groups | Pass 15/15 | evidence/phase2-2026-10-26T22-41-29-459Z/results.json |
+| P3-001 organization/layout browser/build groups | Pass 12/12 | evidence/phase3-2026-10-26T22-41-30-435Z/results.json |
+
+Environment: Windows PowerShell; Node v24.22.1; installed Chrome 155.0.8059.85 using the preinstalled Playwright module. Fresh headless disposable browser contexts at http://127.0.0.1:4173/ with real IndexedDB; 1500×1050 plus existing resize checks. New targeted context enables touch so Chrome DevTools Input.dispatchTouchEvent can issue touchStart/move/touchCancel. It asserts pointercancel is trusted and touch-originated, with screenshots before and after cancellation, changed preview card/routes, exact restored card/group/path geometry, unchanged canonical document and equality after reload. This is browser-generated cancellation, not dispatchEvent. Mouse gesture regressions are separately covered in the existing suites.
+
+Final result: 77/77 Node and 80/80 browser/build scenario groups Pass; zero Fail. New targeted checks exercise accepted and declined Undo and Redo followed by Save/reload; trusted pointer cancellation after visible movement; Order A→B plus Required B→C→A changed atomically to Required B→A; rejected invalid final cycle and duplicate pair; one-step Undo/Redo, JSON export and reload. Existing editing, drafts, pointer, bulk, group, persistence, failed-save/Retry and failed-import recovery regressions pass. The first targeted run and all regression runs passed; no failed run is hidden. Static runners build new output, verify source/vendor bytes and original dist hashes, and reuse the existing verified server without touching personal profiles.
+
+Data impact: no migration, no browser personal-data edits or resets. Manual independent statuses/counters, IDs, relationships, positions, visual groups, canonical hard-only readiness, backup schema and IndexedDB identifiers remain unchanged. The original dist and historical evidence remain preserved. The targeted runnable static output is evidence/p3-005-2026-10-26T22-41-19-168Z/static/ at the same localhost origin.
+
+Known defects: no P0/P1 or new P2 defect observed in executed checks. Existing P2 routing ambiguity remains OPEN: shared trunks and two reconstructed raid-route crossings per density remain possible. No routing repair was attempted. See the new organization suite's layout-metrics.json for actual measurements. Not run: independent reviewer, CEO review, Owner acceptance, other browser engines, headed manual/assistive-technology audit, natural quota exhaustion, concurrent-tab conflicts, mobile, production-scale performance. No pass is claimed for those.
+
+Runnable instructions (application root): npm run dev retains http://127.0.0.1:4173/. Run npm test. Set PLAYWRIGHT_MODULE_PATH to C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright, then node tests/browser_editing.mjs. The same environment runs tests/browser_workspace.mjs, tests/browser_cursor.mjs, tests/browser_bulk.mjs, tests/browser_phase2.mjs and tests/browser_phase3.mjs. Each creates fresh timestamped evidence; static output uses a new directory. No package install is needed. Do not run the default build, which replaces dist.
+
+Short Owner walkthrough (use a disposable browser profile/data and export personal work before any replacement):
+
+1. Save a goal title edit, then dirty its inspector title/notes. Undo: decline and verify fields/history unchanged; Save retains the intentional draft. Repeat and accept discard: inspector shows the canonical undone title/notes; Save must not resurrect discarded text. Repeat both cases for Redo.
+2. Drag a card visibly and cancel the pointer gesture using touch input/OS cancellation; verify it and its connection routes return to their starting geometry. Reload and verify original positions. The automated trusted-input scenario is available in the targeted browser runner and its before/after screenshots.
+3. Using illustrative A/B/C goals, set Order A→B and Required B→C→A. Double-click A→B, choose Required prerequisite, then Reverse direction: Required B→A succeeds. One Undo/Redo restores/reapplies the entire edit. Try an invalid final cycle and a duplicate reverse pair; both reject without altering the original. Export/reload verifies persistence.
+
+STOP: return the completed P3-005 package for independent review, CEO review and Owner acceptance. No phase acceptance or later-phase authorization is inferred.
+
+
+---
+
+Prior delivery retained verbatim as historical evidence:
+
+# P3-004 executed QA — 2026-10-26
+
+Exact checkout: C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor; branch main; HEAD/base 604d4d6d21fcd0030286acb400087cb14388e8f7. Delivery remains unstaged/uncommitted; no staging, commits, branch change, push or deployment. Phase 1/2 are Owner-accepted; Phase 2 static build was not verified. Phase 3 acceptance is pending independent reviewer, CEO review and Owner acceptance. Phase 4 is NOT AUTHORIZED. Owner authority and superseding scope: ADR-020.
+
+Implemented: optional closed-at-start details overlay with labeled keyboard toggle and pointer/keyboard resizing; single-click selection, double-click full quick editing, explicit field/position transfers; creation Progress disclosure; connection type/reverse/confirmed delete; region-only compact floating bulk controls; unchanged source/destination pairing; one modal quick editor, draft replacement/commit guards, no premature port-start discard prompt; focus/Tab/Escape/Enter/bounds; View and Help/Diagnostics; persistent visible save/failure/Retry; approved full relationship labels with compact Required/Recommended/Order edge badges and full-name tooltips. Existing detailed/context actions remain available.
+
+Data impact: no dependency, migration, schema, storage identifier or origin changes. Existing IDs, semantic references, original edge types, positions, statuses/counters, visual group identities, canonical hard-only readiness and recovery format remain intact. Selection, quick forms and inspector visibility/width are transient. Hidden inspector DOM retains its unsaved draft; Cancel/Escape explicitly discards a quick draft. Saving, moving and status edits do not open details. Panel/toolbar changes do not move or Fit the graph. Failed writes preserve the prior committed roadmap; invalid/canceled/failed imports preserve active data. No routing repairs or automatic layout/completion were added.
+
+Environment: Windows PowerShell; Node 24.22.1; Chrome 155.0.8059.85; preinstalled bundled Playwright; headless 1500×1050 and 1000×650 boundary checks; real HTTP/IndexedDB in fresh disposable browser contexts at unchanged http://127.0.0.1:4173/. Static suites use fresh output under evidence, match source/vendor bytes and verify original dist hashes. Existing server reused after verification; personal profiles/data untouched.
+
+| Check | Actual result | New evidence |
+|---|---|---|
+| Node unit/integration, npm test | Pass 74/74 | evidence/p3-004-preflight-2026-10-26/node-tests-final.txt |
+| Workspace / separate static build | Pass 14/14 | evidence/p3-004-2026-10-26T21-29-23-732Z/results.json |
+| P3-003 cursor/context regressions | Pass 17/17 | evidence/p3-003-2026-10-26T21-29-23-216Z/results.json |
+| P3-002 region/bulk regressions | Pass 13/13 | evidence/p3-002-2026-10-26T21-29-22-772Z/results.json |
+| P3-001 organization/layout regressions | Pass 12/12 | evidence/phase3-2026-10-26T21-29-22-296Z/results.json |
+| Phase 1/2 detailed/progression/backup regressions | Pass 15/15 | evidence/phase2-2026-10-26T21-29-21-880Z/results.json |
+
+Final results: 74/74 Node checks and 71/71 browser/build scenario groups Pass, zero final Fail. Intermediate failed runs are preserved separately: integer-coordinate expectation and old inspector/disclosure access adjustments; genuine group-form reset, double-click event shadow, modal Tab wrap, Retry overlap and bulk-toolbar port-target jump were found and fixed before final runs. New workspace evidence covers accepted/declined dirty-draft resolution and import guard, single/double-clicks, panel resizing, full transfers, cancel/history/save/reload/JSON, keyboard and actual pointer gestures. See individual results for executed assertions; screenshots alone are not acceptance evidence.
+
+Layout measurements (unchanged router): seven-goal compact 1715×412 and detailed 2015×508; raid compact 4029×556 and detailed 4689×700. All measured card overlaps, node intersections and label/card/label intersections were zero. Seven-goal routes had zero crossings and two shared trunks per density. Raid optimized routes had zero crossings and ten shared trunks; reconstruction after reload retained ten shared trunks with two crossings per density. Collapsed ToA summary layout 2509×696, zero card overlaps/crossings and four shared trunks. These measurements preserve and disclose the existing ambiguity, not a routing repair.
+
+Known defects: no P0/P1 or new P2 defect observed in executed checks. Existing P2 routing ambiguity remains OPEN, unchanged: two reconstructed raid-route crossings/shared trunks can remain ambiguous. P3-001 final layout-metrics.json retains actual per-density routing measurements, including any remaining routing issues. Compact edge badges abbreviate approved labels and use smaller text to preserve routing geometry; full names are available in tooltips/editors/Help. Not run: independent review, CEO review, Owner acceptance, headed manual/assistive-technology audit, other browser engines, natural quota exhaustion, concurrent-tab conflicts, mobile and production-scale performance. These are not reported as passes.
+
+Changed files for this ticket:
+
+Application: index.html; src/main.js; src/style.css; src/ui/graph.js; src/ui/inspector.js; src/ui/cursor.js; src/ui/bulk.js; src/ui/organization.js; new src/ui/workspace.js and src/ui/labels.js.
+
+Tests: new tests/browser_workspace.mjs; adapted tests/browser_phase2.mjs, tests/browser_phase3.mjs, tests/browser_bulk.mjs and tests/browser_cursor.mjs. Existing assertions are retained; detailed workflows explicitly invoke Open details, disclosures are opened through their summary controls, canceled transfer menus are explicitly closed, integer mouse coordinates match browser events, partial-selection start avoids the group heading, and boundary-label expectations use the approved names.
+
+Current documents: DECISIONS.md, docs/agents/CURRENT_PHASE_GATE.md, HANDOFF.md, TEST_REPORT.md, README.md, PRODUCT_SPEC.md, ARCHITECTURE.md and docs/TESTING.md. New evidence/checkpoint files only; exact hashes and incremental changed-file inventory are in evidence/p3-004-preflight-2026-10-26/delivery-manifest.json. Earlier Git changes also include Phase 2/3 files outside this ticket; those are preserved, not attributed to P3-004.
+
+Runnable validation (from this checkout): npm test. Set PLAYWRIGHT_MODULE_PATH to C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright, then run node tests/browser_workspace.mjs, node tests/browser_cursor.mjs, node tests/browser_bulk.mjs, node tests/browser_phase3.mjs and node tests/browser_phase2.mjs. Each browser run writes a new evidence directory; static runners build into its new static subdirectory. Default dist is preserved.
+
+Owner walkthrough:
+
+1. Run npm run dev in the existing checkout and use http://127.0.0.1:4173/. Use a disposable browser profile for acceptance; export personal work before any replacement. No install is required. Do not run the default build: it replaces preserved dist.
+2. Start with details closed. Click a card/connection: selection only. Double-click: quick edit; change title/category/manual status/counters, Save, Undo/Redo. Counters above target must not set completion. Double-click empty space to create; expand optional Progress or Cancel.
+3. More details transfers entered fields and creation position. Enter notes, close details, select another goal, reopen: draft retained. Try transferring another quick draft; decline replacement, then explicitly cancel or approve. Port dragging and canceling a connection must not prompt to discard inspector drafts; committing/transferring resolves them explicitly.
+4. Shift-drag full cards. Check the floating count/Status/Group/More/Clear toolbar and reviewed affected IDs. Cancel then apply a status/group action; Undo/Redo. Empty click clears temporary selection without data changes. Empty drag pans; source → actual Shift-click destination → Connect and port dragging both still work.
+5. Toggle/resize details without changing viewport or positions. Use View for completed visibility/Focus/Highlight and Help / Diagnostics for Controls and fail-next-save. Verify visible save failure and Retry with details closed; reload/JSON roundtrip. Inspect connection reversal/delete confirmations and unchanged hard-only readiness with hidden prerequisites.
+
+STOP: engineering P3-004 package is returned for independent reviewer and CEO review, then Owner acceptance. Neither AI accepts the phase. No Phase 4 work is authorized.
+
+
+---
+
+The complete prior delivery below is retained as historical evidence; its interaction descriptions are superseded by P3-004 above.
+
+# P3-003 executed QA — 2026-10-26
+
+Checkout: `C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor`, `main`, HEAD `604d4d6d21fcd0030286acb400087cb14388e8f7` plus unstaged/uncommitted delivery. Authorization: bounded P3-003, ADR-019. Independent review / CEO review / Owner acceptance remain pending; Phase 4 is unauthorized. Existing P2 routing ambiguity remains open. Historical report blocks/evidence, dist and prior delivery are preserved.
+
+Environment: Windows PowerShell, Node **24.22.1**, installed Chrome **155.0.8059.85**, bundled Playwright, headless **1500×1050** plus panel-boundary resize to **1000×650**. Fresh disposable contexts with real HTTP/IndexedDB, unchanged origin **http://127.0.0.1:4173/**. New suite navigates a fresh separate static build beneath that origin. No personal profile/site-data changes, installs, runtime service or dependency additions.
+
+| Check | Actual result | Evidence |
+|---|---|---|
+| `npm test` | **Pass 74/74** (67 prior + 7 cursor/reverse tests) | [Node log](evidence/p3-003-preflight-2026-10-26/node-tests-final.txt) |
+| `node tests/browser_cursor.mjs` | **Pass 17/17** against separate static output | [Results](evidence/p3-003-2026-10-26T20-51-23-072Z/results.json) |
+| New static build inside cursor runner | **Pass**, source/vendor bytes match and dist hashes unchanged | [Build log](evidence/p3-003-2026-10-26T20-51-23-072Z/build.txt) |
+| `node tests/browser_phase2.mjs` | **Pass 15/15**, detailed workflows through More details where appropriate | [Results](evidence/phase2-2026-10-26T20-51-23-436Z/results.json) |
+| `node tests/browser_bulk.mjs` | **Pass 13/13** | [Results](evidence/p3-002-2026-10-26T20-51-23-902Z/results.json) |
+| `node tests/browser_phase3.mjs` | **Pass 12/12** | [Results](evidence/phase3-2026-10-26T20-53-19-907Z/results.json) |
+| Visual QA / keyboard / actual pointer modifiers | **Pass** for tested desktop interactions | [Create panel](evidence/p3-003-2026-10-26T20-51-23-072Z/cursor-create.png), [goal menu](evidence/p3-003-2026-10-26T20-51-23-072Z/goal-context.png), [connection menu](evidence/p3-003-2026-10-26T20-51-23-072Z/connection-menu.png) |
+| New-suite page exceptions / external runtime requests | **Pass: zero** | Results arrays |
+| Preservation / whitespace | **Pass** at delivery audit | Starting-file comparison in `evidence/p3-003-preflight-2026-10-26/`; `git diff --check`; original dist hashes identical |
+| Default build / legacy evidence-writing Python suites | **Not run** | Preserve dist/historical evidence; separate builds used |
+| Natural quota exhaustion, concurrent tabs, other browsers/mobile, full accessibility, production-scale performance | **Not run** | No broad support or hardening claim |
+| Independent review / CEO review / Owner acceptance | **Not run / pending** | Required next gate |
+
+New browser coverage: quick create/cancel/Enter/undo/redo and coordinates at changed zoom/pan; transfer title/category/position without orphan; both actual mouse Shift-click pairing and port dragging into the same explicit-endpoint quick connection form, including cancellation and type transfer; duplicate/self/hard-cycle quick connection rejection; menu opening/cancel preserving data and dirty inspector; declined discard preventing commit; rename/counters/More details preserving draft fields, including zero/blank removal and no inferred completion; selected-card context versus singleton outside target and reviewed grouping/count/IDs; edge type/reverse/delete confirmation/details/history; reverse duplicate/cycle rejection preserving original; group rename/transfer/collapse/expand/details preserving identities/status/counters/positions; Focus directions and empty Fit/Reset/Create here; keyboard Shift+F10, arrows/End/Enter/Escape/focus return; window-boundary clamping/resize; reload/JSON and failed-save last-known-good/Retry; actual pan, region selection, single-node movement, port dragging and mouse Shift-click after closing menus.
+
+Unit coverage: endpoint reversal preserves ID/type/other records and input immutability; duplicate pair/hard cycle/missing edge/invalid self-document rejection; history and JSON/reload for reverse/rename/counters without completion inference; window bounds; explicit context targeting inside/outside the selected-ID set. Self-conflicting connection creation is browser-tested; valid endpoint swapping cannot create a self-edge from distinct IDs, so invalid self-input reversal is covered at the model boundary.
+
+Previous tests were adapted narrowly: creation/connection inspector regressions invoke More details, and the bulk runner uses the cursor-specific Cancel selector. All prior assertions remain. One initial bulk run (`evidence/p3-002-2026-10-26T20-43-59-140Z/`) stopped on an ambiguous unscoped Cancel locator after both editors existed; this was a test selector failure, corrected without changing product behavior. The final 13/13 result above passes. Earlier new passing cursor/static artifacts are retained separately.
+
+Data impact: no schema/migration/database/origin changes. Cursor menus/forms are transient. Full validation precedes committing and precedes dirty-inspector discard prompts; cancellation/declined transfer creates no goal/edge or history change. Existing action/store/autosave preserves counters, unrelated goals, canonical readiness and visual-only groups. Reverse is atomic and does not mutate the original on failure. Separate single-goal grouping uses an explicit singleton reviewed scope; selection grouping freezes the original explicit selection. No automatic layout/completion propagation, no routing repair or dependency change.
+
+Known defects: **P0/P1 none found in executed checks; P3 none newly confirmed**. Existing **P2 routing crossings/shared-path ambiguity remain open and unchanged**. Phase 2 static build remains historically unverified; these build passes belong to the current delivery. Stop for independent review, CEO review and Owner acceptance.
+
+---
+
+# Retained P3-002 executed QA — historical package evidence
+
+# P3-002 executed QA — 2026-10-26
+
+Checkout: `C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor`, `main`, HEAD `604d4d6d21fcd0030286acb400087cb14388e8f7` plus unstaged/uncommitted Phase 2/3 delivery. Owner authorized selection UX only (ADR-018). Phase 3 acceptance is pending independent reviewer / CEO review and Owner acceptance. Phase 4 is not authorized. Existing P2 routing limitation stays open. No storage, schema, origin, dependency or routing changes; historical evidence, prior report blocks and dist preserved.
+
+Environment: Windows PowerShell, Node **24.22.1**, installed Chrome **155.0.8059.85**, bundled Playwright, headless **1500×1050**. New nonpersistent contexts, real HTTP and IndexedDB at **http://127.0.0.1:4173/**; separate static output is served beneath the same origin. No personal profiles/data accessed/reset. No installs. Existing server reused after byte checks; no unrelated process stopped.
+
+| Check | Actual result | Evidence |
+|---|---|---|
+| `npm test` | **Pass 67/67** (59 prior + 8 bulk) | `evidence/p3-002-preflight-2026-10-26/node-tests.txt` |
+| `node tests/browser_bulk.mjs` | **Pass 13/13** on new separate static build | [Results](evidence/p3-002-2026-10-26T20-05-12-987Z/results.json) |
+| New-target build inside bulk runner | **Pass**, copied source/vendor bytes verified; dist hashes unchanged | [Build log](evidence/p3-002-2026-10-26T20-05-12-987Z/build.txt) |
+| `node tests/browser_phase2.mjs` on current source | **Pass 15/15** | [Prior workflows/failure recovery](evidence/phase2-2026-10-26T20-05-29-532Z/results.json) |
+| `node tests/browser_phase3.mjs` | **Pass 12/12** on another separate static build | [Phase 3 regression](evidence/phase3-2026-10-26T20-05-29-200Z/results.json) |
+| Visual inspection | **Pass**, tested desktop | [Rectangle](evidence/p3-002-2026-10-26T20-05-12-987Z/selection-rectangle.png), [selected cards/toolbar](evidence/p3-002-2026-10-26T20-05-12-987Z/selected-goals-toolbar.png), [review dialog](evidence/p3-002-2026-10-26T20-05-12-987Z/bulk-status-preview.png) |
+| Browser errors/external runtime requests | **Pass: zero** in new suite | Results arrays |
+| Preservation / whitespace | **Pass** at final review | Starting-file hashes and preservation record in `evidence/p3-002-preflight-2026-10-26/`; `git diff --check` |
+| Default build, legacy Python/evidence-writing suites | **Not run** | Preserved dist/historical evidence |
+| Natural quota exhaustion, concurrent tabs, other browsers/mobile, production-scale performance | **Not run** | No new support/performance claim |
+| Independent reviewer / CEO review / Owner acceptance | **Not run / pending** | Required next review gate; engineering tests do not accept the phase |
+
+New browser coverage: rectangle drawn by real Shift/pointer events; full card containment at changed zoom/pan, reverse drag, partial-card rejection and compact sizing; ordinary pan preserving node positions; highlighting/count; Escape and mid-region cancellation; previewed manual statuses including all three enum values; exact affected IDs/counters/unrelated-node preservation; group create cancel/validation, add/ungroup, retained target members and representative cleanup; one-step undo/redo; unsaved editor draft preservation on Cancel and declined discard; completed Hide/Collapse, Focus, Highlight and collapsed group scope; exclusion of offscreen goals and summaries; adding to collapsed groups prunes selection; reload and JSON roundtrips with transient selection absent; failed bulk save last-committed recovery and Retry; click/Shift-click source→destination workflow, single-node drag and port-to-port connection after region selection.
+
+Unit/integration coverage: containment geometry and projected visibility pruning; status changes limited to explicit IDs without counter/completion propagation; group reassignment/representative validity; invalid action/IDs/title reject atomically; each effective command adds one history step (no-op adds none); exact JSON/reload roundtrip; failed coordinated write preserves prior committed state and retries only the intended result. Existing model/storage/layout/navigation tests remain intact.
+
+Known defects: **P0/P1 none found in executed checks; P3 none newly confirmed**. Existing **P2 reconstructed-route crossings/shared-path ambiguity remain open**, with routing code unchanged by this ticket. Selection is intentionally not persisted; projection-hidden selected IDs are pruned and never re-added implicitly. No automatic layout occurs. Personal browser data, canonical counters and unselected goals are preserved. Phase 2's static build remains historically unverified; the new build verification belongs to this delivery.
+
+---
+
+# Retained P3-001 executed QA — historical package evidence
+
+# P3-001 executed QA — 2026-10-26
+
+Checkout: `C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor`; `main`; HEAD `604d4d6d21fcd0030286acb400087cb14388e8f7` plus unstaged Phase 2/3 changes. Owner accepted Phase 2 and authorized P3-001 (ADR-017). **Phase 2 static build was not verified.** Phase 3 acceptance remains pending; Phase 4 is not authorized. Original delivery evidence and prior report text below are preserved.
+
+Environment: Windows PowerShell, Node **24.22.1**, installed Chrome **155.0.8059.85**, existing bundled Playwright, headless 1500×1050. Fresh disposable browser contexts; real IndexedDB; unchanged origin **http://127.0.0.1:4173/**. Phase 3 suite exercises the separate static build at `/evidence/phase3-2026-10-26T19-14-39-604Z/static/`; the existing Phase 1/2 suite exercises current source. No normal/personal profile was opened; no server/profile was reset. No npm install or package lifecycle scripts.
+
+| Check | Actual result | Evidence |
+|---|---|---|
+| `npm test` | **Pass 59/59** (46 existing + 13 Phase 3) | [Node log](evidence/phase3-validation-2026-10-26/node-tests.txt) |
+| `node tests/browser_phase3.mjs` | **Pass 12/12** against separate static output | [Results](evidence/phase3-2026-10-26T19-14-39-604Z/results.json) |
+| `node tests/browser_phase2.mjs` on current Phase 3 source | **Pass 15/15**, affected Phase 1/2 workflows and failure recovery | [Regression results](evidence/phase2-2026-10-26T19-14-39-938Z/results.json) |
+| `node scripts/build.mjs evidence/phase3-2026-10-26T19-14-39-604Z/static` | **Pass** | [Build log](evidence/phase3-2026-10-26T19-14-39-604Z/build.txt); suite verifies copied source/vendor bytes |
+| Attempt same explicit output again | **Pass: overwrite rejected** | [Expected rejection](evidence/phase3-2026-10-26T19-14-39-604Z/build-overwrite-rejected.txt); preserved `dist/` hashes identical before/after |
+| Local ELK feasibility | **Pass**, working engine, convergence/divergence, groups, disconnected node, soft cycle, both densities | Initial [feasibility](evidence/phase3-preflight-2026-10-26/elk-feasibility.json); final browser [metrics](evidence/phase3-2026-10-26T19-14-39-604Z/layout-metrics.json) supersede prototype spacing/compact height |
+| Browser exceptions / external runtime requests | **Pass: zero** in final suites | Results include exception/request arrays |
+| Visual QA | **Pass for tested desktop views** | Final screenshots in Phase 3 evidence; overview, collapsed group, original boundary inspector, Focus |
+| Whitespace / historical preservation | **Pass** at final review | `git diff --check`; protected baseline/evidence checks; original `dist/` hashes unchanged |
+| Default `npm run build`, legacy Python/evidence-writing suites | **Not run** | Original `dist/` and historical evidence preserved |
+| 250/400 production performance/memory, concurrent tabs, natural quota exhaustion, Edge/Firefox/Safari/mobile/full accessibility | **Not run** | Phase 6 or separate hardening; no broad support/performance claim |
+| Owner Phase 3 walkthrough | **Not run by Owner in this ticket** | Await CEO review / Owner acceptance; README walkthrough |
+
+Layout measurements (world px, actual compact **176×76**, detailed **236×108**, summaries **284×208**):
+
+| Fixture | Density | Bounds | Card overlaps / route-card hits | Label-card / label-label / label-edge collisions | Proper crossings ELK / reload | Shared segment incidences |
+|---|---|---|---|---|---|---|
+| Seven-goal convergence | Compact | 1715×412 | 0 / 0 | 0 / 0 / 0 | 0 / 0 | 2 |
+| Seven-goal convergence | Detailed | 2015×508 | 0 / 0 | 0 / 0 / 0 | 0 / 0 | 2 |
+| 16-goal branching raid + disconnected component + soft cycle | Compact | 4029×556 | 0 / 0 | 0 / 0 / 0 | 0 / 2 | 10 |
+| Same raid fixture | Detailed | 4689×700 | 0 / 0 | 0 / 0 / 0 | 0 / 2 | 10 |
+| Collapsed ToA with independent goals | Detailed | 2509×696 | 0 / 0 | 0 / 0 / 0 | 0 / Not measured | 4 |
+
+Metrics check axis-aligned card boxes and orthogonal segment geometry, not perceived visual complexity, antialiasing or arrowhead outlines. Shared collinear segment incidences include repeated pair incidences and are reported separately from proper crossings. Each original edge retains a distinct label and inspector; shared trunks can still be ambiguous. Fit is an overview; long chains need zoom/pan and Focus. Two reconstructed-route crossings remain on raid7/raid9 and raid8/raid9 after reload; initial ELK geometry is deliberately transient. Optimizing again restores ELK routing without altering semantic data. Arbitrary manual overlaps are not automatically corrected.
+
+Coverage: position-only layout and failure immutability; grouped/ungrouped and disconnected/cyclic graphs; summary packing/hidden-member translation; group CRUD, reassignment, representative independence, cancel/dirty-draft protection, default ungroup deletion and history; 100 completed-node component summary (model); all four completed modes and hidden canonical readiness; directional all-edge cycle-safe Focus/Highlight/reset without sibling flood-fill; preferences and schema-1 compatibility, deletion of active root, full JSON/reload persistence; actual movement after Optimize, undo/redo; all prior UI save/import/cancellation/failure/transaction-abort workflows. No fabricated group/summary connections are persisted.
+
+Dependency/provenance: **elkjs 0.12.0**, local unmodified 1,609,707-byte browser bundle, **EPL-2.0 OR GPL-3.0-or-later**, EPL-2.0 selected. Upstream license/README, notice and SHA-256 integrity inventory are local under `src/vendor/elkjs/`; original pinned npm archive retained separately. No CDN/runtime service or stack replacement. Initial registry access failed under sandbox EACCES; approved registry/download access succeeded. No package scripts were executed.
+
+Defects: **P0/P1 none found in executed checks**; **P2 two raid reload-routing crossings/shared-path ambiguity**; **P3 none newly confirmed**. Large-graph layout latency and arbitrary manual placement remain unverified outside these fixtures; main-thread execution has not received Phase 6 hardening. New evidence is separate; intermediate Phase 3 passing runs are retained. Review does not constitute Owner acceptance.
+
+---
+
+# Retained Phase 2 QA record (historical acceptance status superseded by ADR-017)
+
+# P2-001 executed QA — 2026-10-26
+
+Checkout: `C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor`, `main`, HEAD `604d4d6d21fcd0030286acb400087cb14388e8f7` plus unstaged delivery changes (no commit/staging/branch operations). Phase 1 acceptance is Owner-reported (ADR-015); the results below are separately executed engineering checks under P2-001 (ADR-016). Phase 2 acceptance remains pending Owner decision.
+
+Environment: Windows PowerShell, Node **24.22.1**, installed Google Chrome **155.0.8059.85**, bundled Playwright, headless 1500×1050 desktop. Real app navigation at **http://127.0.0.1:4173/** and real IndexedDB, with a newly created nonpersistent browser context per run. Personal profiles/data were not opened. The existing server was reused after verifying application source bytes; no existing process was stopped. No dependencies were installed.
+
+| Check | Actual result | Evidence |
+|---|---|---|
+| `npm test` | **Pass 46/46**, zero failures | [Node output](evidence/phase2-2026-10-26T16-55-55-492Z/node-tests.txt); 34 existing + 12 Phase 2 tests |
+| `node tests/browser_phase2.mjs` with bundled Playwright module path | **Pass 15/15**, zero unhandled page exceptions | [Final results](evidence/phase2-2026-10-26T16-57-05-678Z/results.json) |
+| HTTP-loaded real IndexedDB reload and import/export roundtrip | **Pass**, in browser suite | Includes exact document comparison after download, replacement, reload and re-export |
+| Failed import and autosave recovery / Retry | **Pass**, in browser suite | Candidate rejection before transaction plus separate deliberately aborted native IndexedDB write; previous committed record verified by readback |
+| Affected Phase 1 workflows | **Pass**, in Node and browser suites | Create/Cancel, title/notes/icon edits, draft protection, both connection methods, duplicate/self/cycle rejection, edge editing/deletion, node deletion, undo/redo, drag/zoom/Fit/Optimize, grouping/density, failed-save reload and Retry |
+| Visual inspection of preview and progression editor | **Pass**, inspected generated screenshots | [Import preview](evidence/phase2-2026-10-26T16-57-05-678Z/import-preview.png), [progression editor](evidence/phase2-2026-10-26T16-57-05-678Z/progression-editor.png), [final graph](evidence/phase2-2026-10-26T16-57-05-678Z/phase2.png) |
+| `git diff --check` | **Pass** | No whitespace errors at delivery review |
+| `npm run build`, legacy Python tests and layout benchmarks | **Not run** | Protect original `dist/` and historical evidence; source modules were exercised directly through HTTP |
+| Natural quota exhaustion, concurrent tabs, Firefox/Edge/Safari/mobile | **Not run** | Deliberate native transaction abort is not a claim of natural quota exhaustion or multi-tab safety |
+| Owner Phase 2 acceptance walkthrough | **Not run by Owner in this ticket** | Six-step walkthrough in README; delivery awaits CEO review and Owner acceptance |
+
+Progression coverage: multiple hard prerequisites, soft/order advisory behavior, Completed override even with incomplete predecessors, current=0 and current>target without completion inference, rejected counters/status, optional counter removal, reused goals without duplication/propagation, collapsed/offscreen canonical logic, status/counter undo/redo and reload persistence with stable IDs. Offscreen coverage is a model test; collapsed behavior also runs in the browser.
+
+Backup coverage: full existing schema roundtrip including positions/groups/preferences/references; malformed JSON, unsupported versions, null records, duplicate IDs, missing endpoints/groups/representatives and hard cycles; exact-current export requirement; chooser/preview/Escape/final-confirm cancellation; successful replacement undo/redo; failed replacement preserving active state/history and committed data; preceding pending-save failure blocks replacement; retained unknown icon strings render fallback and survive ordinary edits. Actual download files are retained alongside final browser evidence. Limits: 64 MiB backup size, existing collection limits; JSON carries references only, no custom asset bytes or undo history. No schema/database migration.
+
+Earlier new Phase 2 evidence folders are preserved: `16-50-15-860Z` records the initial runner's occupied-port failure (no browser checks); `16-50-37-850Z` found the restored save-coordinator Idle/Saved mismatch (fixed); `16-51-38-285Z` stopped on an overly broad test selector (fixed). Subsequent intermediate runs passed; final results above include the real Import button/file chooser, screenshots and final UI changes. No Phase 1 evidence was overwritten.
+
+Known defects: **P0/P1 none found in executed checks**. **P2 inherited** dense edge-label overlap/basic large-graph layout limitations; advanced layout remains excluded. **P3 none newly confirmed**. P0/P1 findings during review block acceptance. No Phase 3 work, deployment or external integration was performed.
+
+---
+
 # Phase 1 executed QA report — 2026-10-25
 
 ## Environment

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "p3-002-disposable",
+    "title": "Disposable region-selection fixture (illustrative only)",
+    "nodes": [
+      {
+        "id": "a",
+        "title": "Goal a",
+        "category": "skill",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 12,
+          "target": 10
+        },
+        "position": {
+          "x": 80,
+          "y": 80
+        },
+        "groupId": "old",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-26T21:26:20.908Z"
+      },
+      {
+        "id": "b",
+        "title": "Goal b",
+        "category": "skill",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 380,
+          "y": 80
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-26T21:26:20.908Z"
+      },
+      {
+        "id": "c",
+        "title": "Goal c",
+        "category": "skill",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 80,
+          "y": 280
+        },
+        "groupId": "target",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "d",
+        "title": "Goal d",
+        "category": "skill",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 380,
+          "y": 280
+        },
+        "groupId": "target",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "h",
+        "title": "Goal h",
+        "category": "skill",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 660,
+          "y": 80
+        },
+        "groupId": "old",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "p",
+        "title": "Goal p",
+        "category": "skill",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 690,
+          "y": 280
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "offscreen",
+        "title": "Goal offscreen",
+        "category": "skill",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 2000,
+          "y": 2000
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "ab",
+        "sourceId": "a",
+        "targetId": "b",
+        "kind": "hard"
+      },
+      {
+        "id": "bc",
+        "sourceId": "b",
+        "targetId": "c",
+        "kind": "hard"
+      },
+      {
+        "id": "hb",
+        "sourceId": "h",
+        "targetId": "b",
+        "kind": "soft"
+      }
+    ],
+    "groups": [
+      {
+        "id": "old",
+        "title": "Old group",
+        "representativeNodeId": "a",
+        "collapsed": false
+      },
+      {
+        "id": "target",
+        "title": "Target group",
+        "representativeNodeId": "c",
+        "collapsed": false
+      }
+    ]
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 30,
+      "y": 20,
+      "zoom": 1
+    }
+  }
+}

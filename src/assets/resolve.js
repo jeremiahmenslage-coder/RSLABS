@@ -1,9 +1,14 @@
+import {artworkAssets,artworkByCatalog} from './artwork.js';
 import {referenceCatalog} from '../catalog/reference.js';
 import {iconData} from '../icons.js';
+import {categoryArtwork} from './categories.js';
+import {ownerCategoryArtwork} from './owner-categories.js';
 
-// Only project-owned test assets. Arbitrary user disk paths/remote URLs are NOT accepted.
-// Production import: validate user-picked bytes and store opaque asset IDs in IndexedDB.
+// Pinned local artwork, original category symbols and preserved legacy/test assets.
+// Arbitrary user disk paths/remote URLs are not accepted.
 export const iconAssets=Object.freeze({
+  ...artworkAssets,
+  ...Object.fromEntries(['quest','skill','item','boss','diary','prayer','activity'].map(category=>[`local:${category}`,{path:`./public/icons/reference-${category}.svg`,mediaType:'image/svg+xml'}])),
   'test:sail-png':{path:'./public/icons/sample-sail.png',mediaType:'image/png'},
   'test:ring-webp':{path:'./public/icons/sample-ring.webp',mediaType:'image/webp'},
   'test:alternate-png':{path:'./public/icons/sample-alternate.png',mediaType:'image/png'},
@@ -13,13 +18,21 @@ export const iconAssets=Object.freeze({
   'test:shield-svg':{path:'./public/icons/shield.svg',mediaType:'image/svg+xml'},
   'test:moon-svg':{path:'./public/icons/moon.svg',mediaType:'image/svg+xml'},
 });
-export const POC_ICON_OPTIONS=Object.freeze(['auto','test:sail-png','test:ring-webp','test:alternate-png','test:missing']);
-export function resolveNodeIcon(node){
+export const POC_ICON_OPTIONS=Object.freeze(['auto',...Object.keys(artworkAssets),...['quest','skill','item','boss','diary','prayer','activity'].map(category=>`local:${category}`),'test:sail-png','test:ring-webp','test:alternate-png','test:missing']);
+// Deprecated individual presentation, retained for compatibility/recovery checks only.
+export function resolveIndividualIcon(node){
   const catalog=referenceCatalog[node.catalogRef];
-  const id=node.iconOverride || catalog?.defaultIconAssetId || null;
+  const id=node.iconOverride || artworkByCatalog[node.catalogRef]?.assetId || catalog?.defaultIconAssetId || null;
   const asset=id&&Object.hasOwn(iconAssets,id)?iconAssets[id]:null;
   return {assetId:id,src:asset?.path ?? iconData.scroll,fallback:iconData.scroll,
-    source:id&&asset?'local_test_asset':'original_fallback'};
+    source:id&&asset?(id.startsWith('art:')?'pinned_authentic_asset':id.startsWith('local:')?'local_original_asset':'local_test_asset'):'original_fallback'};
+}
+export function resolveNodeIcon(node){
+  const asset=ownerCategoryArtwork[node.category]??categoryArtwork[node.category];
+  const gap=node.category==='item'?'Inventory':node.category==='diary'?'Achievement Diary':null;
+  return {assetId:asset?.assetId??null,src:asset?.src??iconData.neutral,fallback:iconData.neutral,
+    source:asset?(ownerCategoryArtwork[node.category]?'owner_category_asset':'pinned_category_asset'):'original_fallback',
+    description:asset?`${asset.label} category marker`:gap?`${gap} symbol unavailable — original fallback`:'Custom — neutral original marker'};
 }
 export function bindImageFallback(img,fallback){
   img.addEventListener('error',()=>{

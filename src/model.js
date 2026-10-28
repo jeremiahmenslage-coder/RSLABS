@@ -1,5 +1,13 @@
+import {validSkillGoal,skillTitle} from './goal-rules.js';
 export const EDGE_KINDS = Object.freeze(['hard','soft','order']);
 export const STATUSES = Object.freeze(['not_started','in_progress','completed']);
+export const STATUS_LABELS = Object.freeze({not_started:'Not Started',in_progress:'In Progress',completed:'Completed'});
+export function readiness(doc){
+  const states=new Map(doc.roadmap.nodes.map(n=>[n.id,n.status==='completed'?'Completed':'Ready']));
+  const completed=new Set(doc.roadmap.nodes.filter(n=>n.status==='completed').map(n=>n.id));
+  for(const e of doc.roadmap.edges)if(e.kind==='hard'&&!completed.has(e.sourceId)&&!completed.has(e.targetId))states.set(e.targetId,'Blocked');
+  return states;
+}
 export const CATEGORIES = Object.freeze(['quest','skill','item','boss','diary','prayer','activity','custom']);
 export function graphSignature(data){
   // Content signature excludes positions, density and grouping presentation.
@@ -8,13 +16,20 @@ export function graphSignature(data){
 }
 export function validateRoadmap(doc){
   const errors=[];
-  if(doc?.schemaVersion!==1||!doc.roadmap) return ['Unsupported schema/roadmap'];
+  if(doc?.schemaVersion!==1||!doc.roadmap||typeof doc.roadmap!=='object'||Array.isArray(doc.roadmap)) return ['Unsupported schema/roadmap'];
   const {nodes,edges,groups}=doc.roadmap;
   if(!Array.isArray(nodes)||!Array.isArray(edges)||!Array.isArray(groups)) return ['Missing collections'];
+  if([...nodes,...edges,...groups].some(value=>!value||typeof value!=='object'||Array.isArray(value)))return ['Invalid collection record'];
   if(!doc.roadmap.id||typeof doc.roadmap.id!=='string'||typeof doc.roadmap.title!=='string')errors.push('Invalid roadmap identity');
   if(nodes.length>10000||edges.length>50000||groups.length>1000)return ['Roadmap exceeds safety limits'];
   if(!doc.preferences||!['graph','board'].includes(doc.preferences.lastView)||!['compact','detailed'].includes(doc.preferences.nodeDensity)||!['show','dim','hide','collapse'].includes(doc.preferences.completedVisibility))errors.push('Invalid display preferences');
   const viewport=doc.preferences?.viewport;
+  const board=doc.preferences?.boardFilters;
+  if(board!==undefined&&(!board||typeof board!=='object'||Array.isArray(board)||typeof board.query!=='string'||board.query.length>150||!['',...CATEGORIES].includes(board.category)||!['','Ready','Blocked','Completed'].includes(board.readiness)||typeof board.group!=='string'||(board.group!==''&&board.group!=='ungrouped'&&!(board.group.startsWith('group:')&&board.group.length>6))))errors.push('Invalid board filters');
+  const nav=doc.preferences?.navigation;
+  if(nav!==undefined&&(!nav||!['none','focus','highlight'].includes(nav.mode)||!['upstream','downstream','both'].includes(nav.direction)||(nav.rootId!==null&&typeof nav.rootId!=='string')))errors.push('Invalid navigation preferences');
+  const expanded=doc.preferences?.expandedCompleted;
+  if(expanded!==undefined&&(!Array.isArray(expanded)||expanded.some(id=>typeof id!=='string')||new Set(expanded).size!==expanded.length))errors.push('Invalid completed expansion preferences');
   if(!viewport||![viewport.x,viewport.y,viewport.zoom].every(Number.isFinite)||viewport.zoom<0.1||viewport.zoom>5)errors.push('Invalid viewport preferences');
   const nodeIds=new Set(), edgeIds=new Set(), groupIds=new Set();
   for(const g of groups){
@@ -26,6 +41,8 @@ export function validateRoadmap(doc){
     if(typeof n?.id!=='string'||!n.id||nodeIds.has(n.id)) errors.push('Duplicate/invalid node ID');
     nodeIds.add(n.id);
     if(!CATEGORIES.includes(n.category)) errors.push(`Category invalid: ${n.id}`);
+    if(n.skillGoal!==undefined&&n.skillGoal!==null&&(n.category!=='skill'||!validSkillGoal(n.skillGoal)))errors.push(`Structured skill goal invalid: ${n.id}`);
+    else if(n.skillGoal&&n.title!==skillTitle(n.skillGoal))errors.push(`Structured skill title contradicts metadata: ${n.id}`);
     if(!STATUSES.includes(n.status)) errors.push(`Status invalid: ${n.id}`);
     if(typeof n.title!=='string'||!n.title.trim()||n.title.length>150) errors.push(`Title invalid: ${n.id}`);
     if(typeof n.notes!=='string'||n.notes.length>5000)errors.push(`Notes invalid: ${n.id}`);
@@ -33,14 +50,16 @@ export function validateRoadmap(doc){
     if(n.iconOverride!==null&&(typeof n.iconOverride!=='string'||n.iconOverride.length>256))errors.push(`Icon reference invalid: ${n.id}`);
     if(!Number.isFinite(Date.parse(n.createdAt))||!Number.isFinite(Date.parse(n.updatedAt)))errors.push(`Timestamp invalid: ${n.id}`);
     if(!Number.isFinite(n.position?.x)||!Number.isFinite(n.position?.y)) errors.push(`Position invalid: ${n.id}`);
-    if(n.groupId&&!groupIds.has(n.groupId)) errors.push(`Group missing: ${n.id}`);
+    if(n.groupId!==null&&(typeof n.groupId!=='string'||!groupIds.has(n.groupId))) errors.push(`Group missing: ${n.id}`);
     if(n.progress !== null && !(Number.isFinite(n.progress?.current)&&Number.isFinite(n.progress?.target)&&n.progress.current>=0&&n.progress.target>0)) errors.push(`Progress invalid: ${n.id}`);
   }
-  for(const g of groups) if(g.representativeNodeId){
+  for(const g of groups) if(g.representativeNodeId!==null){
     const rep=nodes.find(n=>n.id===g.representativeNodeId);
     if(!rep) errors.push(`Representative missing: ${g.id}`);
     else if(rep.groupId!==g.id) errors.push(`Representative outside group: ${g.id}`);
   }
+  if(nav!==undefined&&((nav?.mode!=='none'||nav?.rootId!==null)&&!nodeIds.has(nav?.rootId)))errors.push('Navigation root missing');
+  if(Array.isArray(expanded)&&expanded.some(id=>!nodeIds.has(id)))errors.push('Completed expansion root missing');
   const pairs=new Set();
   for(const e of edges){
     if(typeof e?.id!=='string'||!e.id||edgeIds.has(e.id)) errors.push(`Duplicate/invalid edge ID: ${e.id}`);
@@ -48,7 +67,7 @@ export function validateRoadmap(doc){
     if(!nodeIds.has(e.sourceId)||!nodeIds.has(e.targetId)) errors.push(`Dangling edge: ${e.id}`);
     if(e.sourceId===e.targetId) errors.push(`Self edge: ${e.id}`);
     if(!EDGE_KINDS.includes(e.kind)) errors.push(`Invalid edge type: ${e.id}`);
-    const pair=`${e.sourceId}->${e.targetId}`;
+    const pair=JSON.stringify([e.sourceId,e.targetId]);
     if(pairs.has(pair)) errors.push(`Duplicate ordered pair: ${pair}`);
     pairs.add(pair);
   }

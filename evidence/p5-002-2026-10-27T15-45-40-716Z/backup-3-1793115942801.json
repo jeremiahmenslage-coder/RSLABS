@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "roadmap_42b08890-a054-441b-86c7-870d662c165e",
+    "title": "My Ironman Roadmap",
+    "nodes": [
+      {
+        "id": "node_986639aa-b63b-40e3-91f7-5ab84f6732aa",
+        "title": "Preserved custom draft",
+        "category": "quest",
+        "notes": "",
+        "iconOverride": null,
+        "status": "not_started",
+        "progress": null,
+        "catalogRef": null,
+        "position": {
+          "x": 315,
+          "y": 415
+        },
+        "groupId": null,
+        "createdAt": "2026-10-27T15:45:42.590Z",
+        "updatedAt": "2026-10-27T15:45:42.590Z"
+      }
+    ],
+    "edges": [],
+    "groups": []
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 35,
+      "y": 35,
+      "zoom": 1
+    }
+  }
+}

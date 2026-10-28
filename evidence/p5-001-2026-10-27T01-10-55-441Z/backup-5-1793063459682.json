@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "p3-003-disposable",
+    "title": "Disposable cursor actions (illustrative links only)",
+    "nodes": [
+      {
+        "id": "a",
+        "title": "Goal a",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 70,
+          "y": 80
+        },
+        "groupId": "g",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "b",
+        "title": "Goal b",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 80
+        },
+        "groupId": "g",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "c",
+        "title": "Goal c",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 70,
+          "y": 320
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "d",
+        "title": "Goal d",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 660,
+          "y": 320
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "node_816751c0-a518-43a7-8926-5881f3aa8683",
+        "title": "Rigour",
+        "category": "prayer",
+        "notes": "",
+        "iconOverride": null,
+        "status": "not_started",
+        "progress": null,
+        "catalogRef": "osrs:prayer:rigour",
+        "position": {
+          "x": 470,
+          "y": 540
+        },
+        "groupId": null,
+        "createdAt": "2026-10-27T01:10:59.515Z",
+        "updatedAt": "2026-10-27T01:10:59.515Z"
+      },
+      {
+        "id": "node_a204c049-8f95-4616-8c2d-b3d9ceef8126",
+        "title": "My custom milestone",
+        "category": "custom",
+        "notes": "",
+        "iconOverride": null,
+        "status": "not_started",
+        "progress": null,
+        "catalogRef": null,
+        "position": {
+          "x": 760,
+          "y": 540
+        },
+        "groupId": null,
+        "createdAt": "2026-10-27T01:10:59.571Z",
+        "updatedAt": "2026-10-27T01:10:59.571Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "ab",
+        "sourceId": "a",
+        "targetId": "b",
+        "kind": "hard"
+      },
+      {
+        "id": "bc",
+        "sourceId": "b",
+        "targetId": "c",
+        "kind": "soft"
+      }
+    ],
+    "groups": [
+      {
+        "id": "g",
+        "title": "Independent goals",
+        "representativeNodeId": "a",
+        "collapsed": false
+      }
+    ]
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 30,
+      "y": 20,
+      "zoom": 1
+    }
+  }
+}

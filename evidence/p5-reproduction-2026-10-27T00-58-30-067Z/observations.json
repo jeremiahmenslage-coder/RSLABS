@@ -1,0 +1,14 @@
+{
+  "targetArrow": {
+    "value": "1",
+    "min": "1",
+    "step": "1"
+  },
+  "groupNull": [
+    "a"
+  ],
+  "drafts": {
+    "prompts": 0,
+    "notes": "UNSAVED Board to Graph notes"
+  }
+}

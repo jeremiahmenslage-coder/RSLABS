@@ -1,0 +1,180 @@
+{
+  "date": "2026-10-27T16:51:08.354Z",
+  "checkout": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor",
+  "branch": "main",
+  "commit": "604d4d6d21fcd0030286acb400087cb14388e8f7",
+  "changed": [
+    {
+      "path": "src/assets/resolve.js",
+      "before": "da6cd29848fcc455f84877818f8eb7aa56889a2d62b61612a86ff5395f52623c",
+      "after": "f7217440cbb4c963dcea91d75a84f77ddc184796381bf44aba08e697b63bb0ee"
+    },
+    {
+      "path": "src/icons.js",
+      "before": "70d53020328aa34d871516cb1dca3249191d2913c9385db1518f7d2c2e988b84",
+      "after": "8cd88621b5648e089e03d3cd94c3bec4073568b88eb1772c83b08d2517ed6624"
+    },
+    {
+      "path": "src/model/actions.js",
+      "before": "982a6675276986fa6b585cf98eb6a7e9487c12ffbdaf5b0c9a69852e2d06cb2d",
+      "after": "85864625a14895c4abec288508a159591762e5071941009c500767c8fe898a9b"
+    },
+    {
+      "path": "src/style.css",
+      "before": "1680421633b594dd432e1d1a239556bd6c9ffb124daa01afc49c08b35d6b7f39",
+      "after": "8b54e06ec0b5c1a759d7b0a776f3fa1487f7b9d3ec11d2dbf974d2d9a313f54d"
+    },
+    {
+      "path": "src/ui/board.js",
+      "before": "0fa1a4d70940430faf2623bb0f083c32aa36a15cee9bf6734c0a5c3811d12e0b",
+      "after": "5363af0d6425bcac4b681e3a9b2977f9cc337624158a7ee8bd1fc07bb0348444"
+    },
+    {
+      "path": "src/ui/cursor.js",
+      "before": "ef322f02ce02e13c20c322db7e04ae7fe4f2b6d36d725efeb9b334b104d6b20d",
+      "after": "705d0b88c0151dc9ebfc7859785e7867a9d2d454e2f360828d20fe868c4e9c0f"
+    },
+    {
+      "path": "src/ui/graph.js",
+      "before": "824f167f2f44a71cc2de0e0b639f67992c14c94350ef7d7133e7876129a7b7f8",
+      "after": "749562b786cfdab9c6e83759c84fdd9b7f7657d7f5ce02ee07153364b307b11a"
+    },
+    {
+      "path": "src/ui/inspector.js",
+      "before": "3921a4c542b1141b27d5441ba572d5b82af0399c9c2b07ea91cd4665238a405a",
+      "after": "5efd90b57938fb4e01df00b4864865a43a9f0b3f050fed07acb873ecef31f983"
+    },
+    {
+      "path": "tests/artwork.test.mjs",
+      "before": "7fa6db8904404b4bb8840cb3b85af32b352b2a29429ae5d0ee0e51cbdfead8ad",
+      "after": "35a67f8eba1737499862606b2e2c74c954dac4067e5a9ae83da84bf1657f7c4e"
+    },
+    {
+      "path": "tests/assets.test.mjs",
+      "before": "c02ecf6835bb7df2cd74741dd2b3524869bb3810cdfaad35e5d23e0fdb00a4c9",
+      "after": "0f4b6594e0c0b60f03554ecc4e4d93f3c0106d8585f64fdf615dffb68600aa02"
+    },
+    {
+      "path": "tests/phase2.test.mjs",
+      "before": "e5624bdb9e68895aefc1398ffe89c3ac62b33cc4c6d2fbebad8d5c151dd74af0",
+      "after": "6fa52f1d63f9b7083783def44a872843f9a9ae6217fa37d1c9b60bec773fe18a"
+    },
+    {
+      "path": "tests/phase5.test.mjs",
+      "before": "318b1d8629d64c1c333c8215a46c02614e5895443283414a89a56aa7934e2a15",
+      "after": "caa2c1e87a70e03da0a248ea3189c3b3f91e8afad64af64cbfe2b724fb51c284"
+    },
+    {
+      "path": "public/catalog-notices.html",
+      "before": "dff6903004555fc41c99cd5cf651214f3c5b41890d716d88335cb15dc4c8b7b6",
+      "after": "f6bd3a7b2773d858a8cc1f28d4abe8aeaf693ca95084e733f099b2acc307d8ff"
+    },
+    {
+      "path": "catalog/ARTWORK.md",
+      "before": "00660d942350a8cadf4949a6ee10ab0f77938689edc88284c7171461bab0c315",
+      "after": "738a7841e98ae6396d85d090eda1f69a888656271eeab733ab85d74957973805"
+    },
+    {
+      "path": "catalog/README.md",
+      "before": "b4857fb84f961348bb9c5a71a7fe6be6e2120f4d7151c5bfb317e3eb00723afe",
+      "after": "9552e2b62f8893d0816110734bf189e756297fe8c90ec8ed35c401ff9fe944fc"
+    },
+    {
+      "path": "DECISIONS.md",
+      "before": "5ba8ce9a95ca43cbc06723d9835f0be57f152c43704c204bee11e9d07816d3c4",
+      "after": "38acd7713031e5aecdc2aaa7c8647edb821351911fef9a19891cd48a0a974d78"
+    },
+    {
+      "path": "HANDOFF.md",
+      "before": "228c26b238c88c42566d8459abb7c4b4b415a7fd5796264e1bf30a8c53981a96",
+      "after": "55bbc3dfe7280ff2230567dba971417f977559ba3928fe5bcf40388f046e662f"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "before": "cfdffa4b0e9f1dfe018e05c18306a0c59f38ac3c8f9a3cbe2cfa63f866bac308",
+      "after": "6c945c4445768b3e1a4395eb114d1d58f6a5ebf81d2631f082e4c975aa5a5166"
+    },
+    {
+      "path": "README.md",
+      "before": "67fc73ff1c598f23f7f2c18c8dc462d6efb29bc9ea3c295fb6f994eb859db93b",
+      "after": "f4b8c51f73404ddc165690e314f9faee26ee110d331439d8874de880295c390e"
+    },
+    {
+      "path": "PRODUCT_SPEC.md",
+      "before": "ee21ccd8a9108a8a7f174450e5c36bfffb985e8f44a4c57bca0815dc8aa24e41",
+      "after": "47ce8bb4396a3c851fd4fe10c28736b089a675fa7297740e71336348a91a44fa"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "before": "38cf3becc71ba62389fac8f5a98b94fdb5ea178d182b08c957504412df900905",
+      "after": "11940f39464371f18c4d487541ce0ce706d383aaa223d4aee7363768f9f48979"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "before": "f508378c9442710e557ba6fe5e10575ce372abf7e9fe70b840d1f9863a704d40",
+      "after": "09a3382462d55fe8956c939b4195780995f32cc1988fe93d5cd6b5840b84482e"
+    },
+    {
+      "path": "docs/agents/CURRENT_PHASE_GATE.md",
+      "before": "79124e5eed71e04c962813ddeccb91a3ec438df987c7a8ae8fe3165a3689ffea",
+      "after": "7306fbb0c83edf84befd33e64c27e5a56293957d2c533b1904c171f4023b1ff5"
+    },
+    {
+      "path": "index.html",
+      "before": "7b44a35265d97f397a655ebe4f75035982ffe7b93727ba9af993324f93c06c64",
+      "after": "2ab879fe79b37a431c30403c118f9219bfb5ed1172cababa66b4564b654baf86"
+    }
+  ],
+  "added": [
+    {
+      "path": "src/assets/categories.js",
+      "after": "6a803aae867c2814f9ee92b729146bdaf578034a46b33fd2ca61a22e10e451cd"
+    },
+    {
+      "path": "src/ui/category-icon.js",
+      "after": "f5c826e03532b9df7df3e0c2a718ec8c1079e5a5da546889853b3294b72abfeb"
+    },
+    {
+      "path": "tests/browser_p5_003.mjs",
+      "after": "5e2ca5dc161f3ef1a9221f249f59f030292bf58b363671a0062ce887e88e332b"
+    },
+    {
+      "path": "tests/category-mode.test.mjs",
+      "after": "b301c02482a3c1fb0fb050400e763a5bc8f52c2b1cefd4938027c7b5ca6daa56"
+    },
+    {
+      "path": "scripts/prepare-category-icons.mjs",
+      "after": "8cec3e2ab816c47997712217778957265cbce820ff92230decc00143ff131847"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-combatIcon.png",
+      "after": "0f19e61937858d77e7889e1c554c4bd93b690c152e14f8066b8d3e68ba7aacbb"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-skillsIcon.png",
+      "after": "1216bb4a8244fc210fd05d535285124885cb7ab597189d88508bfc8946c0a78d"
+    },
+    {
+      "path": "catalog/category-artwork-manifest.json",
+      "after": "f9f80cf276ea9eb638658d86563f7a668f6b9919356f9bfe3dfab0b9e707c11a"
+    },
+    {
+      "path": "catalog/CATEGORY_MODE.md",
+      "after": "a6b549d95fe0e0f8a39da0f7484058d6d2a3cd4ebc6a7bde5764e01dcd0ddfd1"
+    }
+  ],
+  "checks": {
+    "allBaselineFilesPresent": true,
+    "protectedArchiveAssetsCatalogSourceToolingNoticesUnchanged": true,
+    "distVendorLayoutStoragePackagesUnchanged": true,
+    "historicalHandoffTestSuffixUnchanged": true,
+    "indexEmpty": true
+  },
+  "evidence": [
+    "p5-003-2026-10-27T16-49-09-267Z",
+    "p3-005-2026-10-27T16-47-09-650Z",
+    "p3-002-2026-10-27T16-47-10-022Z",
+    "phase3-2026-10-27T16-47-10-441Z"
+  ],
+  "evidenceNote": "New preflight scripts/logs/snapshots and timestamped browser evidence/static copies are additional artifacts excluded from source inventory. Existing evidence was not overwritten."
+}

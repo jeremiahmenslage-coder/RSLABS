@@ -1,0 +1,150 @@
+{
+  "date": "2026-10-28T00:27:16.209Z",
+  "checkout": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor",
+  "branch": "main",
+  "commit": "604d4d6d21fcd0030286acb400087cb14388e8f7",
+  "changed": [
+    {
+      "path": "src/layout/routing.js",
+      "before": "8522aa5bb4faa4ad3e41eef961e792d3f8f5aeb79555ad213dbb02720d2576a1",
+      "after": "a5ad07bb8d46af953aba18259f2240917c5cdbdf6e0f4f759a8aa5617ebe9574"
+    },
+    {
+      "path": "src/main.js",
+      "before": "8b9bcaff47fd4a469fbe80feb0d83823aa3df944c019178365d24ff76509b818",
+      "after": "a043302d10a30120ffa403c1612fd17dfbc591d79a3a8069f27b3d9cb2e02d9d"
+    },
+    {
+      "path": "src/model/actions.js",
+      "before": "de008ece366f4a14cb6a4327d415e5537ea951db882b07cd1874355d638c7a1f",
+      "after": "16f544187974c714c921c99bd1408ce2372ad6a62a136f88f4080a4ccb0b2344"
+    },
+    {
+      "path": "src/model.js",
+      "before": "acf235d03003bd6d6c1598b61df46b6e45d3679d0f1cc696c6a4e143cec41840",
+      "after": "ce8ebae1c5131c5a4b79d9856fb2dd7f062b33b566c40cb68a8f8aa0c30ba413"
+    },
+    {
+      "path": "src/style.css",
+      "before": "8b54e06ec0b5c1a759d7b0a776f3fa1487f7b9d3ec11d2dbf974d2d9a313f54d",
+      "after": "c46c92e916756f74415ae5bffbc2296cbb71209d2854322b58d117bc1b1469d8"
+    },
+    {
+      "path": "src/ui/bulk.js",
+      "before": "12014a1cb7692e3d9f7e0f76722fff610ba3dd6786a3c2a54ac1a5e4ce4b338f",
+      "after": "e575f4371fecd86ff2826812d7afa304d98042ae301ef623494db9c518ff951b"
+    },
+    {
+      "path": "src/ui/cursor.js",
+      "before": "08f52a584b4cb19cb8914f0cd66c306544bdc977c652b8eea35018a3c46f7e61",
+      "after": "7f6b6d8cbc1c7e63550d87b61bc46d93d9d0ddc1460248ae03e27c96443a4ed4"
+    },
+    {
+      "path": "src/ui/graph.js",
+      "before": "749562b786cfdab9c6e83759c84fdd9b7f7657d7f5ce02ee07153364b307b11a",
+      "after": "c3278be6d09c667fa9072ff31475974295155eeddacb9c0d5b5ad2c9bd6d3b9b"
+    },
+    {
+      "path": "src/ui/inspector.js",
+      "before": "ed13896ee3213c49bab582bb7855d2627dd41b72820b04f202aa7882563fe44f",
+      "after": "c13ceab1b2331dbaba1712be879913c491b9d1b80682d5dc090337d3ee8a5e00"
+    },
+    {
+      "path": "tests/browser_bulk.mjs",
+      "before": "f9ecc5711dfc7ecbd0f54819f65434da97e47d9c692e32184c5e075a76462f9a",
+      "after": "03e8c66477701e34fd8b4d6c0caebb110a30b9580bbc16342a68fae2fa9b1c39"
+    },
+    {
+      "path": "tests/phase5.test.mjs",
+      "before": "caa2c1e87a70e03da0a248ea3189c3b3f91e8afad64af64cbfe2b724fb51c284",
+      "after": "4ff489e2a761c63e7eb4af2365374f60cb4e3be03cb17f7c56e762d07a9e95d2"
+    },
+    {
+      "path": "README.md",
+      "before": "8feeb49c6c669be1b65e69a54a82ad333c4953a687099912cdd19bd27f62723b",
+      "after": "db13a8b4d438e825299caa338ff5e39e68d2bbff27c50a534b938380707b3f1f"
+    },
+    {
+      "path": "PRODUCT_SPEC.md",
+      "before": "0fb7d4883a64961ed8f56efcfe928641c2fe553804a1dc033b93cc62da897262",
+      "after": "dc3b3bb7cda7f145d5e1eb0f8ceb8e552129d247bfc658ffeebcc6b9b45b7ea2"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "before": "db37d3d273eaec025b1b9126fc36fc2a262e6e1c90120c8b494c4f149fcb3a40",
+      "after": "68dbe81ed5cee0c60fcb449b5c172ded0dc7740a3d6bd18a05c12767cd9c6993"
+    },
+    {
+      "path": "DECISIONS.md",
+      "before": "c9806daf600e1ea7d672ef4e6981a7113b367e07b80bb452ccf15a247197f616",
+      "after": "a4f38cd4ecb32cab894473ab26a473fb516d1a13ca5bdedc4172fe52530b0da9"
+    },
+    {
+      "path": "HANDOFF.md",
+      "before": "40f9093c1e955d73622881851e51abd84cc67e6f68aefca43df109ff1fa9ffcc",
+      "after": "889f78af1015b62bd4bcfe1836400090817e940850f99a71d7ebdf143c74d712"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "before": "f0ec12bb4f79808d9ed0019b60d092f87bd04a6dbdd661f0b2ebbe397cd04b94",
+      "after": "9584c462ae983c31d90e2a40e1cb24bc385fb883ca3a60dafd2ca0b11694f45c"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "before": "3ed164a0fe5816a899bf56203b0e756f7c0479e0dfd62bafd214d0c95eb8ef75",
+      "after": "ece981a08336b812fd87a6fd9fdbb2463a1dab92169e3d38e62c220ca2d10ff5"
+    },
+    {
+      "path": "docs/agents/CURRENT_PHASE_GATE.md",
+      "before": "6ad62a9ea8b476865f9a64b483f9d66a7ee61054c895af13679ee8fec6bf151d",
+      "after": "65052f358b52d337fe2ec1786710f6df92a9ec5c1d2a6854a323ca9a82faeb23"
+    },
+    {
+      "path": "index.html",
+      "before": "152715cf493e2d6f69d460a7fb03f7d26486692ac3db20ad8c2d475b8075e1c1",
+      "after": "f328d2afd8b37e6a6c597c360e37ba86b7472c31470fecc37f2860761d8774aa"
+    },
+    {
+      "path": "docs/SKILL_GOAL_CONTRACT.md",
+      "before": "3e15984cc1736eb612d8efbe589786554f4580e600d21087dab8b7907ce8c955",
+      "after": "98308aa717a0934e06897d437045a144d15285867e300cf865f06c199718b022"
+    }
+  ],
+  "added": [
+    {
+      "path": "src/layout/simple-routing.js",
+      "after": "f2ba814c404b718f5a3e0b46683593a013d816fec91d9dad9dc0557a25ccb5b2"
+    },
+    {
+      "path": "tests/browser_movement_benchmark.mjs",
+      "after": "82817c1d74abb62b61536e366d14ebf6bfd171595c1eef1164b8f3611aa169d1"
+    },
+    {
+      "path": "tests/browser_p5_005.mjs",
+      "after": "e847ab911a97d3ee49dad0f8644090aa5849a12cf67ca2b000ac96d02d69dd72"
+    },
+    {
+      "path": "tests/fixtures/movement.mjs",
+      "after": "9a5670e3da1fdc93a81e09de3ef1b8bb18712a841d7ea2419e03fe8a43e354f2"
+    },
+    {
+      "path": "tests/movement.test.mjs",
+      "after": "371c838a29508d7c78af2fd5308773734a92de0f747916746871dabdd0a9ffb2"
+    }
+  ],
+  "checks": {
+    "allBaselineFilesRetained": true,
+    "distStorageVendorArtNoticesPacksPackagesOwnerDocsUnchanged": true,
+    "historicalHandoffTestSuffixUnchanged": true,
+    "finalBuildSourcePublicIndexMatches": true,
+    "indexEmpty": true
+  },
+  "browserEvidence": [
+    "p5-005-2026-10-28T00-25-08-906Z",
+    "p5-004-2026-10-28T00-25-46-972Z",
+    "p3-005-2026-10-28T00-25-46-982Z",
+    "p3-002-2026-10-28T00-25-46-977Z",
+    "phase3-2026-10-28T00-25-47-406Z"
+  ],
+  "baselineNote": "Original starting-files.json retained. Skill contract before-copy supplements baseline; two harness files created just before snapshot reclassified as ticket additions. New preflight/evidence/fixture artifacts excluded from source inventory; original evidence not overwritten."
+}

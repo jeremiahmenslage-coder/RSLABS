@@ -1,0 +1,59 @@
+{
+  "date": "2026-10-26T22:58:43.917Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p4-001-2026-10-26T22-58-33-767Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "empty/loading board, three columns and no-results states; inspector remains optional",
+      "result": "Pass"
+    },
+    {
+      "name": "Board quick status/counters and explicit status controls immediately agree with Graph without geometry or propagation",
+      "result": "Pass"
+    },
+    {
+      "name": "Graph quick editing agrees with Board; shared Undo/Redo retains active view/filter navigation",
+      "result": "Pass"
+    },
+    {
+      "name": "combined filters include completed and use canonical blockers despite graph collapse/focus/hide",
+      "result": "Pass"
+    },
+    {
+      "name": "last view, filters, edits and graph viewport survive reload and complete JSON replacement roundtrip",
+      "result": "Pass"
+    },
+    {
+      "name": "view switching preserves inspector draft; target transfer/commit declined leaves both draft and data intact",
+      "result": "Pass"
+    },
+    {
+      "name": "Board quick validation/cancellation and explicit details preserve canonical IDs and fields",
+      "result": "Pass"
+    },
+    {
+      "name": "Board failed saves preserve last good copy and show accessible Retry; reload/retry recovery retains shared IDs",
+      "result": "Pass"
+    },
+    {
+      "name": "cancelled, invalid-preference and failed replacement imports preserve Board document and committed copy",
+      "result": "Pass"
+    },
+    {
+      "name": "no exceptions/external requests; static and historical dist preserved",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

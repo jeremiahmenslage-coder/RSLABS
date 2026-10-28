@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-27T15:39:57.263Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p5-002-2026-10-27T15-39-48-228Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "creation starts with visible search and adjacent prominent custom action; cancellation makes no orphan",
+      "result": "Pass"
+    },
+    {
+      "name": "direct custom minimal form retains input while switching paths; reference replacement is guarded",
+      "result": "Pass"
+    },
+    {
+      "name": "catalog identities create independent repeated goals with pinned authentic artwork and correct positions",
+      "result": "Pass"
+    },
+    {
+      "name": "More details retains catalog/custom draft and zoom/pan creation coordinates; Inspector Cancel closes without creating",
+      "result": "Pass"
+    },
+    {
+      "name": "graph shortcut is absent but non-color status, quick/detailed/Board edits, keyboard history and persistence remain",
+      "result": "Pass"
+    },
+    {
+      "name": "Inspector Cancel discards and closes, preserves applied history/data, while panel hiding preserves drafts",
+      "result": "Pass"
+    },
+    {
+      "name": "connection/group inspector cancellation discards only their forms and closes",
+      "result": "Pass"
+    },
+    {
+      "name": "all 94 local PNGs decode; category representatives and match scope are inspectable",
+      "result": "Pass"
+    },
+    {
+      "name": "manual overrides, legacy references and original missing-image fallback have priority over new defaults",
+      "result": "Pass"
+    },
+    {
+      "name": "artwork-only updated static fixture changes defaults without rewriting user goals, overrides or hidden data",
+      "result": "Pass"
+    },
+    {
+      "name": "backup roundtrip and failed-save/Retry/reload plus cancelled/failed imports preserve recovery",
+      "result": "Pass"
+    },
+    {
+      "name": "hidden counters stay absent; no errors/external runtime calls; dist unchanged",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

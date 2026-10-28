@@ -1,0 +1,37 @@
+# OSRS Ironman Progression Planner — Phase 5 review package
+
+P5-001 is delivered for independent reviewer, CEO review and Owner acceptance under ADR-024. Phases 1–4 are Owner-accepted; Phase 6 is NOT AUTHORIZED. This is a local-first statically deployable personal planner. Manual statuses and canonical hard-only prerequisites remain independent; no automatic game prerequisites or completion propagation.
+
+## Run on Windows
+
+From this existing application folder run npm run dev and keep the terminal open. Use http://127.0.0.1:4173/ with the same browser/origin for your saved roadmap. No package install is required. Export JSON regularly; source files alone do not back up browser IndexedDB. Do not rebuild the preserved dist by default. Current separate review build: evidence/p5-001-2026-10-27T01-19-49-438Z/static/ under the same server.
+
+## Daily controls
+
+- Click a graph goal to select; double-click for quick title/category/manual-status editing. Its small status button changes manual state directly, with keyboard support. Empty click clears temporary selection; drag empty space to pan, wheel to zoom. Fit and Optimize are explicit.
+- Double-click empty canvas to create. Reference catalog is optional: search/filter, select a factual reference or keep manual/custom entry. More details transfers draft/reference/position to the optional inspector. Notes, icons and detailed grouping stay there. Closing details/view switching preserves notes; actually replacing/discarding a draft requires confirmation.
+- Drag right + to left input for connections, or click source then Shift-click destination and Connect. Required prerequisite blocks readiness; Recommended preparation and Preferred order never block. Status remains manual even when prerequisites disagree.
+- Shift-drag empty canvas to select full visible cards. The counted Status/Group/More/Clear toolbar previews affected IDs; hidden/unselected members and downstream goals are never implicit. Undo/Redo uses the same state across Graph and Board.
+- Board has three manual-status columns and shared quick edits. Combine goal-name/category/readiness/group filters; completed goals remain searchable. Clear filters restores results. Graph hiding/Focus/group collapse never changes Board's canonical readiness. Last view/Board filters and graph viewport survive reload/backups.
+- Right-click or Shift+F10 opens contextual actions; Escape cancels a quick surface or clears selection. Tab/Enter access status and editor controls. Only More details explicitly opens the inspector.
+- Numeric progress UI is Owner-hidden throughout the application; stored values and validation/backups remain intact. Restoring its UI requires Owner approval.
+- Save status and Retry remain visible in both views. Help / Diagnostics includes controls, failure injection for disposable tests, and catalog source/permission notices. Import previews/requires export of the current roadmap and explicit replacement confirmation. Failed writes preserve the prior committed copy; Retry before reloading unsaved work.
+
+## Reference content and permissions
+
+207 factual reference records: 24 skills, 32 quests, 30 items, 24 bosses, 29 prayers, 48 diary tiers and 20 activities. These are a documented subset/snapshot, not all game content or requirements. Seven original category SVGs total 1,933 bytes; authentic game artwork is not bundled. Unknown/missing icons fall back without deleting references. Two goals from one reference remain independent; catalog updates never overwrite player edits/state.
+
+Read [catalog provenance/import/coverage](catalog/README.md), [asset permission manifest](catalog/asset-manifest.json) and [source review](catalog/source-review.json). Run node scripts/import-catalog.mjs catalog/reference-source.json --check to verify the generated catalog. This tool is offline and never accesses a player's roadmap.
+
+## Consolidated Owner walkthrough
+
+1. Run npm run dev in the existing checkout and use http://127.0.0.1:4173/. Use a disposable browser profile for acceptance; export personal work before replacement. No install is needed. The separately verified build is evidence/p5-001-2026-10-27T01-19-49-438Z/static/ beneath the same origin. Do not run the default build over preserved dist.
+2. On a graph goal, click its manual-status button or Tab to it and press Enter. Choose a status, Cancel, then apply. Selection, positions and connection pairing must stay unchanged. Undo/Redo, reload and switch to Board: the same goal/ID changes, independently of downstream goals. No numeric progress controls or values should appear in either view or any editor/menu/help.
+3. Double-click empty canvas, expand Reference catalog, search Cook's Assistant and filter Quest. Create it twice; complete/edit one and verify the other remains independent. More details preserves the reference, draft and intended canvas position. Use manual/custom entry for gaps. In details, change a local icon override; unknown or missing assets must fall back.
+4. In Board, combine name/category/readiness/group filters; verify completed search, Ungrouped, clearing filters and reload/JSON preferences. Test a literal group ID null in disposable JSON: it must not include ungrouped goals. Hidden/collapsed prerequisites still determine canonical hard-only readiness.
+5. Enter unsaved notes in Board details, close it, switch to Graph, single-click a different goal, and reopen details. Original notes must remain without a prompt. Opening another object's details or applying a conflicting edit still asks before discarding. Decline and verify both drafts remain.
+6. Optimize a disposable branching roadmap, reload and move a goal manually. Verify readable reconstructed routes without changing IDs/relationships or other positions. Exact raid metrics and screenshots are in the evidence. Export/reload/restore including stored fractional progress, and use Help / Diagnostics to test failed save/Retry and failed import replacement. Test artifacts include a real changed-catalog build proving user data survives an update.
+
+## Validation and limits
+
+89/89 Node checks and 49/49 current browser/build groups passed with disposable Chrome data. See [TEST_REPORT.md](TEST_REPORT.md), [HANDOFF.md](HANDOFF.md), [testing inventory](docs/TESTING.md) and [phase gate](docs/agents/CURRENT_PHASE_GATE.md). The documented raid reconstruction now has zero measured crossings/shared segments in compact/detailed reload/manual-move fixtures; no universal guarantee for overlapping/non-planar graphs or production-scale performance is claimed. The clarified Owner notes-switching report did not reproduce; Owner verification remains part of acceptance. Individual live audit of all catalog links, authentic artwork, mobile, other browsers and Phase 6 hardening remain gaps/unrun. Historical records and pre-P5 README remain preserved in evidence.

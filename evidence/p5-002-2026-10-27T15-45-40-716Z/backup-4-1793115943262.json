@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "p3-003-disposable",
+    "title": "Disposable cursor actions (illustrative links only)",
+    "nodes": [
+      {
+        "id": "a",
+        "title": "Goal a",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0.125,
+          "target": 0.5
+        },
+        "position": {
+          "x": 70,
+          "y": 80
+        },
+        "groupId": "g",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "b",
+        "title": "Goal b",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 390,
+          "y": 80
+        },
+        "groupId": "g",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "c",
+        "title": "Goal c",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 70,
+          "y": 320
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "d",
+        "title": "Goal d",
+        "category": "custom",
+        "catalogRef": null,
+        "iconOverride": null,
+        "notes": "original notes",
+        "status": "completed",
+        "progress": {
+          "current": 0,
+          "target": 10
+        },
+        "position": {
+          "x": 660,
+          "y": 320
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "node_87b0a85c-2cc9-41c7-88dd-3ae0f92bf292",
+        "title": "Rune scimitar",
+        "category": "item",
+        "notes": "",
+        "iconOverride": null,
+        "status": "completed",
+        "progress": null,
+        "catalogRef": "osrs:item:rune-scimitar",
+        "position": {
+          "x": 420,
+          "y": 540
+        },
+        "groupId": null,
+        "createdAt": "2026-10-27T15:45:42.963Z",
+        "updatedAt": "2026-10-27T15:45:43.087Z"
+      },
+      {
+        "id": "node_d17df632-5e1a-4503-8099-5912638a034c",
+        "title": "Rune scimitar",
+        "category": "item",
+        "notes": "",
+        "iconOverride": null,
+        "status": "not_started",
+        "progress": null,
+        "catalogRef": "osrs:item:rune-scimitar",
+        "position": {
+          "x": 730,
+          "y": 540
+        },
+        "groupId": null,
+        "createdAt": "2026-10-27T15:45:43.031Z",
+        "updatedAt": "2026-10-27T15:45:43.031Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "ab",
+        "sourceId": "a",
+        "targetId": "b",
+        "kind": "hard"
+      },
+      {
+        "id": "bc",
+        "sourceId": "b",
+        "targetId": "c",
+        "kind": "soft"
+      }
+    ],
+    "groups": [
+      {
+        "id": "g",
+        "title": "Independent goals",
+        "representativeNodeId": "a",
+        "collapsed": false
+      }
+    ]
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 30,
+      "y": 20,
+      "zoom": 1
+    }
+  }
+}

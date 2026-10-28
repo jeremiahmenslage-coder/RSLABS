@@ -1,0 +1,188 @@
+{
+  "changedFiles": [
+    "src/main.js",
+    "src/style.css",
+    "src/ui/bulk.js",
+    "src/ui/cursor.js",
+    "src/ui/graph.js",
+    "src/ui/inspector.js",
+    "src/ui/organization.js",
+    "tests/browser_bulk.mjs",
+    "tests/browser_cursor.mjs",
+    "tests/browser_phase2.mjs",
+    "tests/browser_phase3.mjs",
+    "index.html",
+    "src/ui/workspace.js",
+    "src/ui/labels.js",
+    "tests/browser_workspace.mjs",
+    "DECISIONS.md",
+    "docs/agents/CURRENT_PHASE_GATE.md",
+    "HANDOFF.md",
+    "TEST_REPORT.md",
+    "README.md",
+    "PRODUCT_SPEC.md",
+    "ARCHITECTURE.md",
+    "docs/TESTING.md"
+  ],
+  "unchanged": 73,
+  "protected": 45,
+  "suites": [
+    [
+      "evidence/p3-004-2026-10-26T21-29-23-732Z",
+      14
+    ],
+    [
+      "evidence/p3-003-2026-10-26T21-29-23-216Z",
+      17
+    ],
+    [
+      "evidence/p3-002-2026-10-26T21-29-22-772Z",
+      13
+    ],
+    [
+      "evidence/phase3-2026-10-26T21-29-22-296Z",
+      12
+    ],
+    [
+      "evidence/phase2-2026-10-26T21-29-21-880Z",
+      15
+    ]
+  ],
+  "layout": [
+    {
+      "name": "seven",
+      "density": "compact",
+      "stage": "optimized ELK routes",
+      "cards": 7,
+      "width": 1715,
+      "height": 412,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 2,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "seven",
+      "density": "compact",
+      "stage": "reloaded routing at saved positions",
+      "cards": 7,
+      "width": 1715,
+      "height": 412,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 2,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "seven",
+      "density": "detailed",
+      "stage": "optimized ELK routes",
+      "cards": 7,
+      "width": 2015,
+      "height": 508,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 2,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "seven",
+      "density": "detailed",
+      "stage": "reloaded routing at saved positions",
+      "cards": 7,
+      "width": 2015,
+      "height": 508,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 2,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "raid",
+      "density": "compact",
+      "stage": "optimized ELK routes",
+      "cards": 16,
+      "width": 4029,
+      "height": 556,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 10,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "raid",
+      "density": "compact",
+      "stage": "reloaded routing at saved positions",
+      "cards": 16,
+      "width": 4029,
+      "height": 556,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 2,
+      "sharedSegments": 10,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "raid",
+      "density": "detailed",
+      "stage": "optimized ELK routes",
+      "cards": 16,
+      "width": 4689,
+      "height": 700,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 10,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "raid",
+      "density": "detailed",
+      "stage": "reloaded routing at saved positions",
+      "cards": 16,
+      "width": 4689,
+      "height": 700,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 2,
+      "sharedSegments": 10,
+      "labelEdgeIntersections": 0
+    },
+    {
+      "name": "collapsed ToA",
+      "density": "detailed",
+      "stage": "optimized summaries",
+      "cards": 14,
+      "width": 2509,
+      "height": 696,
+      "cardOverlaps": 0,
+      "nodeIntersections": 0,
+      "labelNodeOverlaps": 0,
+      "labelOverlaps": 0,
+      "crossings": 0,
+      "sharedSegments": 4,
+      "labelEdgeIntersections": 0
+    }
+  ]
+}

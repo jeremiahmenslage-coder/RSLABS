@@ -32,6 +32,13 @@ export class SaveCoordinator {
   this.status('failed',error?.message||String(error));this.settle(error);
  }}
  retry(){if(this.queued){this.failed=false;this.status('pending');return this.flush();}return Promise.resolve();}
+ async replaceDurably(snapshot,apply){
+  checked(snapshot);const candidate=structuredClone(snapshot);
+  await this.flush();await this.whenSettled();
+  this.busy=true;this.status('saving');
+  try{await this.write(candidate);}catch(error){this.busy=false;this.status('import_failed',error.message);this.settle(error);throw error;}
+  this.busy=false;apply(candidate);this.status('saved');this.settle();
+ }
  settle(error){for(const {resolve,reject} of this.waiters.splice(0)){if(error)reject(error);else resolve();}}
  whenSettled(){if(this.failed)return Promise.reject(Error('Save failed'));if(!this.busy&&!this.queued)return this.failed?Promise.reject(Error('Save failed')):Promise.resolve();return new Promise((resolve,reject)=>this.waiters.push({resolve,reject}));}
 }

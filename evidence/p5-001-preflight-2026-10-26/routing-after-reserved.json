@@ -1,0 +1,86 @@
+[
+  {
+    "density": "compact",
+    "move": false,
+    "ms": 27.298999999999978,
+    "visibleCards": 16,
+    "width": 4029,
+    "height": 556,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [],
+    "labelEdgeIntersections": [
+      [
+        "raid4",
+        "raid2"
+      ]
+    ]
+  },
+  {
+    "density": "compact",
+    "move": true,
+    "ms": 26.26260000000002,
+    "visibleCards": 16,
+    "width": 4029,
+    "height": 556,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [],
+    "labelEdgeIntersections": [
+      [
+        "raid4",
+        "raid2"
+      ],
+      [
+        "raid4",
+        "raid2"
+      ]
+    ]
+  },
+  {
+    "density": "detailed",
+    "move": false,
+    "ms": 7.814900000000023,
+    "visibleCards": 16,
+    "width": 4689,
+    "height": 700,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [],
+    "labelEdgeIntersections": [
+      [
+        "raid4",
+        "raid2"
+      ]
+    ]
+  },
+  {
+    "density": "detailed",
+    "move": true,
+    "ms": 9.477399999999989,
+    "visibleCards": 16,
+    "width": 4689,
+    "height": 700,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [],
+    "labelEdgeIntersections": [
+      [
+        "raid4",
+        "raid2"
+      ]
+    ]
+  }
+]

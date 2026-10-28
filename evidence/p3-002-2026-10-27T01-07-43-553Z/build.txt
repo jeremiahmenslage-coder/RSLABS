@@ -1,0 +1,1 @@
+Static output created (local assets and vendored ELK.js): C:\Users\Jeremiah\OneDrive\Desktop\OSRSLABS\Phase1\osrs-phase1-editor\evidence\p3-002-2026-10-27T01-07-43-553Z\static

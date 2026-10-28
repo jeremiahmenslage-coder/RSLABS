@@ -1,0 +1,96 @@
+{
+  "permission": {
+    "source": "Owner-provided P5-002 report of Jagex permission",
+    "scope": "Third-party icon sourcing and bundling in this private local planner only",
+    "independentlyVerified": false,
+    "broaderDistributionRights": false
+  },
+  "activeMode": "Category markers only; catalog/individual artwork inactive",
+  "assets": [
+    {
+      "category": "boss",
+      "export": "combatIcon",
+      "file": "public/icons/artwork/art-dava-category-combatIcon.png",
+      "width": 19,
+      "height": 19,
+      "bytes": 372,
+      "sha256": "0f19e61937858d77e7889e1c554c4bd93b690c152e14f8066b8d3e68ba7aacbb",
+      "source": {
+        "repo": "Dava96/osrs-icons",
+        "revision": "16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6"
+      },
+      "sourceUrl": "https://github.com/Dava96/osrs-icons/blob/16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6/src/generated/category-icons.ts#combatIcon",
+      "changes": "PNG bytes unchanged",
+      "license": "CC-BY-NC-SA-3.0; Jagex/Wiki rights retained"
+    },
+    {
+      "category": "activity",
+      "export": "minigameMapIcon",
+      "file": "public/icons/artwork/art-dava-category-minigameMapIcon.png",
+      "width": 15,
+      "height": 15,
+      "bytes": 218,
+      "sha256": "fe90043dedc4daf4d7e01bb789e66a43ebe1bc9086f5bc2f2e6df9b682d91821",
+      "source": {
+        "repo": "Dava96/osrs-icons",
+        "revision": "16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6"
+      },
+      "sourceUrl": "https://github.com/Dava96/osrs-icons/blob/16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6/src/generated/category-icons.ts#minigameMapIcon",
+      "changes": "PNG bytes unchanged",
+      "license": "CC-BY-NC-SA-3.0; Jagex/Wiki rights retained"
+    },
+    {
+      "category": "quest",
+      "export": "questStartIcon",
+      "file": "public/icons/artwork/art-dava-category-questStartIcon.png",
+      "width": 15,
+      "height": 15,
+      "bytes": 218,
+      "sha256": "acefc6b88c235a3f363f6beaac2a36dee89f1905b2c44cf12b98010c239fd038",
+      "source": {
+        "repo": "Dava96/osrs-icons",
+        "revision": "16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6"
+      },
+      "sourceUrl": "https://github.com/Dava96/osrs-icons/blob/16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6/src/generated/category-icons.ts#questStartIcon",
+      "changes": "PNG bytes unchanged",
+      "license": "CC-BY-NC-SA-3.0; Jagex/Wiki rights retained"
+    },
+    {
+      "category": "skill",
+      "export": "skillsIcon",
+      "file": "public/icons/artwork/art-dava-category-skillsIcon.png",
+      "width": 24,
+      "height": 22,
+      "bytes": 330,
+      "sha256": "1216bb4a8244fc210fd05d535285124885cb7ab597189d88508bfc8946c0a78d",
+      "source": {
+        "repo": "Dava96/osrs-icons",
+        "revision": "16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6"
+      },
+      "sourceUrl": "https://github.com/Dava96/osrs-icons/blob/16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6/src/generated/category-icons.ts#skillsIcon",
+      "changes": "PNG bytes unchanged",
+      "license": "CC-BY-NC-SA-3.0; Jagex/Wiki rights retained"
+    },
+    {
+      "category": "prayer",
+      "export": "prayer",
+      "file": "public/icons/artwork/art-dava-category-prayer.png",
+      "width": 47,
+      "height": 45,
+      "bytes": 659,
+      "sha256": "4588e2afb7070fc82df559b55bce2bec881548e5026cc511ea7ed1c5537e50cd",
+      "source": {
+        "repo": "Dava96/osrs-icons",
+        "revision": "16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6"
+      },
+      "sourceUrl": "https://github.com/Dava96/osrs-icons/blob/16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6/src/generated/category-icons.ts#prayer",
+      "changes": "PNG bytes unchanged",
+      "license": "CC-BY-NC-SA-3.0; Jagex/Wiki rights retained"
+    }
+  ],
+  "gaps": {
+    "item": "Inventory symbol unavailable in reviewed pinned exports; original fallback displayed",
+    "diary": "Achievement Diary symbol unavailable in reviewed pinned exports; original fallback displayed"
+  },
+  "custom": "Neutral original marker"
+}

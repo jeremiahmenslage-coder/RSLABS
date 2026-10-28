@@ -1,0 +1,1 @@
+import fs from 'node:fs';const p='tests/phase5.test.mjs';let s=fs.readFileSync(p,'utf8');s=s.replace("assert.equal(resolveNodeIcon(a).assetId,'local:quest');","assert.equal(resolveNodeIcon(a).assetId,'art:dava:category:questStartIcon');");fs.writeFileSync(p,s);

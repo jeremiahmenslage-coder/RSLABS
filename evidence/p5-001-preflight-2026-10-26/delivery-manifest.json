@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-27T01:24:22.062Z",
+  "checkout": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor",
+  "branch": "main",
+  "commit": "604d4d6d21fcd0030286acb400087cb14388e8f7",
+  "authority": "Owner P5-001 / ADR-024; Phase 4 Owner-accepted",
+  "files": [
+    {
+      "file": "index.html",
+      "before": "26196BE3886BB87F67AD9C68CBD4161F890F232D1062208EDFBF07946B47E2E8",
+      "after": "80c145b9982202f736fbd4a30239c4f8da8a63ecd5fcc006cd5f4cb7ba9da484"
+    },
+    {
+      "file": "src/main.js",
+      "before": "322017981DC6D739E9A1F48F1FECE30B8B92F05907AEE923C520CA896D07231E",
+      "after": "922dfc8f710f2d12700ae846040b9eaff439caaffa8f46e948dbf334c549d386"
+    },
+    {
+      "file": "src/style.css",
+      "before": "28EF0B43B470167B16829E0FA580EDC76265463E80AFC720BCEF7BB05FF4D312",
+      "after": "79b8f1930bdf91befaa236170c25569a1166613c59169e885c40d3641ff9735a"
+    },
+    {
+      "file": "src/board.js",
+      "before": "BDB9BD97E3CA5F8A0A9C2FAC90BD632FE96F894966269F106E98EA91905F70A6",
+      "after": "ba466d1c08894a75ad4a664820a250dd28974e58129d1669f130a444ad50ed62"
+    },
+    {
+      "file": "src/model/actions.js",
+      "before": "C377C3779208E8EE7FF86A5E36A57D5F51CD8588769ED8AA1181377E8BE78B95",
+      "after": "95e517c66c24552a4eb3cb66d78cdd8948a00ceba77614848febe486e6b7bb90"
+    },
+    {
+      "file": "src/layout/routing.js",
+      "before": "FDDA9D750F072C76D8081EA7F23500424C752D4B9B48C2025420D26F7E3EBB1D",
+      "after": "8522aa5bb4faa4ad3e41eef961e792d3f8f5aeb79555ad213dbb02720d2576a1"
+    },
+    {
+      "file": "src/catalog/reference.js",
+      "before": "8732DB29E0A41C7CE90C171D2D628F004D49D8D5548ABF35B4AAB831A282BD61",
+      "after": "b76b2ef1691a83c911742924a857b9d6cd50196e7c950506651cee3f9d1b9d8e"
+    },
+    {
+      "file": "src/catalog/generated.js",
+      "before": null,
+      "after": "892151d7138d5e24fa1e2583196aff0fd6521771b395b57ff29dcf8049622773"
+    },
+    {
+      "file": "src/catalog/search.js",
+      "before": null,
+      "after": "f0ce167ef4399927acd3a57712b297d716d291dcff992a4e63be4cf88835ef21"
+    },
+    {
+      "file": "src/assets/resolve.js",
+      "before": "AE13B1F111B4CC383D403DD8029BCA7CFBB5A2DD534599DAD2880A5652043B82",
+      "after": "e9f6addbe46ecee60aff8038f5cccfca5245c39f7bc386a68d755f96ccb8df6d"
+    },
+    {
+      "file": "src/ui/board.js",
+      "before": "4462F13BB0A9CAD9E519A5108F7B8F05392F61194B6A32E656B5A8D084349E59",
+      "after": "0fa1a4d70940430faf2623bb0f083c32aa36a15cee9bf6734c0a5c3811d12e0b"
+    },
+    {
+      "file": "src/ui/cursor.js",
+      "before": "EFDE573CC0ABBED27649D98EC74AFCB433B3D1D4C6E89B9B9F80D6CE16D5CE3F",
+      "after": "eaade920dffcee5a9a608f17c47487a64339aed98a72b5e98f21316a4b222d18"
+    },
+    {
+      "file": "src/ui/graph.js",
+      "before": "205F7C3F412EFD50CA7EFD54B233BC66A16A4F65F40319C5A8D94C03F293B01C",
+      "after": "43f4cdcda2d37b0e0e28a5fb2f6f381e5f8d263d6607c873ce6b595f688b4783"
+    },
+    {
+      "file": "src/ui/inspector.js",
+      "before": "B7A1202C28EE177A23A1A5825F271FE000ECB54DB67811E6280ACDF18B5DD0BF",
+      "after": "ca9290577468c14bc0e6626c4fe294144504bb5cf596a07237e1ab2f213788c7"
+    },
+    {
+      "file": "src/ui/catalog.js",
+      "before": null,
+      "after": "b1b06f1177265c62138259966b2836c00f98d02ceb65edff20da9dba51457539"
+    },
+    {
+      "file": "src/ui/labels.js",
+      "before": "EBB7324018E76378CE090F202772BD79FCECC6242838CF4064285C5C92727279",
+      "after": "53dae445272a35ccead1ca36d30c5e0d1844daab2057fb48312644cad6b67c0f"
+    },
+    {
+      "file": "src/ui/backup.js",
+      "before": "C3DD6AC136735AC726DB4FC977020973E4EE7367430EFC58FAB088094F929647",
+      "after": "8bf0aff0cc031f31001543aa89fd95ffdf30387d2950c635438094222e7927af"
+    },
+    {
+      "file": "src/progress-input.js",
+      "before": null,
+      "after": "cc216d4e4e0362883741d3b203ea6cc44e09e7c300cc7de35a095a085c97db2f"
+    },
+    {
+      "file": "scripts/import-catalog.mjs",
+      "before": null,
+      "after": "d739432e90216796f0b1e8ccc95328551012b965a3967392c054ce5af07e96ae"
+    },
+    {
+      "file": "catalog/reference-source.json",
+      "before": null,
+      "after": "120feef57baad050e2a2aa665c31b3e221c75342327681b5e2ca4589be8f2c40"
+    },
+    {
+      "file": "catalog/README.md",
+      "before": null,
+      "after": "aac0bee9fef0a986db954ea53fd71bb3316d72844ab2ed4d1584d424ffec2a95"
+    },
+    {
+      "file": "catalog/asset-manifest.json",
+      "before": null,
+      "after": "6cf19f24cd8a704ad324e8f89040ec2c6201e082959a7d6fe29e7e34aa2b8f7b"
+    },
+    {
+      "file": "catalog/source-review.json",
+      "before": null,
+      "after": "65063d61e79a11f0c8069274392f8273d2a21f6f667ef98de6edb3e50c738b1a"
+    },
+    {
+      "file": "public/catalog-notices.html",
+      "before": null,
+      "after": "88915e0226223f9ffaf63893ed1d740a24c278484b0fc4eb18eca9daf7e82a88"
+    },
+    {
+      "file": "public/icons/reference-quest.svg",
+      "before": null,
+      "after": "bddca6df0133f3edf49a760476567f57795d2a71b2bc58306fee540edede3718"
+    },
+    {
+      "file": "public/icons/reference-skill.svg",
+      "before": null,
+      "after": "a945d90ac41903ac2e4f6bb77319dc51c8e0c0bf7e6514c0ea1c87d416b07170"
+    },
+    {
+      "file": "public/icons/reference-item.svg",
+      "before": null,
+      "after": "d5b4d2e5bc394866035049e6c65557151ad8c0c78716d2841a4fb392a7547c6a"
+    },
+    {
+      "file": "public/icons/reference-boss.svg",
+      "before": null,
+      "after": "4b1b4b1ff3b97def6df48c3acb3cd3426ebfaed8f85a5dd0dbf6d43b0b2a7ce4"
+    },
+    {
+      "file": "public/icons/reference-diary.svg",
+      "before": null,
+      "after": "1ad015bc9ac7646edda08692906347cfe96a4673754c445f580e1a99d8aff15e"
+    },
+    {
+      "file": "public/icons/reference-prayer.svg",
+      "before": null,
+      "after": "f425923434cde295167fb888c116ea82d43a4a3b1f15199db14a8f910ab9b6d1"
+    },
+    {
+      "file": "public/icons/reference-activity.svg",
+      "before": null,
+      "after": "92a244535f04b4c896bf88cd23ebc0e4d6e733c913fbeb9ee8c47533035c8a8b"
+    },
+    {
+      "file": "tests/phase5.test.mjs",
+      "before": null,
+      "after": "8215a2f946be6d1fec6f47fe5f3785e51faf890d35128f403189b3660f089413"
+    },
+    {
+      "file": "tests/browser_phase5.mjs",
+      "before": null,
+      "after": "7e643957e51ebee79b4420abe6d228fd313ab8264dae481a5788d13ac49c6c6b"
+    },
+    {
+      "file": "tests/browser_p5_reproduction.mjs",
+      "before": null,
+      "after": "a9ecfb739802153c227c7eb8dc179db55ace381072c4352376fec1b38e55f51e"
+    },
+    {
+      "file": "DECISIONS.md",
+      "before": "77827D3383EF48D0FEE3C0E0784DF1A32E206775DD985B1268B73840213FADC4",
+      "after": "d3f89326c961be24d95f6a2caab55102af9284aaba9f89caec322a5d780f783c"
+    },
+    {
+      "file": "docs/agents/CURRENT_PHASE_GATE.md",
+      "before": "05B2508E9B7D77973351FBDFC55A365365CEA366E5B8CC6FD519B46E38D0CD70",
+      "after": "d1d0a06e89e93e8f6b19bcf2e5741ca36484981dd9dd76c54831e6a5e371a251"
+    },
+    {
+      "file": "HANDOFF.md",
+      "before": "3FAF1EE27B617CFAD041745EA095D6C48985435BE827B62AF95C280A9895B27F",
+      "after": "2cf385f73e12be00ad05cfe361c49cda7f42f124fb1ae20835b0d83a0ea85369"
+    },
+    {
+      "file": "TEST_REPORT.md",
+      "before": "58430210928A520190842B0056DEF504A50A40B27B7FB0AA88E5B9216BA559F0",
+      "after": "da19a8f3a71c7861ee4e2d0f217c57c84962139332f7eab877d142d998f8b78d"
+    },
+    {
+      "file": "README.md",
+      "before": "23F1354F6EE995E3450D298F7BFD7A59ADCAA61F3EFF18BB289C62A8A73F00D0",
+      "after": "8c89bc61a6b32132f70c26a7f2238158e598a55e3959bcc2f9e5939431336853"
+    },
+    {
+      "file": "PRODUCT_SPEC.md",
+      "before": "3FCFA1982BA9D2031230442893073421D3F76B75F63D883CBFA1C10D600C5CDB",
+      "after": "b8c863ef4c1abb7c01d890161bc880dd7799c7c048137e9f16ac3cab71f406cd"
+    },
+    {
+      "file": "ARCHITECTURE.md",
+      "before": "0EACAEAC6A20443A050C4ACAF94DC9E4CEDF7F35E5254E9D2A8057D612888CF8",
+      "after": "1d499f1ac112f5f3b4c22d7bab0cf89f214ca6707119d9cf438d652a98130b8a"
+    },
+    {
+      "file": "docs/TESTING.md",
+      "before": "14E82279512B2851F986E6BC0E6238DF69156F93FBD48F0EE3F4B1F13569347A",
+      "after": "9e3cb1cb8779aef4e10366d15e84cf513a88af822d7cc4a5267f31bddc92f804"
+    }
+  ],
+  "unchangedBaselineFiles": 80,
+  "historicalRecordSuffixes": {
+    "HANDOFF.md": {
+      "bytes": 57505,
+      "sha256": "9cdc42719855257ec21c099713375fae78bdbb65651a459e6703a9a6b024b82a"
+    },
+    "TEST_REPORT.md": {
+      "bytes": 55176,
+      "sha256": "58430210928a520190842b0056def504a50a40b27b7fb0aa88e5b9216ba559f0"
+    }
+  },
+  "priorPublicFilesVerified": 9,
+  "static": {
+    "path": "evidence/p5-001-2026-10-27T01-19-49-438Z/static",
+    "currentSourcePublicAndIndexMatch": true,
+    "filesVerified": 61
+  },
+  "preserved": "dist, vendor, storage modules, store, graph IDs/schema/origin and old evidence; empty index and same branch/HEAD",
+  "tests": {
+    "node": 89,
+    "browserBuildGroups": 49,
+    "suites": [
+      [
+        "P5-001 current progress/catalog/deferred cases",
+        15,
+        "p5-001-2026-10-27T01-19-49-438Z"
+      ],
+      [
+        "P3-005 editing/history/cancellation",
+        9,
+        "p3-005-2026-10-27T01-12-57-256Z"
+      ],
+      [
+        "P3-002 bulk/gestures/grouping",
+        13,
+        "p3-002-2026-10-27T01-12-57-259Z"
+      ],
+      [
+        "P3-001 organization/layout/navigation",
+        12,
+        "phase3-2026-10-27T01-12-57-627Z"
+      ]
+    ],
+    "finalFailures": 0
+  },
+  "deferred": {
+    "routing": "Documented compact/detailed raid reload/manual-move corrected; no universal non-planar guarantee",
+    "groupNull": "Reproduced and fixed",
+    "targetArrows": "Reproduced and fixed before hiding; old fractions preserved",
+    "inspectorDraft": "Owner clarified graph goal afterward; exact flow not reproduced; notes retained and real replacement guarded"
+  },
+  "catalog": {
+    "records": 207,
+    "counts": {
+      "skill": 24,
+      "quest": 32,
+      "item": 30,
+      "boss": 24,
+      "prayer": 29,
+      "diary": 48,
+      "activity": 20
+    },
+    "originalSymbols": 7,
+    "originalBytes": 1933,
+    "authenticGameArt": 0,
+    "individualLiveLinkAudit": "Not run"
+  },
+  "data": "No migration, schema/storage identifier/origin changes or deletion; hidden progress exact; catalog separate",
+  "stop": "Independent reviewer, CEO review and Owner Phase 5 acceptance pending; Phase 6 unauthorized"
+}

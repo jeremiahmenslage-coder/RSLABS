@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-26T21:19:52.146Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/phase3-2026-10-26T21-19-17-457Z/static/",
+    "storage": "disposable nonpersistent context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "separate static build succeeds, refuses overwrite, and preserves original dist",
+      "result": "Pass"
+    },
+    {
+      "name": "seven compact: actual local ELK optimization, ports, dimensions, overlap measurements",
+      "result": "Pass"
+    },
+    {
+      "name": "seven detailed: actual local ELK optimization, ports, dimensions, overlap measurements",
+      "result": "Pass"
+    },
+    {
+      "name": "raid compact: actual local ELK optimization, ports, dimensions, overlap measurements",
+      "result": "Pass"
+    },
+    {
+      "name": "raid detailed: actual local ELK optimization, ports, dimensions, overlap measurements",
+      "result": "Pass"
+    },
+    {
+      "name": "create/edit visual group, independent ToA/Fang/Lightbearer, representative and original boundary inspector",
+      "result": "Fail",
+      "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Collapse group', exact: true })\u001b[22m\n\n    at C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase3.mjs:58:185\n    at async check (C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor\\tests\\browser_phase3.mjs:20:34)\n    at async file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_phase3.mjs:51:2"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

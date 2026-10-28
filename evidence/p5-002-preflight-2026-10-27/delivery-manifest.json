@@ -1,0 +1,555 @@
+{
+  "date": "2026-10-27T15:47:38.887Z",
+  "checkout": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor",
+  "branch": "main",
+  "commit": "604d4d6d21fcd0030286acb400087cb14388e8f7",
+  "baseline": "starting-files.json",
+  "changed": [
+    {
+      "path": "src/assets/resolve.js",
+      "before": "E9F6ADDBE46ECEE60AFF8038F5CCCFCA5245C39F7BC386A68D755F96CCB8DF6D",
+      "after": "DA6CD29848FCC455F84877818F8EB7AA56889A2D62B61612A86FF5395F52623C"
+    },
+    {
+      "path": "src/main.js",
+      "before": "922DFC8F710F2D12700AE846040B9EAFF439CAAFFA8F46E948DBF334C549D386",
+      "after": "8B9BCAFF47FD4A469FBE80FEB0D83823AA3DF944C019178365D24FF76509B818"
+    },
+    {
+      "path": "src/model/actions.js",
+      "before": "95E517C66C24552A4EB3CB66D78CDD8948A00CEBA77614848FEBE486E6B7BB90",
+      "after": "982A6675276986FA6B585CF98EB6A7E9487C12FFBDAF5B0C9A69852E2D06CB2D"
+    },
+    {
+      "path": "src/style.css",
+      "before": "79B8F1930BDF91BEFAA236170C25569A1166613C59169E885C40D3641FF9735A",
+      "after": "1680421633B594DD432E1D1A239556BD6C9FFB124DAA01AFC49C08B35D6B7F39"
+    },
+    {
+      "path": "src/ui/catalog.js",
+      "before": "B1B06F1177265C62138259966B2836C00F98D02CEB65EDFF20DA9DBA51457539",
+      "after": "52CE44256263DBC7A38E4643DBD200FFB4DECBF107B1D5D56B44393D81257E6F"
+    },
+    {
+      "path": "src/ui/cursor.js",
+      "before": "EAADE920DFFCEE5A9A608F17C47487A64339AED98A72B5E98F21316A4B222D18",
+      "after": "EF322F02CE02E13C20C322DB7E04AE7FE4F2B6D36D725EFEB9B334B104D6B20D"
+    },
+    {
+      "path": "src/ui/graph.js",
+      "before": "43F4CDCDA2D37B0E0E28A5FB2F6F381E5F8D263D6607C873CE6B595F688B4783",
+      "after": "824F167F2F44A71CC2DE0E0B639F67992C14C94350EF7D7133E7876129A7B7F8"
+    },
+    {
+      "path": "src/ui/inspector.js",
+      "before": "CA9290577468C14BC0E6626C4FE294144504BB5CF596A07237E1AB2F213788C7",
+      "after": "3921A4C542B1141B27D5441BA572D5B82AF0399C9C2B07EA91CD4665238A405A"
+    },
+    {
+      "path": "tests/phase5.test.mjs",
+      "before": "8215A2F946BE6D1FEC6F47FE5F3785E51FAF890D35128F403189B3660F089413",
+      "after": "318B1D8629D64C1C333C8215A46C02614E5895443283414A89A56AA7934E2A15"
+    },
+    {
+      "path": "public/catalog-notices.html",
+      "before": "88915E0226223F9FFAF63893ED1D740A24C278484B0FC4EB18ECA9DAF7E82A88",
+      "after": "DFF6903004555FC41C99CD5CF651214F3C5B41890D716D88335CB15DC4C8B7B6"
+    },
+    {
+      "path": "catalog/README.md",
+      "before": "AAC0BEE9FEF0A986DB954EA53FD71BB3316D72844AB2ED4D1584D424FFEC2A95",
+      "after": "B4857FB84F961348BB9C5A71A7FE6BE6E2120F4D7151C5BFB317E3EB00723AFE"
+    },
+    {
+      "path": "catalog/source-review.json",
+      "before": "65063D61E79A11F0C8069274392F8273D2A21F6F667EF98DE6EDB3E50C738B1A",
+      "after": "1C246D7646F96EB70A4104374519D2D3E9712C94E47CD3C37D58E8AB676EB8DE"
+    },
+    {
+      "path": "index.html",
+      "before": "80C145B9982202F736FBD4A30239C4F8DA8A63ECD5FCC006CD5F4CB7BA9DA484",
+      "after": "7B44A35265D97F397A655EBE4F75035982FFE7B93727BA9AF993324F93C06C64"
+    },
+    {
+      "path": "DECISIONS.md",
+      "before": "D3F89326C961BE24D95F6A2CAAB55102AF9284AABA9F89CAEC322A5D780F783C",
+      "after": "5BA8CE9A95CA43CBC06723D9835F0BE57F152C43704C204BEE11E9D07816D3C4"
+    },
+    {
+      "path": "HANDOFF.md",
+      "before": "2CF385F73E12BE00AD05CFE361C49CDA7F42F124FB1AE20835B0D83A0EA85369",
+      "after": "228C26B238C88C42566D8459ABB7C4B4B415A7FD5796264E1BF30A8C53981A96"
+    },
+    {
+      "path": "TEST_REPORT.md",
+      "before": "DA19A8F3A71C7861EE4E2D0F217C57C84962139332F7EAB877D142D998F8B78D",
+      "after": "CFDFFA4B0E9F1DFE018E05C18306A0C59F38AC3C8F9A3CBE2CFA63F866BAC308"
+    },
+    {
+      "path": "README.md",
+      "before": "8C89BC61A6B32132F70C26A7F2238158E598A55E3959BCC2F9E5939431336853",
+      "after": "67FC73FF1C598F23F7F2C18C8DC462D6EFB29BC9EA3C295FB6F994EB859DB93B"
+    },
+    {
+      "path": "PRODUCT_SPEC.md",
+      "before": "B8C863EF4C1ABB7C01D890161BC880DD7799C7C048137E9F16AC3CAB71F406CD",
+      "after": "EE21CCD8A9108A8A7F174450E5C36BFFFB985E8F44A4C57BCA0815DC8AA24E41"
+    },
+    {
+      "path": "ARCHITECTURE.md",
+      "before": "1D499F1AC112F5F3B4C22D7BAB0CF89F214CA6707119D9CF438D652A98130B8A",
+      "after": "38CF3BECC71BA62389FAC8F5A98B94FDB5EA178D182B08C957504412DF900905"
+    },
+    {
+      "path": "docs/agents/CURRENT_PHASE_GATE.md",
+      "before": "D1D0A06E89E93E8F6B19BCF2E5741CA36484981DD9DD76C54831E6A5E371A251",
+      "after": "79124E5EED71E04C962813DDECCB91A3EC438DF987C7A8AE8FE3165A3689FFEA"
+    },
+    {
+      "path": "docs/TESTING.md",
+      "before": "9E3CB1CB8779AEF4E10366D15E84CF513A88AF822D7CC4A5267F31BDDC92F804",
+      "after": "F508378C9442710E557BA6FE5E10575CE372ABF7E9FE70B840D1F9863A704D40"
+    }
+  ],
+  "added": [
+    {
+      "path": "src/assets/artwork.js",
+      "after": "02A14D1635D8342AC20F688B09677561037708D30DAA0B66C8A2F94E3E87525E"
+    },
+    {
+      "path": "tests/artwork.test.mjs",
+      "after": "7FA6DB8904404B4BB8840CB3B85AF32B352B2A29429AE5D0EE0E51CBDFEAD8AD"
+    },
+    {
+      "path": "tests/browser_p5_002.mjs",
+      "after": "57A4B0D7A8D50F4C1A9FF41FAC32779202FA341BB010C706C46F0BFA9927E208"
+    },
+    {
+      "path": "scripts/prepare-artwork.mjs",
+      "after": "8C6EF4106C4B60B365EFDF7DC6DAA475390B5B89E1CE50E5C6EFCB3173D7DDC3"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-agility.png",
+      "after": "9285EE8A94D21B7587833107CB0E3034096A829311C327A0081BBD79B1C94AE1"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-attack.png",
+      "after": "E1106B14AB14516A4E82D2D90C0FA947E5898210663A55B6672B634612535DF3"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-barbarianAssaultLogo.png",
+      "after": "DB76D950168468CD873AE124FE7553AA30317E27FDED7B505A9396728240808E"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-blastFurnaceLogo.png",
+      "after": "E457F4465B2B10FBA9601AB868AC47C7E1122DF9FFA321D6C12D3F76F1D1DE4D"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-combatAchievementsIcon.png",
+      "after": "9444FF35F9999424418BF1E4E2E714E99A00673EA460CB290E867ECF32F49055"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-construction.png",
+      "after": "D84FA0B266650E063238A39CAB6EE3F6FA08900F199BC41E9FC7D5EB73F5B3F4"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-cooking.png",
+      "after": "D4341DC941F2EB2C9A67128199CAFA087D74ABEA537A9F6ACC3C8D1BCEE2064F"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-crafting.png",
+      "after": "FEAC65F596AC8066AF448098B471011A6EABA748BC78F4187BB71412AA70E91E"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-defence.png",
+      "after": "C058ACE200BA6B15AF31710E5B917F1AF85DBE3348C2D0957B5C8D2F00795BF8"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-farming.png",
+      "after": "471F72793056CD088512C647726B7E54B8E60668552966DA12804B55423D35BA"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-firemaking.png",
+      "after": "C84B3E08B0739008F2E9B66E2E4D3BBA2E3CD26028A729555BBB658247D6934C"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-fishing.png",
+      "after": "1B06E12C494970006B46944B8E6428692ED063CE529D5019D49E58E43239BE90"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-fishingTrawlerLogo.png",
+      "after": "E6C4B0A2637E26A3B511D53D7483A7A89701569D28849DAA19D23FE4CBF88FE1"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-fletching.png",
+      "after": "52343B4ED69A654E618A44E8CC215C370B2A8A8CC60F89952E2EBDB3D8E0B0BB"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-giantsFoundryLogo.png",
+      "after": "160AD081F8D9C14B151A0B4CD96A4955A2EF032947EC9459909B9E9144340424"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-guardiansOfTheRiftLogo.png",
+      "after": "23921A4E69235B5CA502BB424BCEE0A204870A67C2DA4BB63AFF4E8F51E65835"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-herblore.png",
+      "after": "77F6E0B6999B0E2A11BB61EB5353C136B9B78E82CD065705F9736DAFCA66F512"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-hitpoints.png",
+      "after": "15575B3945A44E7A1968CCA80A493C590B4076A4337F3A2BB9F96479E13C5015"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-hunter.png",
+      "after": "1F3EF36AEDBB0F1F3C4E7DD9C15266BF586B0E4C61CCF948A834F11B5A515879"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-magic.png",
+      "after": "8EBA93B5F2DD3EC9CF20240BF59905F317313B5FE78B6F6D889EBED658551687"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-minigameMapIcon.png",
+      "after": "FE90043DEDC4DAF4D7E01BB789E66A43EBE1BC9086F5BC2F2E6DF9B682D91821"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-mining.png",
+      "after": "057ED31939FA5B9276ED87F90EB6AF98C45A5098C50A45B0197A88B568F2A981"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-pestControlLogo.png",
+      "after": "65696B67924F8DE9428A0374850C4317F92BA15FC8C66FED85BFCD547E1CB0B5"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-prayer.png",
+      "after": "4588E2AFB7070FC82DF559B55BCE2BEC881548E5026CC511EA7ED1C5537E50CD"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-questStartIcon.png",
+      "after": "ACEFC6B88C235A3F363F6BEAAC2A36DEE89F1905B2C44CF12B98010C239FD038"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-ranged.png",
+      "after": "3E39BCBF41BC7B63893B1D7A0DD0614B8FF0E8140BED957D3107C279C27F50E6"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-runecraft.png",
+      "after": "90B9B5FB81FCEAA061261ADC3F2A3F1B21C1EA59CED25CB81E0E4892033A5C85"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-sailing.png",
+      "after": "6A98FBF74854A3AA6EE95A34460E5BCE3732729A7EE12CC58CD9C13FA17F1D7B"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-slayer.png",
+      "after": "B9D062FBA0D7D8439F67DD0341873C1875B1C3741C8607CDA24C0F9826760374"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-smithing.png",
+      "after": "2ABC2FADD19037F6456370DDDC30584505A5EE79FB835FAD8E8DC43518DC70AA"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-strength.png",
+      "after": "9441E434166EBFAF85249D95E4EF6807BC26143B53EC0A2878AA32EE97C263AA"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-thieving.png",
+      "after": "BD989171FD1725FC1BB3F3033B453BAB9EEA67B5BEC6DFC2B8D14EBD46F994F3"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-titheFarmLogo.png",
+      "after": "963587DF0C7D11D75DD1A1EFCB04646D90C67C9B70C2200A121D7AD027E8AB7D"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-category-woodcutting.png",
+      "after": "6B2FFB738CEB8B5BDF8F7F99CA9E4D589DBA9C623CFBAFA4CAB8A09A30776806"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-inventory-achievementDiaryCape.png",
+      "after": "61A0788CDEF476A168E6BF7800E294D69F69B20B8E679D0BEC70D7BE833C013E"
+    },
+    {
+      "path": "public/icons/artwork/art-dava-inventory-osmumtensFang.png",
+      "after": "8964BF969931AE21369414335204870150A45C9B7F69CD2B0EABDD9AE94D9DEA"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-11785.png",
+      "after": "691FFF60254A5EC5873339EF9B519F1F5DBA0CB6920396273972E635F2C7E0B2"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-11832.png",
+      "after": "CED422BBBED6644F1B1560B26A447787A4210858450AE7D06212DC874B58F3A3"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-11834.png",
+      "after": "0891276BBB0E9ABAA65180485554286109BCCD180AE820E9A776172359548C61"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-11907.png",
+      "after": "6E283B7F83D8B649D4BF46B6806ABCC2887AE5F256FF7168E3B346B92A4FBF90"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-12002.png",
+      "after": "E4A000E9979D830268A573B3592F8D9756D346866DE864C54E42691EBC68E0F1"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-12926.png",
+      "after": "1D13DA8B5049BE33796D1F0C9B5918EEFA9774809CA0EC479197946F5E2D7ADD"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-12954.png",
+      "after": "C35ABC0F83884532566DA5FDDEDDD1A2A5D458F7AA6D80548D67EED9D2D5B0FA"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-1333.png",
+      "after": "26E3138382CE6C82266F6D59D418DCF2108D2489C863DBB04B3F26F7568C2E1E"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-13576.png",
+      "after": "7FDF340030FA8D5BC7DAABCC6FE04A280C5A2BA7DB3EEBEB3B70028766E8479C"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-19529.png",
+      "after": "8CFA7CA808B265B72071A4CC190FACA61201DEA70DA0D46C34DAC121562E2A68"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-19547.png",
+      "after": "162467A6431D08F959D7D90EDCCC72AB585BF826D1EAEA7C8F1FA580C1928B30"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-19553.png",
+      "after": "AAE315EB1AE0B3058F26EB743C60C5F20B2291FA31A194B85D8AD1B28BD74484"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-21034.png",
+      "after": "A798F121A3DD5CE27AF26EF39EDFAEDDFF5345B69BF39CE7A9CD09168C9832AE"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-21079.png",
+      "after": "D230C6DDE65AD431636AE3F994FD36CB0B1CDC8075E08539BDEBAE74517D3695"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-21295.png",
+      "after": "B0EDFAC8F286D80BB15E98E501CE693B9237575CC945D735D350AE3D14868E98"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-23983.png",
+      "after": "2861FBD01374A0B5BE17B7DE49C854DF8B36CE032D1D50EAD6CBD6CC033AE4FD"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-23991.png",
+      "after": "A838599F8C1E450537FD1E2FD5C280C63F6828F25944C668D018056C848A0641"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-25865.png",
+      "after": "72B05F3F20860098E47F38DBD8F6BB5B41BCFF52B4AC990488BE468CB50C2EC3"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-25975.png",
+      "after": "BB6B1FA0D6AD3709BEB84271160444DBB4DC063DAEC5094FB71D58463445CA88"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-4151.png",
+      "after": "8DD74989FD4B977470425059914529713118DC7FA00755DB6FF5FC01842B4B87"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-4587.png",
+      "after": "25D1F9406906567B20FD6FFAC2AA8A143803E8DC92FB0242274EB793AE00C3EC"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-4712.png",
+      "after": "F1EE71F7AA2112FD5D3786F0A51B2FD25EAD11E7B019B8F6C69F72D505C73FD5"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-4718.png",
+      "after": "31DF5BE9AC12923E9AD0DDE78A910EDEAE2CCCC0F6099B44939978DB564FFDC9"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-4726.png",
+      "after": "7F7CC26EAF6158722BCDA5DA9160A630225E74EBF2B3B2E315C05D5EC123B10A"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-4736.png",
+      "after": "EE46470572278787563C691241D0A371D2D007BFBA866DB30A8EB8C78EC9FD3E"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-6570.png",
+      "after": "C35639658F3A554CBDAEA92486AFE95758A7057E0F78339C42944513387ECB89"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-6585.png",
+      "after": "F567CF301CFB1F73D07CD25A9D5C1D63DF1282CA8AB62369297DBF538F4EF51A"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-6737.png",
+      "after": "817F71F2D939D61ADABA854F2FED2F7FE562E03DCF686392479AA34518942588"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-items-7462.png",
+      "after": "42D20FB2DA4DB7B355377B4A5B776BE1440289E921E334643CEF61A017D01B3E"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-1.png",
+      "after": "EFADCCD4C47E2020B031579CA021D705BE4CD046F0F04272D7849D62E99014F8"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-10.png",
+      "after": "DA08C0678617BD6FE0A0102372251650CEDAC247C48C1FB3DD6017DABAED52BE"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-11.png",
+      "after": "4998C11F8D06DEC48B3A28C8E0A55BD6E5475891816AAE1DFDC7AD182A987855"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-12.png",
+      "after": "2D2F74551AE0F53DC97E7A9724C019CCAF33627B0ED1F29E6BD7AD2272324F01"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-13.png",
+      "after": "58760A8972BC8858BF69D2708D334206BBB0913018890FBE5CCA7CEA7397CA91"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-14.png",
+      "after": "E5FD486F5CD224C1E07A11D596F1ACADA4B08A63756863CAA30C378E7439DC00"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-15.png",
+      "after": "8A36FFD3EC7099A96A7CC41DC923A3DA474C740C377B17BCF2B6724FFBB8416D"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-16.png",
+      "after": "E710877D679BD2621B95D0716109E772A8B45A94A7137E85230F3C8F4C7274D1"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-17.png",
+      "after": "FBE86E8EEB8437A880CA288024B622B11E9DAB0654EFA421EABE35E9170C1CBC"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-18.png",
+      "after": "137089B34F7BD8898A3E7BB8100AAA08D8F33F5606854B3001B8ED39620BEBBB"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-19.png",
+      "after": "481FD99519ACB7D83BCC6BC335F43F1E39049A6FA1C3E0081551DEECFF1F2235"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-2.png",
+      "after": "F51E438AE552B16963CAFD5E74DABBC981F2B9E98328E74F8DD53FC185B5B413"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-20.png",
+      "after": "EF67B634D3A03C5FF1EB434A8680E538C084BF277DE771DC3E0B772CD48BEE21"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-21.png",
+      "after": "FDEB997E6AC8656F645E661C6059CF932E3F27AC6F76849B3C81D7BFA2F0F436"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-22.png",
+      "after": "B203B23C2AF916F24ED2BAF0DEF05F61E71BC0C4FAC2C2A44F2B5A12F49D5F0D"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-23.png",
+      "after": "708803A1FADB7B5D2C66DA1E2125A19622AD4578386C13F732DDD0CB74876AD5"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-24.png",
+      "after": "634657D25E83C9D3D8841B2A14588A41DCE622ADF2EFB3CE4AB82987509BDA8A"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-25.png",
+      "after": "A9BBBA6D7EB3A9B5AE188E85B9ED025D6B20515022BB41EEEDA01F3FB71D31B8"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-26.png",
+      "after": "E0AE013C8158F0044B41BADC97FC4F0EAE64598723870C02EE168FB0CBEE8B1C"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-27.png",
+      "after": "300172872303124FFFCAE48CEA48D1E86153FD05EFDC0E522B3FE74EF53444A2"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-28.png",
+      "after": "111D1609AC07E9F2BEF6AE43FC51072F38E766CEF80466444BB748FEE7C6B2B0"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-29.png",
+      "after": "6801BA0A6F01E996A72902EF2DB02F52633ADC5277BE92D9E0408263660C5F61"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-3.png",
+      "after": "EBDF61F6794628AA3D88AE9C083FD394180E7F51AEB6A9C0FE58F5D7BF312FCD"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-4.png",
+      "after": "5D7BB557DEFAEA06922BF6C9853032F873D1A6301F60D2AB9F835EF7A1217F4E"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-5.png",
+      "after": "7A50208E4B2A46A01A4836BF423CE9A94BA38A0D493732A78D3A0EF0A67EEC76"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-6.png",
+      "after": "E88686CB0ADD86EEB05A5E2383A18FBBC2007E01A36A0F8402D518E33EE6F3E1"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-7.png",
+      "after": "2AE5080F8BCD07F832E8752272353F70D6A313D61D7C1B45C7420D0BB88A4950"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-8.png",
+      "after": "38D8E11BE0CF60C885B7ED58C4F5CE6A3A26D9CD9093709F099D987020690A5F"
+    },
+    {
+      "path": "public/icons/artwork/art-osrsbox-prayers-9.png",
+      "after": "FA1A5E91AC702897615985862001AB5C14C42E09830903482EB3BF7673825DEA"
+    },
+    {
+      "path": "public/notices/artwork/ATTRIBUTION.md",
+      "after": "89991341EBC0A946DB51A3D3F9DE5DD6BD780D729A588CC841985862A39692D4"
+    },
+    {
+      "path": "public/notices/artwork/Dava96-LICENSE",
+      "after": "A61C36EF31E076CAF6B965FEA1BF6319C07F1783D49218D492FC0CE15C535A9A"
+    },
+    {
+      "path": "public/notices/artwork/Dava96-README.md",
+      "after": "C22A48C546A42E2545C1175DAD0BE93C49F586F0D72C429995F1C9E30523E802"
+    },
+    {
+      "path": "public/notices/artwork/osrsbox-LICENSE",
+      "after": "3972DC9744F6499F0F9B2DBF76696F2AE7AD8AF9B23DDE66D6AF86C9DFB36986"
+    },
+    {
+      "path": "public/notices/artwork/osrsbox-README.md",
+      "after": "42B8D9AE7153313830D2969E74872985908F7060401CA4645AA049EAF0F9B9C8"
+    },
+    {
+      "path": "catalog/artwork-manifest.json",
+      "after": "EA212E35D6FC03D1C6A340F1B87BB3CB57E24DE320C6860D615422CC2E734876"
+    },
+    {
+      "path": "catalog/artwork-selection.json",
+      "after": "834B9164EAF091DE35B716456454E58D008E98CF8E179740DCC678F708296E1B"
+    },
+    {
+      "path": "catalog/ARTWORK.md",
+      "after": "00660D942350A8CADF4949A6EE10AB0F77938689EDC88284C7171461BAB0C315"
+    }
+  ],
+  "checks": {
+    "distUnchanged": true,
+    "vendorUnchanged": true,
+    "storageUnchanged": true,
+    "referenceCatalogUnchanged": true,
+    "historicalHandoffAndTestSuffixUnchanged": true,
+    "indexEmpty": true
+  },
+  "evidence": [
+    "p5-002-2026-10-27T15-45-40-716Z",
+    "p3-005-2026-10-27T15-39-48-598Z",
+    "p3-002-2026-10-27T15-39-49-072Z",
+    "phase3-2026-10-27T15-39-49-499Z"
+  ],
+  "evidenceNote": "New timestamped evidence plus preflight scripts/raw pinned source cache/logs are additional files, excluded from source inventory. Every prior baseline file remains present."
+}

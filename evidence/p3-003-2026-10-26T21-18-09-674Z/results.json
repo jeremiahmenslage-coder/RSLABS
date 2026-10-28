@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-26T21:18:11.960Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p3-003-2026-10-26T21-18-09-674Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "cursor create/cancel is bounded near pointer, makes no orphan and returns focus",
+      "result": "Pass"
+    },
+    {
+      "name": "creation draft More details retains title/category/position at zoom and pan; inspector cancel makes no orphan",
+      "result": "Fail",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:\n+ actual - expected\n\n  {\n    x: 41,\n+   y: 176\n-   y: 177\n  }\n\n    at file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_cursor.mjs:46:865\n    at async check (file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_cursor.mjs:17:34)\n    at async file:///C:/Users/Jeremiah/OneDrive/Desktop/OSRSLABS/Phase1/osrs-phase1-editor/tests/browser_cursor.mjs:45:2"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

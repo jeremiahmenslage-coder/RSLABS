@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-28T00:25:17.837Z",
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32",
+    "browser": "155.0.8059.85",
+    "origin": "http://127.0.0.1:4173",
+    "url": "http://127.0.0.1:4173/evidence/p5-005-2026-10-28T00-25-08-906Z/static/",
+    "storage": "fresh disposable context; real IndexedDB"
+  },
+  "results": [
+    {
+      "name": "new static build matches source/vendor and preserves dist",
+      "result": "Pass"
+    },
+    {
+      "name": "selected-set drag in both densities retains selection, moves explicit IDs by one common offset and writes/history once",
+      "result": "Pass"
+    },
+    {
+      "name": "frame coalescing patches incident graphics only; unrelated SVG identity/routes remain stable and Escape restores geometry",
+      "result": "Pass"
+    },
+    {
+      "name": "trusted touch pointer cancellation restores all selected cards, group bounds and settled routes without a write",
+      "result": "Pass"
+    },
+    {
+      "name": "hidden members and descendants never join selected movement; repeated drags preserve data and JSON",
+      "result": "Pass"
+    },
+    {
+      "name": "many-prerequisite/high-degree/cyclic connections have no arrowheads and preserve right-out/left-in endpoints",
+      "result": "Pass"
+    },
+    {
+      "name": "generous line hit target, hover/selection emphasis and explicit source/destination remain keyboard accessible",
+      "result": "Pass"
+    },
+    {
+      "name": "individual goal deletion is immediate, preserves descendants/group validity and offers one-step Undo",
+      "result": "Pass"
+    },
+    {
+      "name": "Delete and explicit selection context/toolbar delete exactly selected IDs with no confirmation and coherent history",
+      "result": "Pass"
+    },
+    {
+      "name": "quick/detailed connection and detailed goal deletion use immediate validated actions, leaving unrelated drafts alone",
+      "result": "Pass"
+    },
+    {
+      "name": "unrelated dirty inspector draft survives explicit target deletion without a discard prompt",
+      "result": "Pass"
+    },
+    {
+      "name": "Delete never intercepts text, open modal/editor fields, contenteditable, Board search or unrelated controls; reset safeguard remains",
+      "result": "Pass"
+    },
+    {
+      "name": "failed movement/deletion saves preserve last committed state and Retry/Undo retain exact IDs and data",
+      "result": "Pass"
+    },
+    {
+      "name": "contradictory structured titles reject import/load without overwrite; legacy freeform and Prayer recover",
+      "result": "Pass"
+    },
+    {
+      "name": "no page errors/external runtime calls; preserved dist unchanged",
+      "result": "Pass"
+    }
+  ],
+  "errors": [],
+  "external": []
+}

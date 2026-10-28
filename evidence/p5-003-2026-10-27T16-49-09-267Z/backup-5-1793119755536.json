@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "p3-003-disposable",
+    "title": "Disposable cursor actions (illustrative links only)",
+    "nodes": [
+      {
+        "id": "cat0",
+        "title": "Category item",
+        "category": "boss",
+        "catalogRef": "osrs:item:rune-scimitar",
+        "iconOverride": "art:osrsbox:items:1333",
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 0.000001,
+          "target": 0.125
+        },
+        "position": {
+          "x": 70,
+          "y": 60
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T16:49:14.267Z"
+      },
+      {
+        "id": "cat1",
+        "title": "Category boss",
+        "category": "activity",
+        "catalogRef": "unknown:catalog:1",
+        "iconOverride": "unknown:icon:1",
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 1.000001,
+          "target": 1.125
+        },
+        "position": {
+          "x": 390,
+          "y": 60
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T16:49:14.315Z"
+      },
+      {
+        "id": "cat2",
+        "title": "Category activity",
+        "category": "quest",
+        "catalogRef": "osrs:item:rune-scimitar",
+        "iconOverride": "art:osrsbox:items:1333",
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 2.000001,
+          "target": 2.125
+        },
+        "position": {
+          "x": 710,
+          "y": 60
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T16:49:14.364Z"
+      },
+      {
+        "id": "cat3",
+        "title": "Category quest",
+        "category": "skill",
+        "catalogRef": "unknown:catalog:3",
+        "iconOverride": "unknown:icon:3",
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 3.000001,
+          "target": 3.125
+        },
+        "position": {
+          "x": 70,
+          "y": 280
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T16:49:14.413Z"
+      },
+      {
+        "id": "cat4",
+        "title": "Category skill",
+        "category": "prayer",
+        "catalogRef": "osrs:item:rune-scimitar",
+        "iconOverride": "art:osrsbox:items:1333",
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 4.000001,
+          "target": 4.125
+        },
+        "position": {
+          "x": 390,
+          "y": 280
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T16:49:14.462Z"
+      },
+      {
+        "id": "cat5",
+        "title": "Category prayer",
+        "category": "diary",
+        "catalogRef": "unknown:catalog:5",
+        "iconOverride": "unknown:icon:5",
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 5.000001,
+          "target": 5.125
+        },
+        "position": {
+          "x": 710,
+          "y": 280
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T16:49:14.524Z"
+      },
+      {
+        "id": "cat6",
+        "title": "Category diary",
+        "category": "custom",
+        "catalogRef": "osrs:item:rune-scimitar",
+        "iconOverride": "art:osrsbox:items:1333",
+        "notes": "original notes",
+        "status": "not_started",
+        "progress": {
+          "current": 6.000001,
+          "target": 6.125
+        },
+        "position": {
+          "x": 70,
+          "y": 500
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T16:49:14.572Z"
+      },
+      {
+        "id": "cat7",
+        "title": "Category custom",
+        "category": "item",
+        "catalogRef": "unknown:catalog:7",
+        "iconOverride": "unknown:icon:7",
+        "notes": "original notes",
+        "status": "in_progress",
+        "progress": {
+          "current": 7.000001,
+          "target": 7.125
+        },
+        "position": {
+          "x": 390,
+          "y": 500
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-27T16:49:14.620Z"
+      }
+    ],
+    "edges": [],
+    "groups": []
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 30,
+      "y": 20,
+      "zoom": 1
+    }
+  }
+}

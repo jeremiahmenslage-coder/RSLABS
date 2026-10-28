@@ -1,0 +1,58 @@
+
+> osrs-ironman-planner@0.2.0-phase2 test
+> node --test tests/*.test.mjs
+
+✔ local PNG/WebP are decodable-format files and manifest maps to local relative paths (1.0629ms)
+✔ catalog default icon is separate from goal status and icon override (0.3683ms)
+✔ demo icon override preserves IDs, typed edges, manual positions and asset fallback (0.3135ms)
+✔ F1 exact seven goal names and SIX directed pairs (2.1031ms)
+✔ all three visibly typed edge semantics exist (0.256ms)
+✔ invalid endpoints, self-edge, duplicate ordered pair cannot be added (0.6335ms)
+✔ hard cycles reject while soft/order cycles are permitted (0.4823ms)
+✔ layout changes only positions, not schema edges and names (0.8522ms)
+✔ optimized six edges run left to right on exact acyclic fixture (0.2956ms)
+✔ group collapse is presentation only and never fabricates graph links (0.9141ms)
+✔ new outgoing edge demonstrates arbitrary divergence without cloning nodes (0.2247ms)
+✔ missing group representative and corrupt coordinates rejected (0.3686ms)
+✔ catalog references are stable and separate from roadmap goals (0.2287ms)
+✔ visual representative must refer to an actual member, not another group (0.1533ms)
+✔ IDB adapter writes a complete snapshot and reads it back after reopen (mocked browser API) (7.0507ms)
+✔ IDB aborted write preserves last committed document (mocked transaction) (1.093ms)
+✔ IDB invalid new document is rejected before transaction begins (0.8965ms)
+✔ empty roadmap starts unseeded, valid, with versioned preference defaults (11.4938ms)
+✔ create stable unique nodes with intended coordinates and catalog separation (1.2323ms)
+✔ create rejects blank, overly long, untrusted icon URI, category, and invalid coordinates, without modifying original (0.3778ms)
+✔ edit keeps id position edges status counters and timestamp types (0.6412ms)
+✔ node delete removes only incident edges, preserves descendants and other edges (0.539ms)
+✔ pair edge uniqueness, self-edge, invalid ID rejects all types (0.4433ms)
+✔ hard cycles rejected on both create and type edit; order cycle permitted (0.6602ms)
+✔ edge edit and delete preserve other records (0.3309ms)
+✔ drag position command changes only position; undo and redo recover final coordinates (0.5087ms)
+✔ undo/redo of chained create edit connect delete maintains integrity (0.6018ms)
+✔ redo invalidated on branching edit and undo bounded (4.3245ms)
+✔ optimize positions preserves exact semantic edges; history restores before position (1.1354ms)
+✔ group collapse remains visual, canonical edges untouched, and undoable (0.537ms)
+✔ invalid future schema or corrupt payload is rejected without resetting it (0.2575ms)
+✔ save coordinator writes latest revision in order and emits honest state (25.8849ms)
+✔ failed write preserves last-known-good and retry saves queued snapshot (15.5583ms)
+✔ separate transient UI preference updates do not pollute graph undo stack (0.363ms)
+✔ soft/order predecessors never block regardless of completion or counters (2.5674ms)
+✔ multiple hard prerequisites, completed override, independent branches and counters (0.7159ms)
+✔ one reused goal feeds branches with no duplicated state or completion propagation (3.7937ms)
+✔ collapsed and offscreen nodes remain canonical prerequisites (0.8908ms)
+✔ manual progression edits undo/redo and reload with stable Phase 1 IDs (0.9329ms)
+✔ invalid counters/status rejected without mutating source; counters can be removed (0.5118ms)
+✔ complete schema roundtrip preserves every field and unknown icon references (1.4261ms)
+✔ malformed/unsupported/broken references/duplicates/hard cycles reject detached copies (1.1406ms)
+✔ backup prerequisite tracks exact current content; cancel clears preview (0.671ms)
+✔ durable replacement waits for pending saves then applies exactly after successful write (16.9275ms)
+✔ failed replacement preserves active and committed roadmap and does not queue candidate for retry (0.9239ms)
+✔ failed pending autosave blocks replacement instead of discarding unsaved state (0.2744ms)
+ℹ tests 46
+ℹ suites 0
+ℹ pass 46
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 164.887

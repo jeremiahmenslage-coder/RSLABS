@@ -83,3 +83,136 @@ Source: direct Owner message in the repository migration/cleanup Codex conversat
 Authorized: verified workspace backup, local Git baseline, root shared instructions and role reconciliation, relocation of staged migration documents out of src, documentation corrections and ignore rules. Application refactoring, test-harness repairs, file deletion, dependencies, push, deployment and Phase 2 are excluded. Git baseline preservation is not acceptance. Phase 1 remains delivered pending formal Owner acceptance.
 
 Records: `docs/agents/CURRENT_PHASE_GATE.md` is the current summary; this file holds decision evidence. Use the existing ledger rather than creating a second live approval ledger. Original kit manifests, evidence and historical phase documents remain archival.
+
+## ADR-015: Owner acceptance of Phase 1 — 2026-10-26
+
+Source: direct Owner instruction in the AI Engineer chat on October 26, 2026:
+
+> Record that I accepted Phase 1 on October 26, 2026, after reporting all required browser acceptance checks passed. Attribute those results to Owner testing; preserve historical delivery evidence.
+
+**Owner decision:** Phase 1 accepted on October 26, 2026. All required browser acceptance checks passed according to Owner testing. These are Owner-reported results, not tests executed or independently verified by the AI Engineer in this documentation task. This acceptance closes the pending Owner browser acceptance gate described in ADR-013; that historical engineering evidence and its limitations remain unchanged.
+
+**Phase 2 remains NOT AUTHORIZED**, pending a scoped proposal and separate express Owner approval. Phase 1 acceptance does not authorize Phase 2 implementation.
+
+Authorized for this task: documentation-only updates to `DECISIONS.md`, `docs/agents/CURRENT_PHASE_GATE.md`, and `HANDOFF.md`. No application code, tests, browser data, Git operations that alter repository state, or historical delivery evidence may be changed. Earlier pending-acceptance statements remain historical records; this decision and the current gate supersede them.
+
+## ADR-016: P2-001 — Phase 2 implementation authorized — 2026-10-26
+
+Source: direct Owner engineering ticket P2-001 in this AI Engineer chat, October 26, 2026:
+
+> I authorize Phase 2 implementation within this proposal.
+
+Authorized scope: manual Not Started / In Progress / Completed, optional current/target counters without inferred completion, canonical hard-only Ready/Blocked indicators with Completed override, shared goals without duplicated state or propagation, complete versioned JSON export, validated preview/import with explicit replacement confirmation and mandatory current-roadmap export, failure-safe persistence, retained unknown icon references with fallback and portability warnings. Associated tests and current documentation updates are authorized. Preserve Phase 1 data/IDs, static/local architecture and browser origin; isolate disposable browser test data and write new evidence separately.
+
+Excluded: task board, advanced layout, new grouping/filter tools, catalog expansion, authentic art ingestion, custom image uploads, mobile work, cloud services, deployment, Phase 3, destructive cleanup, new integrations, staging, commits, branch changes and push. No material scope, architecture or data-risk changes are preapproved. Deliver for CEO review and separate Owner Phase 2 acceptance; P0/P1 defects block acceptance. Phase 1 acceptance under ADR-015 remains intact. This decision supersedes the earlier Phase 2 authorization hold only within P2-001 scope.
+
+## ADR-017: Owner Phase 2 acceptance and P3-001 authorization — 2026-10-26
+
+Source: direct Owner ticket P3-001 in the AI Engineer chat. Owner reports accepting Phase 2, followed by the explicit directions “approve moving forward with phase 3” and “proceed.” Phase 2 static build was **not verified**; acceptance does not retroactively turn that unrun check into a pass. Its uncommitted source delivery and historical test evidence are preserved.
+
+Authorized: readable graph organization within P3-001: working ELK.js feasibility assessment and local bundling if adopted, reliable replaceable port-aware layout, one-level visual group CRUD/membership/independent representative, original boundary inspection, completed show/dim/hide/collapse, cycle-safe upstream/downstream/both Focus and Highlight, relevant compatibility/regression tests and current documentation. Retain static local architecture, browser origin/storage identifiers and schema where possible. Validate static build in a separate new output directory. No task board, catalog/art ingestion, uploads, mobile/cloud/deployment, staging, commits, branch changes, push, destructive cleanup, Phase 4 or Phase 6 production hardening. Return for CEO review and Owner acceptance; P0/P1 defects block acceptance.
+
+Implementation choice within the ticket/ADR-002: adopt pinned **elkjs 0.12.0**, unmodified browser bundle local under `src/vendor/elkjs/`, license **EPL-2.0 OR GPL-3.0-or-later** (EPL-2.0 used for this bundled copy), upstream license/README retained. Published archive SHA-1: `7dc1bc71ab8f402d1b6564e2fa509ca1caee276c`. No npm install, lifecycle scripts, CDN/runtime service or rendering-stack replacement. Feasibility evidence: `evidence/phase3-preflight-2026-10-26/elk-feasibility.json` (working Node engine, seven-goal convergence and 16-goal branching/cyclic/disconnected fixture, both densities). Route coordinates require conversion from ELK container-local coordinates. Full performance hardening remains Phase 6.
+
+No migration proposed or required: existing schema-version-1 groups and completion visibility are used; optional `preferences.navigation` and `preferences.expandedCompleted` default to no navigation scope and no expanded completed summaries when absent. Validate these when present and preserve them in full-document backups. Readiness remains canonical and hard-only. Layout changes node positions only; route geometry and view summaries are derived/transient and never become semantic edges. Expanded groups are layout containers only. Collapsed summaries are packed as disconnected visual boxes; boundary links remain inspectable original connections rather than fabricated container edges.
+
+## ADR-018: P3-002 — region selection and bulk actions authorized — 2026-10-26
+
+Source: direct Owner follow-up ticket P3-002 in the AI Engineer chat:
+
+> Authorize the Phase 3 selection UX follow-up.
+
+Authorized: Shift-drag empty-canvas region selection of fully enclosed projected goal cards at current zoom/pan; count/highlight/toolbar/Escape; explicit selected-ID group creation, add-to-group, ungroup, and manual status operations. Preview action/count/goal list and allow cancellation; respect unsaved drafts. Each effective bulk action is a single validated undoable command through existing autosave. Preserve counters, unselected/hidden goals, IDs, edges, independent states, valid representatives, positions, inspector grouping and both connection methods (including source → Shift-click destination). No automatic layout or inferred completion. Associated tests/current records and static validation in new separate output are authorized.
+
+Boundaries: preserve uncommitted Phase 2/3 delivery, historical evidence and dist. No unrelated refactoring, routing repairs, new phases, staging/commits/branch changes, push or deployment. Existing P2 routing limitation remains open. Stop for independent reviewer and CEO review before Owner acceptance; no Phase 3 acceptance is inferred and Phase 4 remains unauthorized.
+
+Implementation policy: region selection is transient UI state separate from the existing connection pair and is not persisted/exported. New rectangles replace that selection. Only projected goal cards can enter selection; hidden IDs are pruned when projection changes, with no implicit additions. A preview freezes explicit IDs/action/current-document identity, revalidates before application, and does not discard drafts on cancellation. Group reassignment changes selected membership only and clears any representative reference invalidated by those moves; old/target unselected members remain intact. No schema/database/origin changes or migration are required.
+
+## ADR-019: P3-003 — cursor editors and contextual actions authorized — 2026-10-26
+
+Source: direct Owner engineering ticket P3-003 in the AI Engineer chat:
+
+> Approved recommended behavior and other quick wins you flagged. Can we get this over to engineering.
+
+The bounded ticket authorizes cursor-local goal creation (title/category/Create/Cancel/More details), a shared quick connection editor for port release and selected-two initiation, quick rename/manual counters, and contextual goal/connection/selection/group/empty-canvas actions. Retain the detailed inspector and visible alternate controls. Context targeting must distinguish the existing selected-ID scope from single objects outside it; selected bulk actions retain reviewed action/count/ID confirmation. Preserve drafts or ask before discarding; cancellation creates no orphan. Reverse direction validates a copy and rejects duplicate/self/hard-cycle conflicts without changing the original connection. Support viewport-bounded panels, keyboard invocation/navigation, Escape, Enter forms and focus return. Associated tests/current docs and new separate static builds are authorized.
+
+No unrelated refactoring, routing repair, dependencies, schema migration, task board, later phases, staging/commits/branch changes, push or deployment. Preserve prior uncommitted delivery, historical evidence, dist, storage identifiers/origin and independent manual state/counters. Existing P2 routing ambiguity remains open. Stop for independent review, CEO review and Owner acceptance; no acceptance or later-phase authorization is inferred.
+
+Implementation policy: cursor menus/forms are transient bounded modal panels. Menu opening never changes the roadmap or inspector draft; actions use existing copy/validate commands, history and autosave. More details transfers fields/endpoints/type and marks the inspector draft unsaved; if replacing a dirty inspector draft is declined, the cursor form stays intact. Single-object grouping reuses the bulk review with an explicit singleton scope; selection menus use the frozen explicit selection/count. No schema/storage/dependency changes are needed. Prior UI regressions will take More details when they intentionally exercise detailed-inspector creation/connection controls; new tests exercise the actual quick paths and mouse modifiers directly.
+
+
+## ADR-020: P3-004 — consolidated canvas usability pass authorized — 2026-10-26
+
+Source: direct Owner P3-004 ticket, superseding earlier P3-004 scope. Owner approved the optional-inspector model and consolidated UX expansion; explicitly confirmed selection is temporary, empty click clears selection without changing roadmap data, empty drag pans, and only one quick editor is active with unsaved input preserved or explicitly resolved when changing targets.
+
+Authorized: inspector closed initially with labeled keyboard toggle; selection independent of inspector, object double-click quick editing, explicit More details transfers; full goal/connection quick editing through validated actions; compact region-only bulk controls; preserved pairing/context actions; dirty-draft protection including no premature port-start discard prompt; keyboard/focus/bounds; View and Help/Diagnostics, relationship labels and visible save/failure/Retry feedback. Associated regressions, new disposable browser evidence and separate static builds/current documentation only.
+
+Preserve uncommitted Phase 2/3 delivery, Owner changes, original dist and historical evidence. No routing repairs, task board, catalog/artwork, mobile, production-scale optimization, new dependencies, schema/storage/origin changes, unrelated refactoring, Git-state mutations, push, deployment or later phase. Existing P2 routing ambiguity remains open. Stop for independent reviewer, CEO review and Owner acceptance. Phase 4 remains NOT AUTHORIZED. Phase 2 acceptance remains Owner-reported; its static build was not verified.
+
+Implementation policy: inspector is a transient overlay so toggling/resizing never changes graph viewport or saved positions; hidden inspector DOM retains its draft. Single-click selection is UI-only; double-click pointer targets remain mounted across selection changes. Quick editors are bounded modal forms, explicit cancellation resolves their input, and transfer/commit guards protect dirty inspector drafts. Bulk toolbar overlays the canvas to avoid changing coordinates during selection/port gestures. Full relationship names appear in editors, context actions, boundary inspection and Help; compact edge badges use Required/Recommended/Order with full-name tooltips, retaining routing geometry. No migration or dependency is required.
+
+P3-004 engineering outcome: implemented with transient workspace surfaces and existing validated actions; 74/74 Node and 71/71 browser/build groups passed in disposable Chrome/IndexedDB contexts. Current delivery evidence is in TEST_REPORT.md/HANDOFF.md. These are engineering results, not Owner acceptance; independent/CEO/Owner review remains pending.
+
+
+## ADR-021: P3-005 — editing consistency fixes authorized — 2026-10-26
+
+Direct Owner ticket authorizes the CEO's three-fix remediation scope, quoting Owner: “Yes i approve”. Fix only accepted/declined Undo/Redo inspector draft resolution; canonical geometry/routes after pointer cancellation; and atomic combined connection type/endpoint editing validated against its final detached candidate. Associated editing/history/persistence/browser tests, separate static build and current decision/gate/handoff/test records are authorized. Preserve existing uncommitted delivery, Owner changes, historical evidence and dist. No unrelated refactoring, routing-ambiguity repair, dependencies, schema/storage/origin changes, Git-state changes, push, deployment or later-phase work. Phase 3 remains unaccepted; Phase 4 unauthorized. Stop for independent review, CEO review and Owner acceptance.
+
+P3-005 engineering outcome: the three authorized fixes are implemented. 77/77 Node tests and 80/80 real HTTP/disposable IndexedDB browser/build groups passed, including a trusted touch-cancellation regression. Evidence and remaining limits are in the current TEST_REPORT.md and HANDOFF.md. This records engineering execution, not phase acceptance; independent/CEO/Owner review remains pending.
+
+## ADR-022: Owner accepts Phase 3 and defers routing ambiguity — 2026-10-26
+
+Source: direct Owner decision in the AI CEO chat: “I accept Phase 3 and defer the documented P2 routing ambiguity. Phase 4 is not authorized.” The Owner subsequently said “APPROVED.” to the proposed documentation-only acceptance update and Phase 4 scope proposal.
+
+Phase 3, including P3-001 through P3-005, is Owner-accepted. Acceptance follows Owner-reported browser walkthrough passes and the CEO review; Owner reports are not independent AI browser executions. The Owner explicitly waived the separate reviewer for P3-005; earlier independent reviews remain historical evidence. P3-005 engineering reports 77/77 Node and 80/80 browser/build checks; these counts retain their engineering attribution.
+
+The documented P2 reload-routing crossings/shared-path ambiguity is explicitly deferred, not fixed or closed. Phase 2's historical static-build limitation remains unchanged. Phase 4 implementation is NOT AUTHORIZED; scope proposal only. This approval authorizes updates to DECISIONS.md, docs/agents/CURRENT_PHASE_GATE.md and HANDOFF.md, with no application changes, tests, builds or Git-state operations. Historical delivery/test records remain preserved; this decision supersedes their pending Phase 3 acceptance statements.
+
+
+## ADR-023: P4-001 — task board and daily-use navigation authorized — 2026-10-26
+
+Direct Owner ticket quotes: “I authorize Phase 4 within this proposal.” This separately authorizes implementation after ADR-022's Phase 3 acceptance/proposal-only hold. Scope: three manual-status columns from canonical goal IDs/store; synchronized optional counters and status; combined name/category/readiness/group board filters including completed discovery; explicit Graph/Board switching and persisted view/navigation preferences; existing quick/details drafts, validated actions/history, autosave and safe backup handling. No separate tasks/order, inferred completion or propagation. Independent review, CEO review and Owner Phase 4 acceptance remain required; Phase 5 is unauthorized. Exclusions and no staging/commits/branch changes/push/deployment remain as in the ticket; deferred P2 routing ambiguity stays open.
+
+Compatibility policy: existing schema 1 already accepts lastView graph/board. Optional preferences.boardFilters contains query/category/readiness/group; absence defaults to empty filters. No schema version, database, storage-key or origin change and no migration/conversion are necessary. New filters are validated on load/import and included by existing full-document export. Group filters use group:<canonical ID>, ungrouped, or empty; a removed/unavailable group yields no matches and can be cleared. Graph visibility/Focus does not filter Board or its canonical readiness. View/filter preferences are navigation state; Undo/Redo preserves the current view and Board filters while applying roadmap history. Inspector drafts survive view changes; modal quick input must be explicitly canceled, saved or transferred before background view switching.
+
+P4-001 engineering outcome: the authorized task board/navigation package is implemented. 82/82 Node and 91/91 browser/build groups passed in disposable real HTTP/IndexedDB Chrome contexts. Existing Phase 1–3 regressions, full JSON preferences, draft preservation and failure recovery passed. See current HANDOFF.md/TEST_REPORT.md for evidence and limits. Engineering delivery is not Owner Phase 4 acceptance; independent/CEO/Owner review remains pending. Phase 5 is unauthorized.
+
+
+## ADR-024: Owner Phase 4 acceptance and bounded P5-001 authorization — 2026-10-26
+
+Direct Owner P5-001 ticket reports accepting Phase 4 based on Owner-reported walkthroughs, explicitly deferring its three documented issues, then authorizing Phase 5 conditional on direct graph status controls, hiding counter UI without data deletion, and resolving deferred defects; Owner subsequently said “Proceed.” These Owner reports are not independent engineering tests. Prior engineering counts/evidence retain their attribution.
+
+Phase 5 is authorized only within P5-001: direct manual status chooser; hide all counter UI while preserving data/validation/backups; investigate and fix routing reconstruction, string-null group filters, Target arrow behavior before hiding, and reported inspector draft prompts; source-qualified locally bundled catalog/import tooling/search/icons/fallback and consistent OSRS-inspired styling. Verify current source/asset permissions before ingestion; use original fallbacks if authentic art permission is unavailable. No automatic game prerequisites, runtime API, prohibited scraping, integrations, uploads, unrelated refactor/architecture change/migration, staging/commits/branch changes/push/deployment. Preserve uncommitted deliveries and historical evidence/dist. Stop for independent reviewer, CEO review and Owner Phase 5 acceptance. Phase 6 is NOT AUTHORIZED; restoring counter UI requires Owner approval.
+
+P5-001 engineering outcome: direct graph status, hidden numeric UI with exact stored-data preservation, 207 reference records/seven original symbols, repeatable import and shared styling are implemented. The documented raid reconstruction, literal-null filter and Target arrows were reproduced/corrected (Target verified before hiding). Owner clarified the notes prompt followed clicking a graph goal; the exact tested sequence retained notes with zero prompts, so no unobserved fix is claimed. 89/89 Node and 49/49 current browser/build groups passed. Authentic artwork and catalog completeness/link audit remain explicit gaps. Independent/CEO/Owner Phase 5 review is pending; Phase 6 unauthorized; restoring counter UI requires Owner approval.
+
+
+## ADR-025: Replacement P5-002 — artwork and final Phase 5 UX — 2026-10-27
+
+Direct Owner replacement ticket extends the existing Phase 5 authorization to assess osrsbox/osrsbox-db and Dava96/osrs-icons, locally bundle suitable pinned icons with provenance/notices/coverage and repeatable tooling; remove graph-card status shortcut while retaining editor/Board status paths; make Inspector Cancel discard unsaved form changes and close details while mere panel hiding preserves drafts; and default creation to catalog search with a prominent direct custom path and safe switching. Counter UI remains hidden.
+
+Owner reports Jagex permission covering third-party icon sourcing and bundling in this private local planner. This is Owner-provided permission, NOT independently verified, and establishes no broader distribution rights. Applicable repository/source notices must be retained. No runtime CDN, unrelated refactor, dependencies without justification, migration, Git-state changes, push, deployment or Phase 6. Preserve all uncommitted work, browser data, historical evidence and dist. Stop for independent reviewer/CEO review before Owner Phase 5 acceptance.
+
+
+P5-002 engineering delivery: 94 pinned PNGs, 90 identity-specific/117 category-marker matches, preserved original fallback/overrides; graph shortcut removed; catalog-first/direct custom creation and Inspector Cancel vs hide implemented. No dependencies/migration/user-record rewrite. 93/93 Node and 47/47 current browser/build groups passed; source/permission/coverage and exact evidence/limits in catalog/ARTWORK.md and current TEST_REPORT.md. Phase 5 is NOT Owner-accepted; stop for independent reviewer/CEO review before Owner acceptance. Phase 6 NOT AUTHORIZED.
+
+
+## ADR-026: P5-003 manual creation/category markers — 2026-10-27
+
+Direct Owner ticket supersedes earlier unsent drafts and P5-002 active catalog/individual artwork UI: manual title/category/status creation, optional details; no active catalog discovery or individual-icon controls; saved references/overrides/counters retained but presentation uses category only. Archive records/assets/tooling/provenance/notices in place as inactive. Genuine Combat, Minigame, Quest, Skills, Prayer symbols are available in the previously pinned Dava96 exports; Inventory and Achievement Diary are not found in those reviewed exports, so disclose original fallbacks instead of unrelated substitutes. Custom uses a neutral original marker. No migration/dependencies/runtime APIs; dictionary and Phase 6 unauthorized. Owner-provided private-planner Jagex permission remains not independently verified with no broader distribution rights implied. Phase 5 acceptance pending; stop for independent reviewer/CEO review before Owner acceptance.
+
+P5-003 engineering delivery: manual/category-only interfaces implemented; five genuine category symbols, Inventory/Diary original-fallback gaps explicitly disclosed, Custom original neutral marker. Archived catalog/individual art/refs/overrides retained inactive; no migration/dependencies. 97/97 Node and 46/46 browser/build groups passed; exact evidence, source/permission scope, data impact and limits in current HANDOFF/TEST_REPORT and catalog/CATEGORY_MODE.md. This is engineering delivery, not Owner acceptance. Independent reviewer/CEO review then Owner Phase 5 acceptance required; Phase 6/dictionary remain unauthorized.
+
+
+## ADR-027: Owner authorization P5-004 — 2026-10-27
+
+Owner replied “Approved” after engineering read the prepared P5-004 ticket and proposed compatibility: preserve existing Prayer goals; remove Prayer only from new categories; Prayer remains a Skill; optional structured skill identity/whole-number target level independent of hidden progress; no automatic parsing/conversion of freeform Skill goals. This authorizes P5-004 category-first creation, bounded reference packs and local Owner icon packs. Adopt additive optional skillGoal {format:1,skillId,targetLevel} within schemaVersion 1; unchanged IndexedDB version/name/store/key and origin, no bulk migration/rewrite. Current validator checks the attribute; old builds may preserve it as unknown data but lack validation/structured editing, so use current build and export before rollback. Existing missing/null field remains a freeform goal. No inference/propagation. Legacy Prayer remains valid in storage/import/editing/filtering, omitted from new-goal picker. Phase 5 pending acceptance; Phase 6 unauthorized. Owner private-planner Jagex permission remains Owner-provided/unverified, no broader distribution rights. Preserve uncommitted work/history/dist; no commits/staging/branch/push/deployment.
+
+P5-004 engineering outcome: category-first picker/structured Skill editing, legacy Prayer/freeform compatibility, 178-entry reference pack and versioned local PNG/WebP preparation implemented. Optional skillGoal extends schema 1 without storage migration or eager rewrite. 102/102 Node and 50/50 browser/build groups passed; Inventory/Diary art gaps and older-build editing limits remain disclosed. Original sample/fixtures are not genuine replacement symbols. Exact tests/source/coverage/contracts/inventory in current HANDOFF/TEST_REPORT, docs/SKILL_GOAL_CONTRACT.md and pack READMEs. Independent reviewer/CEO review and Owner Phase 5 acceptance pending; Phase 6/in-app dictionary authoring unauthorized.
+
+
+## ADR-028: Owner P5-005 responsive movement/connections — 2026-10-27
+
+Direct Owner ticket authorizes targeted Phase 5 remediation: benchmark many-prerequisite drag/release; coalesced cheap affected-edge previews; bounded settled routes; selected-set movement/retained selection, common offset and one history/save; exact cancellation; remove arrowheads while retaining directed ports/readouts/type styling/hit targets; immediate undoable individual/selected deletion with focus/editor guards; reject contradictory structured Skill titles on load/import. Preserve current pack foundation/Custom escape; broad dictionary expansion deferred. No migration/new dependencies/unrelated rewrite/Git changes/push/deployment. Phase 5 unaccepted, Phase 6 unauthorized. Stop independent reviewer/CEO/Owner review.
+
+P5-005 engineering outcome: frame-coalesced incident previews, common-offset selected movement with one history/save and exact cancellation, bounded shorter arrowhead-free port routes/readouts, immediate exact-scope deletion/Undo and strict structured-title load/import validation implemented. 107 Node +65 browser/build groups passed. Measured primary routing ~315–335ms→3–5ms median; release ~248–281ms→about10ms; no observed post-change long tasks on primary/24-degree fixtures. Shorter routes may cross; quality/latency limits explicitly reported in PERFORMANCE.md and current handoff. Original data/history/art/pack foundation/dist protected. Phase 5 still pending independent/CEO/Owner acceptance; Phase 6 unauthorized.

@@ -1,0 +1,715 @@
+{
+  "repo": "Dava96/osrs-icons",
+  "revision": "16c5de73d6c57e1b47ef0606cf4b6e4ff39e82c6",
+  "date": "2026-09-22T14:19:22Z",
+  "truncated": false,
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3dad271490548bc10291b651e4490b33de70b66a",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/3dad271490548bc10291b651e4490b33de70b66a"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ef136a4d9e45c5dfc091d636eb30078a4f9cc6da",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/ef136a4d9e45c5dfc091d636eb30078a4f9cc6da"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f1c89b265e0165a67832861db3670a0ffd0c5f9",
+      "size": 938,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/7f1c89b265e0165a67832861db3670a0ffd0c5f9"
+    },
+    {
+      "path": ".github/workflows/publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9d94ebae97b60be94409991f619f99f08026380",
+      "size": 3443,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/f9d94ebae97b60be94409991f619f99f08026380"
+    },
+    {
+      "path": ".github/workflows/update-and-deploy.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1f95072291d4de263c570e7fed011275127ecdc",
+      "size": 2675,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/a1f95072291d4de263c570e7fed011275127ecdc"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be026418ffff34af48c04acbd96c8b5c2439c09a",
+      "size": 386,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/be026418ffff34af48c04acbd96c8b5c2439c09a"
+    },
+    {
+      "path": ".husky",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ebd40652be4585810e310f9870e6c349b79cf42",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/0ebd40652be4585810e310f9870e6c349b79cf42"
+    },
+    {
+      "path": ".husky/pre-commit",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2312dc587f61186ccf0d627d678d851b9eef7b82",
+      "size": 16,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/2312dc587f61186ccf0d627d678d851b9eef7b82"
+    },
+    {
+      "path": ".prettierignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2af663f86908c370c845bed9371ef6181993e347",
+      "size": 186,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/2af663f86908c370c845bed9371ef6181993e347"
+    },
+    {
+      "path": ".prettierrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "785de2930704c63e8347d5e51787bca8a3b70a68",
+      "size": 106,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/785de2930704c63e8347d5e51787bca8a3b70a68"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a91f0466ba984d15880d35b512e03f4d38863b3",
+      "size": 4791,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/0a91f0466ba984d15880d35b512e03f4d38863b3"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af42a093a404b17312ffd5c60490a0e36605b542",
+      "size": 832,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/af42a093a404b17312ffd5c60490a0e36605b542"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "993e8a14453cf493e86be96619900b15e269ef69",
+      "size": 12274,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/993e8a14453cf493e86be96619900b15e269ef69"
+    },
+    {
+      "path": "eslint.config.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "120c7f44f1e26765ea31b76f43e66da9f95dee3a",
+      "size": 906,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/120c7f44f1e26765ea31b76f43e66da9f95dee3a"
+    },
+    {
+      "path": "package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad4eba6ffd5577dabe47985c2497e4e57a32df8d",
+      "size": 131844,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/ad4eba6ffd5577dabe47985c2497e4e57a32df8d"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57c4e5e8ea4034f3a318bf066c245ec1ac03d5e8",
+      "size": 1968,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/57c4e5e8ea4034f3a318bf066c245ec1ac03d5e8"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1f969de5c781c5fcf9dd7e09674e7de6ee16c65",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/b1f969de5c781c5fcf9dd7e09674e7de6ee16c65"
+    },
+    {
+      "path": "scripts/check_category.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba668ccc2c526a767ad91dcc042bcb7a801ccb7e",
+      "size": 483,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/ba668ccc2c526a767ad91dcc042bcb7a801ccb7e"
+    },
+    {
+      "path": "scripts/check_collisions.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f23533bec3a2f161d10e4f8d8f9b3d5b6b59ac0",
+      "size": 1438,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/7f23533bec3a2f161d10e4f8d8f9b3d5b6b59ac0"
+    },
+    {
+      "path": "scripts/shared.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbe5e462bd5971106d070fee299cc2839f24c4de",
+      "size": 17664,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/bbe5e462bd5971106d070fee299cc2839f24c4de"
+    },
+    {
+      "path": "scripts/shared_test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c14eb2a666a6d6b0f79861d47f6bd6b16b7e287",
+      "size": 5528,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/3c14eb2a666a6d6b0f79861d47f6bd6b16b7e287"
+    },
+    {
+      "path": "scripts/update-category-icons.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bfa22b9fc5565fe98f884d453575e1c6cfea95a",
+      "size": 8031,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/6bfa22b9fc5565fe98f884d453575e1c6cfea95a"
+    },
+    {
+      "path": "scripts/update-category-icons_test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "108ad8f81817246302d6ea0c456536efdc5eb8a3",
+      "size": 6375,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/108ad8f81817246302d6ea0c456536efdc5eb8a3"
+    },
+    {
+      "path": "scripts/update-icons.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6274f471e8242ea07e6f00d8a52e81ddddd1660",
+      "size": 2539,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/d6274f471e8242ea07e6f00d8a52e81ddddd1660"
+    },
+    {
+      "path": "site",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bb241cb874c8ebd451acb95a95f050bbc861e721",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/bb241cb874c8ebd451acb95a95f050bbc861e721"
+    },
+    {
+      "path": "site/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a547bf36d8d11a4f89c59c144f24795749086dd1",
+      "size": 253,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/a547bf36d8d11a4f89c59c144f24795749086dd1"
+    },
+    {
+      "path": "site/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c987b941e72521f72f6dd31b42d164c1ff365143",
+      "size": 2559,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/c987b941e72521f72f6dd31b42d164c1ff365143"
+    },
+    {
+      "path": "site/eslint.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a53e3817ac6778e5e4c83a12098c2236c37f60cb",
+      "size": 623,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/a53e3817ac6778e5e4c83a12098c2236c37f60cb"
+    },
+    {
+      "path": "site/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e39224a95ac0a063c93fa91d31b0bb6452b40a6",
+      "size": 359,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/2e39224a95ac0a063c93fa91d31b0bb6452b40a6"
+    },
+    {
+      "path": "site/package-lock.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47739e75a06454efbef110e0445b6ad6c2cdf2b9",
+      "size": 108040,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/47739e75a06454efbef110e0445b6ad6c2cdf2b9"
+    },
+    {
+      "path": "site/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7f66941cea0c12ddd9e6b1e6ba57b00a3deecdd",
+      "size": 774,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/c7f66941cea0c12ddd9e6b1e6ba57b00a3deecdd"
+    },
+    {
+      "path": "site/public",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "557b37c44d5cb352ff331f90e7fba0189cdfa65e",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/557b37c44d5cb352ff331f90e7fba0189cdfa65e"
+    },
+    {
+      "path": "site/public/vite.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7b8dfb1b2a60bd50538bec9f876511b9cac21e3",
+      "size": 1497,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/e7b8dfb1b2a60bd50538bec9f876511b9cac21e3"
+    },
+    {
+      "path": "site/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "603794b384f4ca107f6ebccc226ab9a56f770b31",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/603794b384f4ca107f6ebccc226ab9a56f770b31"
+    },
+    {
+      "path": "site/src/App.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a4251f77132bc1563d65e54f2d5de4bf945f660",
+      "size": 701,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/9a4251f77132bc1563d65e54f2d5de4bf945f660"
+    },
+    {
+      "path": "site/src/App.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bea594ac87fa548404dac3e3936e94160fe8a1b",
+      "size": 2678,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/9bea594ac87fa548404dac3e3936e94160fe8a1b"
+    },
+    {
+      "path": "site/src/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "94c0b2fc152a086447a04f62793957235d2475be",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/94c0b2fc152a086447a04f62793957235d2475be"
+    },
+    {
+      "path": "site/src/assets/react.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c87de9bb3358469122cc991d5cf578927246184",
+      "size": 4126,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/6c87de9bb3358469122cc991d5cf578927246184"
+    },
+    {
+      "path": "site/src/components",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1e6f311f362849eec77960e9dbc191dc21bf78c2",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/1e6f311f362849eec77960e9dbc191dc21bf78c2"
+    },
+    {
+      "path": "site/src/components/AnimateDemo.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06fe0c296d86212a057add3d45ac19758dfa1951",
+      "size": 4246,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/06fe0c296d86212a057add3d45ac19758dfa1951"
+    },
+    {
+      "path": "site/src/components/AnimateDemo.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f50fe3074b628e36a582e0206442f2a4c3f07e8",
+      "size": 4261,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/6f50fe3074b628e36a582e0206442f2a4c3f07e8"
+    },
+    {
+      "path": "site/src/components/FlipDemo.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87c293f144e1da31366dbb86c480ba3a628aceb1",
+      "size": 4304,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/87c293f144e1da31366dbb86c480ba3a628aceb1"
+    },
+    {
+      "path": "site/src/components/FlipDemo.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88a666ad99b3e087e2f4fc29674fe5e3a6bcca72",
+      "size": 4458,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/88a666ad99b3e087e2f4fc29674fe5e3a6bcca72"
+    },
+    {
+      "path": "site/src/components/Hero.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "897df71f1f391b21faf6ddaa3f4e23c79ba5860e",
+      "size": 2309,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/897df71f1f391b21faf6ddaa3f4e23c79ba5860e"
+    },
+    {
+      "path": "site/src/components/Hero.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4dc51b2e90df25e89e00f84b02550ecb302efa4",
+      "size": 2174,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/a4dc51b2e90df25e89e00f84b02550ecb302efa4"
+    },
+    {
+      "path": "site/src/components/IconGrid.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48c939f9889d18bc4d94b80d8aa5fca4ce249008",
+      "size": 2185,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/48c939f9889d18bc4d94b80d8aa5fca4ce249008"
+    },
+    {
+      "path": "site/src/components/IconGrid.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e4a4b65492d574aec99a3dd7fe8d196273878b3",
+      "size": 3127,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/6e4a4b65492d574aec99a3dd7fe8d196273878b3"
+    },
+    {
+      "path": "site/src/components/LoadingScreen.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f38513a72895a2cf8b15a3f1b228e9d21bf783e9",
+      "size": 742,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/f38513a72895a2cf8b15a3f1b228e9d21bf783e9"
+    },
+    {
+      "path": "site/src/components/LoadingScreen.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3db9dc77d6d6d901d4c2a0470a13843cd1b10483",
+      "size": 1653,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/3db9dc77d6d6d901d4c2a0470a13843cd1b10483"
+    },
+    {
+      "path": "site/src/components/OsrsNavIcon.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cea6ac4fc22e19a9eebdc547a66e91e3842ba0d4",
+      "size": 1050,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/cea6ac4fc22e19a9eebdc547a66e91e3842ba0d4"
+    },
+    {
+      "path": "site/src/components/PackBuilder.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d91539a3d9c06822bf8abdbd2191545894edb6b9",
+      "size": 7585,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/d91539a3d9c06822bf8abdbd2191545894edb6b9"
+    },
+    {
+      "path": "site/src/components/PackBuilder.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82415bae067ab0ebf25519af54ac7ecee597b926",
+      "size": 9481,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/82415bae067ab0ebf25519af54ac7ecee597b926"
+    },
+    {
+      "path": "site/src/components/PacksDemo.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2740788fcf2f7e92b060f69fe3453082925db59",
+      "size": 4319,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/a2740788fcf2f7e92b060f69fe3453082925db59"
+    },
+    {
+      "path": "site/src/components/PacksDemo.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da7c4739163b0aed8405621e31027719ee2d4e3e",
+      "size": 2614,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/da7c4739163b0aed8405621e31027719ee2d4e3e"
+    },
+    {
+      "path": "site/src/components/Search.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1493b666835f0af2f83c883f43248db9a38b2098",
+      "size": 679,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/1493b666835f0af2f83c883f43248db9a38b2098"
+    },
+    {
+      "path": "site/src/components/Search.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6740e03081b21111e637735c823b76ae0ce81d9",
+      "size": 691,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/b6740e03081b21111e637735c823b76ae0ce81d9"
+    },
+    {
+      "path": "site/src/components/SectionNav.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f51c9e2ebfa508d9f138c5efd5a1eca90324cb12",
+      "size": 1212,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/f51c9e2ebfa508d9f138c5efd5a1eca90324cb12"
+    },
+    {
+      "path": "site/src/components/SectionNav.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf9e6f50280e463f063286250278d122a2ab9ea9",
+      "size": 2131,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/cf9e6f50280e463f063286250278d122a2ab9ea9"
+    },
+    {
+      "path": "site/src/components/Toast.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da55d66ae247e7678553caee9920a4f365020fc4",
+      "size": 1210,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/da55d66ae247e7678553caee9920a4f365020fc4"
+    },
+    {
+      "path": "site/src/components/Toast.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61207876a6472931ee22118ecc04548cef8460a6",
+      "size": 966,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/61207876a6472931ee22118ecc04548cef8460a6"
+    },
+    {
+      "path": "site/src/components/Usage.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de0131742318076679928db542a940468b21243d",
+      "size": 1169,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/de0131742318076679928db542a940468b21243d"
+    },
+    {
+      "path": "site/src/components/Usage.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86d53e037476b87f464e63b649523611e26d1daa",
+      "size": 6660,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/86d53e037476b87f464e63b649523611e26d1daa"
+    },
+    {
+      "path": "site/src/context",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d4d6a56317613f5760dae96159d2a06b9fae4da3",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/d4d6a56317613f5760dae96159d2a06b9fae4da3"
+    },
+    {
+      "path": "site/src/context/ToastContext.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "746fa80f4a767720fce29c2ace19a328f0ce00b1",
+      "size": 1383,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/746fa80f4a767720fce29c2ace19a328f0ce00b1"
+    },
+    {
+      "path": "site/src/hooks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "120fa8e97e9a3db4b32c350ffc0d791660089bb5",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/120fa8e97e9a3db4b32c350ffc0d791660089bb5"
+    },
+    {
+      "path": "site/src/hooks/useRandomCursor.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0945707f610470f9f73c22e869541845e7a9db23",
+      "size": 1316,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/0945707f610470f9f73c22e869541845e7a9db23"
+    },
+    {
+      "path": "site/src/index.css",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "953cf218781e24f93f27aa46acefb36e7668aede",
+      "size": 1018,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/953cf218781e24f93f27aa46acefb36e7668aede"
+    },
+    {
+      "path": "site/src/main.tsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93db3799c0cf1b3f36f3283d16683bc3ac64428e",
+      "size": 240,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/93db3799c0cf1b3f36f3283d16683bc3ac64428e"
+    },
+    {
+      "path": "site/tsconfig.app.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9b5a59ca647ca0102d2501b56cedd83ad7b6818",
+      "size": 732,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/a9b5a59ca647ca0102d2501b56cedd83ad7b6818"
+    },
+    {
+      "path": "site/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d32ff682003e0ff5d8a6e6bb3663d4c35a45b116",
+      "size": 107,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/d32ff682003e0ff5d8a6e6bb3663d4c35a45b116"
+    },
+    {
+      "path": "site/tsconfig.node.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a67f62f4ceebff3424e6e8cd4b3c25b17347546",
+      "size": 653,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/8a67f62f4ceebff3424e6e8cd4b3c25b17347546"
+    },
+    {
+      "path": "site/vite.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ebed60592aae6cffd1597d4ac9d5ebf67bdc677",
+      "size": 188,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/4ebed60592aae6cffd1597d4ac9d5ebf67bdc677"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b87ca8819f75e5b43195ca4fb674c203fc54d83",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/9b87ca8819f75e5b43195ca4fb674c203fc54d83"
+    },
+    {
+      "path": "src/animateCursor.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4b7633b5fb63b28eb5bf093fc7e6eaf50f57512",
+      "size": 3707,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/a4b7633b5fb63b28eb5bf093fc7e6eaf50f57512"
+    },
+    {
+      "path": "src/animateCursor_test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08176e483e0b6147fe2f0ded44fd671c49d5868d",
+      "size": 2650,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/08176e483e0b6147fe2f0ded44fd671c49d5868d"
+    },
+    {
+      "path": "src/applyCursors.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f25adcb20b9cb383a11ef6a8055004121a13e7cd",
+      "size": 3273,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/f25adcb20b9cb383a11ef6a8055004121a13e7cd"
+    },
+    {
+      "path": "src/applyCursors_test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f56a3fea049f2f50c816706b9535bcaecf780bd6",
+      "size": 1825,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/f56a3fea049f2f50c816706b9535bcaecf780bd6"
+    },
+    {
+      "path": "src/flip.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf662dce5b8b4441f472ff3542c62ac2e2c9094d",
+      "size": 5142,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/cf662dce5b8b4441f472ff3542c62ac2e2c9094d"
+    },
+    {
+      "path": "src/flip_test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04b8c5e207dddd45956e8898f24e6d51673afcc0",
+      "size": 4772,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/04b8c5e207dddd45956e8898f24e6d51673afcc0"
+    },
+    {
+      "path": "src/generated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e1d8afbf28bfea5c535ad22ce43f781a5fad972",
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/trees/7e1d8afbf28bfea5c535ad22ce43f781a5fad972"
+    },
+    {
+      "path": "src/generated/category-icons-meta.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60b9266d30a6ac949d2f7d53013ca184b4f304d9",
+      "size": 53001,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/60b9266d30a6ac949d2f7d53013ca184b4f304d9"
+    },
+    {
+      "path": "src/generated/category-icons.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64b7ec269e35fa8c5c10926749f31a9fe1e40531",
+      "size": 1991754,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/64b7ec269e35fa8c5c10926749f31a9fe1e40531"
+    },
+    {
+      "path": "src/generated/icons.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2abc09354bafcf5c98c42805a66b85d4e0fb5a58",
+      "size": 15104039,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/2abc09354bafcf5c98c42805a66b85d4e0fb5a58"
+    },
+    {
+      "path": "src/generated/meta.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a05493a8eeaf64b0d01f4e947a27e4dee2f7bd8",
+      "size": 411726,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/4a05493a8eeaf64b0d01f4e947a27e4dee2f7bd8"
+    },
+    {
+      "path": "src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19e36a87af48b5d97e1a373871a94f973933100b",
+      "size": 2045,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/19e36a87af48b5d97e1a373871a94f973933100b"
+    },
+    {
+      "path": "src/index_test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "328ca9cbe8f7cd51ce3e4247aae2edf0fd8839e3",
+      "size": 4586,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/328ca9cbe8f7cd51ce3e4247aae2edf0fd8839e3"
+    },
+    {
+      "path": "src/packs.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1e969c98b3a92c972ccc2836a9bdefc5c3e9553",
+      "size": 6572,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/c1e969c98b3a92c972ccc2836a9bdefc5c3e9553"
+    },
+    {
+      "path": "src/packs_test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c4c020b4c9d9ab314d4a1a5f043b8e92769c9a6",
+      "size": 6651,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/7c4c020b4c9d9ab314d4a1a5f043b8e92769c9a6"
+    },
+    {
+      "path": "tsconfig.esm.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05de45403b34a81b010d8dc332dd947ee90ac522",
+      "size": 149,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/05de45403b34a81b010d8dc332dd947ee90ac522"
+    },
+    {
+      "path": "tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f82124e448d6251432c02995965a2b5084d844d7",
+      "size": 427,
+      "url": "https://api.github.com/repos/Dava96/osrs-icons/git/blobs/f82124e448d6251432c02995965a2b5084d844d7"
+    }
+  ]
+}

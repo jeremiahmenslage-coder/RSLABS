@@ -4,11 +4,31 @@ Run commands from the application root, not OSRSLABS. Node 20+ is required; this
 
 | Command | Classification | Side effects / limitations |
 |---|---|---|
-| node --test tests/assets.test.mjs tests/graph.test.mjs tests/indexeddb.test.mjs tests/phase1.test.mjs | Current regression suite, also exposed as npm test | 34 model/assets/state/mock-storage checks; no project-file writes observed in reviewed tests. Not real browser IndexedDB. |
+| node tests/browser_p5_005.mjs | Current movement/connections/deletion suite | New separate build/evidence; both densities, selected-set mouse/touch/cancel/frame coalescing/write counts, short port routes/cycles/hit testing, no-confirm delete/history/focus safeguards, load/import contradictions, DB recovery. Disposable IndexedDB; dist preserved. |
+| node tests/browser_movement_benchmark.mjs after | Measured drag/routing/release probe | Fresh build/context/evidence; three drags and direct routing samples per density; RAF, preview, release and long-task raw measurements. --count 24 adds high-degree workload. --source path replays a fresh copy of the preserved before build without changing original evidence. Requires verified running local server. |
+| node tests/browser_p5_004.mjs | Current picker/reference/local-icon browser suite | Fresh evidence/static copies, disposable Chrome/real IndexedDB; category flows, 24 skills/48 diaries, drafts, structured/legacy compatibility, updates, PNG/WebP decoding/mapping/fallback, imports/history/reload/failures. Original dist untouched. Also creates immutable original test-icon copies under public/icon-packs; no live mapping activation. |
+| node scripts/import-catalog.mjs --pack catalog/reference-packs/osrs-v1.json --check | Current text reference pack check | Offline validation/reproducibility/coverage; no data writes. Without --check uses one candidate/atomic activation module. |
+| node scripts/prepare-category-icons.mjs --pack catalog/icon-packs/sample-v1/manifest.json --output evidence/p5-004-preflight-2026-10-27/sample-owner-categories.js --check | Original local icon sample verification | Uses existing Playwright/Chrome decoder in fresh about:blank context; no network/personal data. First run without --check generates candidate plus immutable sample file. Omit --output only when intentionally activating an Owner mapping. See icon-packs README. |
+| node tests/browser_p5_003.mjs | Preserved P5-003; direct-create assumptions superseded by P5-004 | 12 groups, new separate build/evidence, source/public equality, both densities/Board/editors, all categories, inactive data, cancellation/history/reload/backups/failures, no catalog/icon controls. Disposable HTTP/IndexedDB; dist preserved. |
+| node scripts/prepare-category-icons.mjs --check | Current offline category source check | Existing pinned cache hash, five PNG byte hashes/mapping; no browser data or network. Without --check generates only reviewed mapping/manifest and missing files, refusing changed existing PNGs. |
+| node tests/browser_p5_002.mjs | Preserved P5-002; catalog/individual-art expectations superseded, not run P5-003 | 13 groups; disposable HTTP/IndexedDB, artwork/defaults/override/fallback/update, catalog/custom creation, Cancel vs hiding, status/history/reload/backup/failures. New evidence only; preserves dist. |
+| node scripts/prepare-artwork.mjs --check | Offline pinned artwork reproducibility | Checks cached sources, generated module/manifest, 94 PNGs and four source notices. See catalog/ARTWORK.md for cache and opt-in --fetch/update behavior; no roadmap access. |
+| node tests/browser_phase5.mjs | Preserved P5-001 suite; creation/status expectations superseded by P5-002; not run this ticket | 15 groups, disposable HTTP/IndexedDB, no runtime integrations; status/hide/data/catalog/update/deferred/history/Board/recovery. New evidence/p5-001-* only. |
+| node scripts/import-catalog.mjs catalog/reference-source.json --check | Current offline catalog check | Reads input/generated source, verifies exact reproducibility. No browser-data writes. Regeneration without --check overwrites only the intended generated module or explicit candidate output; review permissions/input first. |
+| node tests/browser_board.mjs | P4-001 separate static build + real Board/Graph workflows | 11 groups; new evidence/p4-001-* only, disposable real HTTP/IndexedDB; synchronized state/history, filters, drafts, reload/JSON and failures. Preserves dist, no installs or personal profiles. |
+| node tests/browser_editing.mjs | P3-005 separate static build + editing consistency | Nine groups: all four history discard paths with Save/reload, trusted touch cancellation/geometry/routes, final combined edits and atomic rejection. Fresh evidence/p3-005-*; disposable real IndexedDB; preserves dist. |
+| node tests/browser_workspace.mjs | P3-004 separate build + real workspace gestures/drafts | New evidence/p3-004-* only; 14 scenarios, fresh real IndexedDB context, panel/quick/selection/keyboard/transfer and recovery checks; preserves dist. Requires existing Playwright/Chrome, no installs. |
+| npm test | Current Phase 5 regression suite | 107 Node checks (including five movement/deletion/title consistency and five reference/pack tests): 7 Phase 5 import/data/deferred/routing checks plus 5 Board projection/compatibility/history checks plus 3 P3-005 combined-edit checks plus 34 Phase 0/1 + 12 Phase 2 + 13 P3-001 + 8 bulk + 7 cursor/reversal. Includes actual locally bundled ELK, explicit scope/history/storage and atomic reversal checks. Console output only; browser checks are separate. |
+| node tests/browser_cursor.mjs | P3-003 separate build + real cursor/context/mouse workflows | Fresh evidence/p3-003-* and static output; verifies source/vendor/dist bytes, real browser context/IndexedDB, draft transfer, context scope, keyboard, actual mouse Shift-click/dragging, validation/history/recovery. No installs, personal profiles or historical evidence overwrite. |
+| node tests/browser_bulk.mjs | P3-002 separate build + real gestures/bulk workflows | Creates a fresh evidence/p3-002-* directory and static output, verifies source/vendor bytes and unchanged dist hashes, uses disposable browser context/real IndexedDB. Requires existing Playwright/Chrome; no package installs or personal profile/site-data access. Writes new screenshots/downloads/results only. |
+| node tests/browser_phase3.mjs | Phase 3 separate static build + real HTTP/IndexedDB | Creates fresh timestamped evidence/phase3-* and static output inside it, refuses overwrite, compares original dist hashes, tests copied source/vendor bytes and actual browser flows with disposable storage. Requires existing Playwright/Chrome; leaves an existing verified server alone. Includes layout metrics and screenshots. |
+| node tests/browser_phase2.mjs | Phase 2 HTTP UI + real IndexedDB | Requires existing Playwright and installed Chrome; creates a disposable browser context at the unchanged 127.0.0.1:4173 origin. Starts a server only if none responds; otherwise verifies served source matches this checkout and leaves the existing process alone. Writes new timestamped evidence/phase2-* folders and actual download files. No dist rebuild, personal profile access or historical evidence overwrite. |
+| node --test tests/assets.test.mjs tests/graph.test.mjs tests/indexeddb.test.mjs tests/phase1.test.mjs | Preserved Phase 0/1 subset | 34 model/assets/state/mock-storage checks; no project-file writes observed in reviewed tests. Not real browser IndexedDB. npm test also includes later phase tests. |
 | node tests/performance_spike.mjs | Synthetic layout/model probe | Console measurements only; not release performance acceptance. |
 | npm run dev | Current source server | Uses 127.0.0.1:4173; opening the app can access that browser origin's IndexedDB. |
 | npm run preview | Existing dist server | Serves the preserved build without rebuilding it. |
 | npm run build | Static build | Deletes and recreates dist; obtain task authorization before regenerating a preserved build. |
+| npm run build -- evidence/my-phase3-build | Separate static build | Parent must exist; target must be new and inside the checkout. Refuses existing output; does not delete or replace dist/evidence. Use a new name on subsequent runs. Includes bundled ELK license/notice/source metadata. |
 | python tests/static_phase1_smoke.py | Current HTTP smoke | Rebuilds dist, starts/stops a local server, checks 11 responses; not browser E2E. |
 | python tests/static_asset_check.py | Earlier HTTP asset smoke | Reads existing dist, starts/stops a local server; still useful for byte/MIME/404 checks. Does not rebuild first. |
 | python tests/browser_phase1.py | Current inline DOM interactions | Requires Playwright; hardcodes /usr/bin/chromium, so Windows setup repair is pending. Uses mocked IndexedDB and overwrites evidence/phase1-editor-chromium-inline.png. |
@@ -23,3 +43,89 @@ The Windows python command resolved to an unusable WindowsApps alias during audi
 The seven-node/six-edge README walkthrough is the primary Phase 1 acceptance scenario, including both connection methods, mutation undo/redo, saved positions/types/notes, failed-save/last-known-good/retry, and invalid connection rejection. The founding five-node scenario remains baseline coverage. Use isolated disposable test data; do not reset or overwrite an existing personal roadmap. Preserve the application's origin, storage identifiers and schema.
 
 Original evidence is historical. For future authorized test runs use a separate checkout or explicitly agreed output location so scripts do not overwrite delivered evidence. Test-harness repairs, dependencies and application fixes require separate authorization. Phase acceptance remains the Owner's decision; Phase 2 requires its own authorization.
+
+## P3-001 authorized validation — October 26, 2026
+
+### P3-003 follow-up
+
+ADR-019 authorizes cursor editors/context actions only. Results: 74/74 Node, 17/17 new cursor browser/static-build, 15/15 detailed-workflow, 13/13 bulk and 12/12 P3-001 browser scenarios. Prior creation/connection inspector tests use More details, and the cursor Cancel selector is scoped; no assertions were removed. Real mouse Shift-click pairing and port/region/node/pan gestures are explicitly covered by the new runner. Existing P2 routing ambiguity remains open; no routing/storage/dependency changes. Independent review, CEO review and Owner acceptance are pending.
+
+```powershell
+$env:PLAYWRIGHT_MODULE_PATH='C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright'
+node tests/browser_cursor.mjs
+```
+
+The runner serves a fresh nonoverwriting static output at a subpath of the unchanged origin using a disposable context. It verifies actual cursor forms/menus and focus/placement, then roundtrips data and injects failed writes. Natural quota exhaustion, concurrent tabs, other browsers/mobile/full accessibility/performance were not tested. See current TEST_REPORT.md for evidence and retained intermediate runs.
+
+### P3-002 follow-up
+
+ADR-018 authorizes region selection and explicit bulk actions only. Results: 67/67 Node tests, 13/13 bulk browser/static-build scenarios, 15/15 prior-workflow browser scenarios, 12/12 P3-001 browser/static-build scenarios. Each browser runner creates new evidence with disposable data. Existing tests, routing/storage code and dist remain unchanged. Independent reviewer/CEO review and Owner acceptance are pending; no routing repair or new phase is authorized.
+
+```powershell
+$env:PLAYWRIGHT_MODULE_PATH='C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright'
+node tests/browser_bulk.mjs
+```
+
+The bulk runner navigates the separate static output beneath the unchanged origin. It uses real keyboard/pointer selection, previews, controls, undo/redo, reload/export/import and injected failed-write recovery. It checks partial/offscreen/hidden/collapsed exclusions, Focus/Highlight scope, dirty drafts, single-command history and prior connection gestures. Exact results and limits: current TEST_REPORT.md. Default build and legacy evidence-writing tests were not run.
+
+### P3-001 baseline
+
+Owner accepted Phase 2 and authorized bounded Phase 3 work (ADR-017); its static build was not verified. P3-001 baseline results: 59/59 Node checks, 12/12 browser/static-build scenarios, and 15/15 prior-workflow browser regression scenarios. No Phase 4 authorization. Run the organization browser suite with the already bundled automation dependency:
+
+```powershell
+$env:PLAYWRIGHT_MODULE_PATH='C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright'
+node tests/browser_phase3.mjs
+node tests/browser_phase2.mjs
+```
+
+The Phase 3 runner creates new static output and validates it at the existing root server's `/evidence/<new-run>/static/` path, retaining the exact browser origin and database identifiers while isolating the browser context. It never uses the normal browser profile or clears site data. It checks that its served build matches local bytes, records layout routing/label measurements, refuses overwriting the build directory, and verifies original dist hashes unchanged. The two browser contexts/runs are independent. See TEST_REPORT.md for final paths and measured P2 routing limits. Legacy Python suites/benchmarks were not run; they can overwrite historical evidence. Main-thread/250-node production performance, natural quota exhaustion and multi-tab races were not tested.
+
+## P2-001 validation baseline — October 26, 2026
+
+ADR-016 authorizes scoped Phase 2 implementation and associated tests. Phase 1 was Owner-accepted under ADR-015. Current results and limitations are in `TEST_REPORT.md`; Phase 2 acceptance is pending and Phase 3 remains unauthorized. The Phase 1 reports and older command limitations above remain historical.
+
+No package installation is needed for the app or Node tests. To repeat the browser suite on this machine using the already bundled automation dependency:
+
+```powershell
+$env:PLAYWRIGHT_MODULE_PATH='C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright'
+node tests/browser_phase2.mjs
+```
+
+Other environments can resolve an already installed `playwright` normally or set that variable to its module path. Chrome is the default installed channel; `BROWSER_CHANNEL=edge` selects Edge (not validated in this delivery). This runner uses `import.meta.dirname` and is validated on Node 24.22.1. Every invocation writes a fresh evidence directory, preserving failures/intermediate runs. Downloads and test roadmap JSON are disposable synthetic data. Browser contexts are closed afterward; the user's normal profile and personal origin storage are untouched. Do not run the historical evidence-writing Python suites against this checkout.
+
+
+## P3-004 consolidated validation
+
+ADR-020 authorizes these UI/test/current-document changes. Final results: 74/74 Node; workspace 14/14, cursor 17/17, bulk 13/13, organization 12/12, Phase 1/2 detailed 15/15 browser/build groups. Command: node tests/browser_workspace.mjs with the same PLAYWRIGHT_MODULE_PATH above. Final evidence, retained failed intermediate runs and Not run limits are in the current TEST_REPORT.md. Legacy detailed tests now explicitly open details/disclosures; data assertions remain. Do not use default npm run build or evidence-overwriting legacy Python runners.
+
+
+## P3-005 editing consistency validation
+
+ADR-021 authorizes only the three reviewed fixes. Run npm test (77 checks) and node tests/browser_editing.mjs using the existing PLAYWRIGHT_MODULE_PATH above. Final targeted run: 9/9 Pass; all existing 71 browser/build regression groups also Pass. Exact evidence and Not run limits are in current TEST_REPORT.md/HANDOFF.md. Trusted pointer cancellation is generated through Chrome touch input, not a synthetic DOM event. No legacy evidence-writing runners or default dist build were used.
+
+
+## P4-001 executed validation
+
+ADR-023 authorizes the bounded Board/navigation work. Final: 82/82 Node and 91/91 browser/build groups Pass (11 Board plus all previous 80). Run node tests/browser_board.mjs with the existing PLAYWRIGHT_MODULE_PATH above. Static output is new, source/vendor matched and dist unchanged. Exact evidence/Not run limits are in current TEST_REPORT.md/HANDOFF.md. No default dist build or legacy evidence-overwriting runners were used.
+
+
+## P5-001 current suite and superseded UI checks
+
+Final executed: npm test 89/89 Pass; browser_phase5 15/15, browser_editing 9/9, browser_bulk 13/13, browser_phase3 12/12 Pass. Use the existing PLAYWRIGHT_MODULE_PATH above. Each browser run creates new evidence/static output and preserves dist. Catalog/source/asset reports are under catalog/ and public/catalog-notices.html.
+
+The unchanged browser_phase2, browser_cursor, browser_workspace and browser_board scripts contain superseded numeric-control interactions and are NOT current Phase 5 UI acceptance runners. They were preserved, not rerun or silently counted as passes; their relevant current workflows/data assertions are covered in the current P5 suite plus unaffected suites. Node progress validation/data tests remain active. browser_p5_reproduction.mjs is a historical before-hiding observation harness; its successful old/corrected static builds and observations are retained, and it is not expected to target removed controls in the current app.
+
+Failed/intermediate Node label-placement checks and harness fixes are retained and explained in TEST_REPORT.md. Required status/counter-data protection is tested without restoring counter UI. The Owner clarified the draft prompt followed a graph-goal click; the exact tested sequence preserves notes with no prompt, while actual More details replacement remains guarded. Not reproduced is distinguished from fixed. Do not run legacy evidence-overwriting Python suites or the default dist build.
+
+
+P5-002 execution (2026-10-27): 93/93 Node, 13/13 P5-002, 9/9 editing, 13/13 bulk and 12/12 Phase 3 browser/build groups passed. Exact evidence/Not run/failure history is in current TEST_REPORT.md. Existing Playwright on this machine: set PowerShell $env:PLAYWRIGHT_MODULE_PATH to C:\Users\Jeremiah\.cache\codex-runtimes\codex-primary-runtime\dependencies\node\node_modules\playwright before running browser scripts. Windows Node v24.22.1, Chrome 155.0.8059.85; real HTTP/IndexedDB disposable contexts. Original dist untouched. Final artwork CLI --fetch with an empty cache, mobile/other browsers and live per-entry link audits were not run.
+
+P5-003: archived individual resolver tests explicitly use resolveIndividualIcon (inactive compatibility path). New category-mode tests cover active resolveNodeIcon and known/unknown hidden-field preservation. Old browser creation/icon assumptions remain preserved, not treated as current passes. See current TEST_REPORT.md for actual execution/Not run evidence.
+
+P5-004 pack unit tests create new evidence/p5-004-pack-unit-* and p5-004-icons-unit-* directories instead of deleting fixtures. Existing tests remain console-only except these explicitly scoped new pack fixtures. Preparation may leave unused immutable/candidate artifacts after an IO failure; no cleanup is automatic. Detailed data contract: SKILL_GOAL_CONTRACT.md. Current exact results and prior harness failures: TEST_REPORT.md.
+
+P5-004 final delivery: 102/102 Node and 50/50 browser/build groups Pass (16 picker/packs +9 editing +13 bulk +12 Phase 3). Exact evidence, initial harness failures and Not run cases in current TEST_REPORT.md. Final separate static output: evidence/p5-004-2026-10-27T21-35-40-394Z/static/.
+
+P5-005: the old zero-crossing/shared-path/label-edge raid assertions are superseded by the authorized shorter-route policy; retained geometry/card/label/state assertions plus new port/cycle/stability checks apply. Bulk browser expectation now retains explicit selection after a moved set; single-click pairing still clears region selection. Historical before definition copied under P5-005 preflight and original evidence unchanged. Exact Pass/Fail/Not run and timing/route-quality tradeoffs are in current TEST_REPORT.md and PERFORMANCE.md.
+
+P5-005 final: 107/107 Node, 65/65 current browser/build groups (15 remediation +16 picker/packs +9 editing +13 bulk +12 Phase 3). Measured benchmark raw samples/quality in evidence/p5-005-preflight-2026-10-27/PERFORMANCE.md; final build evidence/p5-005-2026-10-28T00-25-08-906Z/static/. Historical runs unchanged; exact failures and Not run limits in TEST_REPORT.md.

@@ -1,0 +1,58 @@
+[
+  {
+    "density": "compact",
+    "stage": "reload",
+    "visibleCards": 16,
+    "width": 4029,
+    "height": 556,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [],
+    "labelEdgeIntersections": []
+  },
+  {
+    "density": "compact",
+    "stage": "manual drag",
+    "visibleCards": 16,
+    "width": 4029,
+    "height": 556,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [],
+    "labelEdgeIntersections": []
+  },
+  {
+    "density": "detailed",
+    "stage": "reload",
+    "visibleCards": 16,
+    "width": 4689,
+    "height": 700,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [],
+    "labelEdgeIntersections": []
+  },
+  {
+    "density": "detailed",
+    "stage": "manual drag",
+    "visibleCards": 16,
+    "width": 4689,
+    "height": 700,
+    "cardOverlaps": [],
+    "nodeIntersections": [],
+    "labelNodeOverlaps": [],
+    "labelOverlaps": [],
+    "crossings": [],
+    "sharedSegments": [],
+    "labelEdgeIntersections": []
+  }
+]

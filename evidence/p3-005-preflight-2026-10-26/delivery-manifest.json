@@ -1,0 +1,122 @@
+{
+  "date": "2026-10-26T22:43:22.882Z",
+  "checkout": "C:\\Users\\Jeremiah\\OneDrive\\Desktop\\OSRSLABS\\Phase1\\osrs-phase1-editor",
+  "branch": "main",
+  "commit": "604d4d6d21fcd0030286acb400087cb14388e8f7",
+  "authority": "Owner P3-005 / ADR-021",
+  "files": [
+    {
+      "file": "src/main.js",
+      "before": "954943CCB1AB453CB0E418D91880E1997CF44A4E0211EB6D17C71F9797DFC5C0",
+      "after": "d40268da156afe2b3eb643f6d3f6b2ed0e4717bca84724f0d59952924ecaf623"
+    },
+    {
+      "file": "src/model/actions.js",
+      "before": "B382F05113A729AEA5C86A6765C440032451222217092F4218CD9DB3930F433C",
+      "after": "c377c3779208e8ee7ff86a5e36a57d5f51cd8588769ed8aa1181377e8be78b95"
+    },
+    {
+      "file": "src/ui/cursor.js",
+      "before": "746FC70F27C899F8CE2F0010BFCB06E2252505734C99A6BB16D4FB7801F3D0C5",
+      "after": "346c10829409c2fc8be71263be15ce8c3c171612ca2522ece2b4667878b7cfd7"
+    },
+    {
+      "file": "tests/editing.test.mjs",
+      "before": null,
+      "after": "1946bdca1d2e9684d96a90152856b4b5925708e8792aa6fc39a518eae23c2fa9"
+    },
+    {
+      "file": "tests/browser_editing.mjs",
+      "before": null,
+      "after": "a1725a0c98f81980b0f7ed71af73f143884b728284b4e9a4cd6a5db91eadae8e"
+    },
+    {
+      "file": "DECISIONS.md",
+      "before": "8CC17CA67536C295CB1082FD29505F06BFE00CD27F1116083CB00231A677AB92",
+      "after": "bee86ec47aff32216cc5b67b07587a61cfaebcd6905ac546cc355e1897735b25"
+    },
+    {
+      "file": "docs/agents/CURRENT_PHASE_GATE.md",
+      "before": "76D3B68A5A2CA1546EF856AC5EDEF495809778878B66327C85551F36A254FA0D",
+      "after": "5116a81d0c2789186fd943aa56c5fa13b03ac7365be877c55fafe0bb2956c71c"
+    },
+    {
+      "file": "HANDOFF.md",
+      "before": "B4B6DB34B790FD86EA9D1D626FE4FCE01E4129E6C81030285710975951BF0320",
+      "after": "a4dfc4498c64d4c5d95dd513ea9be54670e01111916b5fb25a2069d30617c891"
+    },
+    {
+      "file": "TEST_REPORT.md",
+      "before": "54BBB14B4772A469288A123C1DDA58723FD4028D1C7D8ED8F00D355D929A3513",
+      "after": "43e16fed4ff8c39f54d286ec173cf2a822557e208906fdf6ca91703b5776370f"
+    },
+    {
+      "file": "docs/TESTING.md",
+      "before": "42C0D2CE0FD3391709E38C53EFBD8380E2BAE4B8E9DE5D0FBE624F62659BF640",
+      "after": "2b504c5ae2c0af1651f58319eede51b5ba37510f3600267a174b076e8cf1ba5c"
+    }
+  ],
+  "unchangedBaselineFiles": 85,
+  "changedExistingFiles": [
+    "src/main.js",
+    "src/model/actions.js",
+    "src/ui/cursor.js",
+    "DECISIONS.md",
+    "HANDOFF.md",
+    "TEST_REPORT.md",
+    "docs/agents/CURRENT_PHASE_GATE.md",
+    "docs/TESTING.md"
+  ],
+  "preserved": "All other baseline files unchanged; historical HANDOFF/TEST_REPORT suffix hashes exact; dist/vendor/storage/layout unchanged; empty Git index",
+  "node": {
+    "pass": 77,
+    "fail": 0
+  },
+  "browser": {
+    "pass": 80,
+    "fail": 0,
+    "suites": [
+      [
+        "P3-005 editing fixes",
+        9,
+        "p3-005-2026-10-26T22-41-19-168Z"
+      ],
+      [
+        "P3-004 workspace",
+        14,
+        "p3-004-2026-10-26T22-41-29-432Z"
+      ],
+      [
+        "P3-003 cursor/context",
+        17,
+        "p3-003-2026-10-26T22-41-29-449Z"
+      ],
+      [
+        "P3-002 bulk",
+        13,
+        "p3-002-2026-10-26T22-41-29-926Z"
+      ],
+      [
+        "Phase 1/2 editing/progression/backup",
+        15,
+        "phase2-2026-10-26T22-41-29-459Z"
+      ],
+      [
+        "P3-001 organization/layout",
+        12,
+        "phase3-2026-10-26T22-41-30-435Z"
+      ]
+    ]
+  },
+  "static": {
+    "path": "evidence/p3-005-2026-10-26T22-41-19-168Z/static",
+    "sourceAndIndexMatch": true
+  },
+  "knownDefects": [
+    {
+      "severity": "P2",
+      "status": "Existing routing ambiguity OPEN, unchanged"
+    }
+  ],
+  "review": "Independent / CEO / Owner acceptance pending; Phase 3 unaccepted; Phase 4 unauthorized"
+}

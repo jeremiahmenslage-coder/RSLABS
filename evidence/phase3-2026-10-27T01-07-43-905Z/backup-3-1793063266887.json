@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "roadmap": {
+    "id": "phase0_fixture",
+    "title": "Canonical convergence spike",
+    "nodes": [
+      {
+        "id": "sailing",
+        "title": "52 Sailing",
+        "category": "skill",
+        "catalogRef": "demo:sailing",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 16,
+          "y": 400
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "tortugans",
+        "title": "Troubled Tortugans",
+        "category": "quest",
+        "catalogRef": "demo:tortugans",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 466,
+          "y": 400
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "belle",
+        "title": "Belle's Folly",
+        "category": "quest",
+        "catalogRef": "demo:belle",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 1121.5,
+          "y": 400
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "barrows",
+        "title": "Barrows armor",
+        "category": "item",
+        "catalogRef": "demo:barrows",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 944,
+          "y": 184
+        },
+        "groupId": "loadout",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "crystal",
+        "title": "Crystal shield",
+        "category": "item",
+        "catalogRef": "demo:crystal",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 944,
+          "y": 56
+        },
+        "groupId": "loadout",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "ring",
+        "title": "Berserker ring",
+        "category": "item",
+        "catalogRef": "demo:ring",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 1294,
+          "y": 56
+        },
+        "groupId": "loadout",
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      },
+      {
+        "id": "moons",
+        "title": "Perilous Moons",
+        "category": "boss",
+        "catalogRef": "demo:moons",
+        "iconOverride": null,
+        "notes": "Phase 0 sample; relationships are illustrative, not verified game requirements.",
+        "status": "not_started",
+        "progress": null,
+        "position": {
+          "x": 1779,
+          "y": 56
+        },
+        "groupId": null,
+        "createdAt": "2026-10-25T00:00:00.000Z",
+        "updatedAt": "2026-10-25T00:00:00.000Z"
+      }
+    ],
+    "edges": [
+      {
+        "id": "e1",
+        "sourceId": "sailing",
+        "targetId": "tortugans",
+        "kind": "order"
+      },
+      {
+        "id": "e2",
+        "sourceId": "tortugans",
+        "targetId": "belle",
+        "kind": "soft"
+      },
+      {
+        "id": "e3",
+        "sourceId": "barrows",
+        "targetId": "ring",
+        "kind": "hard"
+      },
+      {
+        "id": "e4",
+        "sourceId": "crystal",
+        "targetId": "ring",
+        "kind": "order"
+      },
+      {
+        "id": "e5",
+        "sourceId": "ring",
+        "targetId": "moons",
+        "kind": "hard"
+      },
+      {
+        "id": "e6",
+        "sourceId": "belle",
+        "targetId": "moons",
+        "kind": "order"
+      }
+    ],
+    "groups": [
+      {
+        "id": "loadout",
+        "title": "Equipment route",
+        "representativeNodeId": null,
+        "collapsed": false
+      }
+    ]
+  },
+  "preferences": {
+    "lastView": "graph",
+    "nodeDensity": "detailed",
+    "completedVisibility": "show",
+    "viewport": {
+      "x": 23.115220483641536,
+      "y": 261.55440967283073,
+      "zoom": 0.5926979611190137
+    }
+  }
+}

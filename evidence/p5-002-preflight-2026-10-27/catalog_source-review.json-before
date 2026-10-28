@@ -1,0 +1,28 @@
+{
+  "reviewDate": "2026-10-26",
+  "sources": [
+    {
+      "url": "https://legal.jagex.com/docs/policies/fan-content-policy",
+      "status": "Read current version 1.4 dated 2026-09-29; companion-app restriction reviewed",
+      "decision": "No authentic Jagex art or game-derived content ingestion"
+    },
+    {
+      "url": "https://oldschool.runescape.wiki/w/RuneScape:Images_and_media_policy",
+      "status": "Read primary media/licensing policy",
+      "decision": "No Wiki images or expressive content copied"
+    },
+    {
+      "url": "https://oldschool.runescape.wiki/w/RuneScape:Copyrights",
+      "status": "Direct retrieval unavailable",
+      "decision": "No unverified prose/image license relied on"
+    }
+  ],
+  "method": "Manual factual-name/category/reference-link curation; source/index searches; no scraping or runtime API",
+  "records": 207,
+  "individualLiveLinkAudit": "Not run; some direct Wiki retrievals robots-denied; no bypass",
+  "authenticArt": 0,
+  "originalSymbols": 7,
+  "originalSymbolBytes": 1933,
+  "packaging": "Project-original symbols locally bundled under Owner P5-001; no broader external license grant",
+  "coverageGaps": "Partial items/quests/bosses/activities, tier-level diaries only; newest-content completeness not claimed"
+}
